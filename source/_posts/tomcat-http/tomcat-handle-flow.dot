@@ -1,0 +1,17 @@
+digraph kafkaComsumerModel{  
+
+  node[fontname="FangSong",size="20,20",shape="Mrecord",color="skyblue",style="filled"];  
+  edge[fontname = "FangSong", fontsize = 12, color="darkgreen"];
+  
+  Browser -> Connector[label="HTTP请求"];
+  Connector -> Engine;
+  Engine -> Host;
+  Host -> Context;
+  Context -> servlet;
+  servlet -> HttpServletRequest;  
+  HttpServletRequest -> doGet;
+  doGet -> HttpServletResponse;
+  HttpServletResponse -> Engine;
+  Engine -> Connector;
+  Connector -> Browser;   
+}
