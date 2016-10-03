@@ -73,6 +73,32 @@ Shift + F6,可以重命名你的类、方法、变量等等。
 
 {% asset_img specify-maven-addr.jpg 修改Maven地址%}
 
+#### 常用快捷键
+
+Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器的味道。善用Intellij Idea编辑器可以大幅提高工作效率，用快捷键有一种装逼的感觉，装逼人士必备。
+
+| 快捷键(Short Keys)        | 作用           |
+| ----------------- |:-------------:|
+| Ctrl + Shift + F12      | 编辑区全屏 |
+| Ctrl + F4      | 关闭当前编辑文件      |
+| Alt + 1 | 打开项目树视图      |
+| Alt + Home | 定位到导航条 |
+| Ctrl + Shift + N| 定位到某一个文件(定位到指定文件) |
+| Shift + Esc | 隐藏底部(如：Debug、TODO等)窗口 |
+| F12 | 把焦点从编辑器移到最近使用的工具窗口，可用于显示底部(如：Debug、TODO等)对应窗口 |
+| Alt + 5 | 激活Debug窗口 |
+| Alt + 7 | 打开Structure窗口(Structure前面有一个带有下划线的5是快捷键提示) |
+| Ctrl + N | 查找类 |
+| Ctrl + Shift + N | 查找文件 |
+| Alt + Insert | 生成Getter、Setter |
+| Ctrl + F12 | 在当前编辑的文件中快速导航 |
+| Alt + F3(Search/Incremental Search ) |在编辑器中实现快速查查找功能 |
+| Ctrl + J | a执行一些你记不起来的Live Template缩写 |
+| Ctrl + X | 删除行 |
+
+##### 进入退出全屏
+
+使用快捷键<code>Alt + V</code>打开View菜单，移动上下键选择<code>Enter Full Screen</code>即可。也可以自定义快捷键。
 
 
 #### 注释模板
