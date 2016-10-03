@@ -1,7 +1,10 @@
 ---
 title: Fedora 20安装中文输入法
-tags:[Fedora]
+tags:
+  - Fedora
+date: 2016-10-03 11:08:51
 ---
+
 
 #### 安装
 
