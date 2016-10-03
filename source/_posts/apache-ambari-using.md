@@ -24,7 +24,7 @@ wget <ambari-repo-url>
 安装ambari-agent。
 
 ```Bash
-yum install ambari-agent
+yum install ambari-agent -y
 ```
 
 启动Agent：
@@ -33,4 +33,10 @@ yum install ambari-agent
 ambari-agent start
 ```
 
-至此，Ambari Agent安装完毕。
+查看Agent运行状态：
+
+```Bash
+ambari-agent status
+```
+
+至此，Ambari Agent安装完毕。Apache Agent的日志在目录<code>/var/log/ambari-agent/</code>下，配置文件是<code>/etc/ambari-agent/conf/ambari-agent.ini</code>。

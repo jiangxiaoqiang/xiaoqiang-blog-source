@@ -100,3 +100,7 @@ links:
   陈皓(CoolShell): http://coolshell.cn
 
 creative_commons: by-nc-sa
+
+search:
+  path: search.xml
+  field: all
