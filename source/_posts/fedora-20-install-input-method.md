@@ -13,9 +13,9 @@ date: 2016-10-03 11:08:51
 yum install scim
 yum install scim-pinyin
 ```
-SCIM(Smart Common Input Method)是基于GTK引擎，为GNOME/GTK环境下非英文/ASCII字符提供的输入。SCIM is a GTK-based input method engine for inputting non-English / non-ASCII characters in a GNOME/GTK environment. There is a KDE frontend called skim. 
-它本身自带拼音、内码等输入法，同时提供简单的程序接口，方便程序员便捷的对其进行扩充。
+SCIM(Smart Common Input Method)是基于GTK引擎，为GNOME/GTK环境下非英文/ASCII字符提供的输入。SCIM is a GTK-based input method engine for inputting non-English / non-ASCII characters in a GNOME/GTK environment. There is a KDE frontend called skim.它本身自带拼音、内码等输入法，同时提供简单的程序接口，方便程序员便捷的对其进行扩充。
 
+<!-- more -->
 
 #### 配置
 
