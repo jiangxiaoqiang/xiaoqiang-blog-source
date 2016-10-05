@@ -40,3 +40,32 @@ ambari-agent status
 ```
 
 至此，Ambari Agent安装完毕。Apache Agent的日志在目录<code>/var/log/ambari-agent/</code>下，配置文件是<code>/etc/ambari-agent/conf/ambari-agent.ini</code>。
+
+#### 清除
+
+##### 运行HostCleanup.py脚本
+
+```Bash
+python /usr/lib/python2.6/site-packages/ambari_agent/HostCleanup.py \
+--silent --skip=users \
+-o /tmp/cleanup.log
+```
+
+##### 移除 Ambari RPM、目录和符号链接
+
+在每个 Ambari 节点上，运行以下命令：
+yum erase -y ambari-*
+在Ambari服务器节点上，运行以下命令：
+rm -rf /usr/lib/ambari-server
+在每个 Ambari 代理程序节点上，运行以下命令：
+
+
+rm -rf /usr/lib/python2.6/site-packages/ambari_agent
+
+可使用以下代码移除已损坏链接：
+```Bash
+rm -rvf /usr/lib/python2.6/site-packages/ambari* /usr/lib/python2.6/site-packages/resource-management
+```
+
+
+

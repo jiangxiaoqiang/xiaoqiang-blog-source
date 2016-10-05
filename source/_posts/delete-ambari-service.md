@@ -31,4 +31,7 @@ curl -u admin:admin -H "X-Requested-By: ambari" -X DELETE http://192.168.24.226:
 
 ```Bash
 curl -i -H "X-Requested-By: ambari" -u admin:admin -X PUT -d '{"RequestInfo":{"context":"Stop Service"},"Body":{"ServiceInfo":{"state":"INSTALLED"}}}' http://192.168.24.226:8080/api/v1/clusters/CLUSTER_NAME/services/SERVICE_NAME
+
+#修改ZooKeeper的状态
+curl -i -H "X-Requested-By: ambari" -u admin:admin -X PUT -d '{"RequestInfo":{"context":"Stop Service"},"Body":{"ServiceInfo":{"state":"INSTALLED"}}}' http://192.168.24.226:8080/api/v1/clusters/zwlbs/services/ZOOKEEPER
 ```
