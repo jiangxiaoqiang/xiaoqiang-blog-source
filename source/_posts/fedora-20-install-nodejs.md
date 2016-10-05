@@ -1,7 +1,13 @@
 ---
 title: Fedora 20 安装NodeJs
-tags: Fedora
+tags:
+  - Fedora
+  - NodeJs
+
+categories: Programming
+date: 2016-10-05 09:52:08
 ---
+
 
 安装环境：
 
@@ -16,6 +22,8 @@ yum update -y
 ```
 
 安装GCC编译环境
+
+<!-- more -->
 
 ```Bash
 yum install g++ curl openssl openssl-devel make gcc-c++ glibc-devel -y
