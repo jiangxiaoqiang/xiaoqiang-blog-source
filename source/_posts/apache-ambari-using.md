@@ -43,6 +43,12 @@ ambari-agent status
 
 #### 清除
 
+停止Ambari Agent：
+
+```Bash
+ambari-agent status
+```
+
 ##### 运行HostCleanup.py脚本
 
 ```Bash
@@ -54,13 +60,21 @@ python /usr/lib/python2.6/site-packages/ambari_agent/HostCleanup.py \
 ##### 移除 Ambari RPM、目录和符号链接
 
 在每个 Ambari 节点上，运行以下命令：
+
+```Bash
 yum erase -y ambari-*
-在Ambari服务器节点上，运行以下命令：
+```
+
+在Ambari服务器节点上，运行以下命令：Bash
+```Bash
 rm -rf /usr/lib/ambari-server
+```
+
 在每个 Ambari 代理程序节点上，运行以下命令：
 
-
+```Bash
 rm -rf /usr/lib/python2.6/site-packages/ambari_agent
+```
 
 可使用以下代码移除已损坏链接：
 ```Bash

@@ -93,3 +93,7 @@ resource_management.core.exceptions.Fail: Execution of 'conf-select set-conf-dir
 Exception: Expected confdir /usr/hdp/2.4.3.0-227/hadoop/conf to be a symlink.
 Error: Error: Unable to run the custom hook script ['/usr/bin/python', '/var/lib/ambari-agent/cache/stacks/HDP/2.0.6/hooks/before-ANY/scripts/hook.py', 'ANY', '/var/lib/ambari-agent/data/command-561.json', '/var/lib/ambari-agent/cache/stacks/HDP/2.0.6/hooks/before-ANY', '/var/lib/ambari-agent/data/structured-out-561.json', 'INFO', '/var/lib/ambari-agent/tmp']
 ```
+
+```language
+Could not determine HDP version for component zookeeper-server by calling '/usr/bin/hdp-select status zookeeper-server > /tmp/tmpE7_tnD'. Return Code: 1, Output: .
+```

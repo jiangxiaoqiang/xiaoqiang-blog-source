@@ -34,7 +34,6 @@ scp ambari-2.2.2.0-centos7.tar.gz root@192.168.24.226:/data/source
 
 ```Bash
 tar -xvf HDP-UTILS-1.1.0.20-centos6.tar.gzip -C /data/source/
-
 ```
 
 切换到目录(/data/source)下,使用Python搭建一个简单的服务器：
