@@ -15,6 +15,8 @@ date: 2016-10-05 09:52:08
 
 * nodejs 6.7.0
 
+#### 安装
+
 使用Hexo写博客需要安装NodeJs,更新系统
 
 ```Bash
@@ -54,5 +56,19 @@ curl http://npmjs.org/install.sh | sh
 
 ```Bash
 node --version
+```
+
+#### 常见问题
+
+##### /usr/bin/env: ‘python’: No such file or directory
+
+```Bash
+dnf install python -y
+```
+
+##### g++: Command not found
+
+```Bash
+dnf install "gcc-c++.x86_64" -y
 ```
 

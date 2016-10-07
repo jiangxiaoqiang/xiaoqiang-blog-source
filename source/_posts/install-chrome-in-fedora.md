@@ -68,6 +68,7 @@ error: Failed dependencies:
 yum install redhat-lsb -y
 yum install wget -y
 yum install libXScrnSaver -y
+yum install libgcrypt.so.11
 ```
 
 ```
