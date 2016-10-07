@@ -121,10 +121,25 @@ rm -rf
 /var/lib/flume
 /var/lib/knox
 
+#Ambari Metrics
+/usr/lib/ambari-metrics-grafana
+/usr/lib/ambari-metrics-hadoop-sink
+/usr/lib/ambari-metrics-kafka-sink
+/var/lib/ambari-metrics-collector
+/var/lib/ambari-metrics-grafana
+/var/run/ambari-metrics-collector
+/var/run/ambari-metrics-monitor
+/var/run/ambari-metrics-grafana
+/var/log/ambari-metrics-collector
+/var/log/ambari-metrics-monitor
+/var/log/ambari-metrics-grafana
+/etc/ambari-metrics-collector
+/etc/ambari-metrics-monitor
+/etc/ambari-metrics-grafana
+
 # other
 /var/tmp/oozie
 ```
-
 
 #### Clean Repository
 
