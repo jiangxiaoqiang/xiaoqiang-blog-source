@@ -97,3 +97,15 @@ Error: Error: Unable to run the custom hook script ['/usr/bin/python', '/var/lib
 ```language
 Could not determine HDP version for component zookeeper-server by calling '/usr/bin/hdp-select status zookeeper-server > /tmp/tmpE7_tnD'. Return Code: 1, Output: .
 ```
+
+
+#### 删除Ambari中的HDP服务
+
+停止所有服务。
+
+```Bash
+#改变Storm的状态
+curl -i -H "X-Requested-By: ambari" -u admin:admin -X PUT -d '{"RequestInfo":{"context":"Stop Service"},"Body":{"ServiceInfo":{"state":"INSTALLED"}}}' http://192.168.24.226:8080/api/v1/clusters/zwlbs/services/STORM
+#删除Storm
+curl -u admin:admin -H "X-Requested-By: ambari" -X DELETE http://192.168.24.226:8080/api/v1/clusters/zwlbs/services/STORM
+```

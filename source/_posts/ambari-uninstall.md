@@ -1,21 +1,28 @@
 ---
-title: 卸载Ambari
+title: 卸载HDP和Ambari
 tags:
-- Ambari
+  - Ambari
+  - HDP
 categories: Programming
+date: 2016-10-07 12:35:59
 ---
+
+
+#### 移除Ambari服务
 
 依次运行如下命令：
 
 ```Bash
 rpm -qa | grep ambari
 ```
+<!-- more -->
 
 ```Bash
 ambari-server stop
 ambari-server reset
 ambari-agent stop
 rpm -qa | grep ambari
+#移除Ambari Server安装包
 yum erase ambari-server -y
 rm -rf /var/lib/ambari-server
 rm -rf /var/run/ambari-server
@@ -25,18 +32,20 @@ rm -rf /var/log/ambari-server
 rm -rf /usr/lib/python2.6/site-packages/ambari*
 ```
 
-Ambari Agent Cleanup Script
+#### Ambari Agent Cleanup Script
 
 ```Bash
 python /usr/lib/python2.6/site-packages/ambari_agent/HostCleanup.py -s -k users
 ```
 
-Remove Packages
+#### Remove Packages
 
 ```Bash
 yum erase -y `yum list | grep @HDP-2 | awk '{ print $1 }'`
 yum erase -y `yum list | grep 2_3_ | awk '{ print $1}'`
 ```
+
+#### 移除文件夹(Clean Folders)
 
 移除文件夹(Clean Folders)脚本：
 
@@ -117,7 +126,7 @@ rm -rf
 ```
 
 
-Clean Repository:
+#### Clean Repository
 
 ```Bash
 yum clean all

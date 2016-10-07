@@ -20,6 +20,8 @@ Fedora 24使用yum命令时标记为过期，推荐使用dnf安装。想了解�
 
 DNF包管理器克服了YUM包管理器的一些瓶颈，提升了包括用户体验，内存占用，依赖分析，运行速度等多方面的内容。DNF使用 RPM, libsolv 和 hawkey 库进行包管理操作。
 
+参考资料来自：
+
 [DNF – The Next Generation Package Management Utility for RPM Based Distributions]
 [DNF – The Next Generation Package Management Utility for RPM Based Distributions]:http://www.tecmint.com/dnf-next-generation-package-management-utility-for-linux/
 
