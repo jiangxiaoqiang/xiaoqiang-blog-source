@@ -146,3 +146,23 @@ rm -rf
 ```Bash
 yum clean all
 ```
+
+在重装之前一定要移除干净。
+
+各个服务的目录位置如下:
+
+```
+/etc/<service_name>
+/usr/lib/<service_name>
+/var/lib/<service_name>
+/var/log/<service_name>
+/var/run/<service_name>
+/var/tmp/<service_name>
+/tmp/<service_name>
+```
+
+
+参考资料来自：
+
+[Uninstalling and Cleaning a HDP Node]
+[Uninstalling and Cleaning a HDP Node]:http://henning.kropponline.de/2016/04/24/uninstalling-and-cleaning-a-hdp-node/

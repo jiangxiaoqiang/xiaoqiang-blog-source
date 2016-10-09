@@ -8,14 +8,14 @@ date: 2016-09-26 14:23:24
 
 #### 输入乱码
 
-输入时显示乱码，如图所示。
+在控制台输入中文时显示的不是输入的汉字，而是显示正方形符号，此时输入的汉字显示乱码，如图所示。
 
 {% asset_img intelli-idea-input-encode.jpg 输入时乱码%}
 
 
 <!-- more -->
 
-使用支持中文较好的字体，覆盖默认字体，在File-Settings-Appearance&Behavior-Appearance。如图所示。
+解决此问题，可使用支持中文较好的字体，覆盖默认字体，在Intellig Idea中的File-Settings-Appearance&Behavior-Appearance中(Ctrl + Alt + S)。如下图所示。
 
 {% asset_img intelli-idea-override-default-font.jpg 覆盖默认字体%}
 
@@ -81,7 +81,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | ----------------- |:-------------:|
 | Ctrl + Shift + F12      | 编辑区全屏 |
 | Ctrl + F4      | 关闭当前编辑文件      |
-| Alt + 1 | 打开项目树视图      |
+| Alt + 1 | 打开项目树视图,并将光标定位到当前编辑文件在项目树上的位置 |
 | Alt + Home | 定位到导航条 |
 | Ctrl + Shift + N| 定位到某一个文件(定位到指定文件) |
 | Shift + Esc | 隐藏底部(如：Debug、TODO等)窗口 |
@@ -93,8 +93,14 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Alt + Insert | 生成Getter、Setter |
 | Ctrl + F12 | 在当前编辑的文件中快速导航 |
 | Alt + F3(Search/Incremental Search ) |在编辑器中实现快速查查找功能 |
-| Ctrl + J | a执行一些你记不起来的Live Template缩写 |
-| Ctrl + X | 删除行 |
+| Ctrl + J | 如果记不住Live Template的缩写，使用此快捷键可以弹出所有Live Template的缩写 |
+| Ctrl + X | 删除行，剪切(Cut) |
+| Ctrl + Alt + F12 | 显示当前项目树结构文件/文件夹所在目录，可以快速打开文件夹 |
+| Ctrl + Shift + T(Test) | 选中类名，按下快捷键,创建一个新的测试Case |
+| Ctrl + Shift + 数字键(NumPad)+ | 展开所有 |
+| Ctrl + Shift + 数字键(NumPad)- | 折叠所有 |
+| Ctrl +  数字键(NumPad)- | 在项目树上应用此快捷键可以折叠所有展开的文件夹 |
+| Ctrl + F12 | 打开Intellij中嵌入的终端(Terminal) |
 
 ##### 进入退出全屏
 
