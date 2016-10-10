@@ -69,7 +69,7 @@ Shift + F6,可以重命名你的类、方法、变量等等。
 
 #### Maven配置
 
-使用Maven最头疼的就是从中央库下载jar包超级慢，等待下载jar包的感觉用重庆话讲：肚肠子把把逗紧了。解决办法就是使用私服地址，私服可以使用本地配置的Maven(不是Intellij Idea里面的boundle Maven)，修改Intellj Maven采用本机安装Maven如下图所示。
+使用Maven最头疼的就是从中央库下载jar包超级慢，等待下载jar包的感觉用重庆话讲：肚肠子把把逗紧了。解决办法就是使用私服地址，私服可以使用本地配置的Maven(不是Intellij Idea里面的boundle Maven)，修改Intellj Maven采用本机安装Maven在设置(Ctrl + Alt + S)中输入Maven，修改地址(例如：<code>D:\Source\zwnewplatform\javasoftware\runtime\apache-maven-3.3.9</code>)即可，如下图所示。
 
 {% asset_img specify-maven-addr.jpg 修改Maven地址%}
 
@@ -101,6 +101,15 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Shift + 数字键(NumPad)- | 折叠所有 |
 | Ctrl +  数字键(NumPad)- | 在项目树上应用此快捷键可以折叠所有展开的文件夹 |
 | Ctrl + F12 | 打开Intellij中嵌入的终端(Terminal) |
+| Ctrl + B | 跳转到实现处 |
+| Ctrl + F8 | 设置断点和取消设置断点 |
+| Alt + Up/Down | 跳转到下一个方法或者属性 |
+| Ctrl + Tab | 编辑窗口切换(切换Debug视图、编辑区类文件等) |
+| Shift + F2/F2 | 跳到上/下一个错误处 |
+| Alt + F1 | 选中目标，可以定位到文件等各种对象，Alt + F1弹出的界面中选择需要定位的对象，也可以理解成对象导航 |
+| Shift + F6 | 重构、重命名 |
+| Ctrl + Shift + F10 | 运行测试，注意运行测试时界面需要切换到测试类的界面 |
+| Alt + F8 | 计算变量值 |
 
 ##### 进入退出全屏
 
