@@ -56,6 +56,14 @@ delete from test where name is null;//例子
 ```
 condition是过滤条件，注意结尾需要有分号，表示SQL语句已经结束，可以提交给引擎执行。
 
+清除表的重复数据。
+
+```SQL
+delete from tablename where vtime in ( select vtime from tablename group by vtime having count(*)>1) and id not in (select max(id) from tablename group by vtime having count(*)>1 );
+```
+
+清除同一时间重复的数据（同一时刻只能有1条数据）。
+
 #### 函数(Function)
 
 substr函数用于截取字符串。
