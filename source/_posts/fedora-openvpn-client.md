@@ -7,7 +7,26 @@ categories: Programming
 date: 2016-10-09 11:55:08
 ---
 
+#### 安装
+
+输入如下命令安装。
+
+```Bash
+#Fedora 24安装命令
+dnf install openvpn -y
+#CentOS 6.8安装命令(可输入lsb_release -a命令查看版本)
+yum intall openvpn -y
+```
+
 #### 配置
+
+##### 生成客户端文件
+
+到OpenVPN服务端<code>easy-rsa</code>目录下，输入如下命令生成客户端key：
+
+```Bash
+build-key client
+```
 
 这里介绍在Fedora中如何设置OpenVPN客户端。将生成的客户端文件拷贝到Fedora的<code>/etc/openvpn</code>配置目录中即可，生成的客户端文件有：
 
@@ -16,9 +35,39 @@ date: 2016-10-09 11:55:08
 * client.key
 * client.ovpn
 
-在Fedora中将client.ovpn改为client.conf即可。
+在Fedora中将client.ovpn改为client.conf即可。启动OpenVPN客户端(root权限):
+
+```Bash
+openvpn client.conf
+```
 
 <!-- more -->
+
+##### 开机启动
+
+输入如下命令开启开启自动启动：
+
+```Bash
+#检查OpenVPN是否在本运行级别下设置为开机启动
+chkconfig --list openvpn
+#如果没设置启动就设置下
+chkconfig --level 2345 openvpn on
+chkconfig openvpn on
+#重新启动
+service sshd restart
+#看是否启动了1194端口.确认下
+netstat -antp |grep openvpn
+#看看是否放行了1194口
+iptables -nL
+#setup---->防火墙设置   如果没放行就设置放行.
+```
+
+chkconfig provides a simple command-line tool for maintaining the <code>/etc/rc[0-6].d</code> directory  hierarchy by relieving system administrators of the task of directly manipulating the numerous symbolic links in those directories.
+
+
+delete from positional where vtime in ( select vtime from positional group by vtime having count(*)>1) and id not in (select top 1 id from positional group by vtime having count(*)>1 );
+
+
 
 #### 问题解决
 
@@ -115,3 +164,24 @@ Sun Oct 09 11:33:41 2016 TCP: connect to 113.204.5.58:1194 failed, will try agai
 # 2048 bit keys.
 dh dh2048.pem #将此处由dh1024.pem修改为dh2048.pem即可
 ```
+出现如下错误：
+
+```
+Tue Oct 11 12:44:00 2016 Socket Buffers: R=[124928->124928] S=[124928->124928]
+Tue Oct 11 12:44:00 2016 UDPv4 link local: [undef]
+Tue Oct 11 12:44:00 2016 UDPv4 link remote: [AF_INET]192.168.24.243:1194
+Tue Oct 11 12:45:00 2016 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
+Tue Oct 11 12:45:00 2016 TLS Error: TLS handshake failed
+Tue Oct 11 12:45:00 2016 SIGUSR1[soft,tls-error] received, process restarting
+Tue Oct 11 12:45:00 2016 Restart pause, 2 second(s)
+```
+
+检查防火墙是否过滤了1194端口的数据。
+
+```Bash
+iptables -A INPUT -p tcp --dport 1194 -j ACCEPT
+#保存防火墙规则
+/etc/init.d/iptables save
+```
+
+检查配置文件是否通过TCP协议而不是UDP。
