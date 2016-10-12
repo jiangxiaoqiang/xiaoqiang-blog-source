@@ -41,6 +41,23 @@ Categories=Network;
 Name[en_US]=Google Chrome.desktop
 ```
 
+如下是Intellij Idea的桌面图标配置文件:
+
+```Bash
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Intellij Idea
+GenericName=IDE
+Exec='/opt/idea/idea-IC-162.2032.8/bin/idea.sh'
+Icon=/opt/idea/idea-IC-162.2032.8/bin/idea.png
+Terminal=false
+Type=Application
+Categories=IDE;
+Name[en_US]=Intellij Idea
+```
+
 保存之后双击打开，一定要双击打开哟，否则启动图标不会出现，会出现一个确认界面。提示需要授权启动项，选择授权即可。效果如图所示。
 
 {% asset_img google-chrome-fedora-desktop-launcher.png Google-Chrome手动添加桌面图标%}
