@@ -1,5 +1,5 @@
 ---
-title: IntelliJ Idea技巧分享
+title: IntelliJ Idea快捷键技巧分享
 tags: [IntelliJ,IDE]
 categories: Programming
 date: 2016-09-26 14:23:24
@@ -111,6 +111,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Shift + F10 | 运行测试，注意运行测试时界面需要切换到测试类的界面 |
 | Alt + F8 | 计算变量值 |
 | Ctrl + F10 | 更新资源和类文件，热部署(需要配置，部署时选择Exploded模式) |
+| Ctrl + Shift + T | 新建测试类，在测试类与被测试类之间跳转 |
 
 ##### 进入退出全屏
 

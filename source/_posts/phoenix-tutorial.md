@@ -64,6 +64,14 @@ delete from tablename where vtime in ( select vtime from tablename group by vtim
 
 清除同一时间重复的数据（同一时刻只能有1条数据）。
 
+连接查询。
+
+```SQL
+SELECT P.id as id, vtime, A.description FROM 表P P left join 表A A on P.id=A.positional_Id WHERE P.vehicle_id='cae21196-cb66-4256-88a6-7cdfb23e2c78' and P.vtime >= '2016-10-10 00:00:00' and P.vtime <= '2016-10-13 23:59:59' and P.alarm is not null and P.alarm != '0' order by P.vtime;
+```
+
+注意在做MyBatis映射时，P.id列需要一个别名，对应定义的实体字段。
+
 #### 函数(Function)
 
 substr函数用于截取字符串。
