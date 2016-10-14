@@ -154,7 +154,7 @@ Sun Oct 09 11:33:35 2016 TCP: connect to 113.204.5.58:1194 failed, will try agai
 Sun Oct 09 11:33:41 2016 TCP: connect to 113.204.5.58:1194 failed, will try again in 5 seconds: Connection refused (WSAECONNREFUSED)
 ```
 
-检查服务端的配置文件无误，这里是将位数由1024改为2048后在服务端的配置文件没有修改为2048pem。
+首先检查服务端OpenVPN是否已经启动；其次检查服务端的配置文件无误，这里是将位数由1024改为2048后在服务端的配置文件没有修改为2048pem。
 
 ```
 # Diffie hellman parameters.

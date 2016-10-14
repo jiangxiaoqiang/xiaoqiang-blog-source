@@ -1,0 +1,55 @@
+---
+title: Linux自动启动
+tags:
+  - Linux
+  - Startup Script
+categories: Programming
+date: 2016-10-14 17:45:50
+---
+
+
+#### 开机时自动运行
+
+一般有守护进程的服务在Fedora 24中都可以通过systemctl命令自动运行。
+
+```Bash
+systemctl enable ServiceName
+```
+
+对于没有服务的程序，如果想在开机时随系统启动可以通过脚本来实现。
+
+<!-- more -->
+
+```Bash
+nohup openvpn /etc/openvpn/client.conf
+```
+
+添加nohup后台启动，避免父进程结束的时候一并结束子进程。在<code>/etc/rc.d/rc.local</code>脚本中加入如下命令：
+
+```Bash
+/etc/openvpn/startopenvpn.sh
+```
+
+* 0:Halt
+* 1:Single-user mode
+* 2:Multi-user mode
+* 3:Multi-user mode with networking
+* 4:Not used/user-definable
+* 5:Start the system normally with appropriate display manager (with GUI)
+* 6:Reboot
+
+#### 登录后自动运行程序
+
+用户登录时，bash首先自动执行系统管理员建立的全局登录script ：/etc/profile。然后bash在用户起始目录下按顺序查找三个特殊文件中的一个：/.bash_profile、/.bash_login、/.profile，但只执行最先找到的 一个。因此，只需根据实际需要在上述文件中加入命令就可以实现用户登录时自动运行某些程序（类似于DOS下的 Autoexec.bat）。简单的方法,在/etc/inittab 结尾加上你要启动的程序。/etc/profile： 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行。/etc/bashrc: 为每一个运行bash shell的用户执行此文件。~/.bashrc: 当登录时以及每次打开新的shell时,该该文件被执行。
+
+#### 联网后自动运行程序
+
+网络连接建立后运行的脚本可以实现诸多实用功能，如动态域名绑定、连接VPN、上网认证等。实现这一目标的大体思路有两种：在基于NetworkManager的系统中，可配置其dispatcher脚本；Fedora对这一功能支持的不是很好，只能在网络连接建立后运行一个脚本，即/sbin/ifup-local。这个文件默认不存在，需要手动创建。下面的例子用vi编辑/创建这个文件，并添加执行权限。
+
+```Bash
+vi /sbin/ifup-local
+chmod 755 /sbin/ifup-local
+```
+
+[Runlevel]
+[Runlevel]:https://en.wikipedia.org/wiki/Runlevel

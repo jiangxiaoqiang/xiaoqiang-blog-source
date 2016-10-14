@@ -4,8 +4,7 @@ tags:
 ---
 
 ```Bash
-yum install texlive-scheme-full
-dnf install texlive-scheme-full
+dnf install texlive*
 ```
 
 
