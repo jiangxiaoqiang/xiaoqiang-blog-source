@@ -1,11 +1,13 @@
 ---
 title: Fedora 24搭建Git Server
 tags:
-- Fedora
-- Git
-- Git Server
+  - Fedora
+  - Git
+  - Git Server
 categories: Programming
+date: 2016-10-16 21:03:39
 ---
+
 
 想将代码拷贝到家里的电脑，在安静的时刻可以阅读消化，思考思考是否还有更好的方式。每天用U盘拷贝也是麻烦，本来Github挺好用的，闭源的托管要交钱。所以就在家里的电脑搭建一个Git Server，通过OpenVPN将家里的电脑和办公电脑做成局域网。这样就可以随时提交代码了。
 

@@ -7,13 +7,13 @@ categories: Software
 date: 2016-10-15 21:30:14
 ---
 
-虽然此处实际在Linux平台进行的配置，但是XX-Net是跨平台的，在Windows、Mac OS下一样可以使用。在Fedora 24中安装完Google Chrome之后，还需要同步在Windows平台上保存的Google Chrome的书签（里面有好多收藏的好网站）、Cookie(不用每次登陆网页输入用户名和密码，记忆用户名和密码非常具有迷惑性，目前注册的用户名密码真的太多了，根本记不住，现在都是借助KeePass来记忆)等等数据。平时的搜索还是需要用Google，Google相比于百度，搜索出的结果更加精确，内容对于用户更加有意义。当你迫切想要知道某个问题的思路时，如果搜索出来一些无关痛痒的内容，是非常浪费时间的，消磨你的意志，会让你有一种被掏空了的感觉，对就是那种感觉。极大的降低了效率，想想如此庞大的用户基数，如果搜索出的内容不精准、没有意义所造成的资源浪费（时间、精力、意志力等）是非常恐怖的。所以这也是为什么费尽心思要使用Google，当你顺利的找到自己想要的内容并快速完成任务时，会深刻的体会到前期在科学上网里花费的时间是值得的。
+虽然此处实际在Linux平台进行的配置，但是XX-Net是跨平台的，在Windows、Mac OS下一样可以使用，在其他的操作系统下配置类似。在Fedora 24中安装完Google Chrome之后，还需要同步在Windows平台上保存的Google Chrome的书签（里面有好多收藏的好网站）、Cookie(不用每次登陆网页输入用户名和密码，记忆用户名和密码非常具有迷惑性，目前注册的用户名密码真的太多了，根本记不住，现在都是借助KeePass来记忆)等等数据。平时的搜索还是需要用Google，Google相比于百度，搜索出的结果更加精确，内容对于用户更加有意义。当你迫切想要知道某个问题的思路时，如果搜索出来一些无关痛痒的内容，是非常浪费时间的，消磨你的意志，会让你有一种被掏空了的感觉，对就是那种感觉。极大的降低了效率，想想如此庞大的用户基数，如果搜索出的内容不精准、没有意义所造成的资源浪费（时间、精力、意志力等）是非常恐怖的。所以这也是为什么费尽心思要使用Google，当你顺利的找到自己想要的内容并快速完成任务时，会深刻的体会到前期在科学上网里花费的时间是值得的。要做到以上两点，就需要借助XX-Net。
 
 <!-- more -->
 
 #### xx-net简介
 
-XX-Net是一款让你可以让你提高工作效率的工具，它通过让你可以获取到更多的信息的方式达到。<!--比如家里的娃娃晚上总是不睡觉啊，大人也是天天熊猫眼，可以向朋友取经（限于朋友圈子），如果单身狗比较多，就只能自己摸索了，但是有了xx-net,你可以向任何一个国家的人求助阿，提高了寻找到解决方案的概率。-->XX-Net is a free desktop application that delivers fast, reliable and secure access to the open Internet for users in censored regions. It uses google app engine (GAE) as a proxy server through the firewall.截至目前，xx-net在Github上(全球最大的同性交友网站)已经有10000+的star和1000+的watch。
+XX-Net是一款让你可以让你提高工作效率的工具，它通过让你可以获取到更多的信息的方式达到。<!--比如家里的娃娃晚上总是不睡觉啊，大人也是天天熊猫眼，可以向朋友取经（限于朋友圈子），如果单身狗比较多，就只能自己摸索了，但是有了xx-net,你可以向任何一个国家的人求助阿，提高了寻找到解决方案的概率。-->XX-Net is a free desktop application that delivers fast, reliable and secure access to the open Internet for users in censored regions. It uses google app engine (GAE:Google App Engine) as a proxy server through the firewall.截至目前，xx-net在Github上(全球最大的同性交友网站)已经有10000+的star和1000+的watch。
 
 #### 下载xx-net
 
@@ -28,6 +28,8 @@ XX-Net是一款让你可以让你提高工作效率的工具，它通过让你�
 ```
 
 #### 配置
+
+配置主要分为两步，第一步是安装代理自动切换插件，第二步是导入证书。
 
 ##### 安装代理切换插件
 
@@ -58,4 +60,4 @@ localhost:8085
 
 #### 验证配置并使用
 
-访问Google搜索引擎，如果能够成功访问Google,代表配置成功。
+访问Google搜索引擎，如果能够成功访问Google,代表配置成功。如果首次无法访问，可以待后台程序多运行一些时间，几十分钟到几小时不等。一段时间之后再次尝试。需要注意的是XX-Net代理上网不具有匿名性，或者说匿名性很弱。
