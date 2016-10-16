@@ -7,6 +7,10 @@ tags:
 categories: Programming
 ---
 
+想将代码拷贝到家里的电脑，在安静的时刻可以阅读消化，思考思考是否还有更好的方式。每天用U盘拷贝也是麻烦，本来Github挺好用的，闭源的托管要交钱。所以就在家里的电脑搭建一个Git Server，通过OpenVPN将家里的电脑和办公电脑做成局域网。这样就可以随时提交代码了。
+
+<!-- more -->
+
 #### 启动SSH服务
 
 确定是否已经安装SSH服务：
@@ -51,3 +55,17 @@ service sshd status
 ```Bash
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
+
+#### 初始化Git仓库
+
+先选定一个目录作为Git仓库，这里是<code>/home/dolphin/dolphin/source/zwlbs/plateform3.0/zwlbs.git</code>，在/srv目录下输入命令：
+
+$ sudo git init --bare zwlbs.git
+
+#### 签出Git库
+
+```Bash
+git clone dolphin@10.0.0.6:/home/dolphin/dolphin/source/zwlbs/plateform3.0/zwlbs.git
+```
+
+签出时会提示确定指纹，选择yes，同时需要输入用户dolphin的密码，输入即可。
