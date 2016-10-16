@@ -40,7 +40,19 @@ nohup openvpn /etc/openvpn/client.conf
 
 #### 登录后自动运行程序
 
-用户登录时，bash首先自动执行系统管理员建立的全局登录script ：/etc/profile。然后bash在用户起始目录下按顺序查找三个特殊文件中的一个：/.bash_profile、/.bash_login、/.profile，但只执行最先找到的 一个。因此，只需根据实际需要在上述文件中加入命令就可以实现用户登录时自动运行某些程序（类似于DOS下的 Autoexec.bat）。简单的方法,在/etc/inittab 结尾加上你要启动的程序。/etc/profile： 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行。/etc/bashrc: 为每一个运行bash shell的用户执行此文件。~/.bashrc: 当登录时以及每次打开新的shell时,该该文件被执行。
+用户登录时，bash首先自动执行系统管理员建立的全局登录script ：/etc/profile。然后bash在用户起始目录下按顺序查找三个特殊文件中的一个：/.bash_profile、/.bash_login、/.profile，但只执行最先找到的 一个。因此，只需根据实际需要在上述文件中加入命令就可以实现用户登录时自动运行某些程序（类似于DOS下的 Autoexec.bat）。简单的方法,在/etc/inittab 结尾加上你要启动的程序。/etc/profile： 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行。/etc/bashrc: 为每一个运行bash shell的用户执行此文件。~/.bashrc: 当登录时以及每次打开新的shell时,该文件被执行。设置登陆时启动OpenVPN,在<code>/etc/profile</code>文件中添加执行脚本：
+
+```Bash
+/etc/openvpn/startopenvpn.sh & >> /tmp/openvpn.log
+```
+其中startopenvpn.sh脚本中：
+
+```Bash
+cd /etc/openvpn
+nohup openvpn /etc/openvpn/client.conf
+```
+
+需要注意的是，执行时需要切换到<code>/etc/openvpn</code>目录，默认的配置文件例如key等默认在当前目录下寻找。OpenVPN启动时需要root权限。需要成功启动OpenVPN客户端首次登陆时需要以root用户登陆。
 
 #### 联网后自动运行程序
 
