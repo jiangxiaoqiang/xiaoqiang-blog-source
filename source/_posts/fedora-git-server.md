@@ -8,8 +8,7 @@ categories: Programming
 date: 2016-10-16 21:03:39
 ---
 
-
-想将代码拷贝到家里的电脑，在安静的时刻可以阅读消化，思考思考是否还有更好的方式。每天用U盘拷贝也是麻烦，本来Github挺好用的，闭源的托管要交钱。所以就在家里的电脑搭建一个Git Server，通过OpenVPN将家里的电脑和办公电脑做成局域网。这样就可以随时提交代码了。
+想将代码拷贝到家里的电脑，在安静的时刻可以阅读消化。每天用U盘拷贝也是比较麻烦，本来Github挺好用的，但是闭源的托管需要费用。刚好办公电脑和家里的电脑安装了OpenVPN,所以就想在家里的电脑搭建一个Git Server，通过OpenVPN将家里的电脑和办公电脑相连(相当于局域网)。这样就可以随时提交代码了。同时也想以SSH连接家里的电脑，所以同时也安装了OpenSSH。也可以SSH远程Copy，但是无法增量Copy，Copy一次大概需要2-3个小时。遂放弃SSH Copy的方案。
 
 <!-- more -->
 
@@ -60,11 +59,21 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 
 #### 初始化Git仓库
 
-先选定一个目录作为Git仓库，这里是<code>/home/dolphin/dolphin/source/zwlbs/plateform3.0/zwlbs.git</code>，在/srv目录下输入命令：
+先在Fedora机器上，选定一个目录作为Git仓库，这里选择的是
 
+```
+/home/dolphin/dolphin/source/zwlbs/plateform3.0/zwlbs.git
+```
+
+在目录下输入命令：
+
+```Bash
 $ sudo git init --bare zwlbs.git
+```
 
 #### 签出Git库
+
+在办公的电脑上输入如下命令签出Git仓库：
 
 ```Bash
 git clone dolphin@10.0.0.6:/home/dolphin/dolphin/source/zwlbs/plateform3.0/zwlbs.git
