@@ -68,6 +68,7 @@ SimpMessagingTemplate是Spring实现的一个发送模板类。
 
 WebSocketAnnotationMethodMessageHandler类在spring-websocket.jar包中。
 
+试一试app+终结点(/app/vehicle)的方式。
 
 [STOMP Over WebSocket]
 [STOMP Over WebSocket]:http://jmesnil.net/stomp-websocket/doc/
