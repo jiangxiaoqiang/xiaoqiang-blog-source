@@ -36,5 +36,38 @@ public void configureMessageBroker(MessageBrokerRegistry config) {
 
 #### 服务端
 
+Spring官方的例子演示了Send-Response模型，如果需要请求之后，服务端多次推送消息，主动推送消息，可采用如下方式：
+
+```Java
+@Controller
+public class GreetingController {
+
+    public SimpMessagingTemplate template;
+
+    @Autowired
+    public GreetingController(SimpMessagingTemplate template) {
+        this.template = template;
+    }
+
+    @MessageMapping("/hello")
+    @SendTo("/topic/greetings")
+    public void greeting(HelloMessage message) throws Exception {
+        template.convertAndSend("/topic/greetings", "aaaaaaa");
+    }
+}
+```
+
+SimpMessagingTemplate是Spring实现的一个发送模板类。
+
+出现如下错误：
+
+```
+15:17:44.688]-[clientInboundChannel-59]-[org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessageHandler]-{Searching methods to handle SEND /app/vehicle session=qnlerizz}
+15:17:44.688]-[clientInboundChannel-59]-[org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessageHandler]-{No matching methods.}
+```
+
+WebSocketAnnotationMethodMessageHandler类在spring-websocket.jar包中。
+
+
 [STOMP Over WebSocket]
 [STOMP Over WebSocket]:http://jmesnil.net/stomp-websocket/doc/
