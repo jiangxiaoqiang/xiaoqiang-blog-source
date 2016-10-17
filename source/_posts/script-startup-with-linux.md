@@ -1,5 +1,5 @@
 ---
-title: Linux自动启动
+title: Linux开机自动启动程序
 tags:
   - Linux
   - Startup Script
