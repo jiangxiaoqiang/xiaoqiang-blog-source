@@ -119,6 +119,12 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 
 使用快捷键<code>Alt + V</code>打开View菜单，移动上下键选择<code>Enter Full Screen</code>即可。也可以自定义快捷键。
 
+#### properties显示中文
+
+使用IntelliJ Idea打开属性文件时，如果包含中文，显示为原始的编码，正确显示中文需要做如下设置，到设置(settings)中,可以使用快捷键Ctrl + Alt + S打开设置界面，找到<code>File Encoding</code>选项卡，选中<code>Default encoding for properties file</code>即可，如下图所示.
+
+{% asset_img intellij-properties-encoding.jpg 属性文件编码设置%}
+
 
 #### 注释模板
 
