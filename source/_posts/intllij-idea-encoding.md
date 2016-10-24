@@ -114,6 +114,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Shift + T | 新建测试类，在测试类与被测试类之间跳转 |
 | Ctrl + Shift +F | 全文查找，类似于Eclipse的Ctrl + H |
 | Ctrl + Shift + Alt + N | 全文搜索，包含Maven引用的jar包里面的内容，在搜索界面中，需要勾选Include non-project symbols |
+| Ctrl + Alt + Left/Right | 到上一次/下一次编辑的位置 |
 
 ##### 进入退出全屏
 
