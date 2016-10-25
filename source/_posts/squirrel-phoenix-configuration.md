@@ -1,0 +1,39 @@
+---
+title: SQuirreL GUI客户端集成Phoenix配置
+tags:
+  - SQuirreL
+  - Phoenix
+categories: Programming
+date: 2016-10-25 09:24:13
+---
+
+#### SQuirreL GUI客户端简介
+
+SQuirreL GUI客户端来连接Phoenix，就像MySQL使用Navicat for MySQL，Oracle使用PL/SQL Developer一样，在进行一些数据库操作的时候能够更加的直观和方便。
+
+<!-- more -->
+
+#### 下载驱动
+
+到Phoenix[镜像站点](http://www.apache.org/dyn/closer.lua/phoenix/)下载包，这里选择的是<code>apache-phoenix-4.8.1-HBase-1.2-bin.tar.gzip</code>，到解压的<code>apache-phoenix-4.8.1-HBase-1.2-bin.tar.gzip</code>包的主目录下，将如下几个jar包拷贝到SQuirreL安装目录的lib目录下，例如本机路径是<code>D:\Program Files\squirrel-sql-3.7.1\lib</code>。
+
+```
+phoenix-4.8.1-HBase-1.2-client.jar
+phoenix-core-4.8.1-HBase-1.2.jar
+phoenix-4.8.1-HBase-1.2-thin-client.jar
+```
+
+注意顺序，先拷贝jar包，在启动SQuirreL添加驱动，如果是拷贝jar包时已经启动了SQuirreL，那么SQuirreL需要重启一下，拷贝的jar包才生效，这个是需要注意的地方，可以参见[SQuirreL Configure: could not initial class org.apache.phoenix.jdbc.PhoenixDriver](http://stackoverflow.com/questions/40215921/squirrel-configure-could-not-initial-class-org-apache-phoenix-jdbc-phoenixdrive/40225765#40225765)。
+
+#### 添加Driver
+
+添加Driver如下图所示。
+
+{% asset_img sphonix-driver-configuration.jpg Sphonix增加驱动%}
+
+
+#### 连接Hbase
+
+
+#### 使用
+
