@@ -1,9 +1,6 @@
 ---
 title: hexo-seo
-tags: seo
+tags:
+- seo
+categories: Programming
 ---
-
-
-
-
-
