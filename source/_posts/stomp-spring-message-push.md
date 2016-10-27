@@ -24,6 +24,7 @@ private void pushInfoImpl(String url, String content) {
 }
 ```
 
+<!-- more -->
 
 #### 推送给指定用户
 
