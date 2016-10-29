@@ -18,6 +18,8 @@ date: 2016-09-26 14:23:24
 
 {% asset_img intelli-idea-override-default-font.jpg 覆盖默认字体%}
 
+在Debug控制台中Tomcat中输出乱码，可以打开Run/Debug Configuration,选择你的tomcat。在Server > VM options设置为<code>-Dfile.encoding=UTF-8</code> ，重启tomcat。
+
 #### 智能提示敏感调整
 
 在智能提示时默认大小写敏感，比如String的智能提示就必须首字母大写才能够准确定位，经常大小写切换，不是特别方便。在settings-Editor-General-Code Completion里设置后，可以省去大小写切换操作。
