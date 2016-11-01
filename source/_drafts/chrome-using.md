@@ -1,11 +1,19 @@
 ---
 title: Google Chrome总结与分享
-tags: Chrome
+tags: 
+- Chrome
+categories: Programming
 ---
 
-#### 清除DNS缓存
+#### 禁用Google Chrome的Javascript
 
-在Chrome里访问jiangxiaoqiang.com时总是定位到联通域名解析重定向页，在IE里可以访问，证明是Chrome域名缓存导致此问题。
+禁用Javascipt可以提升浏览网页的安全性。如下图所示。
+
+{% asset_img google-chrome-startup-icon.png Google-Chrome快速启动图标%}
+
+
+
+
 
 #### 打开Google Chrome任务管理器
 
