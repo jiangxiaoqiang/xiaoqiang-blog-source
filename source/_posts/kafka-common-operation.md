@@ -1,9 +1,17 @@
 ---
 title: Kafka常用操作
 tags:
-- Kafka
+  - Kafka
 categories: Programming
+date: 2016-10-29 17:11:35
 ---
+
+
+启动kafka：
+
+```Bash
+./kafka-server-start.sh ../config/server.properties &
+```
 
 创建主题：
 
@@ -17,8 +25,16 @@ categories: Programming
 ./kafka-topics.sh --list --zookeeper 192.168.24.11:2181
 ```
 
+<!-- more -->
+
 删除主题：
 
 ```Bash
+./kafka-topics.sh --zookeeper 192.168.24.244:2181 --delete --topic 0085000
+```
 
+消费主题：
+
+```Bash
+./kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic 0085000
 ```

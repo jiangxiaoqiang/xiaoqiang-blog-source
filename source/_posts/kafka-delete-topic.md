@@ -13,6 +13,12 @@ date: 2016-10-29 14:24:15
 ./kafka-topics.sh --describe --zookeeper 192.168.244.11:2181
 ```
 
+只查看所有Topic：
+
+```Bash
+./kafka-topics.sh --list --zookeeper 192.168.24.244:2181
+```
+
 删除主题：
 
 ```Bash
@@ -39,7 +45,7 @@ cd /usr/hdp/2.4.3.0-227/zookeeper/bin
 #找到topic所在的目录
 ls /brokers/topics
 
-#彻底删除topic
+#彻底删除topic(remove recursively)
 rmr /brokers/topics/0085000
 ```
 

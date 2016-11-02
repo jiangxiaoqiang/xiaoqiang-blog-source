@@ -89,7 +89,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | F12 | 把焦点从编辑器移到最近使用的工具窗口，可用于显示底部(如：Debug、TODO等)对应窗口 |
 | Alt + 5 | 激活Debug窗口 |
 | Alt + 7 | 打开Structure窗口(Structure前面有一个带有下划线的5是快捷键提示) |
-| Ctrl + N | 查找类 |
+| Ctrl + N | 根据输入的类名查找类文件 |
 | Ctrl + Shift + N | 查找文件 |
 | Alt + Insert | 生成Getter、Setter |
 | Ctrl + F12 | 在当前编辑的文件中快速导航 |
@@ -111,11 +111,15 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Shift + F6 | 重构、重命名 |
 | Ctrl + Shift + F10 | 运行测试，注意运行测试时界面需要切换到测试类的界面 |
 | Alt + F8 | 计算变量值 |
+| Alt + Left/Right | 按左/右方向切换当前已打开的文件视图 |
 | Ctrl + F10 | 更新资源和类文件，热部署(需要配置，部署时选择Exploded模式) |
 | Ctrl + Shift + T | 新建测试类，在测试类与被测试类之间跳转 |
 | Ctrl + Shift +F | 全文查找，类似于Eclipse的Ctrl + H |
 | Ctrl + Shift + Alt + N | 全文搜索，包含Maven引用的jar包里面的内容，在搜索界面中，需要勾选Include non-project symbols |
 | Ctrl + Alt + Left/Right | 到上一次/下一次编辑的位置 |
+| Ctrl + Y | 删除光标所在行或删除选中的行 |
+| Ctrl + P(Parameter) | 方法参数提示显示 |
+| Ctrl + Q | 光标所在的变量/类名/方法名等上面（也可以在提示补充的时候按），显示文档内容 |
 
 ##### 进入退出全屏
 

@@ -9,9 +9,9 @@ date: 2016-09-22 22:11:14
 
 #### Connector获取请求
 
-请求被发送到Apache Tomcat服务器端口8080，被在那里侦听的Coyote HTTP/1.1 Connector(org.apache.tomcat.util.net.NioEndpoint)获得。Tomcat源码中与connector相关的类位于org.apache.coyote包中，Connector分为以下几类：
+请求被发送到Apache Tomcat服务器端口8080，被在那里侦听的`Coyote HTTP/1.1 Connector(org.apache.tomcat.util.net.NioEndpoint)`获得。Tomcat源码中与connector相关的类位于org.apache.coyote包中，Connector分为以下几类：
 
-* **Http Connector** 基于HTTP协议，负责建立HTTP连接。它又分为BIO Http Connector与NIO Http Connector(org.apache.tomcat.util.net.NioEndpoint)两种。BIO(blocking I/O)，顾名思义，即阻塞式I/O操作，表示Tomcat使用的是传统的Java I/O操作(即java.io包 及其子包)。一般而言，bio模式是三种运行模式中性能最低的一种。NIO为Network IO，后者提供非阻塞IO与长连接Comet支持。NIO(new I/O)，是Java SE 1.4及后续版本提供的一种新的I/O操作方式(即java.nio包及其子包)。Java nio是一个基于缓冲区、并能提供非阻塞I/O操作的Java API，因此nio也被看成是non-blocking I/O的缩写。它拥有比传统I/O操作(bio)更好的并发运行性能。
+* **Http Connector** 基于HTTP协议，负责建立HTTP连接。它又分为BIO Http Connector与`NIO Http Connector(org.apache.tomcat.util.net.NioEndpoint)`两种。BIO(blocking I/O)，顾名思义，即阻塞式I/O操作，表示Tomcat使用的是传统的Java I/O操作(即java.io包 及其子包)。一般而言，bio模式是三种运行模式中性能最低的一种。NIO为Network IO，后者提供非阻塞IO与长连接Comet支持。NIO(new I/O)，是Java SE 1.4及后续版本提供的一种新的I/O操作方式(即java.nio包及其子包)。Java nio是一个基于缓冲区、并能提供非阻塞I/O操作的Java API，因此nio也被看成是non-blocking I/O的缩写。它拥有比传统I/O操作(bio)更好的并发运行性能。
 
 <!-- more -->
 
