@@ -33,7 +33,7 @@ phoenix-4.8.0-HBase-1.2-client.jar
 
 {% asset_img sphonix-driver-configuration.jpg Sphonix增加驱动%}
 
-Name填写用户自定义名称。Example URL填写ZooKepper地址。
+Name填写用户自定义名称。Example URL填写ZooKepper地址。Class Name填写：`org.apache.phoenix.jdbc.PhoenixDriver`。
 
 #### 添加Alias连接Hbase
 
