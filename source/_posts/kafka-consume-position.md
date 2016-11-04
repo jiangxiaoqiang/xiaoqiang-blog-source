@@ -27,10 +27,12 @@ public void initialTopicsPartitions(String[] topics) {
             if (!Converter.toBlank(topic).equals("")) {
                 topicPartitions.add(new TopicPartition(topic, PublicVariable.KAFKA_COMSUME_PARTION));
             }
-        }
-        //从最新的位置开始消费
-        consumer.seekToEnd();
+        }                
         consumer.assign(topicPartitions);
+        /*
+        从最新的位置开始消费,Special methods for seeking to the earliest and latest offset the server maintains are also available ( seekToBeginning(TopicPartition...) and seekToEnd(TopicPartition...) respectively)
+        */
+        consumer.seekToEnd();
     }
 }
 ```
