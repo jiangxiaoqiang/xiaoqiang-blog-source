@@ -38,3 +38,9 @@ date: 2016-10-29 17:11:35
 ```Bash
 ./kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic 0085000
 ```
+
+改变主题L000000的默认分区数：
+
+```Bash
+/kafka-topics.sh  --zookeeper 192.168.24.238:2181,192.168.24.11:2181,192.168.24.71:2181 --alter --topic L000000 --partitions 2
+```
