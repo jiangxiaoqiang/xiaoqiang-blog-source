@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Redis客户端连接
+=======
+title: redis-client-connect
+>>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 tags:
   - Redis
   - Connect
@@ -7,6 +11,11 @@ categories: Programming
 date: 2016-11-04 13:10:45
 ---
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 #### Redis特点
 
 
@@ -48,7 +57,11 @@ blocked_clients:0
 
 * “关闭集群链接时异常导致连接泄漏”问题
 
+<<<<<<< HEAD
 修改配置：
+=======
+修改配置可以暂时解决：
+>>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 
 ```Java
 private static Dictionary<Integer, JedisPool> pools = new Hashtable();
@@ -72,6 +85,7 @@ static {
 }
 ```
 
+<<<<<<< HEAD
 原因是在打开了连接之后未关闭连接，此处使用的Redis版本为3.2.100 for Windows。
 
 ```Java
@@ -106,3 +120,5 @@ public static String get(String key, Integer db) {
 参考资料：
 
 [Jedis - When to use returnBrokenResource()](http://stackoverflow.com/questions/17082163/jedis-when-to-use-returnbrokenresource)
+=======
+>>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
