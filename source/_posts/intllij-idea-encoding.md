@@ -120,6 +120,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Y | 删除光标所在行或删除选中的行 |
 | Ctrl + P(Parameter) | 方法参数提示显示 |
 | Ctrl + Q | 光标所在的变量/类名/方法名等上面（也可以在提示补充的时候按），显示文档内容 |
+| Ctrl + Shift + Up/Down | 代码行上下移动 |
 
 ##### 进入退出全屏
 
