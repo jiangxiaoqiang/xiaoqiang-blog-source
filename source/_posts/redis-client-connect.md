@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: Redis客户端连接
-=======
-title: redis-client-connect
->>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 tags:
   - Redis
   - Connect
@@ -11,11 +7,6 @@ categories: Programming
 date: 2016-11-04 13:10:45
 ---
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 #### Redis特点
 
 
@@ -57,36 +48,33 @@ blocked_clients:0
 
 * “关闭集群链接时异常导致连接泄漏”问题
 
-<<<<<<< HEAD
+
 修改配置：
-=======
-修改配置可以暂时解决：
->>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
 
 ```Java
 private static Dictionary<Integer, JedisPool> pools = new Hashtable();
 
 static {
     JedisPoolConfig config = new JedisPoolConfig();
-    config.setMaxIdle(2);
-    config.setMaxTotal(100);
+    config.setMaxTotal(200);
+    config.setMaxIdle(50);
+    /*设置最小空闲数,在并发量不高时可以降低最小空闲数*/
+    config.setMinIdle(8);
+    config.setMaxWaitMillis(10000);
     config.setTestOnBorrow(true);
-    config.setMinIdle(30);
-    config.setLifo(true);
-    config.setTimeBetweenEvictionRunsMillis(1);
-    config.setNumTestsPerEvictionRun(10);
-    config.setMinEvictableIdleTimeMillis(5);
-    config.setMaxWaitMillis(2000);
+    config.setTestOnReturn(true); //Idle时进行连接扫描
+    config.setTestWhileIdle(true); //表示idle object evitor两次扫描之间要sleep的毫秒数
+    config.setTimeBetweenEvictionRunsMillis(30000); //表示idle object evitor每次扫描的最多的对象数
+    config.setNumTestsPerEvictionRun(10); //表示一个对象至少停留在idle状态的最短时间，然后才能被idle object evitor扫描并驱逐；这一项只有在timeBetweenEvictionRunsMillis大于0时才有意义
+    config.setMinEvictableIdleTimeMillis(60000);
     //循环创建16个redis数据库连接池,存放在字典里面
-    for (int i = 0; i < 16; i++) {
-        JedisPool item = new JedisPool(config, "127.0.0.1", 6379, 10 * 1000);
+    for (int i = 0; i < 2; i++) {
+        JedisPool item = new JedisPool(config, "127.0.0.1", 6379, 0);
         pools.put(i, item);
     }
 }
 ```
-
-<<<<<<< HEAD
-原因是在打开了连接之后未关闭连接，此处使用的Redis版本为3.2.100 for Windows。
+使用命令`client-cli.exe info clients`查看客户端的连接数量时，一般为最小空闲连接数量与客户端数量之和。比如查看客户端连接数量为17，设置的最小空闲连接数量是8，有2个连接池，即为16，加一个当前客户端的连接，刚好17个连接。此处`Could not get a resource from the pool`错误的原因是在打开了连接之后未关闭连接，此处使用的Redis版本为3.2.100 for Windows。
 
 ```Java
 /**
@@ -117,8 +105,8 @@ public static String get(String key, Integer db) {
 }
 ```
 
+
 参考资料：
 
 [Jedis - When to use returnBrokenResource()](http://stackoverflow.com/questions/17082163/jedis-when-to-use-returnbrokenresource)
-=======
->>>>>>> 2e811b88860dc244827b13d566fed966b8243aaa
+
