@@ -72,7 +72,8 @@ theme: next
 deploy:
   type:
 
-disqus_shortname: jiangxiaoqiang
+#disqus_shortname: jiangxiaoqiang
+duoshuo_shortname: jiangxiaoqiang
 
 index_generator:
   per_page: 5
@@ -101,6 +102,3 @@ links:
 
 creative_commons: by-nc-sa
 
-search:
-  path: search.xml
-  field: all

@@ -42,6 +42,8 @@ client_biggest_input_buf:0
 blocked_clients:0
 ```
 
+#### Redis是否正确关闭连接
+
 可以看出目前的客户端已经超出了最大的客户端数量(配置的是10个)。应该是没有释放连接导致的问题。明显一个请求一次连接是很不靠谱的。这个问题发生有两方面的原因：
 
 * 未正确使用对象池的空闲队列行为（LIFO“后进先出”栈方式）
@@ -105,6 +107,32 @@ public static String get(String key, Integer db) {
 }
 ```
 
+#### Redis配置是否正确绑定
+
+在Redis的配置文件中：
+
+
+```
+#
+# ~~~ WARNING ~~~ If the computer running Redis is directly exposed to the
+# internet, binding to all the interfaces is dangerous and will expose the
+# instance to everybody on the internet. So by default we uncomment the
+# following bind directive, that will force Redis to listen only into
+# the IPv4 lookback interface address (this means Redis will be able to
+# accept connections only from clients running into the same computer it
+# is running).
+#
+# IF YOU ARE SURE YOU WANT YOUR INSTANCE TO LISTEN TO ALL THE INTERFACES
+# JUST COMMENT THE FOLLOWING LINE.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bind 192.168.24.252
+```
+
+bind的地址如果和程序中配置的地址不一致，也会提示此错误。在Linux里，如果没有指定配置文件，则会使用默认的配置文件，所以在修改了配置文件之后，启动Redis服务的时候显示的指定使用修改后的配置文件：
+
+```Bash
+./redis-server ../redis.conf &
+```
 
 参考资料：
 
