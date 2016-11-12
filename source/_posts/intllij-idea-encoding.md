@@ -118,9 +118,11 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Shift + Alt + N | 全文搜索，包含Maven引用的jar包里面的内容，在搜索界面中，需要勾选Include non-project symbols |
 | Ctrl + Alt + Left/Right | 到上一次/下一次编辑的位置 |
 | Ctrl + Y | 删除光标所在行或删除选中的行 |
-| Ctrl + P(Parameter) | 方法参数提示显示 |
+| Ctrl + P(Parameter) | 方法参数提示显示,当调用方法时未出现参数的智能提示时，可以手动显示方法的提示 |
 | Ctrl + Q | 光标所在的变量/类名/方法名等上面（也可以在提示补充的时候按），显示文档内容 |
 | Ctrl + Shift + Up/Down | 代码行上下移动 |
+| Ctrl + Shift + U | 变量转换为大写 |
+| Ctrl + W | 选中光标所在位置的单词(Words) |
 
 ##### 进入退出全屏
 

@@ -36,7 +36,11 @@ date: 2016-10-29 17:11:35
 消费主题：
 
 ```Bash
+# 从开始处消费主题
 ./kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic 0085000
+
+# 从最新位置消费主题
+./kafka-console-consumer.sh --zookeeper localhost:2181 --topic 0085000
 ```
 
 改变主题L000000的默认分区数：

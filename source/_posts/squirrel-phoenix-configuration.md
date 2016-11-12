@@ -15,7 +15,11 @@ SQuirreL GUI客户端来连接Phoenix，就像MySQL使用Navicat for MySQL，Ora
 
 #### 下载并安装SQuirreL GUI
 
-下载好的文件是一个压缩包(`squirrel-sql-3.7.1-standard.zip`)。不用解压缩，直接修改文件的后缀名为jar(`squirrel-sql-3.7.1-standard.jar`)，双击即可打开安装界面。
+下载好的文件是一个压缩包(`squirrel-sql-3.7.1-standard.zip`)。不用解压缩，直接修改文件的后缀名为jar(`squirrel-sql-3.7.1-standard.jar`)，双击即可打开安装界面。如果无法双击打开，则可以通过命令行的方式打开：
+
+```Bash
+java -jar squirrel-sql-3.7-standard.jar
+```
 
 #### 下载驱动
 
@@ -55,5 +59,5 @@ SQL查询如下图所示。
 
 {% asset_img squirrel-connect-mysql.jpg SQuirreL连接MySQL%}
 
-驱动链接填写：jdbc:mysql://192.168.24.234:3306/clbs?useUnicode=true&characterEncoding=utf-8。用户名和密码填写登录Linux主机的用户名和密码。
+驱动链接填写：`jdbc:mysql://192.168.24.234:3306/clbs?useUnicode=true&characterEncoding=utf-8`。用户名和密码填写登录Linux主机的用户名和密码。
 

@@ -4,6 +4,8 @@ title: Spring MVC-DispatcherServlet处理请求过程
 
 Spring MVC基于模型-视图-控制器(Model-View-Controller,MVC)模式，它能够帮助我们建立灵活和松耦合的Web程序.Spring MVC中用户请求如下图所示：
 
+<!-- more -->
+
 {% asset_img example.jpg DispatcherServlet处理请求过程%}
 
 

@@ -28,7 +28,7 @@ List<Integer> numbers = Arrays.asList( 4, 8, 15, 16, 23, 42 );
 return numbers.stream().map( n -> n.toString() ).collect( Collectors.joining( "," ) );
 ```
 
-#### 去除重复数据
+#### 去List除重复数据
 
 去除List中对象的重复数据。
 
@@ -37,3 +37,11 @@ List<ClientVehicleInfo> distinctVehicles = clientVehicleInfos.stream().distinct(
 ```
 
 对于Stream中包含的元素进行去重操作（去重逻辑依赖元素的equals方法），新生成的Stream中没有重复的元素。（根据.equals行为排除所有重复的元素。）
+
+#### 去除String数组重复数据
+
+其中deviceNumbers为String类型的数组。
+
+```Java
+deviceNumbers= new HashSet<>(Arrays.asList(deviceNumbers)).toArray(new String[0]);
+```

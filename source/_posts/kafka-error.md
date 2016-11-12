@@ -76,3 +76,17 @@ vim /etc/hosts
 192.168.24.137 节点2主机名
 192.168.24.244 localhost
 ```
+
+#### Consumer Marking the coordinator XXXXX dead
+
+Marking the coordinator dead happens when there is a Network communication error between the Consumer Client and the Coordinator (Also this can happen when the Coordinator dies and the group needs to rebalance). There are a variety of situations (offset commit request, fetch offset, etc) that can cause this issue. I will suggest that you research what's causing this situations。解决此问题，重新启动消费者/生产者。
+
+#### LEADER\_NOT\_AVAILABLE
+
+在Kafka消费数据时，提示如下错误：
+
+```
+14:37:19.717]-[Thread-24]-[org.apache.kafka.clients.NetworkClient]-{Error while fetching metadata with correlation id 63 : {0402080=LEADER_NOT_AVAILABLE, T16092920=LEADER_NOT_AVAILABLE, TH003086=LEADER_NOT_AVAILABLE, 65565665666=LEADER_NOT_AVAILABLE, 0146636=LEADER_NOT_AVAILABLE, 16687896589=LEADER_NOT_AVAILABLE, CQSZ=LEADER_NOT_AVAILABLE, 25698568=LEADER_NOT_AVAILABLE, 1037494=LEADER_NOT_AVAILABLE, 1551555=LEADER_NOT_AVAILABLE, 0085000=LEADER_NOT_AVAILABLE, L000010=LEADER_NOT_AVAILABLE, 145263078=LEADER_NOT_AVAILABLE}}
+```
+
+重新启动生产者即可。KafkaProducer/Sender都需要获取集群的配置信息Metadata。所谓Metadata，Topic/Partion与broker的映射关系：每一个Topic的每一个Partion，得知道其对应的broker列表是什么，其中leader是谁，follower是谁。Sender从集群获取信息，然后更新Metadata； KafkaProducer先读取Metadata，然后把消息放入队列。如果没有获取到相应的元素据(Metadata)，则会有如下错误：`fetching topic metadata for topics from broker failed`。
