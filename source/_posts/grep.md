@@ -31,6 +31,13 @@ grep –E '219|216'
 ```Bash
 tail -f catalina.out |grep --color=auto -E 'topic|0194592|0720724|512|0146636|S000099'
 ```
+全局配置自动显示颜色：
+
+```Bash
+vim ~/.bashrc
+alias grep='grep --color'
+source ~/.bashrc
+```
 
 选出不包含512且不包含topic的行。
 

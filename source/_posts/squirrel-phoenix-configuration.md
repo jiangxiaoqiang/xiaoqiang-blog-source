@@ -29,7 +29,7 @@ java -jar squirrel-sql-3.7-standard.jar
 phoenix-4.8.0-HBase-1.2-client.jar
 ```
 
-注意顺序，先拷贝jar包，在启动SQuirreL添加驱动，如果是拷贝jar包时已经启动了SQuirreL，那么SQuirreL需要重启一下，拷贝的jar包才生效，这个是需要注意的地方，可以参见[SQuirreL Configure: could not initial class org.apache.phoenix.jdbc.PhoenixDriver](http://stackoverflow.com/questions/40215921/squirrel-configure-could-not-initial-class-org-apache-phoenix-jdbc-phoenixdrive/40225765#40225765)。
+注意顺序，先拷贝jar包，在启动SQuirreL添加驱动，如果是拷贝jar包时已经启动了SQuirreL，那么SQuirreL需要重启一下，拷贝的jar包才生效，这个是需要注意的地方，可以参见[SQuirreL Configure: could not initial class org.apache.phoenix.jdbc.PhoenixDriver](http://stackoverflow.com/questions/40215921/squirrel-configure-could-not-initial-class-org-apache-phoenix-jdbc-phoenixdrive/40225765#40225765)。在连接不同的HBase数据库时，需要注意驱动的版本，不同版本的驱动是无法正确连接的。高版本的驱动无法连接低版本的HBase。
 
 #### 添加Driver
 

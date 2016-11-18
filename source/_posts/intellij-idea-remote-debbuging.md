@@ -25,16 +25,30 @@ date: 2016-11-12 17:28:17
 set CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,address=53996,suspend=n,server=y"
 ```
 
+如果是Linux，在catalina.sh文件中中，设置catalina环境变量：
+
+```Bash
+export CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,address=53996,suspend=n,server=y"
+```
+
 运行如下命令启动Tomcat：
 
 ```Bash
+#Windows下启动Tomcat
 catalina.bat start
+
+#Linux下启动Tomcat
+catalina.sh start
 ```
 
 使用如下命令查看是否配置成功：
 
 ```Bash
+#Windows下用此命令查看
 netstat -ano
+
+#Linux下用此命令查看
+lsof -i:53996
 ```
 
 查看是否有53996的端口处于监听状态。如下图所示：
