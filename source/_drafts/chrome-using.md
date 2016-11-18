@@ -1,6 +1,6 @@
 ---
 title: Google Chrome总结与分享
-tags: 
+tags:
 - Chrome
 categories: Programming
 ---
@@ -12,9 +12,6 @@ categories: Programming
 {% asset_img google-chrome-startup-icon.png Google-Chrome快速启动图标%}
 
 
-
-
-
 #### 打开Google Chrome任务管理器
 
 
@@ -22,5 +19,3 @@ categories: Programming
 
 
 {% asset_img google-chrome-task-manage-console.jpg Google Chrome任务管理控制台%}
-
-
