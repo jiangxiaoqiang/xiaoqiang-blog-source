@@ -124,6 +124,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Shift + U | 变量转换为大写 |
 | Ctrl + W | 选中光标所在位置的单词(Words),递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 |
 | Ctrl + Alt + O | 优化(Optimization)类的Import |
+| Ctrl + H | 显示类的层次结构(Hierarchy) |
 
 ##### 进入退出全屏
 

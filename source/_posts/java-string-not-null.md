@@ -37,11 +37,27 @@ if (!Strings.isNullOrEmpty(myString)) {
 }
 ```
 
+#### 非空默认值
+
+有时在值为null时，会给一个默认值，有如下方式。
+
+```Java
+String alarmType = vehicleMessageHandler.parseAlarm(kafkaRecievedLocationMessageBody.getAlarm());
+//使用三元运算符
+positional.setAlarm(StringUtils.isBlank(alarmType) ? "0" : alarmType);
+//com.google.common.base
+Objects.firstNonNull(alarmType, "0");
+//java.util
+Optional.ofNullable(alarmType).orElse("0");
+```
+
+
 源自：
 * [Java, check whether a string is not null and not empty?]
 
 [Java, check whether a string is not null and not empty?]:http://stackoverflow.com/questions/3598770/java-check-whether-a-string-is-not-null-and-not-empty
 
+* [How to convert a possible null-value to a default value using Guava?](http://stackoverflow.com/questions/8039504/how-to-convert-a-possible-null-value-to-a-default-value-using-guava)
 
 
 
