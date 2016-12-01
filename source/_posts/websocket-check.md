@@ -29,4 +29,14 @@ Google Chrome自带查看模块，如下图所示。F12进入开发者页面，�
 
 {% asset_img fiddler-websocket.jpg Fiddler查看WebSocket%}
 
+Fiddler中的WebSocket显示乱码是因为数据已经被压缩(Compressed),要查看乱码的内容，在Response中添加头信息。按下F2按钮后，即可在Response中手动添加头信息(Add Headers)。
 
+```
+Content-Encoding: deflate
+```
+
+添加头信息之后，点击TextView会出现黄色的Decode提示框。
+
+{% asset_img websocket-decode.jpg Fiddler查看WebSocket-Decode%}
+
+点击之后即可看到原始的Json数据。
