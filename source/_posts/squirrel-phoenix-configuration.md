@@ -9,7 +9,7 @@ date: 2016-10-25 09:24:13
 
 #### SQuirreL GUI客户端简介
 
-SQuirreL GUI客户端来连接Phoenix，就像MySQL使用Navicat for MySQL，Oracle使用PL/SQL Developer一样，在进行一些数据库操作的时候能够更加的直观和方便。同时它还可以连接MySQL。
+SQuirreL GUI([下载地址](https://sourceforge.net/projects/squirrel-sql/?source=typ_redirect))客户端来连接Phoenix，就像MySQL使用Navicat for MySQL，Oracle使用PL/SQL Developer一样，在进行一些数据库操作的时候能够更加的直观和方便。同时它还可以连接MySQL。它可以运行在Windows、Linux、Mac OS操作系统上。
 
 <!-- more -->
 
@@ -60,4 +60,3 @@ SQL查询如下图所示。
 {% asset_img squirrel-connect-mysql.jpg SQuirreL连接MySQL%}
 
 驱动链接填写：`jdbc:mysql://192.168.24.234:3306/clbs?useUnicode=true&characterEncoding=utf-8`。用户名和密码填写登录Linux主机的用户名和密码。
-
