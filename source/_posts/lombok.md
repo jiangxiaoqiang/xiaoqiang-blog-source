@@ -3,9 +3,22 @@ title: Lombok精简Java代码
 tags: lombok
 ---
 
+#### 简介
 
 [lombok](https://projectlombok.org/)提供了简单的注解的形式来帮助我们简化消除一些必须有但显得很臃肿的java代码,特别是相对于POJO(Plain Ordinary Java Object)。安装Lombok Plugin和引入Jar包之后方可使用。
 
+
+#### 安装
+
+安装完毕lombok插件之后，添加如下包：
+
+```XML
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.16.6</version>
+</dependency>
+```
 
 常用的 lombok 注解：
 
