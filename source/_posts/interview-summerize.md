@@ -6,11 +6,7 @@ tags:
 categories: Interview
 ---
 
-<<<<<<< HEAD
 面试的过程也是气质是否和公司搭调的过程，每个公司都有自己的管理特色。找到价值观相对契合的企业非常重要。这里是面试时面试官问过的问题，或许平时开发中根本没有想过这些问题，但注意更多细节总是有益处的，总结如下。
-=======
-面试的过程也是气质是否和公司搭调的过程，每个公司都有自己的管理特色。找到价值观相对契合的企业非常重要。这里是面试时面试官问过的问题。
->>>>>>> c4d14ae18be2906cfba48c05b531b0dd0480fe55
 
 <!-- more -->
 
@@ -194,4 +190,4 @@ promotion failed是在进行Minor GC时，survivor space放不下、对象只能
 
 4.动态判断对象的年龄。如果Survivor区中相同年龄的所有对象大小的总和大于Survivor空间的一半，年龄大于或等于该年龄的对象可以直接进入老年代。
 
-5.空间分配担保。每次进行Minor GC时，JVM会计算Survivor区移至老年区的对象的平均大小，如果这个值大于老年区的剩余值大小则进行一次Full GC，如果小于检查HandlePromotionFailure设置，如果true则只进行Monitor GC,如果false则进行Full GC。 
+5.空间分配担保。每次进行Minor GC时，JVM会计算Survivor区移至老年区的对象的平均大小，如果这个值大于老年区的剩余值大小则进行一次Full GC，如果小于检查HandlePromotionFailure设置，如果true则只进行Monitor GC,如果false则进行Full GC。
