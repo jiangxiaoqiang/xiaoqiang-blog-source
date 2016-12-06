@@ -13,6 +13,6 @@ date: 2016-09-27 17:53:07
 
 * Mail:jiangtingqiang@gmal.com
 
-{% asset_img qrcode.jpg 微信扫码关注 %}
+![qr](./index/qrcode.jpg)
 
 微信订阅号会不定期推送一些文章。
