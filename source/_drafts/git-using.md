@@ -52,3 +52,8 @@ git push origin master -f
 git stash
 ```
 
+#### Please, commit your changes or stash them before you can merge
+
+出现这个问题的原因是其他人修改了文件并提交到版本库中去了，而你本地也修改了xxx.php，这时候你进行git pull操作就好出现冲突了。
+
+
