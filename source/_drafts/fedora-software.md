@@ -6,6 +6,10 @@ tags:
 
 #### VLC Media Player
 
+#### MPlayer
+
+#### Graphiz
+
 #### Putty
 
 #### Google Chrome
@@ -21,6 +25,10 @@ tags:
 #### aMule
 
 #### TexStudio
+
+#### Nutstore
+
+跨平台的云同步软件。
 
 #### KeePass
 
