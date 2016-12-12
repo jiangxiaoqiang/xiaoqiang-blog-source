@@ -18,7 +18,7 @@ date: 2016-09-26 14:23:24
 
 {% asset_img intelli-idea-override-default-font.jpg 覆盖默认字体%}
 
-在Debug控制台中Tomcat中输出乱码，可以打开Run/Debug Configuration,选择你的tomcat。在Server > VM options设置为<code>-Dfile.encoding=UTF-8</code> ，重启tomcat。
+在Debug控制台中Tomcat中输出乱码，可以打开Run/Debug Configuration,选择你的tomcat。在Server > VM options设置为<code>-Dfile.encoding=UTF-8</code> ，重启tomcat，其中参数-D代表Default，设置默认的文件编码是UTF-8。
 
 #### 智能提示敏感调整
 
