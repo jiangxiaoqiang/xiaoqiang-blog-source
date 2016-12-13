@@ -9,6 +9,8 @@ categories: Programming
 
 在非官方集群解决方案中，物理上把数据“分片”（sharding）存储在多个Redis实例，一般情况下，每一“片”是一个Redis实例。
 
+<!-- more -->
+
 #### 客户端分片
 
 #### 代理分片
