@@ -528,3 +528,53 @@ Synchronized进过编译，会在同步块的前后分别形成monitorenter和mo
 #### 谈谈分布式Session的几种实现方式
 
 #### 讲一下Session和Cookie的区别和联系以及Session的实现原理
+
+#### XML文档定义有几种形式？它们之间有何本质区别？解析XML文档有哪几种方式？
+
+两种定义形式 dtd（文档类型定义）  schema（XML模式）；
+
+##### 它们之间有何本质区别？
+
+XML Schema和DTD（Document Type Define）都用于文档验证，但二者还有一定区别，本质区别:schema本身是xml的，可以被XML解析器解析(这也是从DTD上发展schema的根本目的)。另外：
+
+XML Schema是内容开放模型，可扩展，功能性强；而DTD可扩展性差；
+
+XML Schema支持丰富的数据类型，而DTD不支持元素的数据类型，对属性的类型定义也很有限；
+
+XML Schema支持命名空间机制，而DTD不支持；
+
+XML Schema可针对不同情况对整个XML文档或文档局部进行验证；而DTD缺乏这种灵活性；
+
+XML Schema完全遵循XML规范，符合XML语法，可以和DOM结合使用，功能强大；而DTD语法本身有自身的语法和要求，难以学习；
+
+##### 解析XML文档有哪几种方式？
+
+有DOM（文档对象模型）,SAX（Simple API for XML）,STAX等
+
+    DOM:文档驱动，处理大型文件时其性能下降的非常厉害。这个问题是由DOM的树结构所造成的，这种结构占用的内存较多，而且DOM必须在解析文件之前把整个文档装入内存,适合对XML的随机访问
+
+SAX:不同于DOM,SAX是事件驱动型的XML解析方式。它顺序读取XML文件，不需要一次全部装载整个文件。当遇到像文件开头，文档结束，或者标签开头与标签结束时，它会触发一个事件，用户通过在其回调事件中写入处理代码来处理XML文件，适合对XML的顺序访问，且是只读的。当前浏览器不支持SAX
+
+SAXParserFactory factory= SAXParserFactory.newInstance();
+
+SAXParser saxparser= factory.newSAXParser();//创建SAX解析器
+
+MyHandler handler=new MyHandler();//创建事件处理器
+
+saxParser.parse(new File(“Sax_1.xml”),handler);//绑定文件和事件处理者
+
+STAX:Streaming API for XML (StAX) Streaming API for XML (StAX)
+
+是用 Java™ 语言处理 XML 的最新标准。StAX 与其他方法的区别就在于应用程序能够把 XML 作为一个事件流来处理。StAX 允许应用程序代码把这些事件逐个拉出来，而不用提供在解析器方便时从解析器中接收事件的处理程序。
+
+#### jsp和servlet的区别和联系
+
+1. jsp经编译后就变成了Servlet.(JSP的本质就是Servlet，JVM只能识别java的类，不能识别JSP的代码,Web容器将JSP的代码编译成JVM能够识别的java类)
+2. jsp更擅长表现于页面显示,servlet更擅长于逻辑控制.
+3. Servlet中没有内置对象，Jsp中的内置对象都是必须通过HttpServletRequest对象，HttpServletResponse对象以及HttpServlet对象得到.
+Jsp是Servlet的一种简化，使用Jsp只需要完成程序员需要输出到客户端的内容，Jsp中的Java脚本如何镶嵌到一个类中，由Jsp容器完成。而Servlet则是个完整的Java类，这个类的Service方法用于生成对客户端的响应。
+联系： JSP是Servlet技术的扩展，本质上就是Servlet的简易方式。JSP编译后是“类servlet”。Servlet和JSP最主要的不同点在于，Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML里分离开来。而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。JSP侧重于视图，Servlet主要用于控制逻辑。
+
+#### 一个“.java”源文件中是否可以包括多个类（不包括内部类）？有什么限制？
+
+可以的，一个“.java”源文件里面可以包含多个类，但是只允许有一个public类，并且类名必须和文件名一致。每个编译单元只能有一个public 类。这么做的意思是，每个编译单元只能有一个公开的接口，而这个接口就由其public 类来表示。你可以根据需要，往这个文件里面添加任意多个提供辅助功能的package 权限的类。但是如果这个编译单元里面有两个或两个以上的public 类的话，程序就不知道从哪里导入了，编译器就会报错。　　
