@@ -51,6 +51,32 @@ Compressed: 61246559
 
 #### VLC Media Player
 
+#### Electronic-Wechat
+
+基于微信网页版微信，结合Electron开发的基于Linux的微信客户端。
+
+#### Shutter
+
+Linux下的截图工具。
+
+#### Intellij Idea
+
+Linux下Java开发必备工具。
+
+#### FileZilla
+
+#### Slack
+
+#### Wireshark
+
+#### Transmission
+
+Linux下torrent下载工具。
+
+#### Deluge
+
+Linux下下载工具，支持磁力链接(Magnic Link)下载。
+
 #### MPlayer
 
 #### Graphiz
