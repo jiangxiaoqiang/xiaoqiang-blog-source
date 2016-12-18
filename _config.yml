@@ -88,11 +88,11 @@ tag_generator:
 
 google_analytics: UA-84391638-1
 
-sitemap: 
+sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
-  
+
  # title, chinese available
 links_title: 推荐博客
 # links
@@ -100,6 +100,7 @@ links:
   阮一峰的个人网站: http://www.ruanyifeng.com/home.html
   陈皓(CoolShell): http://coolshell.cn
   阿里中间件团队博客: http://jm.taobao.org/
+  小土刀的博客: http://wdxtub.com/
 
 creative_commons: by-nc-sa
 

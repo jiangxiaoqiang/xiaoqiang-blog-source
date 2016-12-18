@@ -8,6 +8,10 @@ date: 2016-12-16 23:32:33
 
 使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。
 
+#### NodeJS
+
+本博客就是基于NodeJS生成，虽然不是很懂NodeJS，但是感觉很牛逼的样子。
+
 #### Fiddler for Linux
 
 #### Apache Tomcat

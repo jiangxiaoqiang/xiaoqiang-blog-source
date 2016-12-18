@@ -8,8 +8,20 @@ date: 2016-09-27 17:53:07
 #### 关于我
 
 * 90后
+* 不放过每一个装B的机会
 * 专注Java开发100年不动摇
 * 开源、分享要从娃娃抓起
+* 喜欢的语言：Java/Python
+* 因为大家都喜欢，所以我喜欢，不要问为什么
+* OS:Redhat/CentOS/Ubuntu/Fedora/OpenSUSE
+* DB:MySQL/Apache HBase
+* Cache:Redis
+* Middleware:Apache Kafka
+
+#### 出没地
+
+* [StackOverflow](http://stackoverflow.com/users/2628868/dolphin)
+* [GitHub](https://github.com/jiangxiaoqiang/)
 
 下图是微信订阅号，会有一些分享，推送不频繁。
 
