@@ -21,6 +21,7 @@ date: 2016-10-21 23:53:36
 | Alt + Tab | 应用程序之间进行切换 |
 | Windows + Left/Right/Up/Down | 将窗口移向左右、最大化、还原 |
 | Windows + PageUp/PageDown | 切换工作区 |
+| Ctrl + L | 清空终端(Terminal) |
 
 <!-- more -->
 

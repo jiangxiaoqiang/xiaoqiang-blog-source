@@ -6,37 +6,53 @@ categories: Programming
 date: 2016-12-16 23:32:33
 ---
 
+使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。
+
+#### Fiddler for Linux
+
+#### Apache Tomcat
+
+#### OpenVPN
+
+#### StarDict
+
 #### htop
 
-序号 列名 含义
-a PID 进程id
-b PPID 父进程id
-c RUSER Real user name
-d UID 进程所有者的用户id
-e USER 进程所有者的用户名
-f GROUP 进程所有者的组名
-g TTY 启动进程的终端名。不是从终端启动的进程则显示为 ?
-h PR 优先级
-i NI nice值。负值表示高优先级，正值表示低优先级
-j P 最后使用的CPU，仅在多CPU环境下有意义
-k %CPU 上次更新到现在的CPU时间占用百分比
-l TIME 进程使用的CPU时间总计，单位秒
-m TIME+ 进程使用的CPU时间总计，单位1/100秒
-n %MEM 进程使用的物理内存百分比
-o VIRT 进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES
-p SWAP 进程使用的虚拟内存中，被换出的大小，单位kb。
-q RES 进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA
-r CODE 可执行代码占用的物理内存大小，单位kb
-s DATA 可执行代码以外的部分(数据段+栈)占用的物理内存大小，单位kb
-t SHR 共享内存大小，单位kb
-u nFLT 页面错误次数
-v nDRT 最后一次写入到现在，被修改过的页面数。
-w S 进程状态。（D=不可中断的睡眠状态，R=运行，S=睡眠，T=跟踪/停止，Z=僵尸进程）
-x COMMAND 命令名/命令行
-y WCHAN 若该进程在睡眠，则显示睡眠中的系统函数名
-z Flags 任务标志，参考 sched.h
+htop是实时显示当前系统运行情况的，不同于ps、pstree、pidof、vmsta等这些快照工具，快照工具只能显示命令执行前一秒系统的情况。htop 对关键信息实行高亮显示，对于我们用肉眼查看进程信息的情况相当友好。
+
+<!-- more -->
+
+| 列名 | 含义 |
+| ----------------- |:-------------:|
+| PID | 进程id |
+| PPID | 父进程id |
+| RUSER | Real user name |
+| UID | 进程所有者的用户id |
+| TTY | 启动进程的终端名。不是从终端启动的进程则显示为 ?|
+| PR | 优先级 |
+| NI | nice值。负值表示高优先级，正值表示低优先级 |
+| P | 最后使用的CPU，仅在多CPU环境下有意义 |
+| %CPU | 上次更新到现在的CPU时间占用百分比 |
+| VIRT(Virtual) | 进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES |
+| TIME | 进程使用的CPU时间总计，单位秒 |
+| SHR(Share) | 共享内存大小，单位kb |
+| TIME+ | 进程使用的CPU时间总计，单位1/100秒 |
+| %MEM | 进程使用的物理内存百分比 |
+| SWAP | 进程使用的虚拟内存中，被换出的大小，单位kb |
+| S(Status) | 进程状态（D=不可中断的睡眠状态，R=运行，S=睡眠，T=跟踪/停止，Z=僵尸进程） |
+| RES | 进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA |
+| CODE | 可执行代码占用的物理内存大小，单位kb |
+| DATA | 可执行代码以外的部分(数据段+栈)占用的物理内存大小，单位kb |
+| nFLT | 页面错误次数 |
+| nDRT | 最后一次写入到现在，被修改过的页面数 |
+| WCHAN | 若该进程在睡眠，则显示睡眠中的系统函数名 |
+| Flags | 任务标志，参考 sched.h |
 
 默认情况下仅显示比较重要的 PID、USER、PR、NI、VIRT、RES、SHR、S、%CPU、%MEM、TIME+、COMMAND 列。可以通过下面的快捷键来更改显示内容
+
+{% asset_img htop-ui.jpg htop界面 %}
+
+上图说明计算机有8个内核，8GB的内存，8GB的交换空间(Swap Space)。
 
 #### Visual Studio Code
 
@@ -50,7 +66,7 @@ Java开发IDE。
 
 7-Zip is open source software. Most of the source code is under the GNU LGPL license. The unRAR code is under a mixed license: GNU LGPL + unRAR restrictions.7-Zip works in Windows 10 / 8 / 7 / Vista / XP / 2012 / 2008 / 2003 / 2000 / NT. There is a port of the command line version to Linux/Unix.安装7zip用于解压.7z结尾的文件：
 
-<!-- more -->
+
 
 ```Bash
 dnf install -y p7zip-plugins
@@ -124,11 +140,19 @@ Linux下下载工具，支持磁力链接(Magnic Link)下载。
 
 #### Google Chrome
 
+Google Chrome浏览器的好处之一就是，只要登陆Google的账号后，它会把你的搜索记录、插件、Cookie等同步到云端，这样回家之后可以接着处理工作上遗留的问题。比如在办公室研究某个问题到一半，回家打开浏览器搜索关键字会快速出现办公时研究的关键字，相当方便。还有你的历史浏览记录，在不同的设备上使用即时同步，不同设备（PC、Laptop）、平台（Windows和Fedora）使用习惯无缝对接。
+
 #### FireFox
 
 #### Google Earth
 
 #### Lantern
+
+如果平时需要用Google搜索一些资料，Lantern是一款必不可少的工具。
+
+#### xx-net
+
+如果平时需要用Google搜索一些资料，xx-net是一款必不可少的工具。
 
 #### Atom
 
