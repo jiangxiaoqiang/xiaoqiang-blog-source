@@ -1,5 +1,5 @@
 ---
-title: Fedora快捷键
+title: Fedora使用技巧
 tags:
   - Fedora
   - Gnome
@@ -32,6 +32,14 @@ date: 2016-10-21 23:53:36
 ```Bash
 gnome-terminal
 ```
+
+在平时使用中，总有一个目录是使用频率最高的，此时打开终端时可以默认切换到对应的目录，只需要将启动命令改为：
+
+```Bash
+gnome-terminal --working-directory=/home/dolphin/dolphin/project/blogs/xiaoqiang-blog-source
+```
+
+此时使用快捷键打开终端时默认为设置的目录，非常之方便。
 
 #### 打开文件夹
 
