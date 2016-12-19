@@ -55,6 +55,6 @@ categories: Programming
 ```
 
 
-红外热像技术
-红外热成像诊断增生、炎症和癌症的临床价值
-医用。
+参考：
+
+* [Google 搜索技巧](http://wdxtub.com/2016/03/26/google-tip/)

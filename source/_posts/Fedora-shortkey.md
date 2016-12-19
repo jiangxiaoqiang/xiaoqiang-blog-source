@@ -7,8 +7,7 @@ categories: Programming
 date: 2016-10-21 23:53:36
 ---
 
-
-如下是我在使用Fedora的时候整理的快捷键，网络上有许多快捷键版本，下表是经过测试可用并一直在使用的快捷键。
+如下是我在使用Fedora的過程中整理的快捷键列表，网络上有许多快捷键版本，下表是经过测试可用，并一直在使用的快捷键。希望使用Fedora的朋友可以參考，加快熟悉Fedora的速度。
 
 | 快捷键 | 作用 |
 | ----------------- |:-------------:|
@@ -22,6 +21,8 @@ date: 2016-10-21 23:53:36
 | Windows + Left/Right/Up/Down | 将窗口移向左右、最大化、还原 |
 | Windows + PageUp/PageDown | 切换工作区 |
 | Ctrl + L | 清空终端(Terminal) |
+| Ctrl + Shift + T(Terminal) | 以Tab頁的形式打開終端 |
+| Ctrl + Shift + N(New) | 打開一個新的終端 |
 
 <!-- more -->
 
