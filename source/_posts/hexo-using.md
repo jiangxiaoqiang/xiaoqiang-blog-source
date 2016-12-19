@@ -15,6 +15,12 @@ categories: Programming
 npm install hexo --save
 ```
 
+安装hexo-cli:
+
+```Bash
+npm install hexo-cli -g
+```
+
 仅仅安装了Hexo还不可以在浏览器中查看效果，还需要安装Hexo Server模块：
 
 ```Bash
@@ -28,4 +34,3 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 ```
 
 访问http://localhost:4000页面空白，提示can not get /，此时需要在源码目录下运行一下npm install命令即可。
-
