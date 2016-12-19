@@ -29,3 +29,17 @@ curl www.jiangxiaoqiang.com
 </body>
 </html>
 ```
+
+#### 请求API数据
+
+比如需要在请求头中添加Key、Value键值对，可以添加-H(Header)参数，如下命令行所示：
+
+```Bash
+curl -H "APPID:123" http://localhost:28080/api/xysj?xdrShxym=addd
+```
+
+如果是需要发送多个请求头，那么多次指定-H参数即可,如下命令所示。
+
+```Bash
+curl -H "APPID:123" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:sdsss" http://localhost:28080/api/xysj?xdrShxym=addd
+```
