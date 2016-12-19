@@ -18,6 +18,7 @@ comment: false
 * DB:MySQL/Apache HBase
 * Cache:Redis
 * Middleware:Apache Kafka
+* Tools(装备)：Git + Intellij Idea + JRebel
 
 #### 出没地
 
