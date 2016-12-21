@@ -60,3 +60,5 @@ date: 2016-11-03 09:51:27
 在 Java 的 String 中编辑有 JSON 非常麻烦，在 Intellij IDEA 中，我们可以直接使用 Intellij IDEA 的 Language Injection 的功能（Alt + Enter）将一个字符串标记为 JSON，就可以非常方便地编写 JSON 了，再也不用担心转义的问题了：
 
 {% asset_img language-injection.jpg Intellij Idea Language Injection%}
+
+#### Intellij Idea注释模板

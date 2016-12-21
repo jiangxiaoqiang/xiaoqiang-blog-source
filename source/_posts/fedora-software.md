@@ -8,6 +8,16 @@ date: 2016-12-16 23:32:33
 
 使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。
 
+<!-- more -->
+
+#### wget
+
+```Bash
+wget -c http://dl.zeroturnaround.com/idea/jr-ide-intellij-6.5.0_13-16.zip
+```
+
+-c参数表示断电续传。--continue： Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program. 
+
 #### NodeJS
 
 本博客就是基于NodeJS生成，虽然不是很懂NodeJS，但是感觉很牛逼的样子。
@@ -24,7 +34,7 @@ date: 2016-12-16 23:32:33
 
 htop是实时显示当前系统运行情况的，不同于ps、pstree、pidof、vmsta等这些快照工具，快照工具只能显示命令执行前一秒系统的情况。htop 对关键信息实行高亮显示，对于我们用肉眼查看进程信息的情况相当友好。
 
-<!-- more -->
+
 
 | 列名 | 含义 |
 | ----------------- |:-------------:|

@@ -1,5 +1,5 @@
 ---
-title: git-using
+title: git使用
 date: 2016-12-19 23:34:02
 tags:
 ---
@@ -19,6 +19,47 @@ git branch
 
 ```Bash
 git log --graph --all
+```
+
+#### 发起pull request
+
+创建(check out)分支v1_xiaoqiang：
+
+```
+git checkout -b v1_xiaoqiang
+```
+
+将新的分之合并到origin分支中：
+
+```Bash
+git push origin v1_xiaoqiang
+```
+
+到GitLab页面里创建一个pull request即可。
+
+#### 更新
+
+采用git pull时，提示如下：
+
+```
+hldev@hldev-100:~/hldata/backend/credit-system$ git pull
+Username for 'http://dn6': xiaoqiang.jiang
+Password for 'http://xiaoqiang.jiang@dn6':
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> v1_xiaoqiang
+```
+
+指定本地dev分支与远程origin/dev分支的链接，根据提示，设置dev和origin/dev的链接：
+
+```Bash
+git branch --set-upstream-to origin/v1 v1_xiaoqiang
 ```
 
 #### Stash

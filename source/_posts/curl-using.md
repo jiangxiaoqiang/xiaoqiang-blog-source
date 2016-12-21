@@ -43,3 +43,5 @@ curl -H "APPID:123" http://localhost:28080/api/xysj?xdrShxym=addd
 ```Bash
 curl -H "APPID:123" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:sdsss" http://localhost:28080/api/xysj?xdrShxym=addd
 ```
+
+#### 发送Cookie
