@@ -1,5 +1,5 @@
 ---
-title: Linux安传输入法
+title: Linux安装输入法
 date: 2016-12-19 23:40:49
 tags:
 - Linux

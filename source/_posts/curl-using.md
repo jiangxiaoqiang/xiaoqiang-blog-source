@@ -16,9 +16,13 @@ curl offers a busload of useful tricks like proxy support, user authentication, 
 
 #### 查看网页源码
 
-直接在curl命令后加上网址，就可以看到网页源码。我们以网址www.jiangxiaoqiang.com为例：
+直接在curl命令后加上网址，就可以看到网页源码。我们以网址www.jiangxiaoqiang.com为例，输入如下命令行：
 
+```Bash
 curl www.jiangxiaoqiang.com
+```
+
+返回的结果为：
 
 ```HTML
 <html>
@@ -28,6 +32,21 @@ curl www.jiangxiaoqiang.com
 <hr><center>nginx</center>
 </body>
 </html>
+```
+
+#### cookie
+
+使用`--cookie`参数，可以让curl发送cookie，如下命令行所示。
+
+```Bash
+curl --cookie "name=xxx" www.example.com
+```
+
+`-c cookie-file`可以保存服务器返回的cookie到文件，`-b cookie-file`可以使用这个文件作为cookie信息，进行后续的请求。
+
+```Bash
+curl -c cookies http://example.com
+curl -b cookies http://example.com
 ```
 
 #### 请求API数据
@@ -44,4 +63,7 @@ curl -H "APPID:123" http://localhost:28080/api/xysj?xdrShxym=addd
 curl -H "APPID:123" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:sdsss" http://localhost:28080/api/xysj?xdrShxym=addd
 ```
 
-#### 发送Cookie
+
+参考资料：
+
+* [curl网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
