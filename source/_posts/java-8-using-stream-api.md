@@ -45,3 +45,11 @@ List<ClientVehicleInfo> distinctVehicles = clientVehicleInfos.stream().distinct(
 ```Java
 deviceNumbers= new HashSet<>(Arrays.asList(deviceNumbers)).toArray(new String[0]);
 ```
+
+#### 过滤器(Filter)
+
+从List中过滤出指定条件的数据：
+
+```Java
+List<CreditDocument> xzxkList = creditDocuments.stream().filter(a -> a.getInfoType() == 1).collect(Collectors.toList());
+```

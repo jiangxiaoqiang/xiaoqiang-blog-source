@@ -62,3 +62,5 @@ date: 2016-11-03 09:51:27
 {% asset_img language-injection.jpg Intellij Idea Language Injection%}
 
 #### Intellij Idea注释模板
+
+File -- Settings -- Editor -- Code Style -- File and Code Templates设置类生成模板。

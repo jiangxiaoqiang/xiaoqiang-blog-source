@@ -34,7 +34,7 @@ curl www.jiangxiaoqiang.com
 </html>
 ```
 
-#### cookie
+#### Ｃookie
 
 使用`--cookie`参数，可以让curl发送cookie，如下命令行所示。
 
@@ -63,6 +63,21 @@ curl -H "APPID:123" http://localhost:28080/api/xysj?xdrShxym=addd
 curl -H "APPID:123" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:sdsss" http://localhost:28080/api/xysj?xdrShxym=addd
 ```
 
+#### 参数
+
+在Restful多参数请求时，需要使用转义符号。url为`http://mywebsite.com/index.PHP?a=1&b=2&c=3`时，web形式下访问url地址，使用$\_GET是可以获取到所有的参数。然而在Linux下
+
+```
+curl http://mywebsite.com/index.php?a=1&b=2&c=3
+```
+
+$\_GET只能获取到参数a,由于url中有&，其他参数获取不到，在linux系统中&会使进程系统后台运行,必须对&进行下转义才能$\_GET获取到所有参数。
+
+```
+curl http://mywebsite.com/index.php?a=1\&b=2\&c=3
+```
+
+这一个细节需要注意。
 
 参考资料：
 
