@@ -10,15 +10,15 @@ comment: false
 
 * 90后
 * 不放过每一个装B的机会
-* 专注Java开发100年不动摇
+* 专注开源100年不动摇
+* Windows过敏
 * 开源、分享要从娃娃抓起
 * 喜欢的语言：Java/Python
-* 因为大家都喜欢，所以我喜欢，不要问为什么
 * OS:Redhat/CentOS/Ubuntu/Fedora/OpenSUSE
 * DB:MySQL/Apache HBase
 * Cache:Redis
 * Middleware:Apache Kafka
-* Tools(装备)：Git + Intellij Idea + JRebel
+* Tools(装备)：Git/Intellij Idea/JRebel
 
 #### 出没地
 
@@ -29,4 +29,4 @@ comment: false
 
 ![qr](./index/qrcode.jpg)
 
-微信订阅号会不定期推送一些文章。
+微信订阅号会不定期推送一些文章，非技术类。

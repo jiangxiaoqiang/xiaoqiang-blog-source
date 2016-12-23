@@ -79,6 +79,16 @@ curl http://mywebsite.com/index.php?a=1\&b=2\&c=3
 
 这一个细节需要注意。
 
+#### 下载文件
+
+如下命令是使用curl下载XX-net工具。
+
+```Bash
+curl -o xxnet.zip https://codeload.github.com/XX-net/XX-Net/zip/3.2.8
+```
+
+-o, --output <file>，文件的保存名称。
+
 参考资料：
 
 * [curl网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)

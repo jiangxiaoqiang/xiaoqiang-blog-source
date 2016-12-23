@@ -6,6 +6,8 @@ tags:
 categories: Programming
 ---
 
+* Java的实体属性中，属性赋值时是区分大小写的，比如adog不能成功映射到aDog
+
 #### Mapper文件中遍历集合参数
 
 在遍历List<Integer>时，直接使用如下的语句即可：
