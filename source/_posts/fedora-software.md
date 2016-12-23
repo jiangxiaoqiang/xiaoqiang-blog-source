@@ -10,6 +10,8 @@ date: 2016-12-16 23:32:33
 
 <!-- more -->
 
+### 网络(Network)
+
 #### wget
 
 ```Bash
@@ -17,6 +19,8 @@ wget -c http://dl.zeroturnaround.com/idea/jr-ide-intellij-6.5.0_13-16.zip
 ```
 
 -c参数表示断电续传。--continue： Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program.
+
+#### 编程开发（Development）
 
 #### NodeJS
 
@@ -122,6 +126,8 @@ Size:       86833121
 Compressed: 61246559
 ```
 
+### 影音娱乐(Media&Entertainment)
+
 #### VLC Media Player
 
 #### Electronic-Wechat
@@ -185,6 +191,8 @@ Google Chrome浏览器的好处之一就是，只要登陆Google的账号后，�
 #### Haroopad
 
 跨平台Markdown编辑器。
+
+### 工具(Tools)
 
 #### KeePass
 
