@@ -18,6 +18,10 @@ wget -c http://dl.zeroturnaround.com/idea/jr-ide-intellij-6.5.0_13-16.zip
 
 -c参数表示断电续传。--continue： Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program.
 
+#### uGet
+
+
+
 #### NodeJS
 
 本博客就是基于NodeJS生成，虽然不是很懂NodeJS，但是感觉很牛逼的样子。
