@@ -92,7 +92,7 @@ git branch
 ```Bash
 #切换到v1_xiaoqiang分支
 git checkout v1_xiaoqiang
-#合并到v1分支
+#将v1分支合并到当前分支（v1_xiaoqiang）
 git merge v1
 ```
 
