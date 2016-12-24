@@ -29,11 +29,15 @@ XX-Net是一款让你可以让你提高工作效率的工具，它通过让你�
 
 #### 配置
 
-配置主要分为两步，第一步是安装代理自动切换插件，第二步是导入证书。
+配置主要分为两步，第一步是安装代理自动切换插件，第二步是导入备份文件，第三步是导入证书。
 
 ##### 安装代理切换插件
 
 打开Google Chrome浏览器，切换到插件管理页面,可以选择Settings-Extensions,也可以访问链接：<code>chrome://extensions/</code>，将文件<code>/opt/xx-net/SwitchyOmega/SwitchyOmega.crx</code>托放到浏览器中，即可安装代理自动切换插件SwitchyOmega。
+
+#### 导入备份文件
+
+到SwitchyOmega的设置页面，找到Import/Export选项卡即可。导入完成后，点击SwitchyOmega，切换成“XX-Net自动切换”，如果使用的是X-Tunnel或SS，请点击“X-Tunnel自动切换”。
 
 ##### 导入证书
 
@@ -61,3 +65,7 @@ localhost:8085
 #### 验证配置并使用
 
 访问Google搜索引擎，如果能够成功访问Google,代表配置成功。如果首次无法访问，可以待后台程序多运行一些时间，几十分钟到几小时不等。一段时间之后再次尝试。需要注意的是XX-Net代理上网不具有匿名性，或者说匿名性很弱。
+
+参考资料：
+
+* [使用Chrome浏览器](https://github.com/XX-net/XX-Net/wiki/%E4%BD%BF%E7%94%A8Chrome%E6%B5%8F%E8%A7%88%E5%99%A8)
