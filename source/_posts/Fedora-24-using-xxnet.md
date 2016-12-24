@@ -43,7 +43,7 @@ XX-Net是一款让你可以让你提高工作效率的工具，它通过让你�
 chrome://settings/certificates
 ```
 
-选择Authorities选项卡，选择导入(Import)证书。如下图所示。
+选择Authorities选项卡，选择导入(Import)证书。证书的存放路径为:`/data/gae-proxy/`下。如下图所示。
 
 
 {% asset_img import-authorize.png Google-Chrome导入证书%}

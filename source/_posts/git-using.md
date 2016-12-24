@@ -23,13 +23,18 @@ git log --graph --all
 
 #### 发起pull request
 
-创建(check out)分支v1_xiaoqiang：
+新建(check out)分支v1_xiaoqiang：
 
 ```
 git checkout -b v1_xiaoqiang
 ```
 
-将新的分之合并到origin分支中：
+| 参数 | 含义 |
+|--------|--------|
+| -b <branch> |  create and checkout a new branch  |
+| -B <branch> |  create/reset and checkout a branch |
+
+将新的分之push到origin分支中：
 
 ```Bash
 git push origin v1_xiaoqiang
@@ -37,7 +42,7 @@ git push origin v1_xiaoqiang
 
 到GitLab页面里创建一个pull request即可。
 
-#### 更新
+#### 更新(update)
 
 采用git pull时，提示如下：
 
@@ -60,6 +65,35 @@ If you wish to set tracking information for this branch you can do so with:
 
 ```Bash
 git branch --set-upstream-to origin/v1 v1_xiaoqiang
+```
+
+#### 合并(merge)
+
+下面是使用过的一个合并步骤,切换到v1分支，v1分支是开发的主分支：
+
+```Bash
+git checkout v1
+```
+
+将远程分支更新获取并合并到v1分支：
+
+```Bash
+git pull origin v1
+```
+
+查看当前分支：
+
+```Bash
+git branch
+```
+
+假如当前分支为名称：v1_xiaoqiang,将v1分支合并到当前分支：
+
+```Bash
+#切换到v1_xiaoqiang分支
+git checkout v1_xiaoqiang
+#合并到v1分支
+git merge v1
 ```
 
 #### Stash

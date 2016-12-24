@@ -23,6 +23,7 @@ date: 2016-10-21 23:53:36
 | Ctrl + L | 清空终端(Terminal) |
 | Ctrl + Shift + T(Terminal) | 以Tab頁的形式打開終端 |
 | Ctrl + Shift + N(New) | 打開一個新的終端 |
+| Ctrl + Alt + Del | 调出关机界面 |
 
 <!-- more -->
 
