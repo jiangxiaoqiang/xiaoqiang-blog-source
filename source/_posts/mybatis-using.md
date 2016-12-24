@@ -104,8 +104,25 @@ open="(" separator="," close=")">#{item}</foreach>
 There is no getter for property named 'moduleCode' in 'class java.lang.String
 ```
 
+将映射语句由：
 
+```XML
+<select id="findByUUID" parameterType="java.lang.String" resultMap="Corporation">
+     SELECT *
+     FROM TS_F_CORPORATION
+     WHERE ID = &apos;${id}&apos;;
+ </select>
+```
 
+改为：
+
+```XML
+<select id="findByUUID" parameterType="java.lang.String" resultMap="Corporation">
+     SELECT *
+     FROM TS_F_CORPORATION
+     WHERE ID = &apos;${_parameter}&apos;;
+ </select>
+```
 
 #### 分页
 
