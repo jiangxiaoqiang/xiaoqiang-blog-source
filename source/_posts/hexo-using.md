@@ -33,4 +33,24 @@ npm install hexo-server --save
 git clone https://github.com/iissnan/hexo-theme-next themes/next
 ```
 
-访问http://localhost:4000页面空白，提示can not get /，此时需要在源码目录下运行一下npm install命令即可。
+访问`http://localhost:4000`页面空白，提示`can not get /`，此时需要在源码目录下运行一下npm install命令即可。
+
+#### 安装搜索模块
+
+安装搜索模块可自定义站内搜索，在源码目录下执行如下命令。
+
+```Bash
+npm install hexo-generator-searchdb --save
+```
+
+#### 安装Next主题
+
+next主题是Hexo下一款非常简洁美观的主题，切换到themes目录下，执行如下命令：
+
+```Bash
+git clone https://github.com/iissnan/hexo-theme-next themes/next
+```
+
+#### 设置菜单
+
+可以自己添加相应菜单，可以在一级菜单上添加一个书(Book)或者其他模块。

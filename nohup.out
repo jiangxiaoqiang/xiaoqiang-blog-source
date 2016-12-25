@@ -1,0 +1,2238 @@
+Python 2.7.12
+XX-Net version:default
+You have not installed pyOpenSSL yet.
+Please install pyOpenSSL.
+XX-Net.desktop already exists
+/opt/local/tools/XX-Net-3.2.8/code/default/python27/1.0/lib/linux/cffi/model.py:526: UserWarning: 'point_conversion_form_t' has no values explicitly defined; next version will refuse to guess which integer type it is meant to be (unsigned/signed, int/long)
+  % self._get_c_name())
+12月 25 14:17:41.5 - [INFO] use build-in openssl lib
+12月 25 14:17:41.5 - [INFO] start XX-Net 3.2.8
+12月 25 14:17:41.5 - [DEBUG] start confirm_xxnet_exit
+12月 25 14:17:41.5 - [DEBUG] good, xxnet:8087 cleared!
+12月 25 14:17:41.5 - [DEBUG] good, xxnet:8085 clear!
+12月 25 14:17:41.5 - [DEBUG] finished confirm_xxnet_exit
+12月 25 14:17:41.6 - [INFO] SSL use version:TLSv1_2
+12月 25 14:17:41.6 - [INFO] OpenSSL support npn
+12月 25 14:17:41.6 - [INFO] load ip range file:/opt/local/tools/XX-Net-3.2.8/code/default/gae_proxy/local/ip_range.txt
+12月 25 14:17:41.6 - [INFO] load google ip_list num:3000, gws num:3000
+12月 25 14:17:41.6 - [DEBUG] network is ok, cost:89 ms
+12月 25 14:17:41.7 - [INFO] OpenSSL support npn
+12月 25 14:17:41.7 - [DEBUG] get ip:202.86.162.172 t:132
+12月 25 14:17:41.7 - [DEBUG] get ip:120.28.26.150 t:317
+12月 25 14:17:41.7 - [DEBUG] ## GAEProxy set keep_running: True
+12月 25 14:17:41.7 - [INFO] ------------------------------------------------------
+12月 25 14:17:41.7 - [INFO] Python Version     : 2.7.12
+12月 25 14:17:41.7 - [INFO] OS                 : Dist:Ubuntu; Version:16.04; ID:xenial
+12月 25 14:17:41.7 - [INFO] Listen Address     : 127.0.0.1:8087
+12月 25 14:17:41.7 - [INFO] GAE APPID          : 
+12月 25 14:17:41.7 - [INFO] Pac Server         : http://127.0.0.1:8086/proxy.pac
+12月 25 14:17:41.7 - [INFO] ------------------------------------------------------
+12月 25 14:17:41.7 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:17:41.7 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:17:41.7 - [INFO] server 127.0.0.1:8087 started.
+12月 25 14:17:41.7 - [INFO] server 127.0.0.1:8086 started.
+12月 25 14:17:41.8 - [INFO] module gae_proxy started
+12月 25 14:17:41.8 - [INFO] start gae_proxy time cost:208 ms
+WARNING:root:Load Crypto.Cipher.ARC4 Failed, Use Pure Python Instead.
+12月 25 14:17:41.8 - [INFO] use config_path:/opt/local/tools/XX-Net-3.2.8/data/x_tunnel/client.json
+12月 25 14:17:41.8 - [INFO] Use proxy:127.0.0.1:8087
+12月 25 14:17:41.8 - [DEBUG] x-tunnel no account
+12月 25 14:17:41.8 - [WARNING] x-tunnel session not start
+12月 25 14:17:41.8 - [INFO] server 127.0.0.1:1080 started.
+12月 25 14:17:41.8 - [INFO] Socks5 server listen:127.0.0.1:1080.
+12月 25 14:17:41.8 - [DEBUG] create_ssl update ip:202.86.162.172 time:125 h2:1
+12月 25 14:17:41.8 - [DEBUG] get ip:59.18.49.113 t:424
+12月 25 14:17:41.9 - [INFO] module x_tunnel started
+12月 25 14:17:41.9 - [INFO] start x_tunnel time cost:114 ms
+12月 25 14:17:41.9 - [INFO] begin to start web control
+12月 25 14:17:41.9 - [INFO] server 127.0.0.1:8085 started.
+12月 25 14:17:41.9 - [INFO] launcher web control started.
+12月 25 14:17:42.2 - [DEBUG] get ip:189.247.160.82 t:466
+Created new window in existing browser session.
+12月 25 14:17:42.4 - [DEBUG] create_ssl update ip:120.28.26.150 time:513 h2:0
+12月 25 14:17:42.5 - [DEBUG] launcher web_control 127.0.0.1:51208 GET /config?cmd=get_config 
+12月 25 14:17:42.5 - [DEBUG] launcher web_control 127.0.0.1:51210 GET /config?cmd=get_config 
+12月 25 14:17:42.7 - [DEBUG] get ip:113.171.253.207 t:469
+12月 25 14:17:42.8 - [DEBUG] create_ssl update ip:189.247.160.82 time:452 h2:0
+12月 25 14:17:42.9 - [INFO] get uuid:72e79c3a-1828-45f1-b3ee-b180305defe1
+12月 25 14:17:42.9 - [INFO] GAE CONNECT xxnet-update.appspot.com:443 
+12月 25 14:17:42.9 - [DEBUG] GAE CONNECT Direct GET https://xxnet-update.appspot.com/update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:17:43.2 - [DEBUG] get ip:58.27.61.96 t:485
+12月 25 14:17:43.2 - [INFO] DIRECT t:334 s:1674 200 xxnet-update.appspot.com /update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:17:43.2 - [INFO] download https://raw.githubusercontent.com/XX-net/XX-Net/master/code/default/update_version.txt to /opt/local/tools/XX-Net-3.2.8/data/downloads/version.txt, retry:0
+12月 25 14:17:43.4 - [DEBUG] create_ssl update ip:113.171.253.207 time:469 h2:0
+12月 25 14:17:43.9 - [DEBUG] create_ssl update ip:58.27.61.96 time:483 h2:0
+12月 25 14:17:45.8 - [DEBUG] 59.18.49.113 fail:timeout('timed out',)
+12月 25 14:17:45.8 - [DEBUG] report_connect_fail:59.18.49.113
+12月 25 14:17:50.5 - [INFO] scan_ip add ip:203.233.126.223 time:196
+12月 25 14:17:50.5 - [INFO] remove_slowest_ip:109.245.221.41 handshake_time:1529, fails:0
+12月 25 14:17:50.7 - [INFO] scan_ip add ip:115.164.12.151 time:777
+12月 25 14:17:50.7 - [INFO] remove_slowest_ip:92.226.2.100 handshake_time:528, fails:1
+12月 25 14:17:51.3 - [DEBUG] GAE GET https://www.google.com/
+12月 25 14:17:51.3 - [DEBUG] get ip:203.233.126.223 t:196
+12月 25 14:17:51.8 - [WARNING] APPID 'xxnet-1--1273' out of Quota, remove it. 113.171.253.207
+12月 25 14:17:51.8 - [WARNING] report_out_of_quota:xxnet-1--1273
+12月 25 14:17:51.8 - [DEBUG] ssl_closed 113.171.253.207
+12月 25 14:17:51.8 - [DEBUG] 113.171.253.207 worker close:appid out of quota:xxnet-1--1273
+12月 25 14:17:51.8 - [DEBUG] GAE_Exception 604 'appid out of quota:xxnet-1--1273'
+12月 25 14:17:51.8 - [WARNING] gae_exception:GAE_Exception() https://www.google.com/
+12月 25 14:17:51.8 - [DEBUG] get ip:113.171.253.207 t:469
+12月 25 14:17:51.8 - [WARNING] 202.86.162.172 Stream 1 forcefully closed.
+12月 25 14:17:52.3 - [DEBUG] get ip:113.171.253.225 t:496
+12月 25 14:17:52.8 - [DEBUG] get ip:63.88.73.152 t:514
+12月 25 14:17:53.2 - [DEBUG] create_ssl update ip:113.171.253.225 time:586 h2:0
+12月 25 14:17:53.3 - [DEBUG] get ip:63.117.14.219 t:524
+12月 25 14:17:53.6 - [DEBUG] create_ssl update ip:63.88.73.152 time:528 h2:1
+12月 25 14:17:53.8 - [DEBUG] create_ssl update ip:113.171.253.207 time:1410 h2:0
+12月 25 14:17:53.8 - [DEBUG] get ip:216.11.246.69 t:532
+12月 25 14:17:54.2 - [DEBUG] get ip:178.45.249.239 t:536
+12月 25 14:17:54.3 - [DEBUG] get ip:113.171.253.220 t:569
+12月 25 14:17:54.6 - [DEBUG] get ip:190.212.166.206 t:581
+12月 25 14:17:54.8 - [DEBUG] get ip:31.209.137.45 t:588
+12月 25 14:17:54.8 - [DEBUG] get ip:190.212.166.169 t:595
+12月 25 14:17:55.1 - [DEBUG] create_ssl update ip:113.171.253.220 time:499 h2:0
+12月 25 14:17:55.3 - [DEBUG] 203.233.126.223 fail:timeout('timed out',)
+12月 25 14:17:55.3 - [DEBUG] report_connect_fail:203.233.126.223
+12月 25 14:17:55.3 - [DEBUG] get ip:24.139.135.119 t:597
+12月 25 14:17:55.3 - [DEBUG] get ip:195.80.179.181 t:624
+12月 25 14:17:55.5 - [DEBUG] create_ssl update ip:190.212.166.206 time:582 h2:0
+12月 25 14:17:55.7 - [DEBUG] create_ssl update ip:190.212.166.169 time:600 h2:0
+12月 25 14:17:55.8 - [DEBUG] get ip:41.201.129.82 t:675
+12月 25 14:17:55.8 - [DEBUG] get ip:216.147.171.169 t:685
+12月 25 14:17:56.1 - [DEBUG] get ip:120.28.26.186 t:718
+Python 2.7.12
+XX-Net version:default
+You have not installed pyOpenSSL yet.
+Please install pyOpenSSL.
+XX-Net.desktop already exists
+12月 25 14:17:56.2 - [DEBUG] create_ssl update ip:24.139.135.119 time:606 h2:0
+12月 25 14:17:56.3 - [DEBUG] get ip:201.64.241.92 t:729
+12月 25 14:17:56.5 - [DEBUG] get ip:203.207.55.235 t:746
+12月 25 14:17:56.6 - [DEBUG] create_ssl update ip:195.80.179.181 time:851 h2:1
+12月 25 14:17:56.7 - [DEBUG] get ip:24.214.95.239 t:748
+12月 25 14:17:56.8 - [DEBUG] create_ssl update ip:41.201.129.82 time:651 h2:0
+/opt/local/tools/XX-Net-3.2.8/code/default/python27/1.0/lib/linux/cffi/model.py:526: UserWarning: 'point_conversion_form_t' has no values explicitly defined; next version will refuse to guess which integer type it is meant to be (unsigned/signed, int/long)
+  % self._get_c_name())
+12月 25 14:17:56.8 - [DEBUG] create_ssl update ip:120.28.26.186 time:550 h2:0
+12月 25 14:17:56.8 - [DEBUG] get ip:59.18.35.112 t:764
+12月 25 14:17:56.9 - [INFO] use build-in openssl lib
+12月 25 14:17:56.9 - [INFO] start XX-Net 3.2.8
+12月 25 14:17:56.9 - [DEBUG] start confirm_xxnet_exit
+12月 25 14:17:56.9 - [DEBUG] GAEProxy Web_control 127.0.0.1:51754 GET /quit 
+12月 25 14:17:56.9 - [DEBUG] <0>: try to terminate xxnet:8087
+12月 25 14:17:57.2 - [DEBUG] get ip:80.252.129.38 t:772
+12月 25 14:17:57.3 - [DEBUG] 63.117.14.219 fail:timeout('timed out',)
+12月 25 14:17:57.3 - [DEBUG] report_connect_fail:63.117.14.219
+12月 25 14:17:57.3 - [DEBUG] get ip:115.164.12.167 t:772
+12月 25 14:17:57.3 - [DEBUG] get ip:115.164.12.151 t:777
+12月 25 14:17:57.6 - [DEBUG] get ip:111.94.248.168 t:785
+12月 25 14:17:57.6 - [DEBUG] create_ssl update ip:203.207.55.235 time:760 h2:0
+12月 25 14:17:57.7 - [INFO] Exiting gae_proxy module...
+12月 25 14:17:57.8 - [DEBUG] get ip:200.105.131.56 t:806
+12月 25 14:17:57.8 - [DEBUG] 216.11.246.69 fail:timeout('timed out',)
+12月 25 14:17:57.8 - [DEBUG] report_connect_fail:216.11.246.69
+12月 25 14:17:57.8 - [DEBUG] get ip:87.79.22.247 t:826
+12月 25 14:17:57.8 - [DEBUG] get ip:203.248.210.36 t:826
+12月 25 14:17:57.8 - [DEBUG] get ip:190.104.150.153 t:826
+12月 25 14:17:58.2 - [DEBUG] 178.45.249.239 fail:timeout('timed out',)
+12月 25 14:17:58.2 - [DEBUG] report_connect_fail:178.45.249.239
+12月 25 14:17:58.2 - [DEBUG] get ip:177.43.235.46 t:826
+12月 25 14:17:58.4 - [DEBUG] get ip:177.101.143.212 t:832
+12月 25 14:17:58.5 - [DEBUG] create_ssl update ip:115.164.12.151 time:777 h2:0
+12月 25 14:17:58.6 - [DEBUG] get ip:183.87.151.92 t:833
+12月 25 14:17:58.8 - [DEBUG] 31.209.137.45 fail:timeout('timed out',)
+12月 25 14:17:58.8 - [DEBUG] report_connect_fail:31.209.137.45
+12月 25 14:17:58.8 - [DEBUG] get ip:212.113.7.144 t:834
+12月 25 14:17:58.8 - [DEBUG] create_ssl update ip:115.164.12.167 time:768 h2:0
+12月 25 14:17:58.9 - [DEBUG] get ip:66.96.224.187 t:840
+12月 25 14:17:59.1 - [DEBUG] create_ssl update ip:80.252.129.38 time:1522 h2:1
+12月 25 14:17:59.4 - [DEBUG] get ip:103.233.36.171 t:841
+12月 25 14:17:59.5 - [DEBUG] get ip:41.184.60.31 t:842
+12月 25 14:17:59.5 - [INFO] scan_ip add ip:125.234.54.173 time:756
+12月 25 14:17:59.5 - [INFO] remove_slowest_ip:31.209.137.45 handshake_time:588, fails:1
+12月 25 14:17:59.8 - [DEBUG] get ip:86.60.255.79 t:842
+12月 25 14:17:59.9 - [DEBUG] 216.147.171.169 fail:timeout('timed out',)
+12月 25 14:17:59.9 - [DEBUG] report_connect_fail:216.147.171.169
+12月 25 14:17:59.9 - [DEBUG] get ip:204.186.215.32 t:842
+12月 25 14:17:59.9 - [DEBUG] good, xxnet:8087 cleared!
+12月 25 14:17:59.9 - [DEBUG] launcher web_control 127.0.0.1:51656 GET /quit 
+12月 25 14:17:59.9 - [DEBUG] start to terminate gae_proxy module
+12月 25 14:17:59.9 - [INFO] start to terminate GAE_Proxy
+12月 25 14:17:59.9 - [DEBUG] ## Set keep_running: False
+12月 25 14:17:59.9 - [DEBUG] module gae_proxy stopping
+12月 25 14:17:59.9 - [DEBUG] <0>: try to terminate xxnet:8085
+12月 25 14:18:00.1 - [DEBUG] create_ssl update ip:66.96.224.187 time:841 h2:1
+12月 25 14:18:00.1 - [DEBUG] get ip:66.96.224.155 t:842
+12月 25 14:18:00.4 - [DEBUG] 201.64.241.92 fail:timeout('timed out',)
+12月 25 14:18:00.4 - [DEBUG] report_connect_fail:201.64.241.92
+12月 25 14:18:00.4 - [DEBUG] get ip:125.234.54.173 t:756
+12月 25 14:18:00.4 - [DEBUG] get ip:190.45.0.228 t:842
+12月 25 14:18:00.6 - [DEBUG] create_ssl update ip:103.233.36.171 time:857 h2:0
+12月 25 14:18:00.7 - [DEBUG] 24.214.95.239 fail:timeout('timed out',)
+12月 25 14:18:00.7 - [DEBUG] report_connect_fail:24.214.95.239
+12月 25 14:18:00.7 - [DEBUG] get ip:95.168.222.161 t:842
+12月 25 14:18:00.8 - [DEBUG] 59.18.35.112 fail:timeout('timed out',)
+12月 25 14:18:00.8 - [DEBUG] report_connect_fail:59.18.35.112
+12月 25 14:18:00.8 - [DEBUG] get ip:49.231.60.95 t:842
+12月 25 14:18:00.9 - [DEBUG] ip:59.18.49.113 real fail
+12月 25 14:18:00.9 - [DEBUG] get ip:71.19.173.114 t:842
+12月 25 14:18:00.9 - [DEBUG] launcher web_control 127.0.0.1:51670 GET /quit 
+12月 25 14:18:00.9 - [DEBUG] start to terminate gae_proxy module
+12月 25 14:18:00.9 - [INFO] start to terminate GAE_Proxy
+12月 25 14:18:00.9 - [DEBUG] ## Set keep_running: False
+12月 25 14:18:00.9 - [DEBUG] module gae_proxy stopping
+12月 25 14:18:00.9 - [DEBUG] <1>: try to terminate xxnet:8085
+12月 25 14:18:01.1 - [DEBUG] get ip:200.10.226.180 t:842
+12月 25 14:18:01.4 - [DEBUG] create_ssl update ip:66.96.224.155 time:843 h2:1
+12月 25 14:18:01.6 - [DEBUG] create_ssl update ip:190.45.0.228 time:828 h2:0
+12月 25 14:18:01.6 - [DEBUG] 111.94.248.168 fail:timeout('timed out',)
+12月 25 14:18:01.6 - [DEBUG] report_connect_fail:111.94.248.168
+12月 25 14:18:01.6 - [DEBUG] get ip:177.135.94.20 t:842
+12月 25 14:18:01.6 - [DEBUG] get ip:81.192.191.13 t:842
+12月 25 14:18:01.8 - [DEBUG] 200.105.131.56 fail:timeout('timed out',)
+12月 25 14:18:01.8 - [DEBUG] report_connect_fail:200.105.131.56
+12月 25 14:18:01.8 - [DEBUG] get ip:120.28.26.142 t:842
+12月 25 14:18:01.8 - [DEBUG] 87.79.22.247 fail:timeout('timed out',)
+12月 25 14:18:01.8 - [DEBUG] report_connect_fail:87.79.22.247
+12月 25 14:18:01.8 - [DEBUG] get ip:5.22.190.108 t:842
+12月 25 14:18:01.8 - [DEBUG] 203.248.210.36 fail:timeout('timed out',)
+12月 25 14:18:01.8 - [DEBUG] report_connect_fail:203.248.210.36
+12月 25 14:18:01.8 - [DEBUG] get ip:84.15.64.14 t:842
+12月 25 14:18:01.9 - [DEBUG] 190.104.150.153 fail:timeout('timed out',)
+12月 25 14:18:01.9 - [DEBUG] report_connect_fail:190.104.150.153
+12月 25 14:18:01.9 - [DEBUG] get ip:203.113.161.147 t:843
+12月 25 14:18:01.9 - [DEBUG] launcher web_control 127.0.0.1:51686 GET /quit 
+12月 25 14:18:01.9 - [DEBUG] start to terminate gae_proxy module
+12月 25 14:18:01.9 - [INFO] start to terminate GAE_Proxy
+12月 25 14:18:01.9 - [DEBUG] ## Set keep_running: False
+12月 25 14:18:01.9 - [DEBUG] module gae_proxy stopping
+12月 25 14:18:01.9 - [DEBUG] <2>: try to terminate xxnet:8085
+12月 25 14:18:02.2 - [DEBUG] 177.43.235.46 fail:timeout('timed out',)
+12月 25 14:18:02.2 - [DEBUG] report_connect_fail:177.43.235.46
+12月 25 14:18:02.2 - [DEBUG] get ip:92.246.12.211 t:843
+12月 25 14:18:02.4 - [DEBUG] 177.101.143.212 fail:timeout('timed out',)
+12月 25 14:18:02.4 - [DEBUG] report_connect_fail:177.101.143.212
+12月 25 14:18:02.4 - [DEBUG] get ip:58.27.108.152 t:843
+12月 25 14:18:02.4 - [DEBUG] get ip:81.30.226.55 t:843
+12月 25 14:18:02.5 - [DEBUG] create_ssl update ip:120.28.26.142 time:469 h2:0
+12月 25 14:18:02.6 - [DEBUG] get ip:1.9.131.90 t:843
+12月 25 14:18:02.7 - [DEBUG] 183.87.151.92 fail:timeout('timed out',)
+12月 25 14:18:02.7 - [DEBUG] report_connect_fail:183.87.151.92
+12月 25 14:18:02.7 - [DEBUG] get ip:191.251.192.28 t:843
+12月 25 14:18:02.7 - [WARNING] socket accept fail(errno: 9).
+12月 25 14:18:02.7 - [DEBUG] ## GAEProxy set keep_running: False
+12月 25 14:18:02.8 - [INFO] module gae_proxy stopped
+12月 25 14:18:02.8 - [DEBUG] start to terminate x_tunnel module
+12月 25 14:18:02.8 - [INFO] Close Socks5 server 
+12月 25 14:18:02.8 - [INFO] Stopping session
+12月 25 14:18:02.8 - [DEBUG] module x_tunnel stopping
+12月 25 14:18:02.8 - [INFO] module x_tunnel stopped
+12月 25 14:18:02.9 - [DEBUG] good, xxnet:8085 clear!
+12月 25 14:18:02.9 - [DEBUG] finished confirm_xxnet_exit
+12月 25 14:18:02.9 - [INFO] SSL use version:TLSv1_2
+12月 25 14:18:02.9 - [INFO] OpenSSL support npn
+12月 25 14:18:02.9 - [INFO] load ip range file:/opt/local/tools/XX-Net-3.2.8/code/default/gae_proxy/local/ip_range.txt
+12月 25 14:18:03.0 - [INFO] load google ip_list num:3000, gws num:3000
+12月 25 14:18:03.0 - [INFO] OpenSSL support npn
+12月 25 14:18:03.0 - [DEBUG] get ip:202.86.162.172 t:125
+12月 25 14:18:03.0 - [DEBUG] get ip:203.233.126.223 t:196
+12月 25 14:18:03.0 - [DEBUG] network is ok, cost:93 ms
+12月 25 14:18:03.0 - [DEBUG] ## GAEProxy set keep_running: True
+12月 25 14:18:03.0 - [INFO] ------------------------------------------------------
+12月 25 14:18:03.0 - [INFO] Python Version     : 2.7.12
+12月 25 14:18:03.0 - [INFO] OS                 : Dist:Ubuntu; Version:16.04; ID:xenial
+12月 25 14:18:03.0 - [INFO] Listen Address     : 127.0.0.1:8087
+12月 25 14:18:03.0 - [INFO] GAE APPID          : 
+12月 25 14:18:03.0 - [INFO] Pac Server         : http://127.0.0.1:8086/proxy.pac
+12月 25 14:18:03.0 - [INFO] ------------------------------------------------------
+12月 25 14:18:03.0 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:18:03.0 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:18:03.0 - [INFO] server 127.0.0.1:8087 started.
+12月 25 14:18:03.0 - [INFO] server 127.0.0.1:8086 started.
+12月 25 14:18:03.1 - [INFO] module gae_proxy started
+12月 25 14:18:03.1 - [INFO] start gae_proxy time cost:208 ms
+WARNING:root:Load Crypto.Cipher.ARC4 Failed, Use Pure Python Instead.
+12月 25 14:18:03.1 - [INFO] use config_path:/opt/local/tools/XX-Net-3.2.8/data/x_tunnel/client.json
+12月 25 14:18:03.1 - [INFO] Use proxy:127.0.0.1:8087
+12月 25 14:18:03.1 - [DEBUG] x-tunnel no account
+12月 25 14:18:03.1 - [WARNING] x-tunnel session not start
+12月 25 14:18:03.1 - [INFO] server 127.0.0.1:1080 started.
+12月 25 14:18:03.1 - [INFO] Socks5 server listen:127.0.0.1:1080.
+12月 25 14:18:03.2 - [DEBUG] create_ssl update ip:202.86.162.172 time:130 h2:1
+12月 25 14:18:03.2 - [DEBUG] get ip:189.247.160.82 t:452
+12月 25 14:18:03.2 - [INFO] module x_tunnel started
+12月 25 14:18:03.2 - [INFO] start x_tunnel time cost:116 ms
+12月 25 14:18:03.2 - [INFO] begin to start web control
+12月 25 14:18:03.2 - [INFO] server 127.0.0.1:8085 started.
+12月 25 14:18:03.2 - [INFO] launcher web control started.
+12月 25 14:18:03.5 - [DEBUG] get ip:113.171.253.207 t:469
+Created new window in existing browser session.
+12月 25 14:18:03.9 - [DEBUG] launcher web_control 127.0.0.1:51712 GET /config?cmd=get_config 
+12月 25 14:18:03.9 - [DEBUG] launcher web_control 127.0.0.1:51714 GET /config?cmd=get_config 
+12月 25 14:18:04.0 - [DEBUG] get ip:58.27.61.96 t:483
+12月 25 14:18:04.1 - [DEBUG] create_ssl update ip:189.247.160.82 time:739 h2:0
+12月 25 14:18:04.2 - [DEBUG] create_ssl update ip:113.171.253.207 time:468 h2:0
+12月 25 14:18:04.2 - [INFO] get uuid:72e79c3a-1828-45f1-b3ee-b180305defe1
+12月 25 14:18:04.2 - [INFO] GAE CONNECT xxnet-update.appspot.com:443 
+12月 25 14:18:04.2 - [DEBUG] GAE CONNECT Direct GET https://xxnet-update.appspot.com/update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:18:04.5 - [DEBUG] get ip:120.28.26.150 t:513
+12月 25 14:18:04.7 - [INFO] DIRECT t:469 s:1674 200 xxnet-update.appspot.com /update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:18:04.7 - [INFO] download https://raw.githubusercontent.com/XX-net/XX-Net/master/code/default/update_version.txt to /opt/local/tools/XX-Net-3.2.8/data/downloads/version.txt, retry:0
+12月 25 14:18:05.0 - [DEBUG] get ip:63.88.73.152 t:514
+12月 25 14:18:05.2 - [DEBUG] get ip:63.117.14.219 t:524
+12月 25 14:18:05.2 - [DEBUG] create_ssl update ip:120.28.26.150 time:511 h2:0
+12月 25 14:18:06.0 - [DEBUG] create_ssl update ip:63.117.14.219 time:516 h2:1
+12月 25 14:18:06.2 - [INFO] scan_ip add ip:192.122.185.123 time:551
+12月 25 14:18:06.2 - [INFO] remove_slowest_ip:93.87.90.121 handshake_time:527, fails:1
+12月 25 14:18:07.0 - [DEBUG] 203.233.126.223 fail:timeout('timed out',)
+12月 25 14:18:07.0 - [DEBUG] report_connect_fail:203.233.126.223
+12月 25 14:18:07.7 - [DEBUG] GAE POST https://clients1.google.com/tbproxy/af/query?client=Google%20Chrome
+12月 25 14:18:07.7 - [DEBUG] get ip:216.11.246.69 t:532
+12月 25 14:18:08.0 - [DEBUG] 58.27.61.96 fail:timeout('timed out',)
+12月 25 14:18:08.0 - [DEBUG] report_connect_fail:58.27.61.96
+12月 25 14:18:08.0 - [DEBUG] get ip:178.45.249.239 t:536
+12月 25 14:18:08.0 - [INFO] GAE t:308 s:34 POST https://clients1.google.com/tbproxy/af/query?client=Google%20Chrome get_worker:5,h2_get_head:300
+12月 25 14:18:08.2 - [DEBUG] get ip:192.122.185.123 t:551
+12月 25 14:18:08.2 - [INFO] scan_ip add ip:67.89.227.237 time:494
+12月 25 14:18:08.2 - [INFO] remove_slowest_ip:190.150.50.46 handshake_time:522, fails:1
+12月 25 14:18:08.7 - [DEBUG] get ip:190.212.166.206 t:581
+12月 25 14:18:09.0 - [DEBUG] 63.88.73.152 fail:timeout('timed out',)
+12月 25 14:18:09.0 - [DEBUG] report_connect_fail:63.88.73.152
+12月 25 14:18:09.0 - [DEBUG] get ip:113.171.253.225 t:586
+12月 25 14:18:09.1 - [DEBUG] get ip:31.209.137.45 t:588
+12月 25 14:18:09.2 - [DEBUG] get ip:190.212.166.169 t:595
+12月 25 14:18:09.6 - [DEBUG] create_ssl update ip:190.212.166.206 time:577 h2:0
+12月 25 14:18:09.7 - [DEBUG] get ip:24.139.135.119 t:597
+12月 25 14:18:09.7 - [DEBUG] create_ssl update ip:113.171.253.225 time:494 h2:0
+12月 25 14:18:10.1 - [DEBUG] create_ssl update ip:190.212.166.169 time:591 h2:0
+12月 25 14:18:10.2 - [DEBUG] get ip:195.80.179.181 t:624
+12月 25 14:18:10.6 - [DEBUG] get ip:41.201.129.82 t:675
+12月 25 14:18:10.7 - [DEBUG] get ip:67.89.227.237 t:494
+12月 25 14:18:10.7 - [DEBUG] get ip:113.171.253.220 t:569
+12月 25 14:18:11.1 - [DEBUG] get ip:216.147.171.169 t:685
+12月 25 14:18:11.2 - [DEBUG] get ip:120.28.26.186 t:718
+12月 25 14:18:11.5 - [DEBUG] create_ssl update ip:195.80.179.181 time:1008 h2:1
+12月 25 14:18:11.6 - [DEBUG] create_ssl update ip:41.201.129.82 time:666 h2:0
+12月 25 14:18:11.7 - [DEBUG] create_ssl update ip:113.171.253.220 time:628 h2:0
+12月 25 14:18:11.7 - [DEBUG] 216.11.246.69 fail:timeout('timed out',)
+12月 25 14:18:11.7 - [DEBUG] report_connect_fail:216.11.246.69
+12月 25 14:18:11.7 - [DEBUG] get ip:201.64.241.92 t:729
+12月 25 14:18:11.7 - [DEBUG] get ip:203.207.55.235 t:746
+12月 25 14:18:12.0 - [DEBUG] 178.45.249.239 fail:timeout('timed out',)
+12月 25 14:18:12.0 - [DEBUG] report_connect_fail:178.45.249.239
+12月 25 14:18:12.0 - [DEBUG] get ip:24.214.95.239 t:748
+12月 25 14:18:12.2 - [DEBUG] 192.122.185.123 fail:timeout('timed out',)
+12月 25 14:18:12.2 - [DEBUG] report_connect_fail:192.122.185.123
+12月 25 14:18:12.2 - [DEBUG] get ip:59.18.35.112 t:764
+12月 25 14:18:12.2 - [DEBUG] get ip:80.252.129.38 t:772
+12月 25 14:18:12.5 - [DEBUG] get ip:115.164.12.167 t:772
+12月 25 14:18:12.6 - [DEBUG] create_ssl update ip:59.18.35.112 time:238 h2:0
+12月 25 14:18:12.6 - [DEBUG] get ip:115.164.12.151 t:777
+12月 25 14:18:12.7 - [DEBUG] get ip:111.94.248.168 t:785
+12月 25 14:18:12.7 - [DEBUG] get ip:200.105.131.56 t:806
+12月 25 14:18:12.7 - [DEBUG] create_ssl update ip:120.28.26.186 time:1321 h2:0
+12月 25 14:18:12.8 - [DEBUG] create_ssl update ip:203.207.55.235 time:762 h2:0
+12月 25 14:18:13.1 - [DEBUG] 31.209.137.45 fail:timeout('timed out',)
+12月 25 14:18:13.1 - [DEBUG] report_connect_fail:31.209.137.45
+12月 25 14:18:13.1 - [DEBUG] get ip:87.79.22.247 t:826
+12月 25 14:18:13.2 - [DEBUG] get ip:203.248.210.36 t:826
+12月 25 14:18:13.6 - [DEBUG] get ip:190.104.150.153 t:826
+12月 25 14:18:13.7 - [DEBUG] create_ssl update ip:115.164.12.151 time:741 h2:0
+12月 25 14:18:13.7 - [DEBUG] 24.139.135.119 fail:timeout('timed out',)
+12月 25 14:18:13.7 - [DEBUG] report_connect_fail:24.139.135.119
+12月 25 14:18:13.7 - [DEBUG] get ip:177.43.235.46 t:826
+12月 25 14:18:13.7 - [DEBUG] get ip:177.101.143.212 t:832
+12月 25 14:18:13.7 - [DEBUG] get ip:183.87.151.92 t:833
+12月 25 14:18:13.8 - [DEBUG] get ip:212.113.7.144 t:834
+12月 25 14:18:14.2 - [DEBUG] get ip:66.96.224.187 t:840
+12月 25 14:18:14.7 - [DEBUG] get ip:103.233.36.171 t:841
+12月 25 14:18:14.7 - [DEBUG] 67.89.227.237 fail:timeout('timed out',)
+12月 25 14:18:14.7 - [DEBUG] report_connect_fail:67.89.227.237
+12月 25 14:18:14.7 - [DEBUG] get ip:41.184.60.31 t:842
+12月 25 14:18:14.7 - [DEBUG] get ip:190.45.0.228 t:842
+12月 25 14:18:14.8 - [DEBUG] create_ssl update ip:115.164.12.167 time:1897 h2:0
+12月 25 14:18:15.1 - [DEBUG] 216.147.171.169 fail:timeout('timed out',)
+12月 25 14:18:15.1 - [DEBUG] report_connect_fail:216.147.171.169
+12月 25 14:18:15.1 - [DEBUG] get ip:95.168.222.161 t:842
+12月 25 14:18:15.2 - [DEBUG] get ip:49.231.60.95 t:842
+12月 25 14:18:15.7 - [DEBUG] 201.64.241.92 fail:timeout('timed out',)
+12月 25 14:18:15.7 - [DEBUG] report_connect_fail:201.64.241.92
+12月 25 14:18:15.7 - [DEBUG] get ip:71.19.173.114 t:842
+12月 25 14:18:15.7 - [DEBUG] get ip:200.10.226.180 t:842
+12月 25 14:18:15.8 - [DEBUG] get ip:177.135.94.20 t:842
+12月 25 14:18:15.8 - [DEBUG] create_ssl update ip:66.96.224.187 time:1228 h2:1
+12月 25 14:18:16.0 - [DEBUG] create_ssl update ip:41.184.60.31 time:834 h2:0
+12月 25 14:18:16.0 - [DEBUG] create_ssl update ip:190.45.0.228 time:833 h2:0
+12月 25 14:18:16.0 - [DEBUG] 24.214.95.239 fail:timeout('timed out',)
+12月 25 14:18:16.0 - [DEBUG] report_connect_fail:24.214.95.239
+12月 25 14:18:16.0 - [DEBUG] get ip:81.192.191.13 t:842
+12月 25 14:18:16.2 - [DEBUG] get ip:86.60.255.79 t:842
+12月 25 14:18:16.7 - [DEBUG] 111.94.248.168 fail:timeout('timed out',)
+12月 25 14:18:16.7 - [DEBUG] report_connect_fail:111.94.248.168
+12月 25 14:18:16.7 - [DEBUG] get ip:204.186.215.32 t:842
+12月 25 14:18:16.7 - [DEBUG] 200.105.131.56 fail:timeout('timed out',)
+12月 25 14:18:16.7 - [DEBUG] report_connect_fail:200.105.131.56
+12月 25 14:18:16.7 - [DEBUG] get ip:66.96.224.155 t:842
+12月 25 14:18:16.8 - [DEBUG] get ip:120.28.26.142 t:842
+12月 25 14:18:17.0 - [DEBUG] get ip:5.22.190.108 t:842
+12月 25 14:18:17.0 - [DEBUG] get ip:84.15.64.14 t:842
+12月 25 14:18:17.1 - [DEBUG] 87.79.22.247 fail:timeout('timed out',)
+12月 25 14:18:17.1 - [DEBUG] report_connect_fail:87.79.22.247
+12月 25 14:18:17.1 - [DEBUG] get ip:203.113.161.147 t:843
+12月 25 14:18:17.2 - [DEBUG] 203.248.210.36 fail:timeout('timed out',)
+12月 25 14:18:17.2 - [DEBUG] report_connect_fail:203.248.210.36
+12月 25 14:18:17.2 - [DEBUG] get ip:92.246.12.211 t:843
+12月 25 14:18:17.6 - [DEBUG] 190.104.150.153 fail:timeout('timed out',)
+12月 25 14:18:17.6 - [DEBUG] report_connect_fail:190.104.150.153
+12月 25 14:18:17.6 - [DEBUG] get ip:58.27.108.152 t:843
+12月 25 14:18:17.7 - [INFO] scan_ip add ip:87.79.22.239 time:767
+12月 25 14:18:17.7 - [INFO] remove_slowest_ip:190.104.150.153 handshake_time:826, fails:1
+12月 25 14:18:17.7 - [DEBUG] 177.43.235.46 fail:timeout('timed out',)
+12月 25 14:18:17.7 - [DEBUG] report_connect_fail:177.43.235.46
+12月 25 14:18:17.7 - [DEBUG] get ip:190.186.210.184 t:844
+12月 25 14:18:17.7 - [DEBUG] 177.101.143.212 fail:timeout('timed out',)
+12月 25 14:18:17.7 - [DEBUG] report_connect_fail:177.101.143.212
+12月 25 14:18:17.7 - [DEBUG] get ip:195.46.107.110 t:844
+12月 25 14:18:17.7 - [DEBUG] 183.87.151.92 fail:timeout('timed out',)
+12月 25 14:18:17.7 - [DEBUG] report_connect_fail:183.87.151.92
+12月 25 14:18:17.7 - [DEBUG] get ip:49.231.60.169 t:844
+12月 25 14:18:17.8 - [DEBUG] create_ssl update ip:120.28.26.142 time:471 h2:0
+12月 25 14:18:17.8 - [DEBUG] 212.113.7.144 fail:timeout('timed out',)
+12月 25 14:18:17.8 - [DEBUG] report_connect_fail:212.113.7.144
+12月 25 14:18:17.8 - [DEBUG] get ip:66.58.255.41 t:844
+12月 25 14:18:17.9 - [DEBUG] create_ssl update ip:66.96.224.155 time:841 h2:1
+12月 25 14:18:18.0 - [DEBUG] create_ssl update ip:80.252.129.38 time:4395 h2:1
+12月 25 14:18:18.7 - [DEBUG] 103.233.36.171 fail:timeout('timed out',)
+12月 25 14:18:18.7 - [DEBUG] report_connect_fail:103.233.36.171
+12月 25 14:18:18.7 - [DEBUG] get ip:185.5.161.91 t:844
+12月 25 14:18:18.8 - [DEBUG] get ip:178.236.130.28 t:844
+12月 25 14:18:18.9 - [DEBUG] get ip:109.199.81.147 t:845
+12月 25 14:18:19.0 - [DEBUG] get ip:190.212.166.179 t:845
+12月 25 14:18:19.0 - [DEBUG] create_ssl update ip:49.231.60.169 time:862 h2:0
+12月 25 14:18:19.2 - [DEBUG] 49.231.60.95 fail:timeout('timed out',)
+12月 25 14:18:19.2 - [DEBUG] report_connect_fail:49.231.60.95
+12月 25 14:18:19.2 - [DEBUG] get ip:186.46.140.103 t:845
+12月 25 14:18:19.7 - [DEBUG] 71.19.173.114 fail:timeout('timed out',)
+12月 25 14:18:19.7 - [DEBUG] report_connect_fail:71.19.173.114
+12月 25 14:18:19.7 - [DEBUG] get ip:103.44.151.51 t:845
+12月 25 14:18:19.7 - [DEBUG] 200.10.226.180 fail:timeout('timed out',)
+12月 25 14:18:19.7 - [DEBUG] report_connect_fail:200.10.226.180
+12月 25 14:18:19.7 - [DEBUG] get ip:87.79.22.239 t:767
+12月 25 14:18:19.8 - [DEBUG] 177.135.94.20 fail:timeout('timed out',)
+12月 25 14:18:19.8 - [DEBUG] report_connect_fail:177.135.94.20
+12月 25 14:18:19.8 - [DEBUG] get ip:81.30.226.55 t:843
+12月 25 14:18:19.9 - [DEBUG] create_ssl update ip:190.212.166.179 time:596 h2:0
+12月 25 14:18:19.9 - [DEBUG] create_ssl update ip:195.46.107.110 time:1795 h2:1
+12月 25 14:18:20.0 - [DEBUG] 81.192.191.13 fail:timeout('timed out',)
+12月 25 14:18:20.0 - [DEBUG] report_connect_fail:81.192.191.13
+12月 25 14:18:20.2 - [DEBUG] 86.60.255.79 fail:timeout('timed out',)
+12月 25 14:18:20.2 - [DEBUG] report_connect_fail:86.60.255.79
+12月 25 14:18:20.7 - [DEBUG] 204.186.215.32 fail:timeout('timed out',)
+12月 25 14:18:20.7 - [DEBUG] report_connect_fail:204.186.215.32
+12月 25 14:18:21.0 - [DEBUG] 5.22.190.108 fail:timeout('timed out',)
+12月 25 14:18:21.0 - [DEBUG] report_connect_fail:5.22.190.108
+12月 25 14:18:21.0 - [DEBUG] 84.15.64.14 fail:timeout('timed out',)
+12月 25 14:18:21.0 - [DEBUG] report_connect_fail:84.15.64.14
+12月 25 14:18:21.1 - [DEBUG] create_ssl update ip:95.168.222.161 time:5553 h2:0
+12月 25 14:18:21.1 - [DEBUG] 203.113.161.147 fail:timeout('timed out',)
+12月 25 14:18:21.1 - [DEBUG] report_connect_fail:203.113.161.147
+12月 25 14:18:21.2 - [DEBUG] 92.246.12.211 fail:timeout('timed out',)
+12月 25 14:18:21.2 - [DEBUG] report_connect_fail:92.246.12.211
+12月 25 14:18:21.6 - [DEBUG] 58.27.108.152 fail:timeout('timed out',)
+12月 25 14:18:21.6 - [DEBUG] report_connect_fail:58.27.108.152
+12月 25 14:18:21.7 - [DEBUG] 190.186.210.184 fail:timeout('timed out',)
+12月 25 14:18:21.7 - [DEBUG] report_connect_fail:190.186.210.184
+12月 25 14:18:21.9 - [DEBUG] 66.58.255.41 fail:timeout('timed out',)
+12月 25 14:18:21.9 - [DEBUG] report_connect_fail:66.58.255.41
+12月 25 14:18:22.0 - [DEBUG] ip:203.233.126.223 real fail
+12月 25 14:18:22.7 - [DEBUG] 185.5.161.91 fail:timeout('timed out',)
+12月 25 14:18:22.7 - [DEBUG] report_connect_fail:185.5.161.91
+12月 25 14:18:22.8 - [DEBUG] 178.236.130.28 fail:timeout('timed out',)
+12月 25 14:18:22.8 - [DEBUG] report_connect_fail:178.236.130.28
+12月 25 14:18:22.9 - [DEBUG] 109.199.81.147 fail:timeout('timed out',)
+12月 25 14:18:22.9 - [DEBUG] report_connect_fail:109.199.81.147
+12月 25 14:18:23.2 - [DEBUG] 186.46.140.103 fail:timeout('timed out',)
+12月 25 14:18:23.2 - [DEBUG] report_connect_fail:186.46.140.103
+12月 25 14:18:23.7 - [DEBUG] 103.44.151.51 fail:timeout('timed out',)
+12月 25 14:18:23.7 - [DEBUG] report_connect_fail:103.44.151.51
+12月 25 14:18:23.7 - [DEBUG] 87.79.22.239 fail:timeout('timed out',)
+12月 25 14:18:23.7 - [DEBUG] report_connect_fail continue_fail_count:11
+12月 25 14:18:23.8 - [DEBUG] 81.30.226.55 fail:timeout('timed out',)
+12月 25 14:18:23.8 - [DEBUG] report_connect_fail network fail
+12月 25 14:18:27.0 - [DEBUG] ip:58.27.61.96 real fail
+12月 25 14:18:30.7 - [DEBUG] ssl_closed 80.252.129.38
+12月 25 14:18:46.7 - [INFO] scan_ip add ip:59.18.34.46 time:242
+12月 25 14:18:46.7 - [INFO] remove_slowest_ip:41.201.129.91 handshake_time:1519, fails:0
+12月 25 14:18:52.1 - [DEBUG] 113.171.253.207 close:host pool alive_timeout
+12月 25 14:18:52.1 - [DEBUG] ssl_closed 113.171.253.207
+12月 25 14:18:53.4 - [INFO] scan_ip add ip:190.150.50.185 time:629
+12月 25 14:18:53.4 - [INFO] remove_slowest_ip:113.171.253.169 handshake_time:518, fails:1
+12月 25 14:18:57.1 - [INFO] scan_ip add ip:202.231.177.120 time:350
+12月 25 14:18:57.1 - [INFO] remove_slowest_ip:61.91.17.236 handshake_time:518, fails:1
+12月 25 14:18:58.5 - [DEBUG] appid:xxnet-295 head fail status:503
+12月 25 14:18:58.5 - [DEBUG] report_connect_fail:189.247.160.82
+12月 25 14:18:59.6 - [DEBUG] recheck_ip:189.247.160.82 restore okl
+12月 25 14:18:59.6 - [DEBUG] 189.247.160.82 worker close:keep alive
+12月 25 14:18:59.8 - [INFO] scan_ip add ip:194.90.196.111 time:709
+12月 25 14:18:59.8 - [INFO] scan_ip add ip:103.7.249.186 time:701
+12月 25 14:18:59.8 - [INFO] remove_slowest_ip:103.7.249.186 handshake_time:701, fails:0
+12月 25 14:18:59.8 - [INFO] remove_slowest_ip:195.249.23.164 handshake_time:1513, fails:0
+12月 25 14:19:04.6 - [DEBUG] appid:qzhunb3 head fail status:503
+12月 25 14:19:04.6 - [DEBUG] report_connect_fail:190.212.166.169
+12月 25 14:19:05.9 - [DEBUG] recheck_ip:190.212.166.169 restore okl
+12月 25 14:19:05.9 - [DEBUG] 190.212.166.169 worker close:keep alive
+12月 25 14:19:06.8 - [DEBUG] appid:test4app7374 head fail status:503
+12月 25 14:19:06.8 - [DEBUG] report_connect_fail:120.28.26.186
+12月 25 14:19:07.5 - [INFO] scan_ip add ip:167.206.252.155 time:692
+12月 25 14:19:07.5 - [INFO] remove_slowest_ip:120.28.26.186 handshake_time:1218, fails:1
+12月 25 14:19:08.5 - [DEBUG] recheck_ip:120.28.26.186 restore okl
+12月 25 14:19:08.5 - [DEBUG] 120.28.26.186 worker close:keep alive
+12月 25 14:19:09.5 - [DEBUG] restore ip:189.247.160.82
+12月 25 14:19:10.4 - [DEBUG] appid:xinxijishuwyq1 head fail status:503
+12月 25 14:19:10.4 - [DEBUG] report_connect_fail:190.45.0.228
+12月 25 14:19:11.2 - [DEBUG] get ip:59.18.34.46 t:242
+12月 25 14:19:12.3 - [DEBUG] recheck_ip:190.45.0.228 restore okl
+12月 25 14:19:12.3 - [DEBUG] 190.45.0.228 worker close:keep alive
+12月 25 14:19:12.4 - [DEBUG] appid:xxnet-1030 head fail status:503
+12月 25 14:19:12.4 - [DEBUG] report_connect_fail:120.28.26.142
+12月 25 14:19:13.5 - [DEBUG] GAE GET https://www.google.com/
+12月 25 14:19:13.9 - [INFO] GAE t:395 s:73665 GET https://www.google.com/ h2_get_head:315,h2_finish[SP:936183]:78
+12月 25 14:19:14.2 - [DEBUG] GAE GET https://www.google.com/xjs/_/js/sdch=d/k=xjs.s.en.E-k8HBn4MQ0.O/m=sx,c,sb,cdos,cr,elog,hsm,jsa,r,qsm,j,p,d,csi/am=AARKHi9YAPH3EBC3iY4gNWBgUA/rt=j/d=1/t=zcms/rs=ACT90oG2tg8KG9nbmKr7z7wuMQcXuZD4Nw
+12月 25 14:19:14.2 - [DEBUG] GAE GET https://www.google.com/images/branding/product/ico/googleg_lodp.ico
+12月 25 14:19:14.3 - [DEBUG] GAE POST https://ogs.google.com/u/0/_/notifications/count
+12月 25 14:19:14.4 - [INFO] GAE t:235 s:0 GET https://www.google.com/xjs/_/js/sdch=d/k=xjs.s.en.E-k8HBn4MQ0.O/m=sx,c,sb,cdos,cr,elog,hsm,jsa,r,qsm,j,p,d,csi/am=AARKHi9YAPH3EBC3iY4gNWBgUA/rt=j/d=1/t=zcms/rs=ACT90oG2tg8KG9nbmKr7z7wuMQcXuZD4Nw h2_get_head:234
+12月 25 14:19:14.4 - [INFO] GAE t:241 s:1494 GET https://www.google.com/images/branding/product/ico/googleg_lodp.ico h2_get_head:238
+12月 25 14:19:14.6 - [DEBUG] GAE GET https://www.google.com/gen_204?v=3&s=webhp&atyp=csi&ei=4WRfWI2pIampjwT_8pnoDg&imc=4&imn=4&imp=0&adh=&xjs=init.30.10.sb.26.p.3.cr.1.bbd.0.TG8rFw.0&ima=2&rt=xjsls.74,prt.102,iml.102,dcl.103,ol.210,xjses.532,jraids.554,jraide.558,xjsee.599,xjs.599,aft.102,wsrt.477,cst.0,dnst.0,rqst.399,rspt.38,rqstt.18,unt.0,cstt.0,dit.580
+12月 25 14:19:14.6 - [DEBUG] GAE GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=1&xhr=t&tch=1&ech=1&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1
+12月 25 14:19:14.7 - [INFO] GAE t:393 s:50 POST https://ogs.google.com/u/0/_/notifications/count h2_get_head:390
+12月 25 14:19:14.8 - [INFO] GAE t:248 s:0 GET https://www.google.com/gen_204?v=3&s=webhp&atyp=csi&ei=4WRfWI2pIampjwT_8pnoDg&imc=4&imn=4&imp=0&adh=&xjs=init.30.10.sb.26.p.3.cr.1.bbd.0.TG8rFw.0&ima=2&rt=xjsls.74,prt.102,iml.102,dcl.103,ol.210,xjses.532,jraids.554,jraide.558,xjsee.599,xjs.599,aft.102,wsrt.477,cst.0,dnst.0,rqst.399,rspt.38,rqstt.18,unt.0,cstt.0,dit.580 h2_get_head:245
+12月 25 14:19:14.8 - [INFO] GAE t:254 s:372 GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=1&xhr=t&tch=1&ech=1&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1 h2_get_head:252
+12月 25 14:19:15.2 - [DEBUG] 59.18.34.46 fail:timeout('timed out',)
+12月 25 14:19:15.2 - [DEBUG] report_connect_fail:59.18.34.46
+12月 25 14:19:15.2 - [DEBUG] get ip:202.231.177.120 t:350
+12月 25 14:19:16.3 - [DEBUG] recheck_ip:120.28.26.142 restore okl
+12月 25 14:19:16.3 - [DEBUG] 120.28.26.142 worker close:keep alive
+12月 25 14:19:16.6 - [DEBUG] GAE GET https://www.google.com/gen_204?atyp=i&ct=webfont_timing&cad=@2sec,1.s.502,1.ds.0,1.de.0,1.cs.0,1.ce.0,1.rq.2,1.rs.3,1.re.6,1.d.6,2.s.509,2.ds.0,2.de.0,2.cs.0,2.ce.0,2.rq.4,2.rs.5,2.re.7,2.d.7&s=497&er=502&eb=510&ei=4WRfWI2pIampjwT_8pnoDg&zx=1482646756657
+12月 25 14:19:16.6 - [DEBUG] get ip:113.171.253.207 t:468
+12月 25 14:19:16.8 - [DEBUG] restore ip:190.212.166.169
+12月 25 14:19:16.9 - [INFO] GAE t:246 s:0 GET https://www.google.com/gen_204?atyp=i&ct=webfont_timing&cad=@2sec,1.s.502,1.ds.0,1.de.0,1.cs.0,1.ce.0,1.rq.2,1.rs.3,1.re.6,1.d.6,2.s.509,2.ds.0,2.de.0,2.cs.0,2.ce.0,2.rq.4,2.rs.5,2.re.7,2.d.7&s=497&er=502&eb=510&ei=4WRfWI2pIampjwT_8pnoDg&zx=1482646756657 h2_get_head:242
+12月 25 14:19:17.1 - [DEBUG] get ip:120.28.26.142 t:3182
+12月 25 14:19:17.3 - [DEBUG] create_ssl update ip:113.171.253.207 time:467 h2:0
+12月 25 14:19:17.6 - [DEBUG] get ip:190.212.166.169 t:567
+12月 25 14:19:18.1 - [DEBUG] restore ip:120.28.26.186
+12月 25 14:19:18.1 - [DEBUG] create_ssl update ip:120.28.26.142 time:771 h2:0
+12月 25 14:19:18.1 - [DEBUG] get ip:190.150.50.185 t:629
+12月 25 14:19:18.3 - [DEBUG] get ip:189.247.160.82 t:453
+12月 25 14:19:18.5 - [DEBUG] create_ssl update ip:190.212.166.169 time:573 h2:0
+12月 25 14:19:18.6 - [DEBUG] get ip:167.206.252.155 t:692
+12月 25 14:19:19.0 - [DEBUG] create_ssl update ip:189.247.160.82 time:473 h2:0
+12月 25 14:19:19.1 - [DEBUG] get ip:194.90.196.111 t:709
+12月 25 14:19:19.1 - [DEBUG] get ip:87.79.22.239 t:767
+12月 25 14:19:19.2 - [DEBUG] 202.231.177.120 fail:timeout('timed out',)
+12月 25 14:19:19.2 - [DEBUG] report_connect_fail:202.231.177.120
+12月 25 14:19:19.3 - [DEBUG] GAE GET https://plus.google.com/u/0/_/notifications/frame?sourceid=1&hl=en&origin=https%3A%2F%2Fwww.google.com&uc=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.FgPLF5SwqIU.O%2Fm%3D__features__%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-9R8fkhlRsCMrG4wpDzgf1RI7BzQ
+12月 25 14:19:19.5 - [DEBUG] get ip:81.30.226.55 t:843
+12月 25 14:19:19.6 - [INFO] GAE t:325 s:8128 GET https://plus.google.com/u/0/_/notifications/frame?sourceid=1&hl=en&origin=https%3A%2F%2Fwww.google.com&uc=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.FgPLF5SwqIU.O%2Fm%3D__features__%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-9R8fkhlRsCMrG4wpDzgf1RI7BzQ h2_get_head:283,h2_finish[SP:216366]:39
+12月 25 14:19:19.6 - [DEBUG] get ip:1.9.131.90 t:843
+12月 25 14:19:20.0 - [DEBUG] get ip:191.251.192.28 t:843
+12月 25 14:19:20.1 - [DEBUG] get ip:103.44.151.39 t:843
+12月 25 14:19:20.4 - [DEBUG] create_ssl update ip:1.9.131.90 time:499 h2:0
+12月 25 14:19:20.5 - [DEBUG] create_ssl update ip:194.90.196.111 time:893 h2:0
+12月 25 14:19:21.3 - [DEBUG] create_ssl update ip:191.251.192.28 time:864 h2:0
+12月 25 14:19:22.1 - [DEBUG] 190.150.50.185 fail:timeout('timed out',)
+12月 25 14:19:22.1 - [DEBUG] report_connect_fail:190.150.50.185
+12月 25 14:19:22.6 - [DEBUG] 167.206.252.155 fail:timeout('timed out',)
+12月 25 14:19:22.6 - [DEBUG] report_connect_fail:167.206.252.155
+12月 25 14:19:23.1 - [DEBUG] 87.79.22.239 fail:timeout('timed out',)
+12月 25 14:19:23.1 - [DEBUG] report_connect_fail:87.79.22.239
+12月 25 14:19:23.5 - [DEBUG] 81.30.226.55 fail:timeout('timed out',)
+12月 25 14:19:23.5 - [DEBUG] report_connect_fail:81.30.226.55
+12月 25 14:19:24.1 - [DEBUG] 103.44.151.39 fail:timeout('timed out',)
+12月 25 14:19:24.1 - [DEBUG] report_connect_fail:103.44.151.39
+12月 25 14:19:25.4 - [DEBUG] ip:190.45.0.228 real fail
+12月 25 14:19:27.4 - [DEBUG] restore ip:120.28.26.142
+12月 25 14:19:30.1 - [INFO] scan_ip add ip:92.246.12.228 time:914
+12月 25 14:19:30.1 - [INFO] remove_slowest_ip:103.44.151.39 handshake_time:843, fails:1
+12月 25 14:19:30.1 - [INFO] remove_slowest_ip:81.30.226.55 handshake_time:843, fails:1
+12月 25 14:19:32.4 - [DEBUG] ip:59.18.34.46 real fail
+12月 25 14:19:37.4 - [DEBUG] ip:202.231.177.120 real fail
+12月 25 14:19:42.4 - [DEBUG] ip:190.150.50.185 real fail
+12月 25 14:19:47.4 - [DEBUG] ip:167.206.252.155 real fail
+12月 25 14:19:52.4 - [DEBUG] ip:87.79.22.239 real fail
+12月 25 14:19:56.0 - [INFO] scan_ip add ip:143.215.193.214 time:527
+12月 25 14:19:56.0 - [INFO] remove_slowest_ip:87.79.22.239 handshake_time:767, fails:1
+12月 25 14:19:57.4 - [INFO] scan_ip add ip:82.102.187.98 time:881
+12月 25 14:19:57.4 - [INFO] remove_slowest_ip:167.206.252.155 handshake_time:692, fails:1
+12月 25 14:19:57.4 - [DEBUG] ip:81.30.226.55 real fail
+12月 25 14:20:02.4 - [DEBUG] ip:103.44.151.39 real fail
+12月 25 14:20:02.9 - [INFO] scan_ip add ip:118.98.30.179 time:493
+12月 25 14:20:03.0 - [INFO] remove_slowest_ip:190.150.50.185 handshake_time:629, fails:1
+12月 25 14:20:09.2 - [DEBUG] get ip:118.98.30.179 t:493
+12月 25 14:20:12.7 - [DEBUG] appid:xxnet-jayxc head fail status:503
+12月 25 14:20:12.7 - [DEBUG] report_connect_fail:120.28.26.142
+12月 25 14:20:13.2 - [DEBUG] 118.98.30.179 fail:timeout('timed out',)
+12月 25 14:20:13.2 - [DEBUG] report_connect_fail:118.98.30.179
+12月 25 14:20:13.2 - [DEBUG] get ip:120.28.26.186 t:524
+12月 25 14:20:13.7 - [DEBUG] appid:xxnet-241 head fail status:503
+12月 25 14:20:13.7 - [DEBUG] report_connect_fail:189.247.160.82
+12月 25 14:20:13.8 - [DEBUG] recheck_ip:120.28.26.142 restore okl
+12月 25 14:20:13.8 - [DEBUG] 120.28.26.142 worker close:keep alive
+12月 25 14:20:13.9 - [DEBUG] create_ssl update ip:120.28.26.186 time:437 h2:0
+12月 25 14:20:13.9 - [DEBUG] get ip:143.215.193.214 t:527
+12月 25 14:20:14.7 - [DEBUG] recheck_ip:189.247.160.82 restore okl
+12月 25 14:20:14.7 - [DEBUG] 189.247.160.82 worker close:keep alive
+12月 25 14:20:15.1 - [DEBUG] appid:xinxijishuwyq2 head fail status:503
+12月 25 14:20:15.1 - [DEBUG] report_connect_fail:1.9.131.90
+12月 25 14:20:16.0 - [WARNING] parse request fail:)�
+
+12月 25 14:20:16.0 - [WARNING] unhandler cmd:None path:mtalk.google.com:443 from:127.0.0.1:54570
+12月 25 14:20:16.6 - [INFO] scan_ip add ip:181.49.182.211 time:649
+12月 25 14:20:16.6 - [INFO] remove_slowest_ip:189.199.250.37 handshake_time:510, fails:1
+12月 25 14:20:17.9 - [DEBUG] 143.215.193.214 fail:timeout('timed out',)
+12月 25 14:20:17.9 - [DEBUG] report_connect_fail:143.215.193.214
+12月 25 14:20:17.9 - [DEBUG] get ip:120.28.26.142 t:429
+12月 25 14:20:18.6 - [DEBUG] create_ssl update ip:120.28.26.142 time:459 h2:0
+12月 25 14:20:19.4 - [INFO] scan_ip add ip:167.206.145.56 time:725
+12月 25 14:20:19.4 - [INFO] remove_slowest_ip:143.215.193.214 handshake_time:527, fails:1
+12月 25 14:20:20.1 - [DEBUG] 1.9.131.90 worker close:keep alive
+12月 25 14:20:20.4 - [INFO] scan_ip add ip:200.124.254.217 time:627
+12月 25 14:20:20.4 - [INFO] remove_slowest_ip:58.26.8.109 handshake_time:507, fails:1
+12月 25 14:20:23.0 - [INFO] scan_ip add ip:207.134.64.22 time:606
+12月 25 14:20:23.0 - [INFO] remove_slowest_ip:80.202.12.158 handshake_time:506, fails:1
+12月 25 14:20:24.2 - [DEBUG] restore ip:120.28.26.142
+12月 25 14:20:25.6 - [DEBUG] restore ip:118.98.30.179
+12月 25 14:20:26.6 - [DEBUG] restore ip:189.247.160.82
+12月 25 14:20:28.4 - [INFO] scan_ip add ip:77.37.252.158 time:533
+12月 25 14:20:28.4 - [INFO] remove_slowest_ip:46.134.193.100 handshake_time:503, fails:1
+12月 25 14:20:31.6 - [DEBUG] ip:1.9.131.90 real fail
+12月 25 14:20:36.6 - [DEBUG] ip:143.215.193.214 real fail
+12月 25 14:20:38.9 - [DEBUG] GAE GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&bvm=bv.142059868,d.amc&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=3&xhr=t&tch=1&ech=2&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1
+12月 25 14:20:39.1 - [INFO] GAE t:262 s:401 GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&bvm=bv.142059868,d.amc&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=3&xhr=t&tch=1&ech=2&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1 h2_get_head:258
+12月 25 14:20:49.8 - [INFO] scan_ip add ip:61.91.160.102 time:371
+12月 25 14:20:49.8 - [INFO] remove_slowest_ip:201.151.207.50 handshake_time:503, fails:1
+12月 25 14:20:52.3 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:20:52.6 - [INFO] GAE t:364 s:3330 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:360
+12月 25 14:20:52.7 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:20:53.1 - [INFO] GAE t:422 s:2023 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:417
+12月 25 14:20:55.4 - [DEBUG] GAE GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&bvm=bv.142059868,d.amc&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=5&xhr=t&tch=1&ech=3&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1
+12月 25 14:20:55.7 - [INFO] GAE t:253 s:400 GET https://www.google.com/complete/search?sclient=psy-ab&site=&source=hp&q=&oq=&gs_l=&pbx=1&bav=on.2,or.r_cp.&bvm=bv.142059868,d.amc&fp=1&biw=1920&bih=966&dpr=1&pf=p&gs_rn=64&gs_ri=psy-ab&tok=THh_HZ5pixHZlBsm0w7IHQ&cp=0&gs_id=5&xhr=t&tch=1&ech=3&psi=4WRfWI2pIampjwT_8pnoDg.1482646754554.1 h2_get_head:251
+12月 25 14:20:59.4 - [DEBUG] GAE GET https://www.googletagmanager.com/gtm.js?id=GTM-KH2LPK
+12月 25 14:20:59.7 - [INFO] GAE t:287 s:24822 GET https://www.googletagmanager.com/gtm.js?id=GTM-KH2LPK h2_get_head:244,h2_finish[SP:601303]:41
+12月 25 14:20:59.7 - [DEBUG] GAE GET https://platform.twitter.com/oct.js
+12月 25 14:20:59.7 - [DEBUG] GAE GET https://connect.facebook.net/en_US/fbevents.js
+12月 25 14:20:59.8 - [DEBUG] GAE GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=869186812&t=pageview&_s=1&dl=https%3A%2F%2Fslack.com%2Fdownloads%2Finstructions%2Flinux&ul=en-us&de=UTF-8&dt=Thanks%20for%20downloading%20Slack!&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=QACAAAABI~&jid=1596286877&cid=415954180.1482122769&tid=UA-56978219-1&_r=1&gtm=GTM-KH2LPK&cd3=prospect&cd4=3m5opndllog00sg4kw888004k&z=1794167845
+12月 25 14:21:00.0 - [INFO] GAE t:248 s:9524 GET https://connect.facebook.net/en_US/fbevents.js h2_get_head:245,h2_finish[SP:4798521]:2
+12月 25 14:21:00.0 - [DEBUG] GAE GET https://www.facebook.com/tr/?id=406609519531182&ev=PageView&dl=https%3A%2F%2Fslack.com%2Fdownloads%2Finstructions%2Flinux&rl=&if=false&ts=1482646860035&v=2.5.1
+12月 25 14:21:00.0 - [INFO] GAE t:315 s:0 GET https://platform.twitter.com/oct.js h2_get_head:313
+12月 25 14:21:00.1 - [INFO] GAE t:341 s:368 GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=869186812&t=pageview&_s=1&dl=https%3A%2F%2Fslack.com%2Fdownloads%2Finstructions%2Flinux&ul=en-us&de=UTF-8&dt=Thanks%20for%20downloading%20Slack!&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=QACAAAABI~&jid=1596286877&cid=415954180.1482122769&tid=UA-56978219-1&_r=1&gtm=GTM-KH2LPK&cd3=prospect&cd4=3m5opndllog00sg4kw888004k&z=1794167845 h2_get_head:337
+12月 25 14:21:00.2 - [INFO] GAE t:250 s:44 GET https://www.facebook.com/tr/?id=406609519531182&ev=PageView&dl=https%3A%2F%2Fslack.com%2Fdownloads%2Finstructions%2Flinux&rl=&if=false&ts=1482646860035&v=2.5.1 h2_get_head:247
+12月 25 14:21:03.6 - [DEBUG] get ip:61.91.160.102 t:371
+12月 25 14:21:06.4 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:21:06.8 - [INFO] GAE t:347 s:8889 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:341,h2_finish[SP:2740058]:2
+12月 25 14:21:06.8 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:21:07.1 - [INFO] GAE t:369 s:539 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:366
+12月 25 14:21:07.6 - [DEBUG] 61.91.160.102 fail:timeout('timed out',)
+12月 25 14:21:07.6 - [DEBUG] report_connect_fail:61.91.160.102
+12月 25 14:21:07.6 - [DEBUG] get ip:189.247.160.82 t:453
+12月 25 14:21:08.3 - [DEBUG] create_ssl update ip:189.247.160.82 time:453 h2:0
+12月 25 14:21:08.3 - [DEBUG] get ip:77.37.252.158 t:533
+12月 25 14:21:09.1 - [DEBUG] create_ssl update ip:77.37.252.158 time:545 h2:0
+12月 25 14:21:22.6 - [DEBUG] ip:61.91.160.102 real fail
+12月 25 14:21:40.7 - [DEBUG] 41.201.129.82 keep alive fail, inactive_time:209 head_timeout:100
+12月 25 14:21:40.7 - [DEBUG] report_connect_fail:41.201.129.82
+12月 25 14:21:43.8 - [INFO] scan_ip add ip:181.30.242.244 time:1777
+12月 25 14:21:43.8 - [INFO] remove_slowest_ip:181.30.242.244 handshake_time:1777, fails:0
+12月 25 14:21:51.7 - [INFO] scan_ip add ip:192.70.222.163 time:528
+12月 25 14:21:51.7 - [INFO] remove_slowest_ip:41.201.129.82 handshake_time:666, fails:1
+12月 25 14:21:51.8 - [INFO] scan_ip add ip:113.171.243.153 time:818
+12月 25 14:21:51.8 - [INFO] remove_slowest_ip:212.142.160.42 handshake_time:501, fails:1
+12月 25 14:21:52.7 - [INFO] scan_ip add ip:177.135.110.44 time:895
+12月 25 14:21:52.7 - [INFO] remove_slowest_ip:58.26.8.98 handshake_time:501, fails:1
+12月 25 14:21:55.1 - [INFO] scan_ip add ip:66.96.226.210 time:758
+12月 25 14:21:55.2 - [INFO] remove_slowest_ip:1.9.131.90 handshake_time:499, fails:1
+12月 25 14:21:55.7 - [DEBUG] ip:41.201.129.82 real fail
+12月 25 14:21:57.1 - [DEBUG] 41.201.129.82 worker close:keep alive
+12月 25 14:21:57.4 - [INFO] scan_ip add ip:189.193.189.34 time:669
+12月 25 14:21:57.4 - [INFO] remove_slowest_ip:67.221.221.154 handshake_time:497, fails:1
+12月 25 14:21:59.2 - [DEBUG] get ip:192.70.222.163 t:528
+12月 25 14:22:01.7 - [INFO] scan_ip add ip:195.95.178.79 time:750
+12月 25 14:22:01.7 - [INFO] remove_slowest_ip:1.9.57.144 handshake_time:494, fails:1
+12月 25 14:22:03.2 - [DEBUG] 192.70.222.163 fail:timeout('timed out',)
+12月 25 14:22:03.2 - [DEBUG] report_connect_fail:192.70.222.163
+12月 25 14:22:03.2 - [DEBUG] get ip:118.98.30.179 t:575
+12月 25 14:22:07.2 - [DEBUG] 118.98.30.179 fail:timeout('timed out',)
+12月 25 14:22:07.2 - [DEBUG] report_connect_fail:118.98.30.179
+12月 25 14:22:07.2 - [DEBUG] get ip:207.134.64.22 t:606
+12月 25 14:22:07.7 - [INFO] scan_ip add ip:212.1.250.242 time:4903
+12月 25 14:22:07.7 - [INFO] remove_slowest_ip:212.1.250.242 handshake_time:4903, fails:0
+12月 25 14:22:10.8 - [INFO] scan_ip add ip:212.0.195.126 time:752
+12月 25 14:22:10.8 - [INFO] remove_slowest_ip:118.98.30.179 handshake_time:575, fails:1
+12月 25 14:22:11.1 - [DEBUG] ssl_closed 195.80.179.181
+12月 25 14:22:11.1 - [DEBUG] 195.80.179.181 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:22:11.2 - [DEBUG] 207.134.64.22 fail:timeout('timed out',)
+12月 25 14:22:11.2 - [DEBUG] report_connect_fail:207.134.64.22
+12月 25 14:22:11.2 - [DEBUG] get ip:200.124.254.217 t:627
+12月 25 14:22:13.0 - [INFO] scan_ip add ip:212.6.83.20 time:599
+12月 25 14:22:13.0 - [INFO] remove_slowest_ip:207.134.64.22 handshake_time:606, fails:1
+12月 25 14:22:15.2 - [DEBUG] 200.124.254.217 fail:timeout('timed out',)
+12月 25 14:22:15.2 - [DEBUG] report_connect_fail:200.124.254.217
+12月 25 14:22:15.2 - [DEBUG] get ip:212.6.83.20 t:599
+12月 25 14:22:15.8 - [DEBUG] ssl_closed 66.96.224.187
+12月 25 14:22:15.8 - [DEBUG] 66.96.224.187 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:22:16.5 - [INFO] scan_ip add ip:150.199.24.143 time:1194
+12月 25 14:22:16.5 - [INFO] remove_slowest_ip:200.124.254.217 handshake_time:627, fails:1
+12月 25 14:22:18.2 - [DEBUG] ip:192.70.222.163 real fail
+12月 25 14:22:18.5 - [WARNING] 66.96.224.155 _consume_single_frame:ConnectionResetError()
+12月 25 14:22:18.5 - [DEBUG] ssl_closed 66.96.224.155
+12月 25 14:22:18.5 - [DEBUG] 66.96.224.155 worker close:disconnect:ConnectionResetError()
+12月 25 14:22:19.2 - [DEBUG] 212.6.83.20 fail:timeout('timed out',)
+12月 25 14:22:19.2 - [DEBUG] report_connect_fail:212.6.83.20
+12月 25 14:22:19.2 - [DEBUG] get ip:181.49.182.211 t:649
+12月 25 14:22:19.4 - [DEBUG] ssl_closed 195.46.107.110
+12月 25 14:22:19.4 - [DEBUG] 195.46.107.110 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:22:23.2 - [DEBUG] ip:118.98.30.179 real fail
+12月 25 14:22:23.2 - [DEBUG] 181.49.182.211 fail:timeout('timed out',)
+12月 25 14:22:23.2 - [DEBUG] report_connect_fail:181.49.182.211
+12月 25 14:22:23.2 - [DEBUG] get ip:189.193.189.34 t:669
+12月 25 14:22:24.5 - [DEBUG] restore ip:207.134.64.22
+12月 25 14:22:27.2 - [DEBUG] 189.193.189.34 fail:timeout('timed out',)
+12月 25 14:22:27.2 - [DEBUG] report_connect_fail:189.193.189.34
+12月 25 14:22:27.2 - [DEBUG] get ip:207.134.64.22 t:605
+12月 25 14:22:30.2 - [DEBUG] ip:200.124.254.217 real fail
+12月 25 14:22:31.2 - [DEBUG] 207.134.64.22 fail:timeout('timed out',)
+12月 25 14:22:31.2 - [DEBUG] report_connect_fail:207.134.64.22
+12月 25 14:22:31.2 - [DEBUG] get ip:167.206.145.56 t:725
+12月 25 14:22:35.2 - [DEBUG] ip:212.6.83.20 real fail
+12月 25 14:22:35.2 - [DEBUG] 167.206.145.56 fail:timeout('timed out',)
+12月 25 14:22:35.2 - [DEBUG] report_connect_fail:167.206.145.56
+12月 25 14:22:35.2 - [DEBUG] get ip:195.95.178.79 t:750
+12月 25 14:22:37.7 - [DEBUG] 115.164.12.167 keep alive fail, inactive_time:262 head_timeout:100
+12月 25 14:22:37.7 - [DEBUG] report_connect_fail:115.164.12.167
+12月 25 14:22:39.2 - [DEBUG] 195.95.178.79 fail:timeout('timed out',)
+12月 25 14:22:39.2 - [DEBUG] report_connect_fail:195.95.178.79
+12月 25 14:22:39.2 - [DEBUG] get ip:212.0.195.126 t:752
+12月 25 14:22:40.2 - [DEBUG] ip:181.49.182.211 real fail
+12月 25 14:22:40.4 - [DEBUG] create_ssl update ip:212.0.195.126 time:751 h2:0
+12月 25 14:22:40.4 - [DEBUG] get ip:66.96.226.210 t:758
+12月 25 14:22:41.5 - [DEBUG] create_ssl update ip:66.96.226.210 time:768 h2:0
+12月 25 14:22:42.7 - [DEBUG] 115.164.12.167 worker close:keep alive
+12月 25 14:22:44.0 - [DEBUG] restore ip:189.193.189.34
+12月 25 14:22:49.0 - [DEBUG] ip:207.134.64.22 real fail
+12月 25 14:22:54.0 - [DEBUG] ip:167.206.145.56 real fail
+12月 25 14:22:59.0 - [DEBUG] ip:115.164.12.167 real fail
+12月 25 14:23:03.4 - [INFO] scan_ip add ip:144.131.80.227 time:745
+12月 25 14:23:03.4 - [INFO] remove_slowest_ip:115.164.12.167 handshake_time:1272, fails:1
+12月 25 14:23:03.4 - [INFO] remove_slowest_ip:189.193.189.34 handshake_time:2003, fails:0
+12月 25 14:23:04.0 - [DEBUG] ip:195.95.178.79 real fail
+12月 25 14:23:19.0 - [INFO] scan_ip add ip:118.98.76.116 time:525
+12月 25 14:23:19.0 - [INFO] remove_slowest_ip:195.95.178.79 handshake_time:750, fails:1
+12月 25 14:23:19.2 - [INFO] scan_ip add ip:209.118.7.93 time:462
+12月 25 14:23:19.3 - [INFO] remove_slowest_ip:167.206.145.56 handshake_time:725, fails:1
+12月 25 14:23:31.6 - [DEBUG] get ip:209.118.7.93 t:462
+12月 25 14:23:32.8 - [INFO] scan_ip add ip:110.93.194.55 time:744
+12月 25 14:23:32.9 - [INFO] remove_slowest_ip:181.49.182.211 handshake_time:649, fails:1
+12月 25 14:23:34.7 - [DEBUG] appid:wyq476137265 head fail status:404
+12月 25 14:23:34.7 - [DEBUG] report_connect_fail:212.0.195.126
+12月 25 14:23:35.6 - [DEBUG] 209.118.7.93 fail:timeout('timed out',)
+12月 25 14:23:35.6 - [DEBUG] report_connect_fail:209.118.7.93
+12月 25 14:23:35.6 - [DEBUG] get ip:118.98.76.116 t:525
+12月 25 14:23:37.0 - [DEBUG] recheck_ip:212.0.195.126 restore okl
+12月 25 14:23:37.0 - [DEBUG] 212.0.195.126 worker close:keep alive
+12月 25 14:23:39.6 - [DEBUG] 118.98.76.116 fail:timeout('timed out',)
+12月 25 14:23:39.6 - [DEBUG] report_connect_fail:118.98.76.116
+12月 25 14:23:39.6 - [DEBUG] get ip:110.93.194.55 t:744
+12月 25 14:23:43.6 - [DEBUG] 110.93.194.55 fail:timeout('timed out',)
+12月 25 14:23:43.6 - [DEBUG] report_connect_fail:110.93.194.55
+12月 25 14:23:43.6 - [DEBUG] get ip:144.131.80.227 t:745
+12月 25 14:23:46.5 - [INFO] scan_ip add ip:110.93.194.49 time:1022
+12月 25 14:23:46.5 - [INFO] remove_slowest_ip:110.93.194.55 handshake_time:744, fails:1
+12月 25 14:23:47.6 - [DEBUG] 144.131.80.227 fail:timeout('timed out',)
+12月 25 14:23:47.6 - [DEBUG] report_connect_fail:144.131.80.227
+12月 25 14:23:47.6 - [DEBUG] get ip:113.171.243.153 t:818
+12月 25 14:23:51.6 - [DEBUG] 113.171.243.153 fail:timeout('timed out',)
+12月 25 14:23:51.6 - [DEBUG] report_connect_fail:113.171.243.153
+12月 25 14:23:51.6 - [DEBUG] get ip:66.96.224.155 t:841
+12月 25 14:23:55.6 - [DEBUG] 66.96.224.155 fail:timeout('timed out',)
+12月 25 14:23:55.6 - [DEBUG] report_connect_fail:66.96.224.155
+12月 25 14:23:55.6 - [DEBUG] get ip:49.231.60.144 t:843
+12月 25 14:23:56.5 - [INFO] scan_ip add ip:103.233.37.40 time:1589
+12月 25 14:23:56.5 - [INFO] remove_slowest_ip:66.96.224.155 handshake_time:841, fails:1
+12月 25 14:23:56.7 - [DEBUG] ip:212.0.195.126 real fail
+12月 25 14:23:59.6 - [DEBUG] 49.231.60.144 fail:timeout('timed out',)
+12月 25 14:23:59.6 - [DEBUG] report_connect_fail:49.231.60.144
+12月 25 14:23:59.6 - [DEBUG] get ip:61.5.222.185 t:843
+12月 25 14:24:01.7 - [DEBUG] ip:209.118.7.93 real fail
+12月 25 14:24:03.6 - [DEBUG] 61.5.222.185 fail:timeout('timed out',)
+12月 25 14:24:03.6 - [DEBUG] report_connect_fail:61.5.222.185
+12月 25 14:24:03.6 - [DEBUG] get ip:190.45.0.154 t:843
+12月 25 14:24:06.7 - [DEBUG] ip:118.98.76.116 real fail
+12月 25 14:24:07.6 - [DEBUG] 190.45.0.154 fail:timeout('timed out',)
+12月 25 14:24:07.6 - [DEBUG] report_connect_fail:190.45.0.154
+12月 25 14:24:07.6 - [DEBUG] get ip:212.191.227.111 t:843
+12月 25 14:24:08.5 - [DEBUG] restore ip:110.93.194.55
+12月 25 14:24:11.6 - [DEBUG] 212.191.227.111 fail:timeout('timed out',)
+12月 25 14:24:11.6 - [DEBUG] report_connect_fail:212.191.227.111
+12月 25 14:24:11.6 - [DEBUG] get ip:49.231.60.142 t:843
+12月 25 14:24:13.5 - [DEBUG] ip:144.131.80.227 real fail
+12月 25 14:24:15.6 - [DEBUG] 49.231.60.142 fail:timeout('timed out',)
+12月 25 14:24:15.6 - [DEBUG] report_connect_fail:49.231.60.142
+12月 25 14:24:15.6 - [DEBUG] get ip:66.96.224.172 t:843
+12月 25 14:24:17.3 - [DEBUG] create_ssl update ip:66.96.224.172 time:1240 h2:1
+12月 25 14:24:17.3 - [DEBUG] get ip:95.180.157.118 t:843
+12月 25 14:24:18.5 - [DEBUG] ip:113.171.243.153 real fail
+12月 25 14:24:21.3 - [DEBUG] 95.180.157.118 fail:timeout('timed out',)
+12月 25 14:24:21.3 - [DEBUG] report_connect_fail:95.180.157.118
+12月 25 14:24:21.3 - [DEBUG] get ip:110.93.194.55 t:727
+12月 25 14:24:22.4 - [DEBUG] create_ssl update ip:110.93.194.55 time:744 h2:0
+12月 25 14:24:24.8 - [DEBUG] ip:66.96.224.155 real fail
+12月 25 14:24:29.8 - [DEBUG] ip:49.231.60.144 real fail
+12月 25 14:24:34.8 - [DEBUG] ip:61.5.222.185 real fail
+12月 25 14:24:36.3 - [INFO] scan_ip add ip:179.185.163.216 time:1757
+12月 25 14:24:36.3 - [INFO] remove_slowest_ip:95.180.157.118 handshake_time:843, fails:1
+12月 25 14:24:36.3 - [INFO] remove_slowest_ip:49.231.60.142 handshake_time:843, fails:1
+12月 25 14:24:38.5 - [DEBUG] 77.37.252.158 keep alive fail, inactive_time:209 head_timeout:100
+12月 25 14:24:38.5 - [DEBUG] report_connect_fail:77.37.252.158
+12月 25 14:24:39.8 - [DEBUG] ip:190.45.0.154 real fail
+12月 25 14:24:43.5 - [DEBUG] 77.37.252.158 worker close:keep alive
+12月 25 14:24:44.8 - [DEBUG] ip:212.191.227.111 real fail
+12月 25 14:24:49.3 - [INFO] scan_ip add ip:203.207.55.207 time:2266
+12月 25 14:24:49.3 - [INFO] remove_slowest_ip:203.207.55.207 handshake_time:2266, fails:0
+12月 25 14:24:49.8 - [DEBUG] ip:49.231.60.142 real fail
+12月 25 14:24:54.8 - [DEBUG] ip:95.180.157.118 real fail
+12月 25 14:24:58.1 - [INFO] scan_ip add ip:59.18.45.204 time:243
+12月 25 14:24:58.1 - [INFO] remove_slowest_ip:212.191.227.111 handshake_time:843, fails:1
+12月 25 14:24:59.8 - [DEBUG] ip:77.37.252.158 real fail
+12月 25 14:25:00.1 - [DEBUG] ssl_closed 63.117.14.219
+12月 25 14:25:00.1 - [DEBUG] 63.117.14.219 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:25:07.1 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:25:07.1 - [DEBUG] 202.86.162.172 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:25:07.5 - [DEBUG] get ip:202.86.162.172 t:130
+12月 25 14:25:07.6 - [DEBUG] create_ssl update ip:202.86.162.172 time:83 h2:1
+12月 25 14:25:09.6 - [INFO] scan_ip add ip:184.150.183.150 time:554
+12月 25 14:25:09.6 - [INFO] remove_slowest_ip:190.45.0.154 handshake_time:843, fails:1
+12月 25 14:25:12.6 - [DEBUG] get ip:59.18.45.204 t:243
+12月 25 14:25:16.6 - [DEBUG] 59.18.45.204 fail:timeout('timed out',)
+12月 25 14:25:16.6 - [DEBUG] report_connect_fail:59.18.45.204
+12月 25 14:25:16.6 - [DEBUG] get ip:63.117.14.219 t:516
+12月 25 14:25:17.9 - [DEBUG] create_ssl update ip:63.117.14.219 time:1038 h2:1
+12月 25 14:25:31.6 - [DEBUG] ip:59.18.45.204 real fail
+12月 25 14:25:38.5 - [INFO] scan_ip add ip:103.15.42.100 time:951
+12月 25 14:25:38.5 - [INFO] remove_slowest_ip:61.5.222.185 handshake_time:843, fails:1
+12月 25 14:25:42.8 - [INFO] scan_ip add ip:212.92.207.180 time:2040
+12月 25 14:25:42.8 - [INFO] remove_slowest_ip:212.92.207.180 handshake_time:2040, fails:0
+12月 25 14:25:46.4 - [INFO] scan_ip add ip:213.145.140.86 time:2005
+12月 25 14:25:46.4 - [INFO] remove_slowest_ip:213.145.140.86 handshake_time:2005, fails:0
+12月 25 14:25:53.6 - [INFO] scan_ip add ip:113.171.253.230 time:455
+12月 25 14:25:53.6 - [INFO] remove_slowest_ip:49.231.60.144 handshake_time:843, fails:1
+12月 25 14:25:57.9 - [DEBUG] get ip:113.171.253.230 t:455
+12月 25 14:25:58.6 - [DEBUG] create_ssl update ip:113.171.253.230 time:455 h2:0
+12月 25 14:26:06.7 - [INFO] scan_ip add ip:203.176.178.45 time:596
+12月 25 14:26:06.8 - [INFO] remove_slowest_ip:113.171.243.153 handshake_time:818, fails:1
+12月 25 14:26:07.7 - [INFO] scan_ip add ip:89.47.210.112 time:1059
+12月 25 14:26:07.7 - [INFO] remove_slowest_ip:179.185.163.216 handshake_time:1757, fails:0
+12月 25 14:26:08.6 - [DEBUG] get ip:184.150.183.150 t:554
+12月 25 14:26:12.6 - [DEBUG] 184.150.183.150 fail:timeout('timed out',)
+12月 25 14:26:12.6 - [DEBUG] report_connect_fail:184.150.183.150
+12月 25 14:26:12.6 - [DEBUG] get ip:203.176.178.45 t:596
+12月 25 14:26:13.5 - [DEBUG] create_ssl update ip:203.176.178.45 time:595 h2:1
+12月 25 14:26:20.8 - [INFO] scan_ip add ip:186.73.72.167 time:651
+12月 25 14:26:20.8 - [INFO] remove_slowest_ip:144.131.80.227 handshake_time:745, fails:1
+12月 25 14:26:27.6 - [DEBUG] ip:184.150.183.150 real fail
+12月 25 14:26:45.3 - [INFO] scan_ip add ip:82.147.54.29 time:1495
+12月 25 14:26:45.3 - [INFO] remove_slowest_ip:207.134.64.22 handshake_time:605, fails:1
+12月 25 14:26:48.5 - [DEBUG] get ip:186.73.72.167 t:651
+12月 25 14:26:48.8 - [INFO] scan_ip add ip:201.57.54.206 time:1240
+12月 25 14:26:48.8 - [INFO] remove_slowest_ip:212.6.83.20 handshake_time:599, fails:1
+12月 25 14:26:52.5 - [DEBUG] 186.73.72.167 fail:timeout('timed out',)
+12月 25 14:26:52.5 - [DEBUG] report_connect_fail:186.73.72.167
+12月 25 14:26:52.5 - [DEBUG] get ip:212.106.221.97 t:843
+12月 25 14:26:53.7 - [DEBUG] create_ssl update ip:212.106.221.97 time:809 h2:0
+12月 25 14:27:02.4 - [INFO] scan_ip add ip:177.126.126.56 time:3388
+12月 25 14:27:02.4 - [INFO] remove_slowest_ip:177.126.126.56 handshake_time:3388, fails:0
+12月 25 14:27:03.8 - [DEBUG] get ip:190.45.0.158 t:843
+12月 25 14:27:07.5 - [DEBUG] ip:186.73.72.167 real fail
+12月 25 14:27:07.8 - [DEBUG] 190.45.0.158 fail:timeout('timed out',)
+12月 25 14:27:07.8 - [DEBUG] report_connect_fail:190.45.0.158
+12月 25 14:27:07.8 - [DEBUG] get ip:120.28.26.152 t:843
+12月 25 14:27:08.5 - [DEBUG] create_ssl update ip:120.28.26.152 time:572 h2:1
+12月 25 14:27:12.2 - [DEBUG] 203.207.55.235 keep alive fail, inactive_time:539 head_timeout:100
+12月 25 14:27:12.2 - [DEBUG] report_connect_fail:203.207.55.235
+12月 25 14:27:13.0 - [DEBUG] 115.164.12.151 keep alive fail, inactive_time:539 head_timeout:100
+12月 25 14:27:13.0 - [DEBUG] report_connect_fail:115.164.12.151
+12月 25 14:27:17.2 - [DEBUG] 203.207.55.235 worker close:keep alive
+12月 25 14:27:18.0 - [DEBUG] 115.164.12.151 worker close:keep alive
+12月 25 14:27:22.8 - [DEBUG] ip:190.45.0.158 real fail
+12月 25 14:27:23.3 - [INFO] scan_ip add ip:181.198.79.156 time:629
+12月 25 14:27:23.3 - [INFO] remove_slowest_ip:190.45.0.158 handshake_time:843, fails:1
+12月 25 14:27:27.8 - [DEBUG] ip:203.207.55.235 real fail
+12月 25 14:27:30.0 - [INFO] scan_ip add ip:84.208.42.22 time:573
+12月 25 14:27:30.1 - [INFO] remove_slowest_ip:203.207.55.235 handshake_time:762, fails:1
+12月 25 14:27:32.8 - [DEBUG] ip:115.164.12.151 real fail
+12月 25 14:27:43.1 - [INFO] scan_ip add ip:61.238.239.241 time:139
+12月 25 14:27:43.1 - [INFO] remove_slowest_ip:115.164.12.151 handshake_time:741, fails:1
+12月 25 14:27:43.6 - [DEBUG] get ip:61.238.239.241 t:139
+12月 25 14:27:43.7 - [DEBUG] create_ssl update ip:61.238.239.241 time:141 h2:1
+12月 25 14:27:43.7 - [INFO] scan_ip add ip:58.26.8.84 time:476
+12月 25 14:27:43.8 - [INFO] remove_slowest_ip:186.73.72.167 handshake_time:651, fails:1
+12月 25 14:27:50.2 - [DEBUG] appid:xxnet-sdcff8 head fail status:503
+12月 25 14:27:50.2 - [DEBUG] report_connect_fail:212.106.221.97
+12月 25 14:27:55.2 - [INFO] scan_ip add ip:190.212.166.143 time:784
+12月 25 14:27:55.2 - [INFO] remove_slowest_ip:212.106.221.97 handshake_time:809, fails:1
+12月 25 14:27:55.7 - [INFO] scan_ip add ip:200.216.90.99 time:739
+12月 25 14:27:55.7 - [INFO] remove_slowest_ip:103.233.37.40 handshake_time:1589, fails:0
+12月 25 14:27:58.8 - [DEBUG] get ip:58.26.8.84 t:476
+12月 25 14:27:59.2 - [INFO] scan_ip add ip:122.149.3.14 time:488
+12月 25 14:27:59.2 - [INFO] remove_slowest_ip:184.150.183.150 handshake_time:554, fails:1
+12月 25 14:27:59.5 - [DEBUG] create_ssl update ip:58.26.8.84 time:501 h2:1
+12月 25 14:27:59.5 - [DEBUG] 212.106.221.97 worker close:keep alive
+12月 25 14:28:03.1 - [INFO] PAC from:127.0.0.1:39968 GET /proxy.pac 
+12月 25 14:28:07.5 - [DEBUG] restore ip:212.106.221.97
+12月 25 14:28:10.0 - [DEBUG] ssl_closed 120.28.26.150
+12月 25 14:28:10.0 - [DEBUG] 120.28.26.150 worker close:idle timeout
+12月 25 14:28:14.2 - [DEBUG] ssl_closed 190.212.166.206
+12月 25 14:28:14.2 - [DEBUG] 190.212.166.206 worker close:idle timeout
+12月 25 14:28:14.6 - [DEBUG] ssl_closed 113.171.253.225
+12月 25 14:28:14.6 - [DEBUG] 113.171.253.225 worker close:idle timeout
+12月 25 14:28:16.3 - [DEBUG] ssl_closed 113.171.253.220
+12月 25 14:28:16.3 - [DEBUG] 113.171.253.220 worker close:idle timeout
+12月 25 14:28:17.3 - [DEBUG] ssl_closed 66.96.224.172
+12月 25 14:28:17.3 - [DEBUG] 66.96.224.172 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:28:17.7 - [DEBUG] ssl_closed 59.18.35.112
+12月 25 14:28:17.7 - [DEBUG] 59.18.35.112 worker close:idle timeout
+12月 25 14:28:20.3 - [DEBUG] ssl_closed 41.184.60.31
+12月 25 14:28:20.3 - [DEBUG] 41.184.60.31 worker close:idle timeout
+12月 25 14:28:20.6 - [DEBUG] 95.168.222.161 worker close:idle timeout
+12月 25 14:28:23.3 - [DEBUG] ssl_closed 49.231.60.169
+12月 25 14:28:23.3 - [DEBUG] 49.231.60.169 worker close:idle timeout
+12月 25 14:28:24.4 - [DEBUG] ssl_closed 190.212.166.179
+12月 25 14:28:24.4 - [DEBUG] 190.212.166.179 worker close:idle timeout
+12月 25 14:28:34.3 - [INFO] scan_ip add ip:87.245.198.23 time:568
+12月 25 14:28:34.3 - [INFO] remove_slowest_ip:212.106.221.97 handshake_time:5347, fails:0
+12月 25 14:28:34.3 - [INFO] remove_slowest_ip:77.37.252.158 handshake_time:545, fails:1
+12月 25 14:28:34.5 - [DEBUG] get ip:59.18.35.112 t:238
+12月 25 14:28:38.5 - [DEBUG] 59.18.35.112 fail:timeout('timed out',)
+12月 25 14:28:38.5 - [DEBUG] report_connect_fail:59.18.35.112
+12月 25 14:28:38.5 - [DEBUG] get ip:122.149.3.14 t:488
+12月 25 14:28:42.5 - [DEBUG] 122.149.3.14 fail:timeout('timed out',)
+12月 25 14:28:42.5 - [DEBUG] report_connect_fail:122.149.3.14
+12月 25 14:28:42.5 - [DEBUG] get ip:113.171.253.225 t:494
+12月 25 14:28:44.6 - [DEBUG] create_ssl update ip:113.171.253.225 time:806 h2:0
+12月 25 14:28:45.8 - [INFO] scan_ip add ip:62.24.158.110 time:1447
+12月 25 14:28:45.8 - [INFO] remove_slowest_ip:192.70.222.163 handshake_time:528, fails:1
+12月 25 14:28:49.6 - [DEBUG] get ip:120.28.26.150 t:511
+12月 25 14:28:50.7 - [DEBUG] create_ssl update ip:120.28.26.150 time:899 h2:0
+12月 25 14:28:53.5 - [DEBUG] ip:59.18.35.112 real fail
+12月 25 14:28:58.5 - [DEBUG] ip:122.149.3.14 real fail
+12月 25 14:29:01.0 - [INFO] scan_ip add ip:216.58.205.88 time:677
+12月 25 14:29:01.1 - [INFO] remove_slowest_ip:118.98.76.116 handshake_time:525, fails:1
+12月 25 14:29:01.6 - [INFO] scan_ip add ip:109.245.221.21 time:552
+12月 25 14:29:01.6 - [INFO] remove_slowest_ip:82.147.54.29 handshake_time:1495, fails:0
+12月 25 14:29:05.6 - [DEBUG] 95.168.222.161 keep alive fail, inactive_time:644 head_timeout:100
+12月 25 14:29:05.6 - [DEBUG] ssl_closed 95.168.222.161
+12月 25 14:29:05.6 - [DEBUG] report_connect_fail:95.168.222.161
+12月 25 14:29:07.6 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:29:07.6 - [DEBUG] 202.86.162.172 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:29:08.2 - [INFO] scan_ip add ip:103.233.37.37 time:858
+12月 25 14:29:08.2 - [INFO] remove_slowest_ip:95.168.222.161 handshake_time:1342, fails:1
+12月 25 14:29:08.7 - [DEBUG] recheck_ip:95.168.222.161 restore okl
+12月 25 14:29:08.7 - [DEBUG] 95.168.222.161 worker close:keep alive
+12月 25 14:29:17.6 - [DEBUG] restore ip:95.168.222.161
+12月 25 14:29:17.9 - [DEBUG] ssl_closed 63.117.14.219
+12月 25 14:29:17.9 - [DEBUG] 63.117.14.219 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:29:22.2 - [DEBUG] ssl_closed 113.171.253.207
+12月 25 14:29:22.2 - [DEBUG] 113.171.253.207 worker close:idle timeout
+12月 25 14:29:23.2 - [DEBUG] ssl_closed 190.212.166.169
+12月 25 14:29:23.2 - [DEBUG] 190.212.166.169 worker close:idle timeout
+12月 25 14:29:24.6 - [DEBUG] ssl_closed 194.90.196.111
+12月 25 14:29:24.6 - [DEBUG] 194.90.196.111 worker close:idle timeout
+12月 25 14:29:25.5 - [DEBUG] ssl_closed 191.251.192.28
+12月 25 14:29:25.5 - [DEBUG] 191.251.192.28 worker close:idle timeout
+12月 25 14:29:28.2 - [INFO] scan_ip add ip:191.251.128.54 time:844
+12月 25 14:29:28.2 - [INFO] remove_slowest_ip:24.100.187.140 handshake_time:493, fails:1
+12月 25 14:29:28.2 - [INFO] remove_slowest_ip:58.27.61.38 handshake_time:492, fails:1
+12月 25 14:29:35.7 - [DEBUG] get ip:202.86.162.172 t:83
+12月 25 14:29:35.9 - [DEBUG] create_ssl update ip:202.86.162.172 time:86 h2:1
+12月 25 14:29:37.6 - [INFO] scan_ip add ip:75.76.44.29 time:535
+12月 25 14:29:37.6 - [INFO] remove_slowest_ip:58.27.61.36 handshake_time:490, fails:1
+12月 25 14:29:38.4 - [INFO] scan_ip add ip:49.243.141.39 time:491
+12月 25 14:29:38.5 - [INFO] remove_slowest_ip:67.89.227.215 handshake_time:490, fails:1
+12月 25 14:29:40.9 - [DEBUG] get ip:113.171.253.207 t:467
+12月 25 14:29:41.6 - [DEBUG] create_ssl update ip:113.171.253.207 time:480 h2:0
+12月 25 14:29:53.1 - [INFO] scan_ip add ip:190.197.64.22 time:684
+12月 25 14:29:53.1 - [INFO] remove_slowest_ip:106.162.216.55 handshake_time:490, fails:1
+12月 25 14:29:55.9 - [INFO] scan_ip add ip:200.149.119.19 time:800
+12月 25 14:29:55.9 - [INFO] remove_slowest_ip:46.61.155.160 handshake_time:490, fails:1
+12月 25 14:30:10.5 - [INFO] scan_ip add ip:197.221.233.18 time:916
+12月 25 14:30:10.5 - [INFO] remove_slowest_ip:189.203.167.82 handshake_time:490, fails:1
+12月 25 14:30:13.5 - [DEBUG] ssl_closed 203.176.178.45
+12月 25 14:30:13.5 - [DEBUG] 203.176.178.45 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:30:16.0 - [WARNING] parse request fail:)�
+
+12月 25 14:30:16.0 - [WARNING] unhandler cmd:None path:mtalk.google.com:5228 from:127.0.0.1:37624
+12月 25 14:30:18.8 - [DEBUG] ssl_closed 120.28.26.186
+12月 25 14:30:18.8 - [DEBUG] 120.28.26.186 worker close:idle timeout
+12月 25 14:30:21.3 - [INFO] scan_ip add ip:111.84.96.84 time:2205
+12月 25 14:30:21.3 - [INFO] remove_slowest_ip:111.84.96.84 handshake_time:2205, fails:0
+12月 25 14:30:23.4 - [DEBUG] ssl_closed 120.28.26.142
+12月 25 14:30:23.4 - [DEBUG] 120.28.26.142 worker close:idle timeout
+12月 25 14:30:26.6 - [DEBUG] get ip:120.28.26.186 t:437
+12月 25 14:30:27.4 - [DEBUG] create_ssl update ip:120.28.26.186 time:551 h2:0
+12月 25 14:30:32.4 - [DEBUG] get ip:120.28.26.142 t:469
+12月 25 14:30:33.6 - [DEBUG] create_ssl update ip:120.28.26.142 time:974 h2:0
+12月 25 14:30:41.1 - [INFO] scan_ip add ip:177.55.62.87 time:1477
+12月 25 14:30:41.1 - [INFO] remove_slowest_ip:58.27.61.106 handshake_time:490, fails:1
+12月 25 14:30:49.6 - [INFO] scan_ip add ip:185.5.161.112 time:858
+12月 25 14:30:49.6 - [INFO] remove_slowest_ip:189.195.96.105 handshake_time:489, fails:1
+12月 25 14:31:01.7 - [INFO] scan_ip add ip:113.171.18.220 time:563
+12月 25 14:31:01.7 - [INFO] remove_slowest_ip:70.186.26.27 handshake_time:489, fails:1
+12月 25 14:31:13.2 - [DEBUG] ssl_closed 189.247.160.82
+12月 25 14:31:13.2 - [DEBUG] 189.247.160.82 worker close:idle timeout
+12月 25 14:31:13.8 - [INFO] scan_ip add ip:5.102.167.16 time:1427
+12月 25 14:31:13.9 - [INFO] remove_slowest_ip:58.27.27.246 handshake_time:489, fails:1
+12月 25 14:31:18.7 - [DEBUG] get ip:189.247.160.82 t:453
+12月 25 14:31:19.3 - [DEBUG] create_ssl update ip:189.247.160.82 time:452 h2:0
+12月 25 14:31:24.4 - [DEBUG] get ip:49.243.141.39 t:491
+12月 25 14:31:28.4 - [DEBUG] 49.243.141.39 fail:timeout('timed out',)
+12月 25 14:31:28.4 - [DEBUG] report_connect_fail:49.243.141.39
+12月 25 14:31:28.4 - [DEBUG] get ip:75.76.44.29 t:535
+12月 25 14:31:28.8 - [INFO] scan_ip add ip:213.158.189.171 time:2207
+12月 25 14:31:28.8 - [INFO] remove_slowest_ip:213.158.189.171 handshake_time:2207, fails:0
+12月 25 14:31:32.4 - [DEBUG] 75.76.44.29 fail:timeout('timed out',)
+12月 25 14:31:32.4 - [DEBUG] report_connect_fail:75.76.44.29
+12月 25 14:31:32.4 - [DEBUG] get ip:109.245.221.21 t:552
+12月 25 14:31:36.4 - [DEBUG] 109.245.221.21 fail:timeout('timed out',)
+12月 25 14:31:36.4 - [DEBUG] report_connect_fail:109.245.221.21
+12月 25 14:31:36.4 - [DEBUG] get ip:113.171.18.220 t:563
+12月 25 14:31:37.1 - [DEBUG] create_ssl update ip:113.171.18.220 time:473 h2:0
+12月 25 14:31:43.4 - [DEBUG] ip:49.243.141.39 real fail
+12月 25 14:31:48.4 - [DEBUG] ip:75.76.44.29 real fail
+12月 25 14:31:48.9 - [DEBUG] GAE POST https://clients4.google.com/invalidation/android/request/CHES4QEStwFBUEE5MWJGUnE5X0NMck1zTWFKckp2SHNFOFpSZnIwNmFiSmN2QTNqVlc0SGtKZ2FFdTFsaU5jUGRrYU1Ya1VMZERrQTRFQTRyNkhfTkZBZS13OGViYzQ3M19BNk9jUnlMaGkxRGxnMXhGT1ZuOF9xUVVJV25hOHpUM2ZaZXpuWkdMckMwSEpXalBtTk9ucXV0LWVKR3RMRjlHZ1V1bVgxWDJ0M19ZNHZMYVdUb3A0UDB4V3NNRDgaACoCCAAyH2NvbS5nb29nbGUuY2hyb21lLmludmFsaWRhdGlvbnM
+12月 25 14:31:48.9 - [DEBUG] get ip:87.245.198.23 t:568
+12月 25 14:31:49.1 - [INFO] GAE t:255 s:0 POST https://clients4.google.com/invalidation/android/request/CHES4QEStwFBUEE5MWJGUnE5X0NMck1zTWFKckp2SHNFOFpSZnIwNmFiSmN2QTNqVlc0SGtKZ2FFdTFsaU5jUGRrYU1Ya1VMZERrQTRFQTRyNkhfTkZBZS13OGViYzQ3M19BNk9jUnlMaGkxRGxnMXhGT1ZuOF9xUVVJV25hOHpUM2ZaZXpuWkdMckMwSEpXalBtTk9ucXV0LWVKR3RMRjlHZ1V1bVgxWDJ0M19ZNHZMYVdUb3A0UDB4V3NNRDgaACoCCAAyH2NvbS5nb29nbGUuY2hyb21lLmludmFsaWRhdGlvbnM h2_get_head:252
+12月 25 14:31:49.4 - [DEBUG] get ip:190.212.166.169 t:573
+12月 25 14:31:49.9 - [DEBUG] get ip:84.208.42.22 t:573
+12月 25 14:31:50.3 - [DEBUG] create_ssl update ip:190.212.166.169 time:586 h2:0
+12月 25 14:31:50.4 - [DEBUG] get ip:190.212.166.206 t:577
+12月 25 14:31:50.9 - [DEBUG] get ip:203.176.178.45 t:595
+12月 25 14:31:51.3 - [DEBUG] get ip:190.212.166.179 t:596
+12月 25 14:31:51.3 - [DEBUG] create_ssl update ip:190.212.166.206 time:613 h2:0
+12月 25 14:31:51.4 - [DEBUG] get ip:113.171.253.220 t:628
+12月 25 14:31:51.9 - [DEBUG] get ip:181.198.79.156 t:629
+12月 25 14:31:52.1 - [DEBUG] get ip:216.58.205.88 t:677
+12月 25 14:31:52.1 - [DEBUG] create_ssl update ip:113.171.253.220 time:493 h2:0
+12月 25 14:31:52.2 - [DEBUG] create_ssl update ip:190.212.166.179 time:597 h2:0
+12月 25 14:31:52.3 - [DEBUG] get ip:190.197.64.22 t:684
+12月 25 14:31:52.4 - [DEBUG] create_ssl update ip:203.176.178.45 time:1217 h2:1
+12月 25 14:31:52.4 - [DEBUG] get ip:200.216.90.99 t:739
+12月 25 14:31:52.9 - [DEBUG] get ip:190.212.166.143 t:784
+12月 25 14:31:52.9 - [DEBUG] 87.245.198.23 fail:timeout('timed out',)
+12月 25 14:31:52.9 - [DEBUG] report_connect_fail:87.245.198.23
+12月 25 14:31:52.9 - [DEBUG] get ip:200.149.119.19 t:800
+12月 25 14:31:53.1 - [DEBUG] create_ssl update ip:216.58.205.88 time:691 h2:1
+12月 25 14:31:53.1 - [DEBUG] get ip:41.184.60.31 t:834
+12月 25 14:31:53.1 - [DEBUG] get ip:195.80.179.174 t:844
+12月 25 14:31:53.2 - [DEBUG] get ip:200.150.4.248 t:844
+12月 25 14:31:53.4 - [DEBUG] ip:109.245.221.21 real fail
+12月 25 14:31:53.4 - [DEBUG] get ip:177.55.62.95 t:844
+12月 25 14:31:53.4 - [DEBUG] get ip:177.35.32.89 t:844
+12月 25 14:31:53.9 - [DEBUG] 84.208.42.22 fail:timeout('timed out',)
+12月 25 14:31:53.9 - [DEBUG] report_connect_fail:84.208.42.22
+12月 25 14:31:53.9 - [DEBUG] get ip:191.251.128.54 t:844
+12月 25 14:31:53.9 - [DEBUG] get ip:190.98.163.110 t:845
+12月 25 14:31:54.4 - [DEBUG] get ip:200.10.226.218 t:845
+12月 25 14:31:54.9 - [DEBUG] get ip:202.153.85.82 t:845
+12月 25 14:31:55.0 - [DEBUG] create_ssl update ip:190.212.166.143 time:1757 h2:1
+12月 25 14:31:55.4 - [DEBUG] get ip:113.171.241.39 t:845
+12月 25 14:31:55.6 - [DEBUG] create_ssl update ip:200.10.226.218 time:808 h2:0
+12月 25 14:31:55.7 - [WARNING] 120.28.26.152 _consume_single_frame:ConnectionResetError()
+12月 25 14:31:55.7 - [DEBUG] ssl_closed 120.28.26.152
+12月 25 14:31:55.7 - [DEBUG] 120.28.26.152 worker close:disconnect:ConnectionResetError()
+12月 25 14:31:55.9 - [DEBUG] 181.198.79.156 fail:timeout('timed out',)
+12月 25 14:31:55.9 - [DEBUG] report_connect_fail:181.198.79.156
+12月 25 14:31:55.9 - [DEBUG] get ip:195.249.23.228 t:845
+12月 25 14:31:55.9 - [DEBUG] get ip:111.95.240.179 t:846
+12月 25 14:31:56.0 - [DEBUG] get ip:201.16.57.39 t:846
+12月 25 14:31:56.3 - [DEBUG] 190.197.64.22 fail:timeout('timed out',)
+12月 25 14:31:56.3 - [DEBUG] report_connect_fail:190.197.64.22
+12月 25 14:31:56.3 - [DEBUG] get ip:196.29.35.161 t:846
+12月 25 14:31:56.4 - [DEBUG] 200.216.90.99 fail:timeout('timed out',)
+12月 25 14:31:56.4 - [DEBUG] report_connect_fail:200.216.90.99
+12月 25 14:31:56.4 - [DEBUG] get ip:200.149.119.124 t:846
+12月 25 14:31:56.4 - [DEBUG] get ip:46.108.1.142 t:846
+12月 25 14:31:56.6 - [DEBUG] create_ssl update ip:195.80.179.174 time:2995 h2:0
+12月 25 14:31:56.6 - [DEBUG] get ip:191.251.192.12 t:847
+12月 25 14:31:56.9 - [DEBUG] get ip:200.149.119.29 t:847
+12月 25 14:31:56.9 - [DEBUG] 200.149.119.19 fail:timeout('timed out',)
+12月 25 14:31:56.9 - [DEBUG] report_connect_fail:200.149.119.19
+12月 25 14:31:56.9 - [DEBUG] get ip:112.72.5.81 t:847
+12月 25 14:31:57.1 - [DEBUG] 41.184.60.31 fail:timeout('timed out',)
+12月 25 14:31:57.1 - [DEBUG] report_connect_fail:41.184.60.31
+12月 25 14:31:57.2 - [DEBUG] 200.150.4.248 fail:timeout('timed out',)
+12月 25 14:31:57.2 - [DEBUG] report_connect_fail:200.150.4.248
+12月 25 14:31:57.2 - [DEBUG] get ip:84.208.42.46 t:847
+12月 25 14:31:57.4 - [DEBUG] 177.55.62.95 fail:timeout('timed out',)
+12月 25 14:31:57.4 - [DEBUG] report_connect_fail:177.55.62.95
+12月 25 14:31:57.4 - [DEBUG] get ip:92.246.5.30 t:847
+12月 25 14:31:57.4 - [DEBUG] 177.35.32.89 fail:timeout('timed out',)
+12月 25 14:31:57.4 - [DEBUG] report_connect_fail:177.35.32.89
+12月 25 14:31:57.4 - [DEBUG] get ip:85.112.116.217 t:847
+12月 25 14:31:57.4 - [DEBUG] get ip:103.233.36.169 t:847
+12月 25 14:31:57.5 - [DEBUG] create_ssl update ip:200.149.119.124 time:798 h2:1
+12月 25 14:31:57.9 - [DEBUG] 191.251.128.54 fail:timeout('timed out',)
+12月 25 14:31:57.9 - [DEBUG] report_connect_fail:191.251.128.54
+12月 25 14:31:57.9 - [DEBUG] 190.98.163.110 fail:timeout('timed out',)
+12月 25 14:31:57.9 - [DEBUG] report_connect_fail:190.98.163.110
+12月 25 14:31:58.2 - [DEBUG] create_ssl update ip:112.72.5.81 time:859 h2:0
+12月 25 14:31:58.7 - [DEBUG] create_ssl update ip:84.208.42.46 time:1302 h2:1
+12月 25 14:31:58.9 - [DEBUG] 202.153.85.82 fail:timeout('timed out',)
+12月 25 14:31:58.9 - [DEBUG] report_connect_fail:202.153.85.82
+12月 25 14:31:59.4 - [DEBUG] 113.171.241.39 fail:timeout('timed out',)
+12月 25 14:31:59.4 - [DEBUG] report_connect_fail:113.171.241.39
+12月 25 14:31:59.5 - [DEBUG] ssl_closed 58.26.8.84
+12月 25 14:31:59.5 - [DEBUG] 58.26.8.84 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:31:59.9 - [DEBUG] 195.249.23.228 fail:timeout('timed out',)
+12月 25 14:31:59.9 - [DEBUG] report_connect_fail:195.249.23.228
+12月 25 14:31:59.9 - [DEBUG] 111.95.240.179 fail:timeout('timed out',)
+12月 25 14:31:59.9 - [DEBUG] report_connect_fail:111.95.240.179
+12月 25 14:32:00.0 - [DEBUG] 201.16.57.39 fail:timeout('timed out',)
+12月 25 14:32:00.0 - [DEBUG] report_connect_fail:201.16.57.39
+12月 25 14:32:00.3 - [DEBUG] 196.29.35.161 fail:timeout('timed out',)
+12月 25 14:32:00.3 - [DEBUG] report_connect_fail:196.29.35.161
+12月 25 14:32:00.4 - [DEBUG] 46.108.1.142 fail:timeout('timed out',)
+12月 25 14:32:00.4 - [DEBUG] report_connect_fail:46.108.1.142
+12月 25 14:32:00.6 - [DEBUG] 191.251.192.12 fail:timeout('timed out',)
+12月 25 14:32:00.6 - [DEBUG] report_connect_fail:191.251.192.12
+12月 25 14:32:00.9 - [DEBUG] 200.149.119.29 fail:timeout('timed out',)
+12月 25 14:32:00.9 - [DEBUG] report_connect_fail:200.149.119.29
+12月 25 14:32:01.4 - [DEBUG] 92.246.5.30 fail:timeout('timed out',)
+12月 25 14:32:01.4 - [DEBUG] report_connect_fail:92.246.5.30
+12月 25 14:32:01.4 - [DEBUG] 85.112.116.217 fail:timeout('timed out',)
+12月 25 14:32:01.4 - [DEBUG] report_connect_fail continue_fail_count:11
+12月 25 14:32:01.4 - [DEBUG] 103.233.36.169 fail:timeout('timed out',)
+12月 25 14:32:01.4 - [DEBUG] report_connect_fail network fail
+12月 25 14:32:07.9 - [INFO] scan_ip add ip:77.234.91.13 time:484
+12月 25 14:32:07.9 - [INFO] remove_slowest_ip:92.246.5.30 handshake_time:847, fails:1
+12月 25 14:32:12.9 - [DEBUG] ip:191.251.128.54 real fail
+12月 25 14:32:13.3 - [DEBUG] 113.171.253.230 keep alive fail, inactive_time:374 head_timeout:100
+12月 25 14:32:13.3 - [DEBUG] report_connect_fail:113.171.253.230
+12月 25 14:32:14.9 - [DEBUG] ssl_closed 61.238.239.241
+12月 25 14:32:14.9 - [DEBUG] 61.238.239.241 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:32:17.9 - [DEBUG] ip:190.98.163.110 real fail
+12月 25 14:32:18.3 - [DEBUG] 113.171.253.230 worker close:keep alive
+12月 25 14:32:20.8 - [INFO] scan_ip add ip:36.37.218.48 time:578
+12月 25 14:32:20.8 - [INFO] remove_slowest_ip:200.149.119.29 handshake_time:847, fails:1
+12月 25 14:32:22.9 - [DEBUG] ip:202.153.85.82 real fail
+12月 25 14:32:24.2 - [INFO] scan_ip add ip:177.99.203.212 time:3242
+12月 25 14:32:24.2 - [INFO] remove_slowest_ip:177.99.203.212 handshake_time:3242, fails:0
+12月 25 14:32:26.2 - [INFO] scan_ip add ip:193.192.226.152 time:769
+12月 25 14:32:26.2 - [INFO] remove_slowest_ip:191.251.192.12 handshake_time:847, fails:1
+12月 25 14:32:26.5 - [INFO] scan_ip add ip:212.89.5.79 time:826
+12月 25 14:32:26.5 - [INFO] remove_slowest_ip:46.108.1.142 handshake_time:846, fails:1
+12月 25 14:32:27.9 - [DEBUG] ip:113.171.241.39 real fail
+12月 25 14:32:31.9 - [DEBUG] appid:zhouxingyucn2 head fail status:503
+12月 25 14:32:31.9 - [DEBUG] report_connect_fail:113.171.18.220
+12月 25 14:32:32.9 - [DEBUG] ip:195.249.23.228 real fail
+12月 25 14:32:33.9 - [DEBUG] recheck_ip:113.171.18.220 restore okl
+12月 25 14:32:33.9 - [DEBUG] 113.171.18.220 worker close:keep alive
+12月 25 14:32:37.9 - [DEBUG] ip:111.95.240.179 real fail
+12月 25 14:32:41.7 - [INFO] scan_ip add ip:118.107.75.167 time:546
+12月 25 14:32:41.7 - [INFO] remove_slowest_ip:196.29.35.161 handshake_time:846, fails:1
+12月 25 14:32:42.2 - [INFO] scan_ip add ip:202.67.35.185 time:783
+12月 25 14:32:42.2 - [INFO] remove_slowest_ip:201.16.57.39 handshake_time:846, fails:1
+12月 25 14:32:42.9 - [DEBUG] ip:201.16.57.39 real fail
+12月 25 14:32:44.8 - [DEBUG] appid:omega-terrain-123504 head fail status:503
+12月 25 14:32:44.8 - [DEBUG] report_connect_fail:190.212.166.169
+12月 25 14:32:45.9 - [DEBUG] ssl_closed 66.96.226.210
+12月 25 14:32:45.9 - [DEBUG] 66.96.226.210 worker close:idle timeout
+12月 25 14:32:46.1 - [DEBUG] recheck_ip:190.212.166.169 restore okl
+12月 25 14:32:46.1 - [DEBUG] 190.212.166.169 worker close:keep alive
+12月 25 14:32:46.1 - [INFO] scan_ip add ip:142.176.121.215 time:568
+12月 25 14:32:46.1 - [INFO] remove_slowest_ip:111.95.240.179 handshake_time:846, fails:1
+12月 25 14:32:46.9 - [DEBUG] appid:xxnet-enaihei-g head fail status:503
+12月 25 14:32:46.9 - [DEBUG] report_connect_fail:113.171.253.220
+12月 25 14:32:47.2 - [DEBUG] get ip:61.238.239.241 t:141
+12月 25 14:32:47.3 - [DEBUG] create_ssl update ip:61.238.239.241 time:88 h2:1
+12月 25 14:32:47.3 - [DEBUG] get ip:77.234.91.13 t:484
+12月 25 14:32:47.9 - [DEBUG] ip:196.29.35.161 real fail
+12月 25 14:32:48.2 - [DEBUG] recheck_ip:113.171.253.220 restore okl
+12月 25 14:32:48.2 - [DEBUG] 113.171.253.220 worker close:keep alive
+12月 25 14:32:49.6 - [DEBUG] appid:xxnet-69 head fail status:503
+12月 25 14:32:49.6 - [DEBUG] report_connect_fail:195.80.179.174
+12月 25 14:32:50.2 - [DEBUG] create_ssl update ip:77.234.91.13 time:2714 h2:0
+12月 25 14:32:50.9 - [DEBUG] recheck_ip:195.80.179.174 restore okl
+12月 25 14:32:50.9 - [DEBUG] 195.80.179.174 worker close:keep alive
+12月 25 14:32:52.9 - [DEBUG] ip:46.108.1.142 real fail
+12月 25 14:32:53.6 - [INFO] scan_ip add ip:24.244.4.27 time:804
+12月 25 14:32:53.6 - [INFO] remove_slowest_ip:195.249.23.228 handshake_time:845, fails:1
+12月 25 14:32:57.9 - [DEBUG] ip:191.251.192.12 real fail
+12月 25 14:32:59.6 - [DEBUG] restore ip:200.149.119.29
+12月 25 14:33:04.6 - [DEBUG] ip:92.246.5.30 real fail
+12月 25 14:33:09.6 - [DEBUG] ip:113.171.253.230 real fail
+12月 25 14:33:11.4 - [DEBUG] restore ip:113.171.18.220
+12月 25 14:33:12.6 - [DEBUG] restore ip:190.212.166.169
+12月 25 14:33:13.8 - [DEBUG] restore ip:113.171.253.220
+12月 25 14:33:19.2 - [DEBUG] ip:195.80.179.174 real fail
+12月 25 14:33:35.3 - [DEBUG] get ip:113.171.253.220 t:490
+12月 25 14:33:36.0 - [DEBUG] create_ssl update ip:113.171.253.220 time:487 h2:0
+12月 25 14:33:39.1 - [INFO] scan_ip add ip:177.43.170.106 time:863
+12月 25 14:33:39.1 - [INFO] remove_slowest_ip:113.171.241.39 handshake_time:845, fails:1
+12月 25 14:33:39.1 - [INFO] remove_slowest_ip:202.153.85.82 handshake_time:845, fails:1
+12月 25 14:33:41.0 - [DEBUG] get ip:58.26.8.84 t:501
+12月 25 14:33:41.7 - [DEBUG] create_ssl update ip:58.26.8.84 time:484 h2:1
+12月 25 14:33:42.7 - [DEBUG] appid:xxnet-izual5 head fail status:503
+12月 25 14:33:42.7 - [DEBUG] report_connect_fail:77.234.91.13
+12月 25 14:33:43.7 - [DEBUG] recheck_ip:77.234.91.13 restore okl
+12月 25 14:33:43.7 - [DEBUG] 77.234.91.13 worker close:keep alive
+12月 25 14:33:48.4 - [INFO] scan_ip add ip:62.75.23.39 time:1628
+12月 25 14:33:48.4 - [INFO] remove_slowest_ip:190.98.163.110 handshake_time:845, fails:1
+12月 25 14:33:48.5 - [INFO] scan_ip add ip:112.72.5.126 time:1322
+12月 25 14:33:48.5 - [INFO] remove_slowest_ip:191.251.128.54 handshake_time:844, fails:1
+12月 25 14:33:50.4 - [INFO] scan_ip add ip:43.245.144.19 time:317
+12月 25 14:33:50.4 - [INFO] remove_slowest_ip:62.75.23.39 handshake_time:1628, fails:0
+12月 25 14:33:53.8 - [DEBUG] restore ip:77.234.91.13
+12月 25 14:34:06.8 - [INFO] scan_ip add ip:49.231.60.112 time:831
+12月 25 14:34:06.8 - [DEBUG] sort ip time:47ms
+12月 25 14:34:06.8 - [INFO] remove_slowest_ip:109.245.221.21 handshake_time:552, fails:1
+12月 25 14:34:12.1 - [INFO] scan_ip add ip:63.117.215.82 time:515
+12月 25 14:34:12.1 - [INFO] remove_slowest_ip:75.76.44.29 handshake_time:535, fails:1
+12月 25 14:34:13.2 - [INFO] scan_ip add ip:150.100.16.78 time:738
+12月 25 14:34:13.2 - [INFO] remove_slowest_ip:49.243.141.39 handshake_time:491, fails:1
+12月 25 14:34:15.1 - [INFO] scan_ip add ip:177.35.32.87 time:1637
+12月 25 14:34:15.1 - [INFO] remove_slowest_ip:177.35.32.87 handshake_time:1637, fails:0
+12月 25 14:34:26.8 - [DEBUG] get ip:43.245.144.19 t:317
+12月 25 14:34:26.8 - [INFO] scan_ip add ip:37.29.1.246 time:1118
+12月 25 14:34:26.8 - [INFO] remove_slowest_ip:46.61.155.142 handshake_time:489, fails:1
+12月 25 14:34:26.9 - [DEBUG] ssl_closed 110.93.194.55
+12月 25 14:34:26.9 - [DEBUG] 110.93.194.55 worker close:idle timeout
+12月 25 14:34:30.7 - [DEBUG] appid:zhouxingyucn5 head fail status:503
+12月 25 14:34:30.7 - [DEBUG] report_connect_fail:113.171.253.220
+12月 25 14:34:30.8 - [DEBUG] 43.245.144.19 fail:timeout('timed out',)
+12月 25 14:34:30.8 - [DEBUG] report_connect_fail:43.245.144.19
+12月 25 14:34:30.8 - [DEBUG] get ip:77.234.91.13 t:474
+12月 25 14:34:31.5 - [DEBUG] create_ssl update ip:77.234.91.13 time:448 h2:0
+12月 25 14:34:31.5 - [DEBUG] get ip:63.117.215.82 t:515
+12月 25 14:34:32.1 - [DEBUG] recheck_ip:113.171.253.220 restore okl
+12月 25 14:34:32.1 - [DEBUG] 113.171.253.220 worker close:keep alive
+12月 25 14:34:32.2 - [DEBUG] create_ssl update ip:63.117.215.82 time:504 h2:0
+12月 25 14:34:40.3 - [INFO] scan_ip add ip:42.119.211.82 time:577
+12月 25 14:34:40.3 - [INFO] remove_slowest_ip:58.26.8.82 handshake_time:489, fails:1
+12月 25 14:34:43.4 - [DEBUG] restore ip:113.171.253.220
+12月 25 14:34:44.3 - [DEBUG] restore ip:43.245.144.19
+12月 25 14:34:46.6 - [INFO] scan_ip add ip:59.18.49.37 time:320
+12月 25 14:34:46.6 - [INFO] remove_slowest_ip:87.251.132.161 handshake_time:489, fails:1
+12月 25 14:34:58.9 - [INFO] scan_ip add ip:62.4.253.113 time:479
+12月 25 14:34:58.9 - [INFO] remove_slowest_ip:201.132.92.18 handshake_time:489, fails:1
+12月 25 14:35:02.6 - [INFO] scan_ip add ip:167.206.145.181 time:721
+12月 25 14:35:02.7 - [INFO] remove_slowest_ip:58.27.27.210 handshake_time:489, fails:1
+12月 25 14:35:22.3 - [DEBUG] get ip:43.245.144.19 t:302
+12月 25 14:35:22.6 - [INFO] scan_ip add ip:113.171.251.229 time:600
+12月 25 14:35:22.6 - [INFO] remove_slowest_ip:58.26.8.126 handshake_time:489, fails:1
+12月 25 14:35:22.7 - [DEBUG] create_ssl update ip:43.245.144.19 time:313 h2:0
+12月 25 14:35:22.7 - [DEBUG] get ip:59.18.49.37 t:320
+12月 25 14:35:25.5 - [INFO] scan_ip add ip:164.85.63.26 time:780
+12月 25 14:35:25.5 - [INFO] remove_slowest_ip:106.162.216.29 handshake_time:489, fails:1
+12月 25 14:35:26.1 - [DEBUG] appid:chrome---1234 head fail status:503
+12月 25 14:35:26.1 - [DEBUG] report_connect_fail:77.234.91.13
+12月 25 14:35:26.7 - [DEBUG] 59.18.49.37 fail:timeout('timed out',)
+12月 25 14:35:26.7 - [DEBUG] report_connect_fail:59.18.49.37
+12月 25 14:35:26.7 - [DEBUG] get ip:62.4.253.113 t:479
+12月 25 14:35:26.8 - [DEBUG] appid:qzhunb8 head fail status:503
+12月 25 14:35:26.8 - [DEBUG] report_connect_fail:63.117.215.82
+12月 25 14:35:26.8 - [INFO] scan_ip add ip:202.160.9.141 time:143
+12月 25 14:35:26.8 - [INFO] remove_slowest_ip:63.117.215.82 handshake_time:504, fails:1
+12月 25 14:35:27.9 - [DEBUG] recheck_ip:63.117.215.82 restore okl
+12月 25 14:35:27.9 - [DEBUG] 63.117.215.82 worker close:keep alive
+12月 25 14:35:28.4 - [DEBUG] recheck_ip:77.234.91.13 restore okl
+12月 25 14:35:28.4 - [DEBUG] 77.234.91.13 worker close:keep alive
+12月 25 14:35:30.4 - [INFO] scan_ip add ip:91.205.69.53 time:2017
+12月 25 14:35:30.4 - [INFO] remove_slowest_ip:91.205.69.53 handshake_time:2017, fails:0
+12月 25 14:35:30.4 - [INFO] remove_slowest_ip:218.208.3.238 handshake_time:488, fails:1
+12月 25 14:35:30.7 - [DEBUG] 62.4.253.113 fail:timeout('timed out',)
+12月 25 14:35:30.7 - [DEBUG] report_connect_fail:62.4.253.113
+12月 25 14:35:30.7 - [DEBUG] get ip:202.160.9.141 t:143
+12月 25 14:35:34.7 - [DEBUG] 202.160.9.141 fail:timeout('timed out',)
+12月 25 14:35:34.7 - [DEBUG] report_connect_fail:202.160.9.141
+12月 25 14:35:34.7 - [DEBUG] get ip:63.117.215.82 t:508
+12月 25 14:35:35.5 - [DEBUG] create_ssl update ip:63.117.215.82 time:503 h2:0
+12月 25 14:35:39.9 - [DEBUG] restore ip:77.234.91.13
+12月 25 14:35:44.6 - [INFO] scan_ip add ip:181.198.79.221 time:651
+12月 25 14:35:44.6 - [INFO] remove_slowest_ip:77.234.91.13 handshake_time:2927, fails:0
+12月 25 14:35:44.9 - [DEBUG] ip:59.18.49.37 real fail
+12月 25 14:35:46.0 - [DEBUG] restore ip:63.117.215.82
+12月 25 14:35:49.1 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:35:49.1 - [DEBUG] 202.86.162.172 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:35:51.0 - [DEBUG] ip:62.4.253.113 real fail
+12月 25 14:35:52.0 - [INFO] scan_ip add ip:212.106.221.28 time:1112
+12月 25 14:35:52.0 - [INFO] remove_slowest_ip:181.30.242.168 handshake_time:1488, fails:0
+12月 25 14:35:52.4 - [DEBUG] ssl_closed 203.176.178.45
+12月 25 14:35:52.4 - [DEBUG] 203.176.178.45 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:35:53.1 - [DEBUG] ssl_closed 216.58.205.88
+12月 25 14:35:53.1 - [DEBUG] 216.58.205.88 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:35:55.5 - [WARNING] 190.212.166.143 _consume_single_frame:ConnectionResetError()
+12月 25 14:35:55.5 - [DEBUG] ssl_closed 190.212.166.143
+12月 25 14:35:55.5 - [DEBUG] 190.212.166.143 worker close:disconnect:ConnectionResetError()
+12月 25 14:35:56.0 - [DEBUG] ip:202.160.9.141 real fail
+12月 25 14:35:57.6 - [DEBUG] ssl_closed 200.149.119.124
+12月 25 14:35:57.6 - [DEBUG] 200.149.119.124 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:35:58.7 - [DEBUG] ssl_closed 84.208.42.46
+12月 25 14:35:58.7 - [DEBUG] 84.208.42.46 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:36:10.5 - [DEBUG] get ip:202.86.162.172 t:86
+12月 25 14:36:10.7 - [DEBUG] create_ssl update ip:202.86.162.172 time:85 h2:1
+12月 25 14:36:15.2 - [INFO] scan_ip add ip:111.95.240.158 time:763
+12月 25 14:36:15.2 - [INFO] remove_slowest_ip:203.116.165.142 handshake_time:488, fails:1
+12月 25 14:36:25.7 - [DEBUG] get ip:118.107.75.167 t:546
+12月 25 14:36:27.6 - [INFO] scan_ip add ip:187.254.78.242 time:968
+12月 25 14:36:27.7 - [INFO] remove_slowest_ip:122.149.3.14 handshake_time:488, fails:1
+12月 25 14:36:29.1 - [INFO] scan_ip add ip:208.90.107.119 time:555
+12月 25 14:36:29.1 - [INFO] remove_slowest_ip:213.253.9.209 handshake_time:488, fails:1
+12月 25 14:36:29.7 - [DEBUG] 118.107.75.167 fail:timeout('timed out',)
+12月 25 14:36:29.7 - [DEBUG] report_connect_fail:118.107.75.167
+12月 25 14:36:29.7 - [DEBUG] get ip:208.90.107.119 t:555
+12月 25 14:36:33.7 - [DEBUG] 208.90.107.119 fail:timeout('timed out',)
+12月 25 14:36:33.7 - [DEBUG] report_connect_fail:208.90.107.119
+12月 25 14:36:33.7 - [DEBUG] get ip:142.176.121.215 t:568
+12月 25 14:36:35.5 - [INFO] scan_ip add ip:85.182.250.241 time:575
+12月 25 14:36:35.5 - [INFO] remove_slowest_ip:208.90.107.119 handshake_time:555, fails:1
+12月 25 14:36:37.7 - [DEBUG] 142.176.121.215 fail:timeout('timed out',)
+12月 25 14:36:37.7 - [DEBUG] report_connect_fail:142.176.121.215
+12月 25 14:36:37.7 - [DEBUG] get ip:190.212.166.169 t:570
+12月 25 14:36:38.6 - [DEBUG] create_ssl update ip:190.212.166.169 time:570 h2:0
+12月 25 14:36:41.0 - [DEBUG] restore ip:118.107.75.167
+12月 25 14:36:48.7 - [DEBUG] ip:208.90.107.119 real fail
+12月 25 14:36:53.7 - [DEBUG] ip:142.176.121.215 real fail
+12月 25 14:36:58.6 - [DEBUG] get ip:118.107.75.167 t:519
+12月 25 14:36:59.7 - [DEBUG] create_ssl update ip:118.107.75.167 time:519 h2:0
+12月 25 14:37:08.9 - [INFO] scan_ip add ip:181.49.182.171 time:651
+12月 25 14:37:08.9 - [INFO] remove_slowest_ip:142.176.121.215 handshake_time:568, fails:1
+12月 25 14:37:17.5 - [WARNING] 58.26.8.84 _consume_single_frame:SysCallError(104, 'ECONNRESET')
+12月 25 14:37:17.5 - [DEBUG] ssl_closed 58.26.8.84
+12月 25 14:37:17.5 - [DEBUG] 58.26.8.84 worker close:disconnect:SysCallError(104, 'ECONNRESET')
+12月 25 14:37:20.8 - [INFO] scan_ip add ip:110.93.194.53 time:1011
+12月 25 14:37:20.8 - [INFO] remove_slowest_ip:159.134.168.115 handshake_time:488, fails:1
+12月 25 14:37:24.9 - [INFO] scan_ip add ip:24.214.95.161 time:1197
+12月 25 14:37:25.0 - [INFO] remove_slowest_ip:58.26.8.102 handshake_time:488, fails:1
+12月 25 14:37:28.4 - [INFO] scan_ip add ip:203.116.165.238 time:455
+12月 25 14:37:28.4 - [INFO] remove_slowest_ip:118.98.36.112 handshake_time:488, fails:1
+12月 25 14:37:29.7 - [DEBUG] get ip:203.116.165.238 t:455
+12月 25 14:37:30.0 - [INFO] scan_ip add ip:179.154.191.178 time:967
+12月 25 14:37:30.1 - [INFO] remove_slowest_ip:200.124.254.219 handshake_time:1487, fails:0
+12月 25 14:37:31.6 - [INFO] scan_ip add ip:49.231.58.153 time:841
+12月 25 14:37:31.6 - [INFO] remove_slowest_ip:62.4.253.228 handshake_time:487, fails:1
+12月 25 14:37:33.1 - [DEBUG] appid:zhouxingyucn6 head fail status:503
+12月 25 14:37:33.1 - [DEBUG] report_connect_fail:190.212.166.169
+12月 25 14:37:33.5 - [INFO] scan_ip add ip:190.211.175.57 time:750
+12月 25 14:37:33.5 - [INFO] remove_slowest_ip:190.212.166.169 handshake_time:570, fails:1
+12月 25 14:37:33.7 - [DEBUG] 203.116.165.238 fail:timeout('timed out',)
+12月 25 14:37:33.7 - [DEBUG] report_connect_fail:203.116.165.238
+12月 25 14:37:33.7 - [DEBUG] get ip:58.26.8.84 t:484
+12月 25 14:37:34.4 - [DEBUG] recheck_ip:190.212.166.169 restore okl
+12月 25 14:37:34.4 - [DEBUG] 190.212.166.169 worker close:keep alive
+12月 25 14:37:34.8 - [DEBUG] create_ssl update ip:58.26.8.84 time:779 h2:1
+12月 25 14:37:35.1 - [WARNING] 61.238.239.241 _consume_single_frame:ConnectionResetError()
+12月 25 14:37:35.1 - [DEBUG] ssl_closed 61.238.239.241
+12月 25 14:37:35.1 - [DEBUG] 61.238.239.241 worker close:disconnect:ConnectionResetError()
+12月 25 14:37:35.6 - [INFO] scan_ip add ip:77.237.27.40 time:859
+12月 25 14:37:35.6 - [INFO] remove_slowest_ip:122.149.3.250 handshake_time:487, fails:1
+12月 25 14:37:35.6 - [INFO] remove_slowest_ip:58.27.61.92 handshake_time:487, fails:1
+12月 25 14:37:44.4 - [DEBUG] restore ip:190.212.166.169
+12月 25 14:37:48.2 - [INFO] scan_ip add ip:24.156.131.112 time:1646
+12月 25 14:37:48.2 - [INFO] remove_slowest_ip:24.156.131.112 handshake_time:1646, fails:0
+12月 25 14:37:49.4 - [DEBUG] ip:203.116.165.238 real fail
+12月 25 14:37:49.8 - [DEBUG] get ip:61.238.239.241 t:88
+12月 25 14:37:53.6 - [INFO] scan_ip add ip:110.93.194.40 time:735
+12月 25 14:37:53.6 - [INFO] remove_slowest_ip:58.26.8.81 handshake_time:487, fails:1
+12月 25 14:37:53.8 - [DEBUG] 61.238.239.241 fail:timeout('timed out',)
+12月 25 14:37:53.8 - [DEBUG] report_connect_fail:61.238.239.241
+12月 25 14:37:53.8 - [DEBUG] get ip:120.28.26.152 t:572
+12月 25 14:37:58.6 - [DEBUG] 120.28.26.152 fail:error(' certficate is none',)
+12月 25 14:37:58.6 - [DEBUG] report_connect_fail:120.28.26.152
+12月 25 14:37:58.6 - [DEBUG] get ip:85.182.250.241 t:575
+12月 25 14:38:00.7 - [INFO] scan_ip add ip:154.66.245.236 time:964
+12月 25 14:38:00.7 - [INFO] remove_slowest_ip:120.28.26.152 handshake_time:572, fails:1
+12月 25 14:38:02.6 - [DEBUG] 85.182.250.241 fail:timeout('timed out',)
+12月 25 14:38:02.6 - [DEBUG] report_connect_fail:85.182.250.241
+12月 25 14:38:02.6 - [DEBUG] get ip:42.119.211.82 t:577
+12月 25 14:38:06.6 - [DEBUG] 42.119.211.82 fail:timeout('timed out',)
+12月 25 14:38:06.6 - [DEBUG] report_connect_fail:42.119.211.82
+12月 25 14:38:06.6 - [DEBUG] get ip:36.37.218.48 t:578
+12月 25 14:38:08.8 - [DEBUG] ip:61.238.239.241 real fail
+12月 25 14:38:10.5 - [DEBUG] restore ip:120.28.26.152
+12月 25 14:38:10.6 - [DEBUG] 36.37.218.48 fail:timeout('timed out',)
+12月 25 14:38:10.6 - [DEBUG] report_connect_fail:36.37.218.48
+12月 25 14:38:10.6 - [DEBUG] get ip:190.212.166.169 t:598
+12月 25 14:38:11.5 - [DEBUG] create_ssl update ip:190.212.166.169 time:616 h2:0
+12月 25 14:38:13.0 - [INFO] scan_ip add ip:4.35.108.88 time:1033
+12月 25 14:38:13.0 - [INFO] remove_slowest_ip:36.37.218.48 handshake_time:578, fails:1
+12月 25 14:38:13.0 - [INFO] remove_slowest_ip:42.119.211.82 handshake_time:577, fails:1
+12月 25 14:38:17.6 - [DEBUG] ip:85.182.250.241 real fail
+12月 25 14:38:19.8 - [INFO] scan_ip add ip:195.80.179.24 time:3516
+12月 25 14:38:19.8 - [INFO] remove_slowest_ip:195.80.179.24 handshake_time:3516, fails:0
+12月 25 14:38:20.2 - [INFO] scan_ip add ip:41.206.47.44 time:1494
+12月 25 14:38:20.2 - [INFO] remove_slowest_ip:85.182.250.241 handshake_time:575, fails:1
+12月 25 14:38:22.6 - [DEBUG] ip:42.119.211.82 real fail
+12月 25 14:38:26.5 - [DEBUG] get ip:113.171.251.229 t:600
+12月 25 14:38:27.6 - [DEBUG] ip:36.37.218.48 real fail
+12月 25 14:38:30.5 - [DEBUG] 113.171.251.229 fail:timeout('timed out',)
+12月 25 14:38:30.5 - [DEBUG] report_connect_fail:113.171.251.229
+12月 25 14:38:30.5 - [DEBUG] get ip:195.80.179.174 t:622
+12月 25 14:38:31.8 - [DEBUG] create_ssl update ip:195.80.179.174 time:841 h2:0
+12月 25 14:38:32.1 - [INFO] scan_ip add ip:190.248.34.137 time:633
+12月 25 14:38:32.1 - [INFO] remove_slowest_ip:113.171.251.229 handshake_time:600, fails:1
+12月 25 14:38:36.7 - [INFO] scan_ip add ip:201.57.54.220 time:1928
+12月 25 14:38:36.7 - [INFO] remove_slowest_ip:201.57.54.220 handshake_time:1928, fails:0
+12月 25 14:38:37.1 - [INFO] scan_ip add ip:189.103.27.111 time:1953
+12月 25 14:38:37.1 - [INFO] remove_slowest_ip:189.103.27.111 handshake_time:1953, fails:0
+12月 25 14:38:40.1 - [INFO] scan_ip add ip:59.18.35.83 time:599
+12月 25 14:38:40.1 - [INFO] remove_slowest_ip:41.206.47.44 handshake_time:1494, fails:0
+12月 25 14:38:45.5 - [DEBUG] ip:113.171.251.229 real fail
+12月 25 14:38:45.7 - [INFO] scan_ip add ip:79.121.0.92 time:492
+12月 25 14:38:45.7 - [INFO] remove_slowest_ip:118.98.111.81 handshake_time:487, fails:1
+12月 25 14:38:48.0 - [DEBUG] ssl_closed 113.171.253.225
+12月 25 14:38:48.0 - [DEBUG] 113.171.253.225 worker close:idle timeout
+12月 25 14:38:55.1 - [DEBUG] ssl_closed 120.28.26.150
+12月 25 14:38:55.1 - [DEBUG] 120.28.26.150 worker close:idle timeout
+12月 25 14:39:01.8 - [DEBUG] get ip:79.121.0.92 t:492
+12月 25 14:39:05.8 - [DEBUG] 79.121.0.92 fail:timeout('timed out',)
+12月 25 14:39:05.8 - [DEBUG] report_connect_fail:79.121.0.92
+12月 25 14:39:05.8 - [DEBUG] get ip:59.18.35.83 t:599
+12月 25 14:39:09.8 - [DEBUG] 59.18.35.83 fail:timeout('timed out',)
+12月 25 14:39:09.8 - [DEBUG] report_connect_fail:59.18.35.83
+12月 25 14:39:09.8 - [DEBUG] get ip:190.248.34.137 t:633
+12月 25 14:39:10.1 - [INFO] scan_ip add ip:206.167.212.117 time:1235
+12月 25 14:39:10.1 - [INFO] remove_slowest_ip:59.18.35.83 handshake_time:599, fails:1
+12月 25 14:39:13.8 - [DEBUG] 190.248.34.137 fail:timeout('timed out',)
+12月 25 14:39:13.8 - [DEBUG] report_connect_fail:190.248.34.137
+12月 25 14:39:13.8 - [DEBUG] get ip:181.198.79.221 t:651
+12月 25 14:39:17.0 - [DEBUG] restore ip:79.121.0.92
+12月 25 14:39:17.2 - [INFO] scan_ip add ip:125.234.53.32 time:537
+12月 25 14:39:17.2 - [INFO] remove_slowest_ip:190.248.34.137 handshake_time:633, fails:1
+12月 25 14:39:17.8 - [DEBUG] 181.198.79.221 fail:timeout('timed out',)
+12月 25 14:39:17.8 - [DEBUG] report_connect_fail:181.198.79.221
+12月 25 14:39:17.8 - [DEBUG] get ip:79.121.0.92 t:495
+12月 25 14:39:21.8 - [DEBUG] 79.121.0.92 fail:timeout('timed out',)
+12月 25 14:39:21.8 - [DEBUG] report_connect_fail:79.121.0.92
+12月 25 14:39:21.8 - [DEBUG] get ip:125.234.53.32 t:537
+12月 25 14:39:24.8 - [DEBUG] ip:59.18.35.83 real fail
+12月 25 14:39:25.8 - [DEBUG] 125.234.53.32 fail:timeout('timed out',)
+12月 25 14:39:25.8 - [DEBUG] report_connect_fail:125.234.53.32
+12月 25 14:39:25.8 - [DEBUG] get ip:181.49.182.171 t:651
+12月 25 14:39:27.1 - [DEBUG] create_ssl update ip:181.49.182.171 time:655 h2:0
+12月 25 14:39:27.1 - [DEBUG] get ip:216.58.205.88 t:691
+12月 25 14:39:29.8 - [DEBUG] ip:190.248.34.137 real fail
+12月 25 14:39:31.1 - [DEBUG] 216.58.205.88 fail:timeout('timed out',)
+12月 25 14:39:31.1 - [DEBUG] report_connect_fail:216.58.205.88
+12月 25 14:39:31.2 - [DEBUG] get ip:167.206.145.181 t:721
+12月 25 14:39:31.2 - [DEBUG] restore ip:181.198.79.221
+12月 25 14:39:35.2 - [DEBUG] 167.206.145.181 fail:timeout('timed out',)
+12月 25 14:39:35.2 - [DEBUG] report_connect_fail:167.206.145.181
+12月 25 14:39:35.2 - [DEBUG] get ip:110.93.194.40 t:735
+12月 25 14:39:35.6 - [INFO] scan_ip add ip:63.84.3.62 time:452
+12月 25 14:39:35.6 - [INFO] remove_slowest_ip:167.206.145.181 handshake_time:721, fails:1
+12月 25 14:39:36.8 - [DEBUG] ip:79.121.0.92 real fail
+12月 25 14:39:37.4 - [DEBUG] create_ssl update ip:110.93.194.40 time:1841 h2:0
+12月 25 14:39:38.1 - [INFO] scan_ip add ip:177.131.1.238 time:1457
+12月 25 14:39:38.1 - [INFO] remove_slowest_ip:216.58.205.88 handshake_time:691, fails:1
+12月 25 14:39:41.9 - [DEBUG] ip:125.234.53.32 real fail
+12月 25 14:39:43.3 - [DEBUG] restore ip:216.58.205.88
+12月 25 14:39:46.4 - [DEBUG] ssl_closed 113.171.253.207
+12月 25 14:39:46.4 - [DEBUG] 113.171.253.207 worker close:idle timeout
+12月 25 14:39:50.2 - [DEBUG] ip:167.206.145.181 real fail
+12月 25 14:40:01.9 - [INFO] scan_ip add ip:66.153.250.204 time:517
+12月 25 14:40:02.0 - [INFO] remove_slowest_ip:125.234.53.32 handshake_time:537, fails:1
+12月 25 14:40:02.0 - [INFO] remove_slowest_ip:79.121.0.92 handshake_time:495, fails:1
+12月 25 14:40:10.7 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:40:10.7 - [DEBUG] 202.86.162.172 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:40:11.3 - [INFO] scan_ip add ip:201.67.193.16 time:1207
+12月 25 14:40:11.3 - [INFO] remove_slowest_ip:113.171.253.204 handshake_time:487, fails:1
+12月 25 14:40:16.1 - [WARNING] parse request fail:)�
+
+12月 25 14:40:16.1 - [WARNING] unhandler cmd:None path:mtalk.google.com:5228 from:127.0.0.1:49046
+12月 25 14:40:16.7 - [INFO] scan_ip add ip:186.251.10.42 time:2747
+12月 25 14:40:16.7 - [INFO] remove_slowest_ip:186.251.10.42 handshake_time:2747, fails:0
+12月 25 14:40:17.4 - [DEBUG] get ip:202.86.162.172 t:85
+12月 25 14:40:17.5 - [DEBUG] create_ssl update ip:202.86.162.172 time:81 h2:1
+12月 25 14:40:21.3 - [DEBUG] appid:xxnet-tn03 head fail status:503
+12月 25 14:40:21.3 - [DEBUG] report_connect_fail:181.49.182.171
+12月 25 14:40:26.3 - [DEBUG] 181.49.182.171 worker close:keep alive
+12月 25 14:40:27.5 - [DEBUG] get ip:63.84.3.62 t:452
+12月 25 14:40:28.2 - [DEBUG] create_ssl update ip:63.84.3.62 time:456 h2:0
+12月 25 14:40:32.1 - [DEBUG] ssl_closed 120.28.26.186
+12月 25 14:40:32.1 - [DEBUG] 120.28.26.186 worker close:idle timeout
+12月 25 14:40:36.3 - [DEBUG] ip:181.49.182.171 real fail
+12月 25 14:40:37.5 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/experimentstatus
+12月 25 14:40:37.5 - [DEBUG] get ip:113.171.253.207 t:480
+12月 25 14:40:37.9 - [DEBUG] ssl_closed 120.28.26.142
+12月 25 14:40:37.9 - [DEBUG] 120.28.26.142 worker close:idle timeout
+12月 25 14:40:37.9 - [INFO] GAE t:493 s:32 POST https://clients4.google.com/chrome-sync/experimentstatus h2_get_head:486,h2_finish[SP:137992]:2
+12月 25 14:40:38.0 - [DEBUG] get ip:66.153.250.204 t:517
+12月 25 14:40:38.2 - [DEBUG] create_ssl update ip:113.171.253.207 time:466 h2:0
+12月 25 14:40:38.2 - [DEBUG] get ip:120.28.26.186 t:551
+12月 25 14:40:38.5 - [DEBUG] get ip:181.198.79.221 t:621
+12月 25 14:40:38.9 - [DEBUG] create_ssl update ip:120.28.26.186 time:428 h2:0
+12月 25 14:40:38.9 - [DEBUG] get ip:216.58.205.88 t:675
+12月 25 14:40:39.0 - [DEBUG] get ip:150.100.16.78 t:738
+12月 25 14:40:39.2 - [DEBUG] get ip:110.93.194.55 t:744
+12月 25 14:40:39.5 - [DEBUG] get ip:190.211.175.57 t:750
+12月 25 14:40:40.0 - [DEBUG] get ip:111.95.240.158 t:763
+12月 25 14:40:40.5 - [DEBUG] get ip:66.96.226.210 t:768
+12月 25 14:40:41.0 - [DEBUG] get ip:193.192.226.152 t:769
+12月 25 14:40:41.2 - [DEBUG] create_ssl update ip:150.100.16.78 time:2048 h2:0
+12月 25 14:40:41.5 - [DEBUG] get ip:200.149.119.29 t:771
+12月 25 14:40:41.6 - [DEBUG] create_ssl update ip:66.96.226.210 time:768 h2:0
+12月 25 14:40:42.0 - [DEBUG] 66.153.250.204 fail:timeout('timed out',)
+12月 25 14:40:42.0 - [DEBUG] report_connect_fail:66.153.250.204
+12月 25 14:40:42.0 - [DEBUG] get ip:164.85.63.26 t:780
+12月 25 14:40:42.0 - [DEBUG] get ip:202.67.35.185 t:783
+12月 25 14:40:42.2 - [DEBUG] get ip:200.149.119.124 t:798
+12月 25 14:40:42.5 - [DEBUG] 181.198.79.221 fail:timeout('timed out',)
+12月 25 14:40:42.5 - [DEBUG] report_connect_fail:181.198.79.221
+12月 25 14:40:42.5 - [DEBUG] get ip:24.244.4.27 t:804
+12月 25 14:40:42.5 - [DEBUG] get ip:113.171.253.225 t:806
+12月 25 14:40:42.6 - [DEBUG] get ip:212.89.5.79 t:826
+12月 25 14:40:42.7 - [DEBUG] create_ssl update ip:200.149.119.29 time:803 h2:1
+12月 25 14:40:42.9 - [DEBUG] 216.58.205.88 fail:timeout('timed out',)
+12月 25 14:40:42.9 - [DEBUG] report_connect_fail:216.58.205.88
+12月 25 14:40:42.9 - [DEBUG] get ip:49.231.60.112 t:831
+12月 25 14:40:43.0 - [DEBUG] get ip:49.231.58.153 t:841
+12月 25 14:40:43.2 - [DEBUG] 110.93.194.55 fail:timeout('timed out',)
+12月 25 14:40:43.2 - [DEBUG] report_connect_fail:110.93.194.55
+12月 25 14:40:43.2 - [DEBUG] get ip:85.112.116.217 t:847
+12月 25 14:40:43.4 - [DEBUG] create_ssl update ip:113.171.253.225 time:601 h2:0
+12月 25 14:40:43.4 - [DEBUG] create_ssl update ip:24.244.4.27 time:744 h2:1
+12月 25 14:40:43.5 - [DEBUG] 190.211.175.57 fail:timeout('timed out',)
+12月 25 14:40:43.5 - [DEBUG] report_connect_fail:190.211.175.57
+12月 25 14:40:43.5 - [DEBUG] get ip:103.233.36.169 t:847
+12月 25 14:40:43.5 - [DEBUG] get ip:118.98.77.98 t:847
+12月 25 14:40:43.6 - [DEBUG] create_ssl update ip:200.149.119.124 time:795 h2:1
+12月 25 14:40:43.7 - [DEBUG] get ip:43.245.195.152 t:847
+12月 25 14:40:43.9 - [DEBUG] create_ssl update ip:212.89.5.79 time:855 h2:1
+12月 25 14:40:44.0 - [DEBUG] 111.95.240.158 fail:timeout('timed out',)
+12月 25 14:40:44.0 - [DEBUG] report_connect_fail:111.95.240.158
+12月 25 14:40:44.0 - [DEBUG] get ip:196.203.102.204 t:848
+12月 25 14:40:44.0 - [DEBUG] get ip:200.149.119.24 t:848
+12月 25 14:40:44.2 - [DEBUG] create_ssl update ip:49.231.58.153 time:813 h2:0
+12月 25 14:40:45.0 - [DEBUG] 193.192.226.152 fail:timeout('timed out',)
+12月 25 14:40:45.0 - [DEBUG] report_connect_fail:193.192.226.152
+12月 25 14:40:45.2 - [DEBUG] create_ssl update ip:200.149.119.24 time:843 h2:1
+12月 25 14:40:46.0 - [DEBUG] 164.85.63.26 fail:timeout('timed out',)
+12月 25 14:40:46.0 - [DEBUG] 202.67.35.185 fail:timeout('timed out',)
+12月 25 14:40:46.0 - [DEBUG] report_connect_fail:164.85.63.26
+12月 25 14:40:46.0 - [DEBUG] report_connect_fail:202.67.35.185
+12月 25 14:40:46.9 - [DEBUG] 49.231.60.112 fail:timeout('timed out',)
+12月 25 14:40:46.9 - [DEBUG] report_connect_fail:49.231.60.112
+12月 25 14:40:47.2 - [DEBUG] 85.112.116.217 fail:timeout('timed out',)
+12月 25 14:40:47.2 - [DEBUG] report_connect_fail:85.112.116.217
+12月 25 14:40:47.4 - [DEBUG] create_ssl update ip:196.203.102.204 time:2962 h2:0
+12月 25 14:40:47.5 - [DEBUG] 103.233.36.169 fail:timeout('timed out',)
+12月 25 14:40:47.5 - [DEBUG] report_connect_fail:103.233.36.169
+12月 25 14:40:47.5 - [DEBUG] 118.98.77.98 fail:timeout('timed out',)
+12月 25 14:40:47.5 - [DEBUG] report_connect_fail:118.98.77.98
+12月 25 14:40:47.7 - [DEBUG] 43.245.195.152 fail:timeout('timed out',)
+12月 25 14:40:47.7 - [DEBUG] report_connect_fail:43.245.195.152
+12月 25 14:40:50.0 - [INFO] scan_ip add ip:209.191.218.143 time:1511
+12月 25 14:40:50.0 - [INFO] remove_slowest_ip:43.245.195.152 handshake_time:847, fails:1
+12月 25 14:40:57.0 - [DEBUG] ip:66.153.250.204 real fail
+12月 25 14:40:58.7 - [INFO] scan_ip add ip:164.40.244.32 time:1046
+12月 25 14:40:58.7 - [INFO] remove_slowest_ip:118.98.77.98 handshake_time:847, fails:1
+12月 25 14:41:02.0 - [DEBUG] ip:181.198.79.221 real fail
+12月 25 14:41:07.0 - [DEBUG] ip:216.58.205.88 real fail
+12月 25 14:41:07.7 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&gs_rn=42&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:08.0 - [INFO] GAE t:256 s:116 GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&gs_rn=42&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw h2_get_head:253
+12月 25 14:41:09.0 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=l&oit=1&cp=1&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.2 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=lo&oit=1&cp=2&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.3 - [INFO] gae_handler.handler send response fail. e:error(32, 'Broken pipe') https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=l&oit=1&cp=1&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.3 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=loc&oit=1&cp=3&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.5 - [INFO] gae_handler.handler send response fail. e:error(32, 'Broken pipe') https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=lo&oit=1&cp=2&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.5 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=loca&oit=1&cp=4&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.6 - [INFO] gae_handler.handler send response fail. e:error(32, 'Broken pipe') https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=loc&oit=1&cp=3&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.6 - [DEBUG] GAE GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=local&oit=1&cp=5&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.7 - [INFO] gae_handler.handler send response fail. e:error(32, 'Broken pipe') https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=loca&oit=1&cp=4&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
+12月 25 14:41:09.8 - [INFO] GAE t:268 s:367 GET https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=local&oit=1&cp=5&url=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&pgcl=4&gs_rn=42&psi=uV-r2XuQj_nkEpZp&sugkey=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw h2_get_head:265
+12月 25 14:41:10.0 - [INFO] scan_ip add ip:192.122.185.31 time:535
+12月 25 14:41:10.0 - [INFO] remove_slowest_ip:103.233.36.169 handshake_time:847, fails:1
+12月 25 14:41:11.2 - [DEBUG] GAE GET http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext
+12月 25 14:41:11.4 - [INFO] GAE t:243 s:672 GET http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext h2_get_head:242
+12月 25 14:41:11.5 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:11.9 - [INFO] GAE t:376 s:3172 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:375
+12月 25 14:41:11.9 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:12.0 - [DEBUG] ip:110.93.194.55 real fail
+12月 25 14:41:12.0 - [DEBUG] GAE GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=1701344850&t=pageview&_s=1&dl=http%3A%2F%2Flocalhost%2F&ul=en-us&de=UTF-8&dt=%E5%B0%8F%E5%BC%BA%E7%9A%84%E5%8D%9A%E5%AE%A2&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=AACAAEABI~&jid=1294869834&cid=1820209896.1482645641&tid=UA-84391638-1&_r=1&z=958628240
+12月 25 14:41:12.3 - [INFO] GAE t:256 s:35 GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=1701344850&t=pageview&_s=1&dl=http%3A%2F%2Flocalhost%2F&ul=en-us&de=UTF-8&dt=%E5%B0%8F%E5%BC%BA%E7%9A%84%E5%8D%9A%E5%AE%A2&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=AACAAEABI~&jid=1294869834&cid=1820209896.1482645641&tid=UA-84391638-1&_r=1&z=958628240 h2_get_head:249
+12月 25 14:41:12.3 - [INFO] GAE t:395 s:541 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:391
+12月 25 14:41:17.0 - [DEBUG] ip:190.211.175.57 real fail
+12月 25 14:41:22.0 - [DEBUG] ip:111.95.240.158 real fail
+12月 25 14:41:22.4 - [INFO] scan_ip add ip:200.142.191.51 time:1599
+12月 25 14:41:22.4 - [INFO] remove_slowest_ip:85.112.116.217 handshake_time:847, fails:1
+12月 25 14:41:23.4 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:23.7 - [INFO] GAE t:354 s:1505 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:351
+12月 25 14:41:23.7 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:23.8 - [DEBUG] 118.107.75.167 keep alive fail, inactive_time:264 head_timeout:100
+12月 25 14:41:23.8 - [DEBUG] report_connect_fail:118.107.75.167
+12月 25 14:41:24.1 - [INFO] GAE t:369 s:467 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:366
+12月 25 14:41:24.1 - [DEBUG] GAE GET http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext
+12月 25 14:41:24.2 - [DEBUG] ssl_closed 189.247.160.82
+12月 25 14:41:24.2 - [DEBUG] 189.247.160.82 worker close:idle timeout
+12月 25 14:41:24.4 - [INFO] GAE t:244 s:672 GET http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext h2_get_head:242
+12月 25 14:41:25.2 - [DEBUG] GAE GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=1829785910&t=pageview&_s=1&dl=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&dr=http%3A%2F%2Flocalhost%3A4000%2F&ul=en-us&de=UTF-8&dt=Linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F%20%7C%20%E5%B0%8F%E5%BC%BA%E7%9A%84%E5%8D%9A%E5%AE%A2&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=AACAAEABI~&jid=1039570205&cid=1796538311.1482122909&tid=UA-84391638-1&_r=1&z=578940276
+12月 25 14:41:25.4 - [INFO] GAE t:246 s:35 GET https://www.google-analytics.com/r/collect?v=1&_v=j47&a=1829785910&t=pageview&_s=1&dl=http%3A%2F%2Fjiangxiaoqiang.com%2F2016%2F10%2F14%2Fscript-startup-with-linux%2F&dr=http%3A%2F%2Flocalhost%3A4000%2F&ul=en-us&de=UTF-8&dt=Linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F%20%7C%20%E5%B0%8F%E5%BC%BA%E7%9A%84%E5%8D%9A%E5%AE%A2&sd=24-bit&sr=1920x1080&vp=1905x966&je=0&fl=24.0%20r0&_u=AACAAEABI~&jid=1039570205&cid=1796538311.1482122909&tid=UA-84391638-1&_r=1&z=578940276 h2_get_head:244
+12月 25 14:41:27.0 - [DEBUG] ip:193.192.226.152 real fail
+12月 25 14:41:28.8 - [DEBUG] 118.107.75.167 worker close:keep alive
+12月 25 14:41:32.0 - [DEBUG] ip:164.85.63.26 real fail
+12月 25 14:41:33.2 - [DEBUG] restore ip:202.67.35.185
+12月 25 14:41:34.3 - [DEBUG] appid:innate-summit-123514 head fail status:503
+12月 25 14:41:34.3 - [DEBUG] report_connect_fail:150.100.16.78
+12月 25 14:41:35.1 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:35.2 - [DEBUG] recheck_ip:150.100.16.78 restore okl
+12月 25 14:41:35.2 - [DEBUG] 150.100.16.78 worker close:keep alive
+12月 25 14:41:35.5 - [INFO] GAE t:348 s:1510 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:345
+12月 25 14:41:35.5 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:41:36.2 - [INFO] GAE t:699 s:467 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:389,h2_finish[SP:2804]:308
+12月 25 14:41:36.9 - [DEBUG] get ip:189.247.160.82 t:452
+12月 25 14:41:37.6 - [DEBUG] create_ssl update ip:189.247.160.82 time:452 h2:0
+12月 25 14:41:37.6 - [DEBUG] get ip:202.67.35.185 t:492
+12月 25 14:41:38.2 - [DEBUG] ip:49.231.60.112 real fail
+12月 25 14:41:38.7 - [DEBUG] appid:xxnet-371410 head fail status:503
+12月 25 14:41:38.7 - [DEBUG] report_connect_fail:49.231.58.153
+12月 25 14:41:39.6 - [DEBUG] appid:xinxijishuwyq11 head fail status:503
+12月 25 14:41:39.6 - [DEBUG] report_connect_fail:196.203.102.204
+12月 25 14:41:41.0 - [INFO] scan_ip add ip:201.248.76.220 time:621
+12月 25 14:41:41.0 - [INFO] remove_slowest_ip:196.203.102.204 handshake_time:1348, fails:1
+12月 25 14:41:41.4 - [DEBUG] recheck_ip:196.203.102.204 restore okl
+12月 25 14:41:41.4 - [DEBUG] 196.203.102.204 worker close:keep alive
+12月 25 14:41:41.6 - [DEBUG] 202.67.35.185 fail:timeout('timed out',)
+12月 25 14:41:41.6 - [DEBUG] report_connect_fail:202.67.35.185
+12月 25 14:41:41.6 - [DEBUG] get ip:150.100.16.78 t:516
+12月 25 14:41:43.2 - [DEBUG] ip:85.112.116.217 real fail
+12月 25 14:41:43.6 - [DEBUG] create_ssl update ip:150.100.16.78 time:1810 h2:0
+12月 25 14:41:43.7 - [DEBUG] 49.231.58.153 worker close:keep alive
+12月 25 14:41:48.2 - [DEBUG] ip:103.233.36.169 real fail
+12月 25 14:41:49.8 - [INFO] scan_ip add ip:58.162.62.79 time:778
+12月 25 14:41:49.8 - [INFO] remove_slowest_ip:49.231.60.112 handshake_time:831, fails:1
+12月 25 14:41:49.8 - [INFO] remove_slowest_ip:49.231.58.153 handshake_time:813, fails:1
+12月 25 14:41:53.2 - [DEBUG] ip:118.98.77.98 real fail
+12月 25 14:41:55.9 - [DEBUG] ssl_closed 190.212.166.206
+12月 25 14:41:55.9 - [DEBUG] 190.212.166.206 worker close:idle timeout
+12月 25 14:41:56.8 - [DEBUG] ssl_closed 190.212.166.179
+12月 25 14:41:56.8 - [DEBUG] 190.212.166.179 worker close:idle timeout
+12月 25 14:41:58.2 - [DEBUG] ip:43.245.195.152 real fail
+12月 25 14:41:59.9 - [DEBUG] ssl_closed 200.10.226.218
+12月 25 14:41:59.9 - [DEBUG] 200.10.226.218 worker close:idle timeout
+12月 25 14:42:02.4 - [DEBUG] ssl_closed 112.72.5.81
+12月 25 14:42:02.4 - [DEBUG] 112.72.5.81 worker close:idle timeout
+12月 25 14:42:03.2 - [DEBUG] ip:118.107.75.167 real fail
+12月 25 14:42:03.9 - [DEBUG] restore ip:150.100.16.78
+12月 25 14:42:08.9 - [DEBUG] ip:49.231.58.153 real fail
+12月 25 14:42:10.3 - [DEBUG] 110.93.194.40 keep alive fail, inactive_time:152 head_timeout:100
+12月 25 14:42:10.3 - [DEBUG] report_connect_fail:110.93.194.40
+12月 25 14:42:11.3 - [DEBUG] restore ip:196.203.102.204
+12月 25 14:42:14.0 - [INFO] scan_ip add ip:93.123.23.49 time:574
+12月 25 14:42:14.0 - [INFO] remove_slowest_ip:110.93.194.40 handshake_time:1235, fails:1
+12月 25 14:42:15.3 - [DEBUG] 110.93.194.40 worker close:keep alive
+12月 25 14:42:16.3 - [DEBUG] ip:202.67.35.185 real fail
+12月 25 14:42:20.3 - [INFO] scan_ip add ip:107.161.13.232 time:1530
+12月 25 14:42:20.3 - [INFO] remove_slowest_ip:164.85.63.26 handshake_time:780, fails:1
+12月 25 14:42:22.3 - [INFO] scan_ip add ip:45.120.84.142 time:824
+12月 25 14:42:22.3 - [INFO] remove_slowest_ip:193.192.226.152 handshake_time:769, fails:1
+12月 25 14:42:25.3 - [DEBUG] ip:110.93.194.40 real fail
+12月 25 14:42:28.6 - [DEBUG] get ip:192.122.185.31 t:535
+12月 25 14:42:32.6 - [INFO] scan_ip add ip:113.171.252.98 time:605
+12月 25 14:42:32.6 - [INFO] remove_slowest_ip:111.95.240.158 handshake_time:763, fails:1
+12月 25 14:42:32.6 - [DEBUG] 192.122.185.31 fail:timeout('timed out',)
+12月 25 14:42:32.6 - [DEBUG] report_connect_fail:192.122.185.31
+12月 25 14:42:32.6 - [DEBUG] get ip:93.123.23.49 t:574
+12月 25 14:42:33.5 - [DEBUG] create_ssl update ip:93.123.23.49 time:574 h2:0
+12月 25 14:42:33.5 - [DEBUG] get ip:190.212.166.179 t:597
+12月 25 14:42:34.7 - [DEBUG] create_ssl update ip:190.212.166.179 time:969 h2:0
+12月 25 14:42:36.9 - [DEBUG] appid:xxnet--02 head fail status:503
+12月 25 14:42:36.9 - [DEBUG] report_connect_fail:150.100.16.78
+12月 25 14:42:39.8 - [INFO] scan_ip add ip:122.2.128.243 time:2918
+12月 25 14:42:39.8 - [INFO] remove_slowest_ip:122.2.128.243 handshake_time:2918, fails:0
+12月 25 14:42:41.9 - [DEBUG] 150.100.16.78 worker close:keep alive
+12月 25 14:42:46.0 - [INFO] scan_ip add ip:113.171.253.114 time:1705
+12月 25 14:42:46.0 - [INFO] remove_slowest_ip:190.211.175.57 handshake_time:750, fails:1
+12月 25 14:42:47.6 - [DEBUG] ip:192.122.185.31 real fail
+12月 25 14:42:48.7 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:42:48.7 - [DEBUG] get ip:113.171.252.98 t:605
+12月 25 14:42:49.1 - [INFO] GAE t:389 s:1517 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:346,h2_finish[SP:47018]:40
+12月 25 14:42:49.1 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:42:49.2 - [DEBUG] get ip:190.212.166.206 t:613
+12月 25 14:42:49.4 - [INFO] GAE t:355 s:467 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h2_get_head:353
+12月 25 14:42:49.7 - [DEBUG] get ip:201.248.76.220 t:621
+12月 25 14:42:49.8 - [DEBUG] get ip:58.162.62.79 t:778
+12月 25 14:42:50.2 - [DEBUG] get ip:200.10.226.218 t:808
+12月 25 14:42:50.7 - [DEBUG] get ip:45.120.84.142 t:824
+12月 25 14:42:51.0 - [DEBUG] create_ssl update ip:190.212.166.206 time:1506 h2:0
+12月 25 14:42:51.2 - [DEBUG] get ip:190.113.97.222 t:848
+12月 25 14:42:51.7 - [DEBUG] get ip:63.88.73.187 t:849
+12月 25 14:42:52.0 - [DEBUG] get ip:196.203.102.44 t:849
+12月 25 14:42:52.2 - [DEBUG] get ip:103.44.151.37 t:849
+12月 25 14:42:52.6 - [DEBUG] ip:150.100.16.78 real fail
+12月 25 14:42:52.7 - [DEBUG] 113.171.252.98 fail:timeout('timed out',)
+12月 25 14:42:52.7 - [DEBUG] report_connect_fail:113.171.252.98
+12月 25 14:42:52.7 - [DEBUG] get ip:190.45.0.228 t:849
+12月 25 14:42:52.7 - [DEBUG] get ip:202.151.87.116 t:849
+12月 25 14:42:52.7 - [DEBUG] create_ssl update ip:190.113.97.222 time:869 h2:1
+12月 25 14:42:53.2 - [DEBUG] get ip:203.151.116.173 t:849
+12月 25 14:42:53.3 - [DEBUG] create_ssl update ip:63.88.73.187 time:1085 h2:1
+12月 25 14:42:53.7 - [DEBUG] 201.248.76.220 fail:timeout('timed out',)
+12月 25 14:42:53.7 - [DEBUG] report_connect_fail:201.248.76.220
+12月 25 14:42:53.7 - [DEBUG] get ip:181.47.248.96 t:849
+12月 25 14:42:53.7 - [DEBUG] create_ssl update ip:203.151.116.173 time:352 h2:1
+12月 25 14:42:53.7 - [DEBUG] get ip:185.38.0.23 t:849
+12月 25 14:42:53.7 - [DEBUG] get ip:61.37.150.151 t:849
+12月 25 14:42:53.8 - [DEBUG] 58.162.62.79 fail:timeout('timed out',)
+12月 25 14:42:53.8 - [DEBUG] report_connect_fail:58.162.62.79
+12月 25 14:42:53.9 - [DEBUG] create_ssl update ip:190.45.0.228 time:838 h2:0
+12月 25 14:42:54.2 - [DEBUG] 200.10.226.218 fail:timeout('timed out',)
+12月 25 14:42:54.2 - [DEBUG] report_connect_fail:200.10.226.218
+12月 25 14:42:54.7 - [DEBUG] 45.120.84.142 fail:timeout('timed out',)
+12月 25 14:42:54.7 - [DEBUG] report_connect_fail:45.120.84.142
+12月 25 14:42:56.0 - [DEBUG] 196.203.102.44 fail:timeout('timed out',)
+12月 25 14:42:56.0 - [DEBUG] report_connect_fail:196.203.102.44
+12月 25 14:42:56.2 - [DEBUG] 103.44.151.37 fail:timeout('timed out',)
+12月 25 14:42:56.2 - [DEBUG] report_connect_fail:103.44.151.37
+12月 25 14:42:56.7 - [DEBUG] 202.151.87.116 fail:timeout('timed out',)
+12月 25 14:42:56.7 - [DEBUG] report_connect_fail:202.151.87.116
+12月 25 14:42:57.7 - [DEBUG] 181.47.248.96 fail:timeout('timed out',)
+12月 25 14:42:57.7 - [DEBUG] report_connect_fail:181.47.248.96
+12月 25 14:42:57.7 - [DEBUG] 185.38.0.23 fail:timeout('timed out',)
+12月 25 14:42:57.7 - [DEBUG] report_connect_fail:185.38.0.23
+12月 25 14:42:57.7 - [DEBUG] 61.37.150.151 fail:timeout('timed out',)
+12月 25 14:42:57.7 - [DEBUG] report_connect_fail:61.37.150.151
+12月 25 14:43:02.7 - [DEBUG] 63.84.3.62 keep alive fail, inactive_time:154 head_timeout:100
+12月 25 14:43:02.7 - [DEBUG] report_connect_fail:63.84.3.62
+12月 25 14:43:07.7 - [DEBUG] 63.84.3.62 worker close:keep alive
+12月 25 14:43:07.7 - [DEBUG] ip:113.171.252.98 real fail
+12月 25 14:43:12.7 - [DEBUG] ip:201.248.76.220 real fail
+12月 25 14:43:16.8 - [INFO] scan_ip add ip:110.93.194.62 time:717
+12月 25 14:43:16.8 - [INFO] remove_slowest_ip:61.37.150.151 handshake_time:849, fails:1
+12月 25 14:43:17.7 - [DEBUG] ip:58.162.62.79 real fail
+12月 25 14:43:22.7 - [DEBUG] ip:200.10.226.218 real fail
+12月 25 14:43:27.7 - [DEBUG] ip:45.120.84.142 real fail
+12月 25 14:43:32.7 - [DEBUG] ip:196.203.102.44 real fail
+12月 25 14:43:35.7 - [INFO] scan_ip add ip:202.75.147.50 time:467
+12月 25 14:43:35.8 - [INFO] remove_slowest_ip:185.38.0.23 handshake_time:849, fails:1
+12月 25 14:43:37.7 - [DEBUG] ip:103.44.151.37 real fail
+12月 25 14:43:42.7 - [DEBUG] ip:202.151.87.116 real fail
+12月 25 14:43:43.8 - [DEBUG] get ip:202.75.147.50 t:467
+12月 25 14:43:44.8 - [DEBUG] create_ssl update ip:202.75.147.50 time:492 h2:0
+12月 25 14:43:44.8 - [DEBUG] get ip:110.93.194.62 t:717
+12月 25 14:43:46.2 - [DEBUG] create_ssl update ip:110.93.194.62 time:732 h2:0
+12月 25 14:43:47.7 - [DEBUG] ip:181.47.248.96 real fail
+12月 25 14:43:48.3 - [DEBUG] appid:pnj201416313 head fail status:503
+12月 25 14:43:48.3 - [DEBUG] report_connect_fail:190.45.0.228
+12月 25 14:43:50.1 - [DEBUG] recheck_ip:190.45.0.228 restore okl
+12月 25 14:43:50.1 - [DEBUG] 190.45.0.228 worker close:keep alive
+12月 25 14:43:52.7 - [DEBUG] ip:185.38.0.23 real fail
+12月 25 14:43:57.7 - [DEBUG] ip:61.37.150.151 real fail
+12月 25 14:43:58.6 - [DEBUG] restore ip:63.84.3.62
+12月 25 14:43:59.3 - [INFO] scan_ip add ip:103.249.65.16 time:2272
+12月 25 14:43:59.3 - [INFO] remove_slowest_ip:103.249.65.16 handshake_time:2272, fails:0
+12月 25 14:44:03.6 - [DEBUG] ip:190.45.0.228 real fail
+12月 25 14:44:08.5 - [INFO] scan_ip add ip:213.145.140.19 time:915
+12月 25 14:44:08.5 - [INFO] remove_slowest_ip:181.47.248.96 handshake_time:849, fails:1
+12月 25 14:44:21.8 - [INFO] scan_ip add ip:186.46.140.113 time:2731
+12月 25 14:44:21.8 - [INFO] remove_slowest_ip:186.46.140.113 handshake_time:2731, fails:0
+12月 25 14:44:24.0 - [INFO] scan_ip add ip:186.68.247.38 time:1555
+12月 25 14:44:24.0 - [INFO] remove_slowest_ip:202.151.87.116 handshake_time:849, fails:1
+12月 25 14:44:30.6 - [INFO] scan_ip add ip:189.14.52.101 time:1610
+12月 25 14:44:30.6 - [INFO] remove_slowest_ip:103.44.151.37 handshake_time:849, fails:1
+12月 25 14:44:36.3 - [DEBUG] get ip:63.84.3.62 t:454
+12月 25 14:44:37.5 - [DEBUG] create_ssl update ip:63.84.3.62 time:988 h2:0
+12月 25 14:44:37.5 - [DEBUG] get ip:190.45.0.228 t:825
+12月 25 14:44:37.9 - [DEBUG] ssl_closed 58.26.8.84
+12月 25 14:44:37.9 - [DEBUG] 58.26.8.84 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:39.2 - [DEBUG] appid:xxnet-5 head fail status:503
+12月 25 14:44:39.2 - [DEBUG] report_connect_fail:202.75.147.50
+12月 25 14:44:40.9 - [DEBUG] recheck_ip:202.75.147.50 restore okl
+12月 25 14:44:40.9 - [DEBUG] 202.75.147.50 worker close:keep alive
+12月 25 14:44:41.5 - [DEBUG] 190.45.0.228 fail:timeout('timed out',)
+12月 25 14:44:41.5 - [DEBUG] report_connect_fail:190.45.0.228
+12月 25 14:44:41.5 - [DEBUG] get ip:202.75.147.50 t:444
+12月 25 14:44:42.7 - [DEBUG] ssl_closed 200.149.119.29
+12月 25 14:44:42.7 - [DEBUG] 200.149.119.29 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:43.0 - [DEBUG] create_ssl update ip:202.75.147.50 time:1223 h2:0
+12月 25 14:44:43.4 - [DEBUG] ssl_closed 24.244.4.27
+12月 25 14:44:43.4 - [DEBUG] 24.244.4.27 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:43.6 - [DEBUG] ssl_closed 200.149.119.124
+12月 25 14:44:43.6 - [DEBUG] 200.149.119.124 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:43.9 - [DEBUG] ssl_closed 212.89.5.79
+12月 25 14:44:43.9 - [DEBUG] 212.89.5.79 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:45.2 - [DEBUG] ssl_closed 200.149.119.24
+12月 25 14:44:45.2 - [DEBUG] 200.149.119.24 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:44:46.4 - [INFO] scan_ip add ip:106.162.216.46 time:326
+12月 25 14:44:46.4 - [INFO] remove_slowest_ip:196.203.102.44 handshake_time:849, fails:1
+12月 25 14:44:50.7 - [DEBUG] restore ip:202.75.147.50
+12月 25 14:44:53.3 - [DEBUG] restore ip:190.45.0.228
+12月 25 14:45:03.6 - [INFO] scan_ip add ip:194.78.99.210 time:479
+12月 25 14:45:03.7 - [INFO] remove_slowest_ip:45.120.84.142 handshake_time:824, fails:1
+12月 25 14:45:18.1 - [INFO] scan_ip add ip:217.18.145.110 time:743
+12月 25 14:45:18.1 - [INFO] remove_slowest_ip:200.10.226.218 handshake_time:808, fails:1
+12月 25 14:45:27.7 - [DEBUG] ssl_closed 43.245.144.19
+12月 25 14:45:27.7 - [DEBUG] 43.245.144.19 worker close:idle timeout
+12月 25 14:45:28.0 - [DEBUG] get ip:43.245.144.19 t:313
+12月 25 14:45:30.2 - [DEBUG] 63.117.215.82 keep alive fail, inactive_time:594 head_timeout:100
+12月 25 14:45:30.2 - [DEBUG] report_connect_fail:63.117.215.82
+12月 25 14:45:31.3 - [DEBUG] recheck_ip:63.117.215.82 restore okl
+12月 25 14:45:31.3 - [DEBUG] 63.117.215.82 worker close:keep alive
+12月 25 14:45:32.0 - [DEBUG] 43.245.144.19 fail:timeout('timed out',)
+12月 25 14:45:32.0 - [DEBUG] report_connect_fail:43.245.144.19
+12月 25 14:45:32.0 - [DEBUG] get ip:106.162.216.46 t:326
+12月 25 14:45:35.5 - [DEBUG] appid:zhouxingyucn13 head fail status:503
+12月 25 14:45:35.5 - [DEBUG] report_connect_fail:110.93.194.62
+12月 25 14:45:36.0 - [DEBUG] 106.162.216.46 fail:timeout('timed out',)
+12月 25 14:45:36.0 - [DEBUG] report_connect_fail:106.162.216.46
+12月 25 14:45:36.0 - [DEBUG] get ip:194.78.99.210 t:479
+12月 25 14:45:37.0 - [DEBUG] appid:chrome6-1209 head fail status:503
+12月 25 14:45:37.0 - [DEBUG] report_connect_fail:202.75.147.50
+12月 25 14:45:37.7 - [DEBUG] recheck_ip:110.93.194.62 restore okl
+12月 25 14:45:37.7 - [DEBUG] 110.93.194.62 worker close:keep alive
+12月 25 14:45:38.9 - [DEBUG] recheck_ip:202.75.147.50 restore okl
+12月 25 14:45:38.9 - [DEBUG] 202.75.147.50 worker close:keep alive
+12月 25 14:45:40.0 - [DEBUG] 194.78.99.210 fail:timeout('timed out',)
+12月 25 14:45:40.0 - [DEBUG] report_connect_fail:194.78.99.210
+12月 25 14:45:40.0 - [DEBUG] get ip:63.117.215.82 t:508
+12月 25 14:45:40.3 - [DEBUG] 63.117.215.82 worker close:idle timeout
+12月 25 14:45:41.2 - [INFO] scan_ip add ip:203.176.178.46 time:523
+12月 25 14:45:41.2 - [INFO] remove_slowest_ip:58.162.62.79 handshake_time:778, fails:1
+12月 25 14:45:44.0 - [DEBUG] 63.117.215.82 fail:timeout('timed out',)
+12月 25 14:45:44.0 - [DEBUG] report_connect_fail:63.117.215.82
+12月 25 14:45:44.0 - [DEBUG] get ip:203.176.178.46 t:523
+12月 25 14:45:44.8 - [DEBUG] create_ssl update ip:203.176.178.46 time:503 h2:0
+12月 25 14:45:44.8 - [DEBUG] get ip:217.18.145.110 t:743
+12月 25 14:45:45.2 - [DEBUG] ip:63.117.215.82 real fail
+12月 25 14:45:45.2 - [INFO] scan_ip add ip:87.126.158.155 time:497
+12月 25 14:45:45.2 - [INFO] remove_slowest_ip:110.93.194.55 handshake_time:744, fails:1
+12月 25 14:45:48.8 - [DEBUG] 217.18.145.110 fail:timeout('timed out',)
+12月 25 14:45:48.8 - [DEBUG] report_connect_fail:217.18.145.110
+12月 25 14:45:48.8 - [DEBUG] get ip:87.126.158.155 t:497
+12月 25 14:45:50.2 - [DEBUG] ip:43.245.144.19 real fail
+12月 25 14:45:51.9 - [DEBUG] restore ip:110.93.194.62
+12月 25 14:45:52.7 - [DEBUG] restore ip:106.162.216.46
+12月 25 14:45:52.8 - [DEBUG] 87.126.158.155 fail:timeout('timed out',)
+12月 25 14:45:52.8 - [DEBUG] report_connect_fail:87.126.158.155
+12月 25 14:45:52.8 - [DEBUG] get ip:24.244.4.27 t:744
+12月 25 14:45:53.5 - [DEBUG] create_ssl update ip:24.244.4.27 time:527 h2:1
+12月 25 14:45:53.8 - [DEBUG] restore ip:202.75.147.50
+12月 25 14:45:56.4 - [INFO] scan_ip add ip:189.63.251.155 time:2743
+12月 25 14:45:56.4 - [INFO] remove_slowest_ip:189.63.251.155 handshake_time:2743, fails:0
+12月 25 14:45:58.8 - [DEBUG] ip:194.78.99.210 real fail
+12月 25 14:46:00.6 - [INFO] scan_ip add ip:43.245.193.149 time:592
+12月 25 14:46:00.6 - [INFO] remove_slowest_ip:217.18.145.110 handshake_time:743, fails:1
+12月 25 14:46:03.8 - [DEBUG] ip:63.117.215.82 real fail
+12月 25 14:46:08.8 - [DEBUG] ip:217.18.145.110 real fail
+12月 25 14:46:13.5 - [INFO] scan_ip add ip:124.248.162.150 time:1148
+12月 25 14:46:13.5 - [INFO] remove_slowest_ip:113.171.253.114 handshake_time:1705, fails:0
+12月 25 14:46:13.8 - [DEBUG] ip:87.126.158.155 real fail
+12月 25 14:46:15.3 - [INFO] scan_ip add ip:62.212.252.108 time:735
+12月 25 14:46:15.3 - [INFO] remove_slowest_ip:216.58.205.88 handshake_time:675, fails:1
+12月 25 14:46:33.3 - [INFO] scan_ip add ip:177.101.143.218 time:838
+12月 25 14:46:33.3 - [INFO] remove_slowest_ip:181.49.182.171 handshake_time:655, fails:1
+12月 25 14:46:33.6 - [DEBUG] get ip:106.162.216.46 t:331
+12月 25 14:46:37.6 - [DEBUG] 106.162.216.46 fail:timeout('timed out',)
+12月 25 14:46:37.6 - [DEBUG] report_connect_fail:106.162.216.46
+12月 25 14:46:37.6 - [DEBUG] get ip:202.75.147.50 t:417
+12月 25 14:46:38.0 - [INFO] scan_ip add ip:212.113.52.207 time:789
+12月 25 14:46:38.0 - [INFO] remove_slowest_ip:201.248.76.220 handshake_time:621, fails:1
+12月 25 14:46:38.8 - [DEBUG] create_ssl update ip:202.75.147.50 time:1044 h2:0
+12月 25 14:46:39.5 - [DEBUG] appid:xxnet-sdcff7 head fail status:503
+12月 25 14:46:39.5 - [DEBUG] report_connect_fail:203.176.178.46
+12月 25 14:46:40.8 - [DEBUG] recheck_ip:203.176.178.46 restore okl
+12月 25 14:46:40.8 - [DEBUG] 203.176.178.46 worker close:keep alive
+12月 25 14:46:43.8 - [DEBUG] get ip:203.176.178.46 t:506
+12月 25 14:46:44.6 - [DEBUG] create_ssl update ip:203.176.178.46 time:504 h2:0
+12月 25 14:46:48.4 - [DEBUG] restore ip:106.162.216.46
+12月 25 14:46:49.4 - [WARNING] 202.86.162.172 _consume_single_frame:ConnectionResetError()
+12月 25 14:46:49.4 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:46:49.4 - [DEBUG] 202.86.162.172 worker close:disconnect:ConnectionResetError()
+Python 2.7.12
+XX-Net version:default
+You have not installed pyOpenSSL yet.
+Please install pyOpenSSL.
+XX-Net.desktop already exists
+12月 25 14:46:50.8 - [DEBUG] restore ip:203.176.178.46
+/opt/local/tools/XX-Net-3.2.8/code/default/python27/1.0/lib/linux/cffi/model.py:526: UserWarning: 'point_conversion_form_t' has no values explicitly defined; next version will refuse to guess which integer type it is meant to be (unsigned/signed, int/long)
+  % self._get_c_name())
+12月 25 14:46:51.2 - [INFO] use build-in openssl lib
+12月 25 14:46:51.2 - [INFO] start XX-Net 3.2.8
+12月 25 14:46:51.2 - [DEBUG] start confirm_xxnet_exit
+12月 25 14:46:51.2 - [DEBUG] GAEProxy Web_control 127.0.0.1:56636 GET /quit 
+12月 25 14:46:51.2 - [DEBUG] <0>: try to terminate xxnet:8087
+12月 25 14:46:51.6 - [INFO] Exiting gae_proxy module...
+12月 25 14:46:52.7 - [DEBUG] ssl_closed 190.113.97.222
+12月 25 14:46:52.7 - [DEBUG] 190.113.97.222 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:46:53.3 - [DEBUG] ssl_closed 63.88.73.187
+12月 25 14:46:53.3 - [DEBUG] 63.88.73.187 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:46:53.7 - [DEBUG] ssl_closed 203.151.116.173
+12月 25 14:46:53.7 - [DEBUG] 203.151.116.173 worker close:GoAway: additional_data:session_timed_out
+12月 25 14:46:54.2 - [DEBUG] good, xxnet:8087 cleared!
+12月 25 14:46:54.2 - [DEBUG] launcher web_control 127.0.0.1:56516 GET /quit 
+12月 25 14:46:54.2 - [DEBUG] start to terminate gae_proxy module
+12月 25 14:46:54.2 - [INFO] start to terminate GAE_Proxy
+12月 25 14:46:54.2 - [DEBUG] ## Set keep_running: False
+12月 25 14:46:54.2 - [DEBUG] <0>: try to terminate xxnet:8085
+12月 25 14:46:54.2 - [DEBUG] module gae_proxy stopping
+12月 25 14:46:55.0 - [WARNING] socket accept fail(errno: 9).
+12月 25 14:46:55.0 - [DEBUG] ## GAEProxy set keep_running: False
+12月 25 14:46:55.1 - [INFO] module gae_proxy stopped
+12月 25 14:46:55.1 - [DEBUG] start to terminate x_tunnel module
+12月 25 14:46:55.1 - [INFO] Close Socks5 server 
+12月 25 14:46:55.1 - [INFO] Stopping session
+12月 25 14:46:55.1 - [DEBUG] module x_tunnel stopping
+12月 25 14:46:55.1 - [INFO] module x_tunnel stopped
+12月 25 14:46:55.2 - [DEBUG] good, xxnet:8085 clear!
+12月 25 14:46:55.2 - [DEBUG] finished confirm_xxnet_exit
+12月 25 14:46:55.2 - [INFO] SSL use version:TLSv1_2
+12月 25 14:46:55.3 - [INFO] OpenSSL support npn
+12月 25 14:46:55.3 - [INFO] load ip range file:/opt/local/tools/XX-Net-3.2.8/code/default/gae_proxy/local/ip_range.txt
+12月 25 14:46:55.3 - [INFO] load google ip_list num:3000, gws num:3000
+12月 25 14:46:55.3 - [DEBUG] network is ok, cost:109 ms
+12月 25 14:46:55.3 - [INFO] OpenSSL support npn
+12月 25 14:46:55.3 - [DEBUG] get ip:202.86.162.172 t:81
+12月 25 14:46:55.3 - [DEBUG] get ip:203.151.116.173 t:352
+12月 25 14:46:55.3 - [DEBUG] ## GAEProxy set keep_running: True
+12月 25 14:46:55.3 - [INFO] ------------------------------------------------------
+12月 25 14:46:55.3 - [INFO] Python Version     : 2.7.12
+12月 25 14:46:55.3 - [INFO] OS                 : Dist:Ubuntu; Version:16.04; ID:xenial
+12月 25 14:46:55.3 - [INFO] Listen Address     : 127.0.0.1:8087
+12月 25 14:46:55.3 - [INFO] GAE APPID          : 
+12月 25 14:46:55.3 - [INFO] Pac Server         : http://127.0.0.1:8086/proxy.pac
+12月 25 14:46:55.3 - [INFO] ------------------------------------------------------
+12月 25 14:46:55.4 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:46:55.4 - [WARNING] please install *libnss3-tools* package to import GoAgent root ca
+12月 25 14:46:55.4 - [INFO] server 127.0.0.1:8087 started.
+12月 25 14:46:55.4 - [INFO] server 127.0.0.1:8086 started.
+12月 25 14:46:55.4 - [INFO] module gae_proxy started
+12月 25 14:46:55.4 - [INFO] start gae_proxy time cost:273 ms
+WARNING:root:Load Crypto.Cipher.ARC4 Failed, Use Pure Python Instead.
+12月 25 14:46:55.4 - [INFO] use config_path:/opt/local/tools/XX-Net-3.2.8/data/x_tunnel/client.json
+12月 25 14:46:55.4 - [INFO] Use proxy:127.0.0.1:8087
+12月 25 14:46:55.4 - [DEBUG] x-tunnel no account
+12月 25 14:46:55.4 - [WARNING] x-tunnel session not start
+12月 25 14:46:55.4 - [INFO] server 127.0.0.1:1080 started.
+12月 25 14:46:55.4 - [INFO] Socks5 server listen:127.0.0.1:1080.
+12月 25 14:46:55.5 - [DEBUG] create_ssl update ip:202.86.162.172 time:120 h2:1
+12月 25 14:46:55.5 - [DEBUG] get ip:120.28.26.186 t:428
+12月 25 14:46:55.5 - [INFO] module x_tunnel started
+12月 25 14:46:55.5 - [INFO] start x_tunnel time cost:108 ms
+12月 25 14:46:55.5 - [INFO] begin to start web control
+12月 25 14:46:55.5 - [INFO] server 127.0.0.1:8085 started.
+12月 25 14:46:55.5 - [INFO] launcher web control started.
+12月 25 14:46:55.8 - [DEBUG] get ip:189.247.160.82 t:452
+Created new window in existing browser session.
+12月 25 14:46:56.1 - [DEBUG] create_ssl update ip:120.28.26.186 time:411 h2:0
+12月 25 14:46:56.3 - [DEBUG] get ip:113.171.253.207 t:466
+12月 25 14:46:56.4 - [DEBUG] launcher web_control 127.0.0.1:56530 GET /config?cmd=get_config 
+12月 25 14:46:56.4 - [DEBUG] launcher web_control 127.0.0.1:56532 GET /config?cmd=get_config 
+12月 25 14:46:56.5 - [DEBUG] create_ssl update ip:189.247.160.82 time:454 h2:0
+12月 25 14:46:56.6 - [INFO] get uuid:72e79c3a-1828-45f1-b3ee-b180305defe1
+12月 25 14:46:56.6 - [INFO] GAE CONNECT xxnet-update.appspot.com:443 
+12月 25 14:46:56.6 - [DEBUG] GAE CONNECT Direct GET https://xxnet-update.appspot.com/update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:46:56.8 - [DEBUG] get ip:67.89.227.237 t:494
+12月 25 14:46:57.0 - [DEBUG] create_ssl update ip:113.171.253.207 time:468 h2:0
+12月 25 14:46:57.0 - [INFO] DIRECT t:467 s:1674 200 xxnet-update.appspot.com /update.json?uuid=72e79c3a-1828-45f1-b3ee-b180305defe1&version=3.2.8&platform=Linux-4.4.0-53-generic-x86_64-with-Ubuntu-16.04-xenial
+12月 25 14:46:57.0 - [INFO] download https://raw.githubusercontent.com/XX-net/XX-Net/master/code/default/update_version.txt to /opt/local/tools/XX-Net-3.2.8/data/downloads/version.txt, retry:0
+12月 25 14:46:58.9 - [INFO] scan_ip add ip:103.2.116.80 time:564
+12月 25 14:46:59.0 - [INFO] remove_slowest_ip:181.198.79.221 handshake_time:621, fails:1
+12月 25 14:46:59.3 - [DEBUG] 203.151.116.173 fail:timeout('timed out',)
+12月 25 14:46:59.3 - [DEBUG] report_connect_fail:203.151.116.173
+12月 25 14:47:00.8 - [DEBUG] 67.89.227.237 fail:timeout('timed out',)
+12月 25 14:47:00.8 - [DEBUG] report_connect_fail:67.89.227.237
+12月 25 14:47:07.2 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:47:07.2 - [DEBUG] get ip:203.176.178.46 t:504
+12月 25 14:47:07.4 - [WARNING] APPID 'qzhunb8' out of Quota, remove it. 202.86.162.172
+12月 25 14:47:07.4 - [WARNING] report_out_of_quota:qzhunb8
+12月 25 14:47:07.4 - [DEBUG] ssl_closed 202.86.162.172
+12月 25 14:47:07.4 - [DEBUG] 202.86.162.172 worker close:appid out of quota:qzhunb8
+12月 25 14:47:07.4 - [DEBUG] GAE_Exception 604 'appid out of quota:qzhunb8'
+12月 25 14:47:07.4 - [WARNING] gae_exception:GAE_Exception() https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:47:07.4 - [ERROR] 202.86.162.172 Unexpected stream identifier 1
+12月 25 14:47:07.7 - [DEBUG] get ip:63.88.73.152 t:514
+12月 25 14:47:07.9 - [INFO] GAE t:713 s:1462 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h1_get_head:466
+12月 25 14:47:07.9 - [DEBUG] GAE POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D
+12月 25 14:47:08.0 - [DEBUG] create_ssl update ip:203.176.178.46 time:526 h2:0
+12月 25 14:47:08.2 - [DEBUG] get ip:24.244.4.27 t:527
+12月 25 14:47:08.4 - [INFO] GAE t:477 s:619 POST https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=zyGwuzTY0vSGoN%2B2z4qYrg%3D%3D h1_get_head:475
+12月 25 14:47:08.7 - [DEBUG] get ip:216.11.246.69 t:532
+12月 25 14:47:09.0 - [DEBUG] get ip:103.2.116.80 t:564
+12月 25 14:47:09.2 - [DEBUG] get ip:87.245.198.23 t:568
+12月 25 14:47:09.7 - [DEBUG] get ip:84.208.42.22 t:573
+12月 25 14:47:10.2 - [DEBUG] get ip:202.86.162.172 t:120
+12月 25 14:47:10.3 - [DEBUG] create_ssl update ip:202.86.162.172 time:88 h2:1
+12月 25 14:47:10.7 - [DEBUG] get ip:178.45.249.239 t:536
+12月 25 14:47:11.1 - [DEBUG] get ip:192.122.185.123 t:551
+12月 25 14:47:11.2 - [DEBUG] get ip:93.123.23.49 t:574
+12月 25 14:47:11.3 - [DEBUG] get ip:31.209.137.45 t:588
+12月 25 14:47:11.7 - [DEBUG] 63.88.73.152 fail:timeout('timed out',)
+12月 25 14:47:11.7 - [DEBUG] report_connect_fail:63.88.73.152
+12月 25 14:47:11.7 - [DEBUG] get ip:43.245.193.149 t:592
+12月 25 14:47:11.7 - [DEBUG] get ip:24.139.135.119 t:597
+12月 25 14:47:12.2 - [DEBUG] 24.244.4.27 fail:timeout('timed out',)
+12月 25 14:47:12.2 - [DEBUG] report_connect_fail:24.244.4.27
+12月 25 14:47:12.2 - [DEBUG] get ip:113.171.253.225 t:601
+12月 25 14:47:12.2 - [DEBUG] get ip:190.212.166.169 t:616
+12月 25 14:47:12.7 - [DEBUG] 216.11.246.69 fail:timeout('timed out',)
+12月 25 14:47:12.7 - [DEBUG] report_connect_fail:216.11.246.69
+12月 25 14:47:12.7 - [DEBUG] get ip:181.198.79.156 t:629
+12月 25 14:47:12.7 - [DEBUG] get ip:190.197.64.22 t:684
+12月 25 14:47:13.0 - [DEBUG] 103.2.116.80 fail:timeout('timed out',)
+12月 25 14:47:13.0 - [DEBUG] report_connect_fail:103.2.116.80
+12月 25 14:47:13.0 - [DEBUG] get ip:216.147.171.169 t:685
+12月 25 14:47:13.1 - [DEBUG] create_ssl update ip:190.212.166.169 time:586 h2:0
+12月 25 14:47:13.2 - [DEBUG] 87.245.198.23 fail:timeout('timed out',)
+12月 25 14:47:13.2 - [DEBUG] report_connect_fail:87.245.198.23
+12月 25 14:47:13.2 - [DEBUG] get ip:110.93.194.62 t:722
+12月 25 14:47:13.2 - [DEBUG] get ip:201.64.241.92 t:729
+12月 25 14:47:13.7 - [DEBUG] 84.208.42.22 fail:timeout('timed out',)
+12月 25 14:47:13.7 - [DEBUG] report_connect_fail:84.208.42.22
+12月 25 14:47:13.7 - [DEBUG] get ip:62.212.252.108 t:735
+12月 25 14:47:13.7 - [DEBUG] get ip:200.216.90.99 t:739
+12月 25 14:47:14.1 - [DEBUG] get ip:24.214.95.239 t:748
+12月 25 14:47:14.2 - [DEBUG] get ip:66.96.226.210 t:768
+12月 25 14:47:14.3 - [DEBUG] create_ssl update ip:110.93.194.62 time:727 h2:0
+12月 25 14:47:14.3 - [DEBUG] ip:203.151.116.173 real fail
+12月 25 14:47:14.7 - [DEBUG] 178.45.249.239 fail:timeout('timed out',)
+12月 25 14:47:14.7 - [DEBUG] report_connect_fail:178.45.249.239
+12月 25 14:47:14.7 - [DEBUG] get ip:58.26.8.84 t:779
+12月 25 14:47:14.7 - [DEBUG] get ip:111.94.248.168 t:785
+12月 25 14:47:15.0 - [DEBUG] create_ssl update ip:113.171.253.225 time:2273 h2:0
+12月 25 14:47:15.1 - [DEBUG] 192.122.185.123 fail:timeout('timed out',)
+12月 25 14:47:15.1 - [DEBUG] report_connect_fail:192.122.185.123
+12月 25 14:47:15.1 - [DEBUG] get ip:212.113.52.207 t:789
+12月 25 14:47:15.2 - [DEBUG] 93.123.23.49 fail:timeout('timed out',)
+12月 25 14:47:15.2 - [DEBUG] report_connect_fail:93.123.23.49
+12月 25 14:47:15.2 - [DEBUG] get ip:200.149.119.124 t:795
+12月 25 14:47:15.2 - [DEBUG] get ip:200.149.119.19 t:800
+12月 25 14:47:15.3 - [DEBUG] get ip:200.149.119.29 t:803
+12月 25 14:47:15.3 - [DEBUG] 31.209.137.45 fail:timeout('timed out',)
+12月 25 14:47:15.3 - [DEBUG] report_connect_fail:31.209.137.45
+12月 25 14:47:15.3 - [DEBUG] get ip:200.105.131.56 t:806
+12月 25 14:47:15.4 - [DEBUG] create_ssl update ip:58.26.8.84 time:479 h2:1
+12月 25 14:47:15.7 - [DEBUG] 43.245.193.149 fail:timeout('timed out',)
+12月 25 14:47:15.7 - [DEBUG] report_connect_fail:43.245.193.149
+12月 25 14:47:15.7 - [DEBUG] get ip:87.79.22.247 t:826
+12月 25 14:47:15.7 - [DEBUG] 24.139.135.119 fail:timeout('timed out',)
+12月 25 14:47:15.7 - [DEBUG] report_connect_fail:24.139.135.119
+12月 25 14:47:15.7 - [DEBUG] get ip:177.43.235.46 t:826
+12月 25 14:47:15.7 - [DEBUG] get ip:203.248.210.36 t:826
+12月 25 14:47:16.0 - [DEBUG] get ip:177.101.143.212 t:832
+12月 25 14:47:16.2 - [DEBUG] get ip:183.87.151.92 t:833
+12月 25 14:47:16.4 - [DEBUG] get ip:41.184.60.31 t:834
+12月 25 14:47:16.4 - [DEBUG] create_ssl update ip:200.149.119.29 time:782 h2:1
+12月 25 14:47:16.5 - [DEBUG] create_ssl update ip:212.113.52.207 time:914 h2:0
+12月 25 14:47:16.5 - [DEBUG] get ip:212.113.7.144 t:834
+12月 25 14:47:16.7 - [DEBUG] 181.198.79.156 fail:timeout('timed out',)
+12月 25 14:47:16.7 - [DEBUG] report_connect_fail:181.198.79.156
+12月 25 14:47:16.7 - [DEBUG] get ip:190.45.0.228 t:838
+12月 25 14:47:16.7 - [DEBUG] 190.197.64.22 fail:timeout('timed out',)
+12月 25 14:47:16.7 - [DEBUG] report_connect_fail:190.197.64.22
+12月 25 14:47:16.7 - [DEBUG] get ip:177.101.143.218 t:838
+12月 25 14:47:16.7 - [DEBUG] get ip:195.80.179.174 t:841
+12月 25 14:47:16.7 - [DEBUG] create_ssl update ip:200.149.119.124 time:1204 h2:1
+12月 25 14:47:17.0 - [DEBUG] 216.147.171.169 fail:timeout('timed out',)
+12月 25 14:47:17.0 - [DEBUG] report_connect_fail:216.147.171.169
+12月 25 14:47:17.0 - [DEBUG] get ip:103.233.36.171 t:841
+12月 25 14:47:17.2 - [DEBUG] create_ssl update ip:66.96.226.210 time:2594 h2:0
+12月 25 14:47:17.2 - [DEBUG] 201.64.241.92 fail:timeout('timed out',)
+12月 25 14:47:17.2 - [DEBUG] report_connect_fail:201.64.241.92
+12月 25 14:47:17.2 - [DEBUG] get ip:71.19.173.114 t:842
+12月 25 14:47:17.4 - [DEBUG] get ip:49.231.60.95 t:842
+12月 25 14:47:17.4 - [DEBUG] create_ssl update ip:183.87.151.92 time:836 h2:1
+12月 25 14:47:17.5 - [DEBUG] create_ssl update ip:177.101.143.212 time:1010 h2:0
+12月 25 14:47:17.7 - [DEBUG] 62.212.252.108 fail:timeout('timed out',)
+12月 25 14:47:17.7 - [DEBUG] report_connect_fail:62.212.252.108
+12月 25 14:47:17.7 - [DEBUG] get ip:200.10.226.180 t:842
+12月 25 14:47:17.7 - [DEBUG] 200.216.90.99 fail:timeout('timed out',)
+12月 25 14:47:17.7 - [DEBUG] report_connect_fail:200.216.90.99
+12月 25 14:47:17.7 - [DEBUG] get ip:177.135.94.20 t:842
+12月 25 14:47:17.7 - [DEBUG] get ip:81.192.191.13 t:842
+12月 25 14:47:18.1 - [DEBUG] 24.214.95.239 fail:timeout('timed out',)
+12月 25 14:47:18.1 - [DEBUG] report_connect_fail:24.214.95.239
+12月 25 14:47:18.1 - [DEBUG] get ip:86.60.255.79 t:842
+12月 25 14:47:18.2 - [DEBUG] get ip:204.186.215.32 t:842
+12月 25 14:47:18.4 - [DEBUG] get ip:5.22.190.108 t:842
+12月 25 14:47:18.5 - [DEBUG] get ip:84.15.64.14 t:842
+12月 25 14:47:18.7 - [DEBUG] 111.94.248.168 fail:timeout('timed out',)
+12月 25 14:47:18.7 - [DEBUG] report_connect_fail:111.94.248.168
+12月 25 14:47:18.7 - [DEBUG] get ip:203.113.161.147 t:843
+12月 25 14:47:19.2 - [DEBUG] 200.149.119.19 fail:timeout('timed out',)
+12月 25 14:47:19.2 - [DEBUG] report_connect_fail:200.149.119.19
+12月 25 14:47:19.2 - [DEBUG] get ip:200.149.119.24 t:843
+12月 25 14:47:19.3 - [DEBUG] 200.105.131.56 fail:timeout('timed out',)
+12月 25 14:47:19.3 - [DEBUG] report_connect_fail:200.105.131.56
+12月 25 14:47:19.3 - [DEBUG] get ip:92.246.12.211 t:843
+12月 25 14:47:19.4 - [DEBUG] ip:67.89.227.237 real fail
+12月 25 14:47:19.7 - [DEBUG] 87.79.22.247 fail:timeout('timed out',)
+12月 25 14:47:19.7 - [DEBUG] report_connect_fail:87.79.22.247
+12月 25 14:47:19.7 - [DEBUG] get ip:58.27.108.152 t:843
+12月 25 14:47:19.7 - [DEBUG] 177.43.235.46 fail:timeout('timed out',)
+12月 25 14:47:19.7 - [DEBUG] report_connect_fail:177.43.235.46
+12月 25 14:47:19.7 - [DEBUG] get ip:200.150.4.248 t:844
+12月 25 14:47:19.7 - [DEBUG] 203.248.210.36 fail:timeout('timed out',)
+12月 25 14:47:19.7 - [DEBUG] report_connect_fail:203.248.210.36
+12月 25 14:47:19.7 - [DEBUG] get ip:177.55.62.95 t:844
+12月 25 14:47:20.1 - [DEBUG] create_ssl update ip:195.80.179.174 time:2957 h2:0
+12月 25 14:47:20.4 - [DEBUG] 41.184.60.31 fail:timeout('timed out',)
+12月 25 14:47:20.4 - [DEBUG] report_connect_fail:41.184.60.31
+12月 25 14:47:20.4 - [DEBUG] get ip:177.35.32.89 t:844
+12月 25 14:47:20.5 - [DEBUG] 212.113.7.144 fail:timeout('timed out',)
+12月 25 14:47:20.5 - [DEBUG] report_connect_fail:212.113.7.144
+12月 25 14:47:20.5 - [DEBUG] get ip:190.186.210.184 t:844
+12月 25 14:47:20.7 - [DEBUG] 190.45.0.228 fail:timeout('timed out',)
+12月 25 14:47:20.7 - [DEBUG] report_connect_fail:190.45.0.228
+12月 25 14:47:20.7 - [DEBUG] get ip:66.58.255.41 t:844
+12月 25 14:47:20.7 - [DEBUG] 177.101.143.218 fail:timeout('timed out',)
+12月 25 14:47:20.7 - [DEBUG] report_connect_fail:177.101.143.218
+12月 25 14:47:20.7 - [DEBUG] get ip:185.5.161.91 t:844
+12月 25 14:47:21.0 - [DEBUG] create_ssl update ip:200.150.4.248 time:859 h2:0
+12月 25 14:47:21.0 - [DEBUG] 103.233.36.171 fail:timeout('timed out',)
+12月 25 14:47:21.0 - [DEBUG] report_connect_fail:103.233.36.171
+12月 25 14:47:21.0 - [DEBUG] get ip:178.236.130.28 t:844
+12月 25 14:47:21.0 - [DEBUG] create_ssl update ip:177.55.62.95 time:881 h2:0
+12月 25 14:47:21.1 - [DEBUG] get ip:109.199.81.147 t:845
+12月 25 14:47:21.2 - [DEBUG] 71.19.173.114 fail:timeout('timed out',)
+12月 25 14:47:21.2 - [DEBUG] report_connect_fail:71.19.173.114
+12月 25 14:47:21.2 - [DEBUG] get ip:186.46.140.103 t:845
+12月 25 14:47:21.4 - [DEBUG] create_ssl update ip:200.149.119.24 time:1763 h2:1
+12月 25 14:47:21.4 - [DEBUG] 49.231.60.95 fail:timeout('timed out',)
+12月 25 14:47:21.4 - [DEBUG] report_connect_fail:49.231.60.95
+12月 25 14:47:21.4 - [DEBUG] get ip:103.44.151.51 t:845
+12月 25 14:47:21.7 - [DEBUG] 200.10.226.180 fail:timeout('timed out',)
+12月 25 14:47:21.7 - [DEBUG] report_connect_fail:200.10.226.180
+12月 25 14:47:21.7 - [DEBUG] get ip:111.94.248.234 t:849
+12月 25 14:47:21.7 - [DEBUG] 177.135.94.20 fail:timeout('timed out',)
+12月 25 14:47:21.7 - [DEBUG] report_connect_fail:177.135.94.20
+12月 25 14:47:21.7 - [DEBUG] get ip:78.136.92.122 t:850
+12月 25 14:47:21.7 - [DEBUG] 81.192.191.13 fail:timeout('timed out',)
+12月 25 14:47:21.7 - [DEBUG] report_connect_fail:81.192.191.13
+12月 25 14:47:21.7 - [DEBUG] get ip:190.98.171.247 t:850
+12月 25 14:47:22.0 - [DEBUG] get ip:67.224.250.120 t:850
+12月 25 14:47:22.0 - [DEBUG] get ip:62.75.10.79 t:850
+12月 25 14:47:22.1 - [DEBUG] 86.60.255.79 fail:timeout('timed out',)
+12月 25 14:47:22.1 - [DEBUG] report_connect_fail:86.60.255.79
+12月 25 14:47:22.1 - [DEBUG] get ip:200.28.8.25 t:850
+12月 25 14:47:22.2 - [DEBUG] 204.186.215.32 fail:timeout('timed out',)
+12月 25 14:47:22.2 - [DEBUG] report_connect_fail:204.186.215.32
+12月 25 14:47:22.2 - [DEBUG] get ip:186.68.154.49 t:850
+12月 25 14:47:22.4 - [DEBUG] get ip:67.224.250.123 t:850
+12月 25 14:47:22.4 - [DEBUG] 5.22.190.108 fail:timeout('timed out',)
+12月 25 14:47:22.4 - [DEBUG] report_connect_fail:5.22.190.108
+12月 25 14:47:22.4 - [DEBUG] get ip:41.184.60.36 t:851
+12月 25 14:47:22.5 - [DEBUG] 84.15.64.14 fail:timeout('timed out',)
+12月 25 14:47:22.5 - [DEBUG] report_connect_fail:84.15.64.14
+12月 25 14:47:22.5 - [DEBUG] get ip:103.13.116.169 t:851
+12月 25 14:47:22.7 - [DEBUG] 203.113.161.147 fail:timeout('timed out',)
+12月 25 14:47:22.7 - [DEBUG] report_connect_fail:203.113.161.147
+12月 25 14:47:22.7 - [DEBUG] get ip:187.1.89.244 t:851
+12月 25 14:47:23.0 - [DEBUG] create_ssl update ip:190.98.171.247 time:851 h2:1
+12月 25 14:47:23.0 - [DEBUG] create_ssl update ip:67.224.250.120 time:690 h2:0
+12月 25 14:47:23.3 - [DEBUG] 92.246.12.211 fail:timeout('timed out',)
+12月 25 14:47:23.3 - [DEBUG] report_connect_fail:92.246.12.211
+12月 25 14:47:23.3 - [DEBUG] get ip:103.233.36.97 t:851
+12月 25 14:47:23.5 - [DEBUG] create_ssl update ip:200.28.8.25 time:1009 h2:1
+12月 25 14:47:23.7 - [DEBUG] 58.27.108.152 fail:timeout('timed out',)
+12月 25 14:47:23.7 - [DEBUG] report_connect_fail:58.27.108.152
+12月 25 14:47:23.7 - [DEBUG] get ip:181.30.242.230 t:851
+12月 25 14:47:24.0 - [DEBUG] get ip:103.233.36.87 t:851
+12月 25 14:47:24.0 - [DEBUG] get ip:66.96.224.166 t:851
+12月 25 14:47:24.2 - [DEBUG] create_ssl update ip:186.46.140.103 time:2696 h2:1
+12月 25 14:47:24.4 - [DEBUG] 177.35.32.89 fail:timeout('timed out',)
+12月 25 14:47:24.4 - [DEBUG] report_connect_fail:177.35.32.89
+12月 25 14:47:24.4 - [DEBUG] get ip:177.128.223.210 t:851
+12月 25 14:47:24.5 - [DEBUG] get ip:66.96.224.143 t:851
+12月 25 14:47:24.5 - [DEBUG] 190.186.210.184 fail:timeout('timed out',)
+12月 25 14:47:24.5 - [DEBUG] report_connect_fail:190.186.210.184
+12月 25 14:47:24.5 - [DEBUG] get ip:195.249.20.207 t:851
+12月 25 14:47:24.6 - [DEBUG] create_ssl update ip:103.233.36.97 time:853 h2:0
+12月 25 14:47:24.7 - [DEBUG] 66.58.255.41 fail:timeout('timed out',)
+12月 25 14:47:24.7 - [DEBUG] report_connect_fail:66.58.255.41
+12月 25 14:47:24.7 - [DEBUG] get ip:189.89.161.52 t:852
+12月 25 14:47:24.7 - [DEBUG] 185.5.161.91 fail:timeout('timed out',)
+12月 25 14:47:24.7 - [DEBUG] report_connect_fail:185.5.161.91
+12月 25 14:47:24.7 - [DEBUG] get ip:203.165.13.250 t:852
+12月 25 14:47:25.0 - [DEBUG] 178.236.130.28 fail:timeout('timed out',)
+12月 25 14:47:25.0 - [DEBUG] report_connect_fail:178.236.130.28
+12月 25 14:47:25.0 - [DEBUG] get ip:49.231.60.147 t:852
+12月 25 14:47:25.1 - [DEBUG] 109.199.81.147 fail:timeout('timed out',)
+12月 25 14:47:25.1 - [DEBUG] report_connect_fail:109.199.81.147
+12月 25 14:47:25.1 - [DEBUG] get ip:190.45.0.23 t:852
+12月 25 14:47:25.1 - [DEBUG] create_ssl update ip:181.30.242.230 time:952 h2:0
+12月 25 14:47:25.3 - [DEBUG] create_ssl update ip:195.249.20.207 time:534 h2:0
+12月 25 14:47:25.4 - [DEBUG] 103.44.151.51 fail:timeout('timed out',)
+12月 25 14:47:25.4 - [DEBUG] report_connect_fail:103.44.151.51
+12月 25 14:47:25.6 - [DEBUG] create_ssl update ip:177.128.223.210 time:826 h2:0
+12月 25 14:47:25.7 - [DEBUG] 111.94.248.234 fail:timeout('timed out',)
+12月 25 14:47:25.7 - [DEBUG] report_connect_fail:111.94.248.234
+12月 25 14:47:25.7 - [DEBUG] 78.136.92.122 fail:timeout('timed out',)
+12月 25 14:47:25.7 - [DEBUG] report_connect_fail:78.136.92.122
+12月 25 14:47:25.8 - [DEBUG] create_ssl update ip:103.233.36.87 time:1419 h2:0
+12月 25 14:47:26.0 - [DEBUG] 62.75.10.79 fail:timeout('timed out',)
+12月 25 14:47:26.0 - [DEBUG] report_connect_fail:62.75.10.79
+12月 25 14:47:26.2 - [DEBUG] 186.68.154.49 fail:timeout('timed out',)
+12月 25 14:47:26.2 - [DEBUG] report_connect_fail:186.68.154.49
+12月 25 14:47:26.2 - [DEBUG] create_ssl update ip:66.96.224.143 time:1350 h2:1
+12月 25 14:47:26.3 - [DEBUG] create_ssl update ip:190.45.0.23 time:830 h2:0
+12月 25 14:47:26.4 - [DEBUG] 67.224.250.123 fail:timeout('timed out',)
+12月 25 14:47:26.4 - [DEBUG] report_connect_fail:67.224.250.123
+12月 25 14:47:26.4 - [DEBUG] 41.184.60.36 fail:timeout('timed out',)
+12月 25 14:47:26.4 - [DEBUG] report_connect_fail:41.184.60.36
+12月 25 14:47:26.5 - [DEBUG] 103.13.116.169 fail:timeout('timed out',)
+12月 25 14:47:26.5 - [DEBUG] report_connect_fail:103.13.116.169
+12月 25 14:47:26.6 - [DEBUG] create_ssl update ip:66.96.224.166 time:2188 h2:1
+12月 25 14:47:26.7 - [DEBUG] ip:63.88.73.152 real fail
+12月 25 14:47:26.7 - [DEBUG] 187.1.89.244 fail:timeout('timed out',)
+12月 25 14:47:26.7 - [DEBUG] report_connect_fail:187.1.89.244
+12月 25 14:47:28.7 - [DEBUG] 189.89.161.52 fail:timeout('timed out',)
+12月 25 14:47:28.7 - [DEBUG] report_connect_fail:189.89.161.52
+12月 25 14:47:28.7 - [DEBUG] 203.165.13.250 fail:timeout('timed out',)
+12月 25 14:47:28.7 - [DEBUG] report_connect_fail:203.165.13.250
+12月 25 14:47:29.0 - [DEBUG] 49.231.60.147 fail:timeout('timed out',)
+12月 25 14:47:29.0 - [DEBUG] report_connect_fail:49.231.60.147
+12月 25 14:47:31.7 - [DEBUG] ip:24.244.4.27 real fail
+12月 25 14:47:36.7 - [DEBUG] ip:216.11.246.69 real fail
+12月 25 14:47:40.2 - [INFO] scan_ip add ip:2.127.237.217 time:592
+12月 25 14:47:40.3 - [DEBUG] sort ip time:48ms
+12月 25 14:47:40.3 - [INFO] remove_slowest_ip:49.231.60.147 handshake_time:852, fails:1
+12月 25 14:47:41.3 - [INFO] scan_ip add ip:193.92.133.28 time:1945
+12月 25 14:47:41.3 - [INFO] remove_slowest_ip:193.92.133.28 handshake_time:1945, fails:0
+12月 25 14:47:41.7 - [DEBUG] ip:103.2.116.80 real fail
+12月 25 14:47:44.4 - [DEBUG] 120.28.26.186 close:host pool alive_timeout
+12月 25 14:47:44.4 - [DEBUG] ssl_closed 120.28.26.186
+12月 25 14:47:46.7 - [DEBUG] ip:87.245.198.23 real fail
+12月 25 14:47:52.4 - [DEBUG] restore ip:84.208.42.22
+12月 25 14:47:57.4 - [DEBUG] ip:178.45.249.239 real fail
+12月 25 14:48:02.4 - [DEBUG] ip:192.122.185.123 real fail
+12月 25 14:48:02.7 - [DEBUG] appid:chrome-1231-1231 head fail status:503
+12月 25 14:48:02.7 - [DEBUG] report_connect_fail:203.176.178.46
+12月 25 14:48:03.8 - [INFO] scan_ip add ip:74.205.129.17 time:673
+12月 25 14:48:03.8 - [INFO] remove_slowest_ip:84.208.42.22 handshake_time:4844, fails:0
+12月 25 14:48:04.2 - [DEBUG] recheck_ip:203.176.178.46 restore okl
+12月 25 14:48:04.2 - [DEBUG] 203.176.178.46 worker close:keep alive
+12月 25 14:48:07.4 - [DEBUG] ip:93.123.23.49 real fail
+12月 25 14:48:09.8 - [DEBUG] appid:xxnet-skyhifi5 head fail status:503
+12月 25 14:48:09.8 - [DEBUG] report_connect_fail:66.96.226.210
+12月 25 14:48:10.7 - [DEBUG] appid:xxnet-145 head fail status:503
+12月 25 14:48:10.7 - [DEBUG] report_connect_fail:212.113.52.207
+12月 25 14:48:11.7 - [DEBUG] appid:xxnet-3-1294 head fail status:503
+12月 25 14:48:11.7 - [DEBUG] report_connect_fail:177.101.143.212
+12月 25 14:48:12.3 - [DEBUG] appid:cryptic-lattice-123514 head fail status:503
+12月 25 14:48:12.3 - [DEBUG] report_connect_fail:195.80.179.174
+12月 25 14:48:12.4 - [DEBUG] ip:31.209.137.45 real fail
+12月 25 14:48:12.4 - [DEBUG] recheck_ip:212.113.52.207 restore okl
+12月 25 14:48:12.4 - [DEBUG] 212.113.52.207 worker close:keep alive
+12月 25 14:48:14.8 - [DEBUG] 66.96.226.210 worker close:keep alive
+12月 25 14:48:15.3 - [DEBUG] get ip:120.28.26.186 t:411
+12月 25 14:48:16.0 - [DEBUG] create_ssl update ip:120.28.26.186 time:456 h2:0
+12月 25 14:48:16.0 - [DEBUG] get ip:203.176.178.46 t:506
+12月 25 14:48:16.7 - [DEBUG] 177.101.143.212 worker close:keep alive
+12月 25 14:48:16.8 - [DEBUG] create_ssl update ip:203.176.178.46 time:521 h2:0
+12月 25 14:48:17.1 - [DEBUG] recheck_ip:195.80.179.174 restore okl
+12月 25 14:48:17.1 - [DEBUG] 195.80.179.174 worker close:keep alive
+12月 25 14:48:17.4 - [DEBUG] ip:43.245.193.149 real fail
+12月 25 14:48:20.7 - [DEBUG] appid:xxnetp3 head fail status:503
+12月 25 14:48:20.7 - [DEBUG] report_connect_fail:190.45.0.23
+12月 25 14:48:22.4 - [DEBUG] ip:24.139.135.119 real fail
+12月 25 14:48:23.6 - [INFO] scan_ip add ip:202.67.45.165 time:479
+12月 25 14:48:23.6 - [INFO] remove_slowest_ip:66.96.226.210 handshake_time:1268, fails:1
+12月 25 14:48:25.7 - [DEBUG] 190.45.0.23 worker close:keep alive
+12月 25 14:48:27.4 - [DEBUG] ip:181.198.79.156 real fail

@@ -22,7 +22,7 @@ if [ -d ~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source ];then
 fi
 ```
 
-下一次打开终端时默认路径即为：`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`
+代码的含义是，如果当前目录不在`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`目录下，那么就切换到此目录。下一次打开终端时默认路径即为：`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`
 
 #### 快捷键
 
