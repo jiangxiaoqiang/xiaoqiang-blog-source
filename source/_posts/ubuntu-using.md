@@ -12,6 +12,18 @@ categories: Programming
 
 * 长按Windows键会出现全局快捷键页面
 
+##### 设置Terminal默认路径
+
+一般情况下，在终端里有一个最高频的使用目录，希望打开终端时默认切换到此目录下。在Ubuntu里可以在Home目录下的bashrc`~/.bashrc`脚本里添加如下代码即可：
+
+```Bash
+if [ -d ~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source ];then
+    cd ~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source
+fi
+```
+
+代码的含义是，如果当前目录不在`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`目录下，那么就切换到此目录。下一次打开终端时默认路径即为：`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`
+
 #### 快捷键
 
 | 快捷键 | 作用 |

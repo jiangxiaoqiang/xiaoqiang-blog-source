@@ -22,7 +22,14 @@ date: 2016-12-16 23:32:33
 wget -c http://dl.zeroturnaround.com/idea/jr-ide-intellij-6.5.0_13-16.zip
 ```
 
--c参数表示断电续传。--continue： Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program.
+-c参数表示断点续传。--continue： Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program.
+
+
+#### uGet
+
+uGet is the #1 Open Source Download Manager app.uGet is a multi-platform app for Linux, BSD, Android & Windows (XP - 8)
+
+
 
 #### 编程开发（Development）
 
@@ -201,3 +208,8 @@ Google Chrome浏览器的好处之一就是，只要登陆Google的账号后，�
 #### KeePass
 
 KeePass是一款密码管理软件，我的密码有100多个。平时没法全部都记住的，所以只需要记住一个KeePass密码即可。KeePass可以同时安装在Windows、Linux上。
+
+#### albert
+
+Albert is a desktop agnostic launcher, inspired by the ease of use of OSX' Alfred launcher. Its goals are usability and beauty, performance and extensability. It is written in C++ and based on the Qt framework.
+
