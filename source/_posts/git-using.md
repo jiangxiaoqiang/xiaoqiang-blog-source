@@ -21,6 +21,12 @@ git branch
 git log --graph --all
 ```
 
+Git保存用户名和密码：
+
+```Bash
+git config credential.helper store
+```
+
 #### 发起pull request
 
 新建(check out)分支v1_xiaoqiang：
