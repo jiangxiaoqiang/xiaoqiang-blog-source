@@ -13,12 +13,12 @@ comment: false
 * 专注开源100年不动摇
 * Windows过敏
 * 开源、分享要从娃娃抓起
-* 喜欢的语言：Java/Python
-* OS:Redhat/CentOS/Ubuntu/Fedora/OpenSUSE
-* DB:MySQL/Apache HBase
+* Language：Java、C#、JavaScript、Python
+* OS:Redhat、CentOS、Ubuntu、Fedora、OpenSUSE
+* DB:MySQL、Apache HBase
 * Cache:Redis
 * Middleware:Apache Kafka
-* Tools(装备)：Git/Intellij Idea/JRebel
+* Tools(装备)：Git、Intellij Idea、JRebel
 
 #### 出没地
 
