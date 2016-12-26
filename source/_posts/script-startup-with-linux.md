@@ -54,6 +54,8 @@ nohup openvpn /etc/openvpn/client.conf
 
 需要注意的是，执行时需要切换到<code>/etc/openvpn</code>目录，默认的配置文件例如key等默认在当前目录下寻找。OpenVPN启动时需要root权限。需要成功启动OpenVPN客户端首次登陆时需要以root用户登陆。
 
+Ubuntu开机之后会执行`/etc/rc.local`文件中的脚本，所以可以直接在`/etc/rc.local`中添加启动脚本。当然要添加到语句`exit 0`前面才行。
+
 #### 联网后自动运行程序
 
 网络连接建立后运行的脚本可以实现诸多实用功能，如动态域名绑定、连接VPN、上网认证等。实现这一目标的大体思路有两种：在基于NetworkManager的系统中，可配置其dispatcher脚本；Fedora对这一功能支持的不是很好，只能在网络连接建立后运行一个脚本，即/sbin/ifup-local。这个文件默认不存在，需要手动创建。下面的例子用vi编辑/创建这个文件，并添加执行权限。

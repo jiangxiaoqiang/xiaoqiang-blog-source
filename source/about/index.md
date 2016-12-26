@@ -8,17 +8,18 @@ comment: false
 
 #### 关于我
 
-* 90后
+| 项 | 说明 | 备注 |
+|--------|--------|
+| Language | Java、C#、JavaScript、Python ||
+| Framework | Spring、MyBatis ||
+| OS | Redhat、CentOS、Ubuntu、Fedora、OpenSUSE ||
+| DB |MySQL、Apache HBase、Redis | |
+| Tools | Git、Intellij Idea、JRebel ||
+
 * 不放过每一个装B的机会
 * 专注开源100年不动摇
-* Windows过敏
 * 开源、分享要从娃娃抓起
-* Language：Java、C#、JavaScript、Python
-* OS:Redhat、CentOS、Ubuntu、Fedora、OpenSUSE
-* DB:MySQL、Apache HBase
-* Cache:Redis
 * Middleware:Apache Kafka
-* Tools(装备)：Git、Intellij Idea、JRebel
 
 #### 出没地
 

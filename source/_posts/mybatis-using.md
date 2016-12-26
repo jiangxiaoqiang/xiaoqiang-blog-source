@@ -71,7 +71,7 @@ open="(" separator="," close=")">#{item}</foreach>
 #### MyBatis中${}与#{}的区别
 
 当使用#{parameterName}引入参数的时候，Mybatis会把这个参数认为是一个字符串，在拼接SQL的时候其实首先是一个问号（？），然后查询的时候，将参数引入到问号（？）之中。比如
-	select * from emp where name = #{name}，这样的一个SQL，解析以后是select * from emp where name = ?，由于是#{name}的方式引入，那么就将问号（？）替换成#{name}的值，比如传进一个字符串"yedward"，那么最终的查询SQL是select * from emp where name = 'yedward'。
+	`select * from emp where name = #{name}`，这样的一个SQL，解析以后是`select * from emp where name = ?`，由于是#{name}的方式引入，那么就将问号（？）替换成#{name}的值，比如传进一个字符串"yedward"，那么最终的查询SQL是`select * from emp where name = 'yedward'`。可以理解为#可以进行预编译，进行类型匹配，而$不进行数据类型匹配。
 
 当使用${parameterName}引入参数的时候，Mybatis会将这个参数直接拼到SQL中去，就没有上面那种问号（？）。
 
@@ -81,20 +81,20 @@ open="(" separator="," close=")">#{item}</foreach>
 　　
 3. #方式能够很大程度防止sql注入。
 　　
-4.$方式无法防止Sql注入。
+4. $方式无法防止Sql注入。
 
-5.$方式一般用于传入数据库对象，例如传入表名.
+5. $方式一般用于传入数据库对象，例如传入表名.
 	注：MyBatis排序时使用order by 动态参数时用$而不是#
 
-6.有时你只是想直接在SQL语句中插入一个不改变的字符串。比如，像ORDER BY，你可以这样来使用：
+6. 有时你只是想直接在SQL语句中插入一个不改变的字符串。比如，像ORDER BY，你可以这样来使用：
 	ORDER BY ${columnName}
+
 这里MyBatis不会修改或转义字符串。
 
 总结：
-写一句SQL-例如：select * from user_role where user_code = "100";
-这句话而言，需要写成 select * from ${tableName} where user_code = #{userCode}
-所以，$符是直接拼成sql的 ，#符则会以字符串的形式 与sql进行拼接。
-在直接拼接规则的时候可以用$，规则已经有了，只是传递参数进去，那么可以用#。
+写一句SQL-例如：`select * from user_role where user_code = "100";`
+这句话而言，需要写成 `select * from ${tableName} where user_code = #{userCode}`
+所以，$符是直接拼成sql的 ，#符则会以字符串的形式 与sql进行拼接。在直接拼接规则的时候可以用$，规则已经有了，只是传递参数进去，那么可以用#。
 
 #### \_parameter参数
 
@@ -124,6 +124,10 @@ There is no getter for property named 'moduleCode' in 'class java.lang.String
  </select>
 ```
 
-#### 分页
+#### 分页(Page)
+
+#### 拦截器实现分页(Implement by Interceptor)
+
+由于不同的数据库厂商所提供的分页不同，例如ORACLE是子查询实现，MySQL是limit语句实现，所以在Mybatis中，默认的实现是基于逻辑分页(Logical Page)的。但是Mybatis支持拦截器(Interceptor),所以，我们可以根据不同的数据库，定制自己的数据库物理分页(Physical Page)逻辑。改变mybatis内部的分页行为，理论上只要把最终要执行的sql转变成对应的分页语句就行了。
 
 ##### Mybatis-PageHelper
