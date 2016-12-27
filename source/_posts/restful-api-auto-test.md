@@ -3,7 +3,7 @@ title: Restful接口自动化测试
 date: 2016-12-26 11:55:38
 tags:
 - Restful
-- 接口自动化测试
+- Auto-test
 categories: Programming
 ---
 
@@ -15,11 +15,23 @@ categories: Programming
 pip install pycurl
 ```
 
+安装时可能会出现如下问题：
+
 <!-- more -->
+
+```
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-jzTgwZ/pycurl
+```
+
+使用如下命令安装依赖包：
+
+```Bash
+apt-get install libcurl4-openssl-dev
+```
 
 #### 使用rest-assured框架测试
 
-Testing and validation of REST services in Java is harder than in dynamic languages such as Ruby and Groovy. REST Assured brings the simplicity of using these languages into the Java domain.
+rest-assured框架用于测试REST方式的接口，使用JSON schema验证返回体，大大的简化了测试代码。esting and validation of REST services in Java is harder than in dynamic languages such as Ruby and Groovy. REST Assured brings the simplicity of using these languages into the Java domain.
 
 ##### 引入依赖包
 
