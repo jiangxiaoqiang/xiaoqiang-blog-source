@@ -12,6 +12,12 @@ date: 2016-12-16 23:32:33
 
 ### 网络(Network)
 
+#### geary(邮件客户端)
+
+[Geary](https://wiki.gnome.org/Apps/Geary) is an email application built around conversations, for the GNOME 3 desktop. It allows you to read, find and send email with a straightforward, modern interface.
+
+Conversations allow you to read a complete discussion without having to find and click from message to message.
+
 #### httrack
 
 网页下载与缓存。
@@ -212,4 +218,3 @@ KeePass是一款密码管理软件，我的密码有100多个。平时没法全�
 #### albert
 
 Albert is a desktop agnostic launcher, inspired by the ease of use of OSX' Alfred launcher. Its goals are usability and beauty, performance and extensability. It is written in C++ and based on the Qt framework.
-

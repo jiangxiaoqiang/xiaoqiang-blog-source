@@ -11,3 +11,4 @@ categories: Programming
 * 循环引用(Cycle Reference)对象的序列化问题
 * Spring MVC中数据转对象的过程
 * MyBatis中使用#时，如何将参数也显示的显示在日志中
+* Java中注解实现原理
