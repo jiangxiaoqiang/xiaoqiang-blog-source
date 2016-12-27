@@ -48,6 +48,35 @@ git push origin v1_xiaoqiang
 
 到GitLab页面里创建一个pull request即可。
 
+#### 关于Commit的建议
+
+* **one thing one commit**:在提交commit的时候尽量保证这个commit只做一件事情，比如实现某个功能或者修改了配置文件。
+* **easy to read**:清楚的表达这个commit做了什么。
+* **cherry-pick**:cherry-pick将Commit从一个分之拷贝到另一个分支，如果每个Commit包含的特性太多，那么就不能完美的pick出想要的特性。
+* **code review**:易于别人做code review。
+
+```
+# 50-character subject line
+#
+# 72-character wrapped longer description. This should answer:
+#
+# * Why was this change necessary?
+# * How does it address the problem?
+# * Are there any side effects?
+#
+# Include a link to the ticket, if any.
+```
+
+常见的修改类型如下：
+
+* feat (feature)
+* fix (bug fix)
+* docs (documentation)
+* style (formating, missing semi colons, …)
+* refactor
+* test (when adding missing tests)
+* chore (maintain)
+
 #### 更新(update)
 
 采用git pull时，提示如下：

@@ -32,7 +32,7 @@ uGet可以作为aria2的UI，aria2下载工具特点：
 * 支持通过http代理的ftp下载
 * 可以作为守护进程(Deamon)运行
 
-输入如下命令安装aria2：
+在Ubuntu 16.04中，输入如下命令安装aria2：
 
 ```Bash
 sudo apt install aria2 -y

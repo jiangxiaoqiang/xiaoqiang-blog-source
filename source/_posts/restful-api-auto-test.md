@@ -35,7 +35,7 @@ rest-assured框架用于测试REST方式的接口，使用JSON schema验证返�
 
 ##### 引入依赖包
 
-引入rest-assured框架的依赖包和TestNG的依赖包。
+引入[rest-assured](http://rest-assured.io/)框架的依赖包和TestNG的依赖包。
 
 ```
 project(':cc-api') {

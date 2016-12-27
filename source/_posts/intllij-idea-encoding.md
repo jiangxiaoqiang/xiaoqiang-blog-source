@@ -126,6 +126,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Alt + O | 优化(Optimization)类的Import |
 | Ctrl + H | 显示类的层次结构(Hierarchy) |
 | Alt + F12 | 激活Terminal |
+| Ctrl + Shift + F10 | 运行所有测试 |
 
 ##### 进入退出全屏
 
