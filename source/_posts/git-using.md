@@ -131,7 +131,7 @@ git checkout v1_xiaoqiang
 git merge v1
 ```
 
-#### Stash
+#### 储藏(Stash)
 
 “‘储藏”“可以获取你工作目录的中间状态——也就是你修改过的被追踪的文件和暂存的变更——并将它保存到一个未完结变更的堆栈中，随时可以重新应用。往堆栈推送一个新的储藏，只要运行：
 
@@ -143,6 +143,13 @@ git stash
 
 ```Bash
 git stash list
+```
+
+输出的内容如下：
+
+```
+hldev@hldev-100:~/hldata/backend/credit-system$ git stash list
+stash@{0}: WIP on v1_xiaoqiang: ac284e4 refactor:根据属性名获取属性值优化
 ```
 
 应用储藏：

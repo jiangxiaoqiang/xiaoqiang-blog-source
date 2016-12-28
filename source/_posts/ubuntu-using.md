@@ -34,3 +34,4 @@ fi
 | Ctrl + Window + Down | 最小化窗口，注意按下时按顺序按下相应键 |
 | Alt + F1 | 调出侧边栏(如果有设置自动隐藏的话) |
 | Ctrl + Window + D(Desktop) | 显示桌面快捷键 |
+| Alt + F7 | 激活窗口移动功能 |
