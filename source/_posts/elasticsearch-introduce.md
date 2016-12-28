@@ -74,12 +74,38 @@ curl http://localhost:9200/?pretty
 
 ##### Head插件
 
-ElasticSearch从版本5+即不支持site plugin(site plugins are not supported). Run elasticsearch-head as a standalone server。
+ElasticSearch从版本5+即不支持site plugin(site plugins are not supported). Run elasticsearch-head as a standalone server。安装Grunt：
 
+```Bash
+sudo npm install -g grunt-cli
+sudo npm install grunt --save-dev
+```
 
+Grunt安装完毕后，接着安装elasticsearch-head：
 
+```
+git clone git://github.com/mobz/elasticsearch-head.git
+cd elasticsearch-head
+npm install
+grunt server
+```
 
+安装完毕后，访问地址：`http://localhost:9100/`。由于有同源策略，暂时还无法连接。
 
+```
+XMLHttpRequest cannot load http://localhost:9200/_cluster/state. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:9100' is therefore not allowed access.
+```
+
+在ElasticSearch配置文件中(`/opt/local/tools/elasticsearch-5.1.1/config/elasticsearch.yml`)添加如下配置：
+
+```
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+```
+
+最后成功连接集群，如下图所示：
+
+{% asset_img head-connect-elasticsearch.jpg 连接ElasticSearch集群效果%}
 
 * [Elasticsearch 简介](http://lxwei.github.io/posts/Elasticsearch-%E7%AE%80%E4%BB%8B.html)
 
