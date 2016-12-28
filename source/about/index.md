@@ -13,13 +13,11 @@ comment: false
 | Language | Java、C#、JavaScript、Python ||
 | Framework | Spring、MyBatis ||
 | OS | Redhat、CentOS、Ubuntu、Fedora、OpenSUSE ||
-| DB |MySQL、Apache HBase、Redis | |
-| Tools | Git、Intellij Idea、JRebel ||
-
-* 不放过每一个装B的机会
-* 专注开源100年不动摇
-* 开源、分享要从娃娃抓起
-* Middleware:Apache Kafka
+| DB |MySQL、Apache HBase | |
+| MQ | Apache Kafka ||
+| Cache | Redis | |
+| Tools | Git、Intellij Idea、JRebel、Gradle ||
+| 口号(Slogan) | 开源、分享要从娃娃抓起,装逼也是(So as zhuangbiliaty) | 不解释 |
 
 #### 出没地
 

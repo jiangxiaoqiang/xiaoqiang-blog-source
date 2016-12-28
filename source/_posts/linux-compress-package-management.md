@@ -22,3 +22,17 @@ categories: Programming
 ```Bash
 tar -xzvf example.tar.gz
 ```
+
+#### rar
+
+在Ubuntu中处理rar(WinRAR Compressed Archive)文件类型，安装相应包：
+
+```Bash
+sudo apt install -y unrar
+```
+
+输入如下命令解压缩：
+
+```Bash
+unrar x -r simple.rar
+```
