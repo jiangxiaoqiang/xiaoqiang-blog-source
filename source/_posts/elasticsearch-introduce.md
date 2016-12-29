@@ -16,6 +16,21 @@ ElasticSearch是一个基于Lucene开发的搜索服务器，具有分布式多�
 
 关系型数据库为了提高查询效率会添加索引，比如MySQL就是B-Tree索引(B+树)，还有文件系统也是采用B+树。搜索引擎的基础数据结构倒排索引(Inverted Index)。在平时，会经常使用各种各样的索引，如根据链接，可以找到链接里的具体文本，这就是索引。反过来，如果，如果我们能根据具体文本，找到文本存在的具体链接，这就是倒排索引，可简单理解为从文本到链接的映射。平时在使用Google、百度时，就是根据具体文本去找链接，这就是以倒排索引为基础的。ElasticSearch也是使用的是倒排索引(Inverted Index)，也是为了提高查询速度。
 
+#### 应用案例
+
+* GitHub searches 20TB of data using Elasticsearch, including 1.3 billion files and 130 billion lines of code.
+
+#### 特点
+
+* Open Source（开源）
+* Apache Lucene（基于 Lucene）
+* Schema Free(模式自由)
+* Document Oriented(面向文档型的设计)
+* Real Time Data & Analytics（实时索引数据）
+* Distributed（分布式）
+* High Availability（高可靠性）
+* 其他特性：RESTful API；JSON format；multi-tenancy；full text search；conflict management；per-operation persistence
+
 ##### 基本概念
 
 **Gateway**：代表ElasticSearch索引快照的存储方式，ElasticSearch默认是先把索引存放到内存中，当内存满了时再持久化(Persist)到本地硬盘。gateway对索引快照进行存储，当这个ElasticSearch集群关闭再重新启动时就会从gateway中读取索引备份数据。ElasticSearch支持多种类型的gateway，有本地文件系统（默认），分布式文件系统，Hadoop的HDFS和Amazon的s3云存储服务。
