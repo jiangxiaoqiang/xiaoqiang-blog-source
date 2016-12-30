@@ -1,6 +1,8 @@
 ---
-title: elasticsearch-using
+title: ElasticSearch使用
 tags:
+- ElasticSearch
+categories: Programming
 ---
 
 #### 什么是索引(Index)
@@ -19,7 +21,75 @@ Elasticsearch ⇒ Indices ⇒ Types ⇒ Documents ⇒ Fields
 
 #### 创建索引(Index)
 
+如下curl命令，创建一个名字为jiangxiaoqiang的索引(Index)：
+
+```Bash
+curl -XPUT 'localhost:9200/jiangxiaoqiang?pretty' -d'
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3,
+            "number_of_replicas" : 2
+        }
+    }
+}'
+```
+
+url里面的pretty是pretty format的含义，指代参数的json是良好格式化的。
+
+#### 创建Type
+
+ElasticSearch中每个文档必须有一个类型定义。这里的类型相当于数据库当中的表，类型定义了字段映射（类似数据库表结构），这样一来，每个索引可以包含多种文档类型，而每种文档类型定义一种映射关系。
+
+```Bash
+curl -XPUT 'localhost:9200/jiangxiaoqiang/typejxq/_mapping' -d'{
+   "typejxq": {
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "desc": {
+            "type": "string"
+         }
+      }
+   }
+}'
+```
+
+#### 添加数据
+
+```Bash
+curl -XPUT 'localhost:9200/jiangxiaoqiang/typejxq/1' -d'{
+   "name":"jiangxiaoqiang",
+   "desc":"dfaewgrehrehr"
+}'
+```
+
+#### 查询数据
+
+```Bash
+curl -XPOST 'localhost:9200/jiangxiaoqiang/_search' -d'{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "prefix": {
+                        "name": "jiang"
+                    }
+                }
+            ],
+            "must_not": [],
+            "should": []
+        }
+    },
+    "from": 0,
+    "size": 10,
+    "sort": [],
+    "aggs": {}
+}'
+```
 
 参考资料：
 
 * [在ElasticSearch中，集群(Cluster),节点(Node),分片(Shard),Indices(索引),replicas(备份)之间是什么关系？](https://www.zhihu.com/question/26446020)
+* [Elastic Stack and Product Documentation](https://www.elastic.co/guide/index.html)

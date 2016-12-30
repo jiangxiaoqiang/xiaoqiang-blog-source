@@ -27,6 +27,12 @@ Git保存用户名和密码：
 git config credential.helper store
 ```
 
+Git查看Url：
+
+```Bash
+git remote -v
+```
+
 #### 发起pull request
 
 新建(check out)分支v1_xiaoqiang：
@@ -152,7 +158,7 @@ hldev@hldev-100:~/hldata/backend/credit-system$ git stash list
 stash@{0}: WIP on v1_xiaoqiang: ac284e4 refactor:根据属性名获取属性值优化
 ```
 
-应用储藏：
+其中WIP代表:Work In Progress，应用储藏：
 
 ```Bash
 git stash apply

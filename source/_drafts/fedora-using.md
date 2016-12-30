@@ -3,6 +3,16 @@ title: fedora-using
 tags:
 ---
 
+#### 常用操作
+
+##### 查看本机IP
+
+```
+ifconfig -a
+ethtool -P eth0
+```
+
+
 #### 安装MPlayer
 
 输入如下命令安装MPlayer：

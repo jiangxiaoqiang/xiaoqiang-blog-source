@@ -19,6 +19,9 @@ ElasticSearch是一个基于Lucene开发的搜索服务器，具有分布式多�
 #### 应用案例
 
 * GitHub searches 20TB of data using Elasticsearch, including 1.3 billion files and 130 billion lines of code.
+* Foursquare:"实时搜索5千万地理位置信息"
+* SoundCloud使用ElasticSearch为1.8亿用户提供即时而精准的音乐搜索服务
+* Elasticsearch使Fog Creek可以在400亿行代码中进行一个月3千万次的查询
 
 #### 特点
 
