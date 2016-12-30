@@ -16,7 +16,7 @@ comment: false
 | DB |MySQL、Apache HBase | |
 | MQ | Apache Kafka ||
 | Cache | Redis | |
-| Tools | Git、Intellij Idea、JRebel、Gradle ||
+| Tools | Git、Intellij Idea、JRebel、Gradle、Jenkins ||
 | 口号(Slogan) | 开源、分享要从娃娃抓起,装逼也是(So as zhuangbiliaty) | 不解释 |
 
 #### 出没地

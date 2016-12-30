@@ -21,3 +21,8 @@ Zookeeper的核心是原子广播（Atomic Broadcast），这个机制保证了�
 * LEADING：当前Server即为选举出来的leader
 
 * FOLLOWING：leader已经选举出来，当前Server与之同步
+
+
+参考文章：
+
+[简要分析ZooKeeper基本原理及安装部署](http://blog.csdn.net/xlgen157387/article/details/53572760)
