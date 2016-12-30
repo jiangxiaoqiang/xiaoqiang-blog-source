@@ -29,6 +29,10 @@ gradle task
 gradle task --all
 ```
 
+
+
+
+
 #### Wrapper
 
 Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。
