@@ -3,7 +3,7 @@ title: uget使用
 date: 2016-12-25 13:55:12
 tags:
 - uget
-categories: software
+categories: Software
 ---
 
 uGet是一款Linux下的下载工具，uGet is the #1 Open Source Download Manager app.uGet is a multi-platform app for Linux, BSD, Android & Windows (XP - 8)。uGet下载最大的体会比较稳定，直观的感受是，用Google Chrome（中途可能变为速度为0的状态）和Wget(可能失去下载连接)无法下载的文件，使用uGet可以下载。

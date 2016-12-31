@@ -3,7 +3,7 @@ title: HP KU 1158键盘
 tags:
 - keyboard
 - KU 1158
-categories: Programmming
+categories: Programming
 date: 2016-10-27 13:08:21
 ---
 

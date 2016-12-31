@@ -1,8 +1,8 @@
 ---
 title: spring-step-by-step（三）-权限管理
 tags:
-  - Spring
-categories: Programmming
+- Spring
+categories: Programming
 date: 2016-11-29 16:16:45
 ---
 
