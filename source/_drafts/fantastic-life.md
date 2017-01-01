@@ -1,0 +1,6 @@
+---
+title: fantastic-life
+tags:
+---
+
+

@@ -6,6 +6,9 @@ tags:
 categories: Programming
 ---
 
+Hexo是一个简洁、高效的博客框架。使用Markdown编写文章，快速渲染成博客静态网页。
+
+<!--more-->
 
 #### 安装
 
