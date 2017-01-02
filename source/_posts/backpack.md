@@ -1,4 +1,4 @@
----
+	---
 title: 我的背包
 date: 2016-12-31 21:59:29
 tags:
@@ -18,3 +18,5 @@ categories: Equipment
 {% asset_img city-compact-backpack.jpg City Compact Backpack %}
 
 City Compact Backpack是Incase旗下的产品。Incase创立于1997年美国加州，是专门以Apple产品为基础，用精品水准生产Apple周边产品的一个品牌。与 Apple 相同，Incase品牌风格主打的是高级简约的路线。
+
+买回来后看了一下它的铭牌，是采用一种叫做Ecoya的材料，这种材料在生产上色过程中采用了节水和低二氧化碳排放的工艺，既能保持原先的耐用性，也比传统材料更环保。不过还是跟自己预想的环保材料有差异，本以为是那种可以自然降解对环境无害的材料。不管只是商家的噱头也好，还是真正的减少了能量的消耗和碳的排放，也算是进步吧。
