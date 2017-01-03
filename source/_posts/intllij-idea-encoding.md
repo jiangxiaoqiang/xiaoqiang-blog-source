@@ -1,5 +1,5 @@
 ---
-title: IntelliJ Idea快捷键技巧分享
+title: IntelliJ Idea快捷键技巧
 tags: [IntelliJ,IDE]
 categories: Programming
 date: 2016-09-26 14:23:24
