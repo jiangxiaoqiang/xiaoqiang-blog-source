@@ -1,5 +1,5 @@
 ---
-title: IntelliJ Idea快捷键技巧分享
+title: IntelliJ Idea快捷键技巧
 tags: [IntelliJ,IDE]
 categories: Programming
 date: 2016-09-26 14:23:24
@@ -78,7 +78,7 @@ Shift + F6,可以重命名你的类、方法、变量等等。
 
 Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器的味道。善用Intellij Idea编辑器可以大幅提高工作效率，用快捷键有一种装逼的感觉，装逼人士必备。
 
-| 快捷键(Short Keys)        | 作用           |
+| 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
 | Ctrl + Shift + F12      | 编辑区全屏 |
 | Ctrl + F4      | 关闭当前编辑文件      |
@@ -126,7 +126,10 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Alt + O | 优化(Optimization)类的Import |
 | Ctrl + H | 显示类的层次结构(Hierarchy) |
 | Alt + F12 | 激活Terminal |
-| Ctrl + Shift + F10 | 运行所有测试 |
+| Ctrl + Shift + F10 | 运行所有测试(不是特别好用) |
+| Ctrl + Delete | 删除行 |
+| Ctrl + Alt + O（Optimize） | 优化包导入 |
+
 
 ##### 进入退出全屏
 

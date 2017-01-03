@@ -1,9 +1,10 @@
 ---
-title: Restful接口自动化测试
+title: 使用Rest-Assured做Restful接口自动化测试
 date: 2016-12-26 11:55:38
 tags:
 - Restful
 - Auto-test
+- TestNG
 categories: Programming
 ---
 
@@ -76,4 +77,6 @@ public class ApiXysjControllerTest {
 }
 ```
 
-上述方法在请求头中加入认证信息，get中为请求的地址，根据返回的error code为0判断服务端成功处理了此次请求。
+上述方法在请求头中加入认证信息，get中为请求的地址，根据返回的error code为0判断服务端成功处理了此次请求。测试结果如下图：
+
+{% asset_img rest-test-result.png Restful接口测试%}
