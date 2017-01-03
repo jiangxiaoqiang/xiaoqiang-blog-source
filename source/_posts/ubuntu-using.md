@@ -3,7 +3,7 @@ title: Ubuntu使用
 date: 2016-12-20 22:58:25
 tags:
 - Ubuntu
-categories: Programming
+categories: OS
 ---
 
 使用的Ubuntu版本为14.04 LTS和16.04 LTS版本。
@@ -35,3 +35,5 @@ fi
 | Alt + F1 | 调出侧边栏(如果有设置自动隐藏的话) |
 | Ctrl + Window + D(Desktop) | 显示桌面快捷键 |
 | Alt + F7 | 激活窗口移动功能 |
+| Alt(长按) | 激活程序的菜单，即可使用程序的Alt快捷键组合了 |
+| Alt(短按) | 激活本应用程序的搜索菜单，即可在当前应用程序中搜索了 |

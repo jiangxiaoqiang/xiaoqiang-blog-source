@@ -3,7 +3,7 @@ title: 你需要一台Mac
 date: 2017-01-01 18:12:22
 tags:
 - Mac
-categories: OS
+categories: Equipment
 ---
 
 年初，给自己换了一台MacBook Air。一大早即去专卖店，从进店到提走电脑，时间不到5分钟，一千多美金就花出去了。心里暗自嘀咕，要是挣钱有这么快就好了。选购的是最低配版的，配置如下：
