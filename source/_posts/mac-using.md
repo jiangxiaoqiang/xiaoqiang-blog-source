@@ -37,6 +37,16 @@ brew list
 
 有些命令安装软件是brew，而有些命令安装软件是brew cask。brew是从下载源码解压然后`./configure && make install`，同时会包含相关依存库。并自动配置好各种环境变量，而且易于卸载。而brew cask是已经编译好了的应用包(.dmg[Apple Disk Image]/.pkg)，仅仅是下载解压，放在统一的目录中(/opt/homebrew-cask/Caskroom)，省掉了自己去下载、解压、拖拽（安装）等步骤，同样，卸载相当容易与干净。这个对一般用户来说会比较方便，包含很多在AppStore里没有的常用软件。
 
+#### 设置Java环境变量
+
+在当前用户的根目录下新建.bash_profiile隐藏文件。文件中添加如下内容：
+
+```Bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home #jdk安装路径   
+export PATH=$JAVA_HOME/bin:$PATH 
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+```
+
 #### 常用快捷键
 
 | 快捷键(Short Keys)  | 作用  |
