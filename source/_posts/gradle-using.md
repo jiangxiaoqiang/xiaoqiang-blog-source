@@ -22,16 +22,34 @@ categories: Programming
 sudo apt install gradle -y
 ```
 
-查看所有任务：
+如下列出了Gradle常用的命令：
 
 ```Bash
+# 查看所有任务
 gradle task
 gradle task --all
+
+# 查看所有项目
+gradle projects
+
+# 清楚app目录下的build文件夹
+gradle clean
+
+# 检查依赖并编译打包 （正式和测试）
+gradle build
+
+#编译并打Debug包
+gradle assembleDebug
+
+#编译并打Release包
+gradle assembleRelease
 ```
 
+定义一个依赖通常需要三个元素：
 
-
-
+* group:创建该library的组织名，通常也会是包名，
+* name :是该library的唯一标识
+* version:该library的版本号
 
 #### Wrapper
 
