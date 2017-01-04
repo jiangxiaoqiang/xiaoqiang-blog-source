@@ -3,7 +3,7 @@ title: Gradle使用
 date: 2016-12-27 16:23:37
 tags:
 - Gradle
-categories: Programming
+categories: Tools
 ---
 
 使用以下配置文件对Gradle的构建进行配置：

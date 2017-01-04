@@ -144,8 +144,11 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 
 {% asset_img intellij-tabs-number-setting.png IntelliJ Idea编辑器Tab页设置%}
 
-#### 注释模板
+#### 类文件注释
 
+通过File--》Setting--》File and Code Template中来设置类文件注释，如下图所示：
+
+{% asset_img setting-class-comment.png 设置类文件注释%}
 
 参考：
 
