@@ -89,6 +89,16 @@ curl -o xxnet.zip https://codeload.github.com/XX-net/XX-Net/zip/3.2.8
 
 -o, --output <file>，文件的保存名称。
 
+#### 提交POST请求
+
+使用Curl提交Post请求如下：
+
+```Bash
+curl -H "APPID:hlb11529c136998cb6" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d" -H "Accept:application/json" -H "Accept:application/json" -H "Content-Type:application/json" -X POST -d '{"id":1}' http://localhost:28080/api/xzss/savejson
+```
+
+使用Curl请求时，默认是Get请求，如果需要显示指定请求类型，那么需要加上-X(--request)参数。
+
 参考资料：
 
 * [curl网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)

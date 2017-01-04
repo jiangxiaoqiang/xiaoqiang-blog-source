@@ -3,10 +3,13 @@ title: Intellij Idea小技巧(tips)
 tags:
   - Intellij Idea
   - tips
-categories: Programming
+categories: Tool
 date: 2016-11-03 09:51:27
 ---
 
+#### 用键盘选择选框
+
+有时我们可以使用Tab按键将焦点移动到单选框里，如何使用键盘选中和取消选中单选框呢？只需要按下Space按键即可，即是键盘的空格按键。
 
 #### 键盘调整Debug窗口的大小
 

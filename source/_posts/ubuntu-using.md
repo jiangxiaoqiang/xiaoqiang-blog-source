@@ -12,6 +12,12 @@ categories: OS
 
 * 长按Windows键会出现全局快捷键页面
 
+#### 设置截屏快捷键
+
+在安装好了Shutter之后，每次截取屏幕都需要打开Shutter，点击Selection按钮。其实可以配置截屏的快捷键，就像QQ的`Ctrl + Alt + A`一样。如下图所示：
+
+{% asset_img shutter-selection-shortkey.png Ubuntu截图设置快捷键%}
+
 ##### 设置Terminal默认路径
 
 一般情况下，在终端里有一个最高频的使用目录，希望打开终端时默认切换到此目录下。在Ubuntu里可以在Home目录下的bashrc`~/.bashrc`脚本里添加如下代码即可：

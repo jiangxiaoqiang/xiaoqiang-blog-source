@@ -1,7 +1,9 @@
 ---
 title: Java rest总结
+date: 2017-01-04 11:57:02
 tags:
 ---
+
 
 以下是开发Rest接口时遇到的一些问题。
 
@@ -56,6 +58,3 @@ curl -H "APPID:hlb11529c136998cb6"
 ```
 
 The Content-Type header is used by @RequestBody to determine what format the data being sent from the client in the request is. The accept header is used by @ResponseBody to determine what format to sent the data back to the client in the response. That's why you need both headers.
-
-
-* [POST JSON fails with 415 Unsupported media type, Spring 3 mvc](http://stackoverflow.com/questions/11492325/post-json-fails-with-415-unsupported-media-type-spring-3-mvc)
