@@ -40,3 +40,5 @@ git config --global merge.tool meld
 #使用merge tool合并
 git mergetool
 ```
+
+可以直接键入meld命令打开meld的GUI。

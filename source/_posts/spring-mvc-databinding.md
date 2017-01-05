@@ -11,3 +11,28 @@ SpringMVC主框架将ServletRequest对象及目标方法的入参实例传递给
 <!-- more -->
 
 {% asset_img spring-mvc-databinding-process.png Spring MVC数据绑定过程图 %}
+
+#### 到DispatcherServlet
+
+客户端的请求到达服务端，首先到DispatcherServlet(org.springframework.web.servlet)的doService方法中。DispatcherServlet通过HandlerMapping获得HandlerExecutionChain，然后获得HandlerAdapter。请求方法参数的处理、响应返回值的处理，分别是HandlerMethodArgumentResolver和HandlerMethodReturnValueHandler，这两个接口都是Spring3.1版本之后加入的。
+
+
+#### 执行请求
+
+
+```Java
+public Object invokeForRequest(NativeWebRequest request, ModelAndViewContainer mavContainer,
+			Object... providedArgs) throws Exception {
+	Object[] args = getMethodArgumentValues(request, mavContainer, providedArgs);
+	if (logger.isTraceEnabled()) {
+		logger.trace("Invoking '" + ClassUtils.getQualifiedMethodName(getMethod(), getBeanType()) +
+				"' with arguments " + Arrays.toString(args));
+	}
+	Object returnValue = doInvoke(args);
+	if (logger.isTraceEnabled()) {
+		logger.trace("Method [" + ClassUtils.getQualifiedMethodName(getMethod(), getBeanType()) +
+				"] returned [" + returnValue + "]");
+	}
+	return returnValue;
+}
+```

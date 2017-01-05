@@ -8,6 +8,14 @@ categories: OS
 
 使用的Ubuntu版本为14.04 LTS和16.04 LTS版本。
 
+#### 字体
+
+在Ubuntu下一些漂亮的字体记录。
+
+| 字体名字 | 说明 |
+|--------|--------|
+| Latin Modern Mono 10  Regular |  目前终端采用的这种字体  |
+
 #### 小技巧
 
 * 长按Windows键会出现全局快捷键页面

@@ -1,8 +1,10 @@
 ---
 title: Graphviz使用
 tags:
-- graphviz
+  - graphviz
+date: 2017-01-05 19:14:06
 ---
+
 
 #### 安装
 
