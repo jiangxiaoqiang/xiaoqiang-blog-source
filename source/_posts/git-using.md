@@ -154,6 +154,33 @@ git checkout v1_xiaoqiang
 git merge v1
 ```
 
+#### Pull操作ubu
+
+git pull的作用是取回远程主机某个分支的更新，再与本地指定分之合并。
+
+```
+git pull <远程主机名>　<远程分支名>：<本地分支名>
+```
+
+比如取回origin主机的next分支，与本地的master分支合并，写成下面这样：
+
+```Bash
+git pull origin next:master
+```
+
+远程分支与当前分支合并，冒号后的内容可以省略：
+
+```Bash
+git pull origin next
+```
+
+等同于先做fetch，再做merge。
+
+```Bash
+git fetch origin
+git merge origin/next
+```
+
 #### 储藏(Stash)
 
 “‘储藏”“可以获取你工作目录的中间状态——也就是你修改过的被追踪的文件和暂存的变更——并将它保存到一个未完结变更的堆栈中，随时可以重新应用。往堆栈推送一个新的储藏，只要运行：
