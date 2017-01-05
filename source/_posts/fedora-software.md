@@ -37,7 +37,12 @@ uGet is the #1 Open Source Download Manager app.uGet is a multi-platform app for
 
 
 
-#### 编程开发（Development）
+### 编程开发（Development）
+
+#### PyCharm(EDU)
+
+PyCharm的教育版是开源免费的，学习Python。
+
 
 #### NodeJS
 

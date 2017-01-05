@@ -155,7 +155,7 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 
 #### 格式化设置
 
-有时在按下格式化按钮后，希望同时优化导入的包，自动移除未使用的包引用，在Intellij Idea中，可以在文件夹上右键，选择Reformate Code(Ctrl + Alt + L)，在弹出的界面中勾选Optimize Import即可。
+有时在按下格式化按钮后，希望同时优化导入的包，自动移除未使用的包引用，在Intellij Idea中，可以在文件夹上右键，选择Reformate Code(Ctrl + Alt + L)，在弹出的界面中勾选Optimize Import即可。这样在每次按下格式化按钮时，会自动优化导入的包，比如自动移除未使用的包引用、自动排序等等。
 
 {% asset_img reformate-code.png 格式化时优化导入包%}
 

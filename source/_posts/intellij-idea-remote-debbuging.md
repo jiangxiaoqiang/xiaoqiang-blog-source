@@ -30,8 +30,7 @@ set CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,address=53996,suspend=n,se
 ```Bash
 export CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,address=53996,suspend=n,server=y"
 ```
-
-运行如下命令启动Tomcat：
+Sun虚拟机实现需要指定命令行选项，以加载JDWP（Java Debug Wire Protocol Transport）代理来debug。JDK 5.0以前需要指定-Xdebug和-Xrunjdwp这两个参数，以后则可以使用参数-agentlib:jdwp替代之，它们指定了JVM使用的连接器。从上面的例子代码可以看到几个jdwp支持的参数选项，包括transport、server、suspend、address等等，这些都很常见，还包括timeout、launch（中断并开始调试的时候，执行什么程序）、onuncaught（如果出现无法捕获的异常是否需要中断并调试）等等。运行如下命令启动Tomcat：
 
 ```Bash
 #Windows下启动Tomcat
@@ -63,3 +62,7 @@ Intellij Idea远程调试配置如下：
 
 {% asset_img intellij-idea-remote-debugging.jpg Intellij Idea远程调试配置%}
 
+
+参考资料：
+
+* [JVM问题定位工具](http://www.raychase.net/1519)

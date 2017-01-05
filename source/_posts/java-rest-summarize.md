@@ -29,6 +29,8 @@ public void saveXzss(@RequestBody String summaryXzssJson) throws IOException {
 1. 请求的 Content-Type 头信息必须是 application/json；
 2. Jackson Json 库必须包含在应用程序的类路径下。
 
+在接收客户端HTTP请求的消息时，如果客户端将请求的Json放到消息体中，那么服务端可以直接取实体，或者取相应的Json进行反序列化。2种方式都能够达到要求，一般是直接取实体，省去了反序列化的步骤，由框架进行反序列化。
+
 #### 发送Post请求
 
 发送Post请求时，需要指定Content-Type和Accept请求头。

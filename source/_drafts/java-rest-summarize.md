@@ -35,8 +35,7 @@ public void saveXzss(@RequestBody String summaryXzssJson) throws IOException {
 curl -H "APPID:hlb11529c136998cb6"
      -H "TIMESTAMP:2016-12-19 16:58:02"
      -H "ECHOSTR:sdsaasf"
-     -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d"
-     -H "Accept:application/json"
+     -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d"     
      -H "Accept:application/json"
      -H "Content-Type:application/json"
      -X POST -d '{"id":1}' http://localhost:28080/api/xzss/savejson

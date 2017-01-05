@@ -10,7 +10,7 @@ comment: false
 
 | 项 | 说明 | 备注 |
 |--------|--------|
-| Language | Java、C#、JavaScript、Python ||
+| Language | Java、C#、JavaScript、Shell、Python ||
 | Framework | Spring、MyBatis ||
 | OS | Redhat、CentOS、Ubuntu、Fedora、OpenSUSE ||
 | DB |MySQL、Apache HBase | |
