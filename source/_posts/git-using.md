@@ -154,7 +154,36 @@ git checkout v1_xiaoqiang
 git merge v1
 ```
 
-#### Pull操作ubu
+关闭文件对比(合并)工具后，辅助文件都会自动删除，但同时会生成一个test.txt.orig的文件，orig是original的缩写，内容是解决冲突前的冲突现场。默认该.orig文件可能不会自动删除，需要手动删除。
+
+#### 撤销合并
+
+使用git show命令查看父编号(parent number):
+
+```Bash
+git show s868dfa3e5267578eeec73947f334320740885f56
+```
+
+显示的内容如下：
+
+```
+commit 868dfa3e5267578eeec73947f334320740885f56
+Merge: 0995c73 6d3ef06
+Author: jiangxiaoqiang <jiangtingqiang@gmail.com>
+Date:   Fri Jan 6 09:30:15 2017 +0800
+
+    Merge branch 'v1' of http://dn6/backend/credit-system into v1
+```
+
+The first one is the first parent, the second one is the second parent。取消合并：
+
+```Bash
+git revert -m 1 HEAD
+```
+
+1就是1，表示0995c73对应的父来源，2表示6d3ef06对应的父来源。要撤销的那条merge线的编号,HEAD表示merge前的版本号。
+
+#### Pull操作
 
 git pull的作用是取回远程主机某个分支的更新，再与本地指定分之合并。
 
