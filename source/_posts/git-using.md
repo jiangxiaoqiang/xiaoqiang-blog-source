@@ -154,6 +154,8 @@ git checkout v1_xiaoqiang
 git merge v1
 ```
 
+关闭文件对比(合并)工具后，辅助文件都会自动删除，但同时会生成一个test.txt.orig的文件，orig是original的缩写，内容是解决冲突前的冲突现场。默认该.orig文件可能不会自动删除，需要手动删除。
+
 #### 撤销合并
 
 使用git show命令查看父编号(parent number):
@@ -180,6 +182,33 @@ git revert -m 1 HEAD
 ```
 
 1就是1，表示0995c73对应的父来源，2表示6d3ef06对应的父来源。要撤销的那条merge线的编号,HEAD表示merge前的版本号。
+
+#### Pull操作
+
+git pull的作用是取回远程主机某个分支的更新，再与本地指定分之合并。
+
+```
+git pull <远程主机名>　<远程分支名>：<本地分支名>
+```
+
+比如取回origin主机的next分支，与本地的master分支合并，写成下面这样：
+
+```Bash
+git pull origin next:master
+```
+
+远程分支与当前分支合并，冒号后的内容可以省略：
+
+```Bash
+git pull origin next
+```
+
+等同于先做fetch，再做merge。
+
+```Bash
+git fetch origin
+git merge origin/next
+```
 
 #### 储藏(Stash)
 

@@ -8,6 +8,15 @@ categories: OS
 
 使用的Ubuntu版本为14.04 LTS和16.04 LTS版本。
 
+#### 软件安装
+
+在Ubuntu下，常用的软件安装一条命令即搞定,跟上常用的软件名称即可，真的是一条命令安装所有软件,非常方便：
+
+```Bash
+# 安装常用软件(16.04 LTS及以后使用apt命令)
+sudo apt install -y wget curl aria2　keepass putty
+```
+
 #### 字体
 
 在Ubuntu下一些漂亮的字体记录。
