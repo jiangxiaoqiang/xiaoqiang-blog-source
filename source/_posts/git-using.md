@@ -154,6 +154,33 @@ git checkout v1_xiaoqiang
 git merge v1
 ```
 
+#### 撤销合并
+
+使用git show命令查看父编号(parent number):
+
+```Bash
+git show s868dfa3e5267578eeec73947f334320740885f56
+```
+
+显示的内容如下：
+
+```
+commit 868dfa3e5267578eeec73947f334320740885f56
+Merge: 0995c73 6d3ef06
+Author: jiangxiaoqiang <jiangtingqiang@gmail.com>
+Date:   Fri Jan 6 09:30:15 2017 +0800
+
+    Merge branch 'v1' of http://dn6/backend/credit-system into v1
+```
+
+The first one is the first parent, the second one is the second parent。取消合并：
+
+```Bash
+git revert -m 1 HEAD
+```
+
+1就是1，表示0995c73对应的父来源，2表示6d3ef06对应的父来源。要撤销的那条merge线的编号,HEAD表示merge前的版本号。
+
 #### 储藏(Stash)
 
 “‘储藏”“可以获取你工作目录的中间状态——也就是你修改过的被追踪的文件和暂存的变更——并将它保存到一个未完结变更的堆栈中，随时可以重新应用。往堆栈推送一个新的储藏，只要运行：
