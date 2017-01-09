@@ -48,7 +48,13 @@ git remote -v
 git add .
 ```
 
-没有添加某一部分子目录的文件，让我有点郁闷，最后切换到那个目录下手动添加修改后(Modified)的文件。按理说应该是添加当前目录下所有的文件和子文件夹啊，百思不得其解。
+没有添加某一部分子目录的文件，让我有点郁闷，最后切换到那个目录下手动添加修改后(Modified)的文件。按理说应该是添加当前目录下所有的文件和子文件夹啊，百思不得其解。原来是由于子目录下的远程库的地址与当前库不一致所导致,子目录下还是next主题的URL,而不是当前库的URL,将子目录下的远程库的地址修改为当前库的地址即可:
+
+```Bash
+git remote set-url --add origin https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
+```
+
+其中,origin是远程库的名字.
 
 #### 发起pull request
 
