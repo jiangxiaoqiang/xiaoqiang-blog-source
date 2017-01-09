@@ -46,6 +46,38 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 npm install hexo-generator-searchdb --save
 ```
 
+在使用搜索模块时，有时会出现如下错误：
+
+```
+hldev@hldev-100:~/summerize/xiaoqiang-blog-source$ hexo s
+ERROR Plugin load failed: hexo-generator-searchdb
+Error: Cannot find module '../highlight_alias.json'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/hldev/summerize/xiaoqiang-blog-source/node_modules/hexo-generator-searchdb/node_modules/hexo-util/lib/highlight.js:6:13)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/hldev/summerize/xiaoqiang-blog-source/node_modules/hexo-generator-searchdb/node_modules/hexo-util/lib/index.js:8:21)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/hldev/summerize/xiaoqiang-blog-source/node_modules/hexo-generator-searchdb/lib/generator.js:4:12)
+    at Module._compile (module.js:556:32)
+```
+
+解决此问题，切换到node_modules目录下，删除hexo-generator-searchdb模块，重新安装hexo-generator-searchdb模块即可。
+
 #### 安装Next主题
 
 next主题是Hexo下一款非常简洁美观的主题，切换到themes目录下，执行如下命令：

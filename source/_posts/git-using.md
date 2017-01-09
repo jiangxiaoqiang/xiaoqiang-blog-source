@@ -54,10 +54,10 @@ git add .
 git remote set-url --add origin https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 ```
 
-其中,origin是远程库的名字.同时，删除原来的远程地址：
+其中,origin是远程库的名字.添加了新地址后，原来的地址还存在，可使用`git config --list`命令查看，同时，使用如下命令删除原来的旧的远程地址：
 
 ```Bash
-git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next 
+git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next
 ```
 
 #### 发起pull request
