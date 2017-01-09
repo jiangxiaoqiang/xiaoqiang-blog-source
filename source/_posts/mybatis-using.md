@@ -8,6 +8,28 @@ categories: Programming
 
 * Java的实体属性中，属性赋值时是区分大小写的，比如adog不能成功映射到aDog
 
+#### 获取新增数据的ID
+
+有时在添加一条记录后，需要获取添加记录的ID，进行其他业务逻辑。那么只需要在MyBatis中进行如下配置即可：
+
+```Java
+<!-- 新增-->
+<insert id="saveXzss" useGeneratedKeys="true" keyProperty="id"
+        parameterType="system.data.model.CreditDissent">
+    INSERT INTO TS_B_XYSS(
+    APPLAYER_NAME)
+    VALUES(
+    #{applayerName});
+</insert>
+```
+
+`useGeneratedKeys="true"`表示开启返回自增ID。`keyProperty="id"`表示返回主键的名字。在业务代码中接收：
+
+```Java   
+workflowMapper.create(autoGenerateFlow);
+int id=creditDissent.getId();
+```
+
 #### Mapper文件中遍历集合参数
 
 在遍历List<Integer>时，直接使用如下的语句即可：
