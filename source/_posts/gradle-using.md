@@ -51,6 +51,24 @@ gradle assembleRelease
 * name :是该library的唯一标识
 * version:该library的版本号
 
+一个简单的打包命令：
+
+```Bash
+gradle -p cc-web-boot bootRun
+```
+
+-p参数指定项目(project directory)的目录，如果不指定就是当前目录(-p, --project-dir,Specifies the start directory for Gradle. Defaults to current directory)。bootRun指代的是当前项目下的任务名称。
+
+#### 插件(Plugin)
+
+插件就是 Gradle 的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：
+
+```
+apply plugin: 'java'
+apply plugin: 'propdeps'
+apply plugin: 'org.springframework.boot'
+```
+
 #### Wrapper
 
 Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。需要查看Gradle Wrapper帮助，在命令行中输入如下命令：
@@ -59,4 +77,12 @@ Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当�
 gradle Wrapper --help
 ```
 
-会打印出所有Gradle Wrapper
+会打印出所有Gradle Wrapper.
+
+#### Gradle界面(GUI)
+
+在终端中输入如下命令可以查看Gradle的GUI：
+
+```Bash
+gradle --gui
+```

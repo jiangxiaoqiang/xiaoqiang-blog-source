@@ -14,7 +14,8 @@ categories: OS
 
 ```Bash
 # 安装常用软件(16.04 LTS及以后使用apt命令)
-sudo apt install -y wget curl aria2　keepass putty vim tree unzip git openssh-server uget maven gradle shutter
+sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
+openssh-server uget maven gradle shutter nginx mysql-server nodejs
 ```
 
 #### 字体
