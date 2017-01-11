@@ -1,8 +1,8 @@
 ---
-title: Sonarcube安装与使用
+title: Sonarqube安装与使用
 date: 2017-01-10 15:51:54
 tags:
-- Sonarcube
+- Sonarqube
 categories: Tool
 ---
 
@@ -75,6 +75,9 @@ export PATH=$PATH:$SONAR_HOME/bin:$SONAR_SCANNER/bin
 
 ```Bash
 source ~/.bash_profile
+
+# 查看所有环境变量
+env
 ```
 
 在需要分析的项目的根目录下，新建文件sonar-project.properties。写入如下内容：
