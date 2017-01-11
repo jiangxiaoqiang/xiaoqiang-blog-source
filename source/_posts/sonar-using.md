@@ -1,5 +1,5 @@
 ---
-title: sonar安装
+title: Sonarcube安装与使用
 date: 2017-01-10 15:51:54
 tags:
 - Sonarcube
@@ -57,4 +57,12 @@ sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncodi
 ./sonar.sh start &
 ```
 
-启动成功后，访问地址：`http://localhost:9000`即可看到sonarqube的主界面。
+启动成功后，访问地址：`http://localhost:9000`，即可看到sonarqube的主界面。首次登录的用户名和密码都是admin。
+
+#### Sonar插件
+
+在多项目构建中的Sonar配置：
+
+```
+
+```
