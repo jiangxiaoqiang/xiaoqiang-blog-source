@@ -68,7 +68,7 @@ gradle properties
 
 #### 插件(Plugin)
 
-插件就是 Gradle 的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：
+插件就是Gradle的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：
 
 ```
 apply plugin: 'java'
@@ -78,7 +78,7 @@ apply plugin: 'org.springframework.boot'
 
 #### Wrapper
 
-Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。需要查看Gradle Wrapper帮助，在命令行中输入如下命令：
+Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。注意安装不会真的在计算机中安装Gradle的发行版本，它会下载Gradle，存放在目录`$USER_HOME/.gradle/wrapper/dists`下，构建时使用命令调用而不是直接添加到当前计算机(试想如果不同的Gradle版本，如果添加到系统的环境变量了，构建时到底是以调用哪一个版本的Gradle呢)。需要查看Gradle Wrapper帮助，在命令行中输入如下命令：
 
 ```Bash
 gradle Wrapper --help
@@ -93,3 +93,13 @@ gradle Wrapper --help
 ```Bash
 gradle --gui
 ```
+
+#### 软件包管理
+
+安装指定版本的软件可以使用如下命令：
+
+```Bash
+sudo apt install gradle=2.12 
+```
+
+其中gradle是软件包的名称，2.12是软件包的版本。
