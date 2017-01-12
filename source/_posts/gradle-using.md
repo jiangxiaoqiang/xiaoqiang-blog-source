@@ -29,7 +29,7 @@ sudo apt install gradle -y
 gradle task
 gradle task --all
 
-# 查看所有项目
+# 查看所有项目(查看所有项目要切换到项目的根目录执行命令)
 gradle projects
 
 # 清楚app目录下的build文件夹
@@ -38,10 +38,10 @@ gradle clean
 # 检查依赖并编译打包 （正式和测试）
 gradle build
 
-#编译并打Debug包
+# 编译并打Debug包
 gradle assembleDebug
 
-#编译并打Release包
+# 编译并打Release包
 gradle assembleRelease
 ```
 
@@ -57,7 +57,14 @@ gradle assembleRelease
 gradle -p cc-web-boot bootRun
 ```
 
--p参数指定项目(project directory)的目录，如果不指定就是当前目录(-p, --project-dir,Specifies the start directory for Gradle. Defaults to current directory)。bootRun指代的是当前项目下的任务名称。
+-p参数指定项目(project directory)的目录，如果不指定就是当前目录(-p, --project-dir,Specifies the start directory for Gradle. Defaults to current directory)。bootRun指代的是当前项目下的任务名称。打包完成后，生成的包文件在对应项目文件的build/libs目录下。使用命令查看当前property：
+
+```Bash
+# 查看当前所有的Property
+gradle properties
+```
+
+其中allprojects表示所有的Project，在多项目构建中，它将包含多个Project；buildDir表示构建结果的输出目录。
 
 #### 插件(Plugin)
 
