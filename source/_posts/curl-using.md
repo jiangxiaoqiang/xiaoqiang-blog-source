@@ -49,6 +49,16 @@ curl -c cookies http://example.com
 curl -b cookies http://example.com
 ```
 
+如果服务端采用Cookie验证登录请求。那么可以首先用浏览器登录网页，找到相应的Cookie，如下图所示：
+
+{% asset_img curl-setcookie.jpg 找到Cookie %}
+
+当Curl请求时，附加上Cookie就可以模拟浏览器的登录请求动作了，如下命令所示：
+
+```Bash
+curl --cookie "cc-o-t=Q2ZWTGp3bFQrTmtOcG9pcTJ4SFV2VnpmNzNhaEhMbktoQWlXeWVyaGhVS3JWeVJEcEprTXBsbldDS3VCN01CeVRFNGxYVTZmQ2hIbHhTSy8zKzF3cDQvYjEwRncxUXgrQ3pMWC9XeTYzcXFrQ1NqQWkrdXRhMUJEc3RZV3ExK0k" http://localhost:28080/api/xzss/detail/1
+```
+
 #### 请求API数据
 
 比如需要在请求头中添加Key、Value键值对，可以添加-H(Header)参数，如下命令行所示：

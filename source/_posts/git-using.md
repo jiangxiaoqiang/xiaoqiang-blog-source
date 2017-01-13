@@ -30,8 +30,11 @@ git log --graph --all
 Git保存用户名和密码：
 
 ```Bash
+# 是否保存认证信息
 git config credential.helper store
 ```
+
+注意是否保存认证信息仅仅是规定在当前库(repository)是否保存认证信息，不是git全局设置，其他库如果需要保存认证信息，需要单独执行此命令。使用`git config --list`命令查看当前库所有的配置。
 
 Git查看Url：
 
@@ -54,10 +57,10 @@ git add .
 git remote set-url --add origin https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 ```
 
-其中,origin是远程库的名字.同时，删除原来的远程地址：
+其中,origin是远程库的名字.添加了新地址后，原来的地址还存在，可使用`git config --list`命令查看，同时，使用如下命令删除原来的旧的远程地址：
 
 ```Bash
-git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next 
+git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next
 ```
 
 #### 发起pull request

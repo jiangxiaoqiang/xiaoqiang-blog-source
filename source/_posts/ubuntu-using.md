@@ -14,8 +14,12 @@ categories: OS
 
 ```Bash
 # 安装常用软件(16.04 LTS及以后使用apt命令)
-sudo apt install -y wget curl aria2　keepass putty
+sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
+openssh-server uget maven gradle shutter nginx mysql-server nodejs 
+texstudio virtualbox synaptic
 ```
+
+synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。
 
 #### 字体
 
@@ -24,6 +28,8 @@ sudo apt install -y wget curl aria2　keepass putty
 | 字体名字 | 说明 |
 |--------|--------|
 | Latin Modern Mono 10  Regular |  目前终端采用的这种字体  |
+| Courier | Courier是一个等宽的粗衬线字体，主要是依据打字机所打印出来的字形来设计，于1955年由Howard "Bud" Kettler设计完成。原来的Courier字体是IBM公司在1950年代设计给打印机使用的字体，但是并未维护他们的专利，使得这个字型成为整个打字机制造业的标准。 |
+| Monospace | 等宽字体（英语：Monospaced Font）是指字符宽度相同的电脑字体。与此相对，字符宽度不尽相同的电脑字体称为比例字体。 |
 
 #### 小技巧
 
@@ -62,3 +68,7 @@ fi
 | Alt(短按) | 激活本应用程序的搜索菜单，即可在当前应用程序中搜索了 |
 | Alt + E | 在Google Chrome浏览器中，可以打开浏览器右侧的菜单 |
 |　Window + 1　| 打开Home目录(还可以用Window组合键打开其他目录) |
+
+参考资料：
+
+* [维基百科Courier条目](https://zh.wikipedia.org/wiki/Courier)
