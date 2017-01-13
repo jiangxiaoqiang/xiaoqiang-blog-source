@@ -20,6 +20,8 @@ categories: Tool
 
 ```Bash
 sudo apt install gradle -y
+# 安装指定版本的Gradle
+sudo apt install -y gradle=2.12
 ```
 
 如下列出了Gradle常用的命令：
@@ -27,6 +29,7 @@ sudo apt install gradle -y
 ```Bash
 # 查看所有任务
 gradle task
+# 查看所有的任务(会列出task之间的依赖关系)
 gradle task --all
 
 # 查看所有项目(查看所有项目要切换到项目的根目录执行命令)
@@ -99,7 +102,17 @@ gradle --gui
 安装指定版本的软件可以使用如下命令：
 
 ```Bash
-sudo apt install gradle=2.12 
+sudo apt install gradle=2.12
 ```
 
 其中gradle是软件包的名称，2.12是软件包的版本。
+
+#### 运行特定项目的任务
+
+此处运行项目cc-web-boot下的bootRepackage任务：
+
+```Bash
+./gradlew build -p cc-web-boot/ bootRepackage -x test
+```
+
+如上命令在项目文件夹cc-web-boot下执行构建，并排除test任务，生成对应的jar包。bootRepackage任务依赖于Gradle assemble任务，assemble任务会编译程序中的源代码，并打包生成Jar文件，这个任务不执行单元测试。不使用spring-boot插件，主程序jar包，与依赖的jar包是分开的，需要分别打包，这在云环境中，上传部署比较麻烦，得传多个文件（或者上传前，先压缩成一个包，再传到服务器上解压），服务器节点多时，操作起来太累又重复。而使用spring-boot插件，会自动将依赖的包集成到主包里，非常方便。
