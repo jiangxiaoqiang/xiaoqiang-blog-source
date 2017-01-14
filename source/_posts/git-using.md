@@ -30,8 +30,11 @@ git log --graph --all
 Git保存用户名和密码：
 
 ```Bash
+# 是否保存认证信息
 git config credential.helper store
 ```
+
+注意是否保存认证信息仅仅是规定在当前库(repository)是否保存认证信息，不是git全局设置，其他库如果需要保存认证信息，需要单独执行此命令。使用`git config --list`命令查看当前库所有的配置。
 
 Git查看Url：
 

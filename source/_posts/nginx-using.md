@@ -21,10 +21,12 @@ sudo apt install nginx -y
 #### 常用命令
 
 ```Bash
+# 查看Nginx的安装目录,一般在(/usr/local/nginx)下
+whereis nginx
+
 # 重启Nginx
 sudo /etc/init.d/nginx restart
 ```
-
 
 #### location
 
@@ -38,3 +40,26 @@ location /api{
 ```
 
 将前缀为api的请求发送到地址：`http://dn5:28080`.
+
+#### 常见问题
+
+#####  the HTTP rewrite module requires the PCRE library
+
+在安装时提示 the HTTP rewrite module requires the PCRE library：
+
+```
+./configure: error: the HTTP rewrite module requires the PCRE library.
+You can either disable the module by using --without-http_rewrite_module
+option, or install the PCRE library into the system, or build the PCRE library
+statically from the source with nginx by using --with-pcre=<path> option.
+```
+
+安装pcre-devel与openssl-devel解决问题：
+
+```Bash
+yum -y install pcre-devel openssl openssl-devel
+ 
+./configure --prefix=/usr/local/nginx
+make
+make install
+```
