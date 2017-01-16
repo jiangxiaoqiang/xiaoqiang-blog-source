@@ -196,9 +196,9 @@ git revert -m 1 HEAD
 
 1就是1，表示0995c73对应的父来源，2表示6d3ef06对应的父来源。要撤销的那条merge线的编号,HEAD表示merge前的版本号。
 
-#### Pull操作
+#### 拉取（Pull）
 
-git pull的作用是取回远程主机某个分支的更新，再与本地指定分之合并。
+git pull的作用是取回远程主机某个分支的更新，再与本地指定分之合并。实际包含2步操作，git fetch和git merge。
 
 ```
 git pull <远程主机名>　<远程分支名>：<本地分支名>
@@ -222,6 +222,14 @@ git pull origin next
 git fetch origin
 git merge origin/next
 ```
+
+有时，当前仓库不止包含一个远程分支，比如一份代码存放在公司内网的git仓库中，一份代码存放在外网的仓库中。使用`git config --list`命令可查看。此时拉取时，指定不同的主机即可，例如：
+
+```Bash
+git pull osc v1
+```
+
+其中osc为远程主机的主机名，v1为本地分支。
 
 #### 储藏(Stash)
 
