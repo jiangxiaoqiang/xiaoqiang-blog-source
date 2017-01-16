@@ -231,6 +231,8 @@ git pull osc v1
 
 其中osc为远程主机的主机名，v1为本地分支。
 
+TS_B_PJZC_T_SP_SXRMD
+
 #### 储藏(Stash)
 
 “‘储藏”“可以获取你工作目录的中间状态——也就是你修改过的被追踪的文件和暂存的变更——并将它保存到一个未完结变更的堆栈中，随时可以重新应用。往堆栈推送一个新的储藏，只要运行：
@@ -239,7 +241,7 @@ git pull osc v1
 git stash
 ```
 
-查看储藏：
+查看所有储藏：
 
 ```Bash
 git stash list
@@ -258,6 +260,13 @@ stash@{0}: WIP on v1_xiaoqiang: ac284e4 refactor:根据属性名获取属性值�
 git stash apply
 ```
 
+丢弃储藏：
+
+```Bash
+git stash drop
+```
+
+drop后可以跟储藏的编号，如果没有指定，默认丢弃最新一次储藏。
 
 #### Your branch and 'origin/master' have diverged
 

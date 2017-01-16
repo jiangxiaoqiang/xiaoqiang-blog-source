@@ -105,6 +105,8 @@ curl -o xxnet.zip https://codeload.github.com/XX-net/XX-Net/zip/3.2.8
 
 ```Bash
 curl -H "APPID:hlb11529c136998cb6" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d" -H "Accept:application/json" -H "Accept:application/json" -H "Content-Type:application/json" -X POST -d '{"id":1}' http://localhost:28080/api/xzss/savejson
+
+curl -H "APPID:hlb11529c136998cb6" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d" http://192.168.32.105:28080/api/blacklist?xdr=4567890123
 ```
 
 使用Curl请求时，默认是Get请求，如果需要显示指定请求类型，那么需要加上-X(--request)参数。
