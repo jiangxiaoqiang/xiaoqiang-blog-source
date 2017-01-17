@@ -89,3 +89,13 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 #### 设置菜单
 
 可以自己添加相应菜单，可以在一级菜单上添加一个书(Book)或者其他模块。
+
+
+#### 常见问题
+
+```
+ERROR Local hexo not found in ~/source/blogs/xiaoqiang-blog-source
+ERROR Try running: 'npm install hexo --save'
+```
+
+使用命令安装了还是不见好。删除项目文件夹下的node_module模块，使用`npm instal hexo --save`重新安装Hexo即可。
