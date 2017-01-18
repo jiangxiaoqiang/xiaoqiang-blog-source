@@ -17,3 +17,5 @@ categories: Programming
 <!-- more -->
 
 启用Annotation Processor即可。Annotation Processor即为注解的处理器。与运行时注解RetentionPolicy.RUNTIME不同，Annotation Processor处理RetentionPolicy.SOURCE类型的注解。在Java代码编译阶段对标注RetentionPolicy.SOURCE类型的注解进行处理。这样在编译过程中添加代码，效率就非常高了。同样，Annotation Processor也可以实现IDE编写代码时的各种代码检验，例如当你在一个并未覆写任何父类方法的函数上添加了@Override注解，IDE会红线标识出你的函数提示错误。
+
+同时安装Lombok插件。
