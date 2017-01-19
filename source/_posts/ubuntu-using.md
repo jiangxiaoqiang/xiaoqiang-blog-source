@@ -71,6 +71,10 @@ fi
 | Window + M | 搜索音乐(Music) |
 | Window + A | 搜索或浏览程序（Application）|
 | Window + F | 搜索或浏览文件（File）|
+| Ctrl + PageUp | 切换到终端的上一个Tab页 |
+| Ctrl + PageDown | 切换到终端的下一个Tab页 |
+| Ctrl + Shift + W | 关闭终端当前Tab标签  |
+| Ctrl + Shift + Q | 关闭终端所有Tab标签 |
 
 参考资料：
 
