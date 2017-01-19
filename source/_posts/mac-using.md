@@ -1,5 +1,5 @@
 ---
-title: Mac使用
+title: Mac使用总结
 date: 2017-01-01 14:53:36
 tags:
 - Mac
@@ -85,3 +85,17 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Ctrl + Space | 输入法切换(用苹果的输入法即可) |
 | Command + Option + Shift + Esc | 强制关闭当前活动的程序 |
 | Command + Option + Esc | 打开强制关闭程序对话框 |
+| 触摸板双指上下滑动 | 上下滚动当前屏幕的页面 |
+| 触摸板三指上下滑动 | 最小化和最大化当前窗口 |
+| Ctrl + A(Ahead) | 在终端中将光标跳到行头 |
+| Ctrl + E(End) | 在终端中将光标跳到行尾 |
+| Ctrl + R | 在终端中搜索已经使用过的命令 |
+| Ctrl + Click | 相当于点击右键 |
+
+#### 设置Terminal颜色显示
+
+Mac的终端下默认时没有颜色的，比如可执行文件和文件夹应该以不同的颜色表示。必须以命令`ls -G`才可以显示颜色。可以在bash_profile文件中添加如下内容即可：
+
+```Bash
+alias ls="ls -G"
+```
