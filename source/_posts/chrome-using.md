@@ -28,6 +28,8 @@ date: 2017-01-19 13:28:26
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
 | 打开“菜单” | Alt + f、Alt + e 或 F10  |
+| G | 滑倒页面的底部 |
+| gg | 滑倒页面的顶部 |
 
 
 #### Plugin
@@ -40,5 +42,6 @@ Vimium is an open source Google Chrome Extension[1] which provides keyboard shor
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
 | Shift + ? | 调取出Vimium帮助页面  |
+|||
 
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
