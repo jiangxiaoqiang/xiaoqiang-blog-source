@@ -1,5 +1,5 @@
 ---
-title: Ubuntu使用
+title: Ubuntu使用快捷键与技巧总结
 date: 2016-12-20 22:58:25
 tags:
 - Ubuntu
@@ -10,16 +10,16 @@ categories: OS
 
 #### 软件安装
 
-在Ubuntu下，常用的软件安装一条命令即搞定,跟上常用的软件名称即可，真的是一条命令安装所有软件,非常方便：
+在Ubuntu下，常用的软件安装一条命令即搞定,跟上常用的软件名称即可，真的是一条命令安装所有软件,特别是重装系统之后，一条命令将原来的软件都安装完毕，节省了时间和精力，非常方便：
 
 ```Bash
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic
+texstudio virtualbox synaptic terminator
 ```
 
-synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。
+synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
 
 #### 字体
 
@@ -68,6 +68,9 @@ fi
 | Alt(短按) | 激活本应用程序的搜索菜单，即可在当前应用程序中搜索了 |
 | Alt + E | 在Google Chrome浏览器中，可以打开浏览器右侧的菜单 |
 |　Window + 1　| 打开Home目录(还可以用Window组合键打开其他目录) |
+| Window + M | 搜索音乐(Music) |
+| Window + A | 搜索或浏览程序（Application）|
+| Window + F | 搜索或浏览文件（File）|
 
 参考资料：
 

@@ -268,6 +268,17 @@ git stash drop
 
 drop后可以跟储藏的编号，如果没有指定，默认丢弃最新一次储藏。
 
+#### 远程仓库(remote)
+
+添加远程仓库：
+
+```Bash
+git remote add osc https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
+```
+
+其中osc为远程仓库的名称，https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git为远程仓库的地址。
+
+
 #### Your branch and 'origin/master' have diverged
 
 If you absolutely sure this is your case then you can force Git to push your changes:
