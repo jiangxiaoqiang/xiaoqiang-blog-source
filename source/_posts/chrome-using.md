@@ -28,6 +28,10 @@ date: 2017-01-19 13:28:26
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
 | 打开“菜单” | Alt + f、Alt + e 或 F10  |
+| Ctrl + Shift + T | 恢复已关闭的标签页（最多恢复10项） |
+| chrome://version/（about:version） | 查看Google Chrome版本信息 |
+| chrome://plugins/（about:plugin） | 查看Google Chrome版本信息 |
+
 
 
 #### Plugin
