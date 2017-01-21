@@ -96,6 +96,9 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Ctrl + C -> Option + Command + V | 剪切 |
 | Command + Option + 电源按钮 | 将Mac置于睡眠状态 |
 | Command + Option + Left／Right | 在Google Chrom中左右Tab页切换 |
+| Command + Shift + 3 | 整个屏幕截图 |
+| Command + Shift + 4 | 屏幕指定区域截图 |
+
 
 #### 设置Terminal颜色显示
 
