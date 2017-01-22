@@ -13,8 +13,13 @@ date: 2017-01-05 22:59:44
 
 aria2最简单的下载,aria2后面跟上链接的地址即可:
 
-```
- aria2c http://ftp.jaist.ac.jp/pub/Linux/Fedora/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso
+```Bash
+aria2c http://ftp.jaist.ac.jp/pub/Linux/Fedora/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso
 ```
 
-会将下载的文件保存到当前目录下。
+会将下载的文件保存到当前目录下。打开断点续传选项：
+
+```Bash
+aria2c -c http://ftp.jaist.ac.jp/pub/Linux/Fedora/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso
+```
+

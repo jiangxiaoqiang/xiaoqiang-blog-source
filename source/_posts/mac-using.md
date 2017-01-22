@@ -1,5 +1,5 @@
 ---
-title: Mac使用总结
+title: Mac使用与技巧总结
 date: 2017-01-01 14:53:36
 tags:
 - Mac
@@ -86,11 +86,19 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Command + Option + Shift + Esc | 强制关闭当前活动的程序 |
 | Command + Option + Esc | 打开强制关闭程序对话框 |
 | 触摸板双指上下滑动 | 上下滚动当前屏幕的页面 |
-| 触摸板三指上下滑动 | 最小化和最大化当前窗口 |
+| 触摸板三指上下滑动 | 最小化和最大化当前窗口（相当于F3） |
 | Ctrl + A(Ahead) | 在终端中将光标跳到行头 |
 | Ctrl + E(End) | 在终端中将光标跳到行尾 |
 | Ctrl + R | 在终端中搜索已经使用过的命令 |
 | Ctrl + Click | 相当于点击右键 |
+| Command + Up／Down | 到Finder的上／下级目录 |
+| 触摸板三指左右滑动 | 在不同应用界面之间切换 |
+| Ctrl + C -> Option + Command + V | 剪切 |
+| Command + Option + 电源按钮 | 将Mac置于睡眠状态 |
+| Command + Option + Left／Right | 在Google Chrom中左右Tab页切换 |
+| Command + Shift + 3 | 整个屏幕截图 |
+| Command + Shift + 4 | 屏幕指定区域截图 |
+
 
 #### 设置Terminal颜色显示
 
