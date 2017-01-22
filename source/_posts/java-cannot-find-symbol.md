@@ -20,9 +20,14 @@ categories: Programming
 
 同时安装Lombok插件。
 
+在项目编译Scala文件时，提示如下错误：
+
 ```
 Warning:scala: skipping Scala files without a Scala SDK in module(s) system import
 ```
 
-解决此问题，打开Project Structure(Ctrl + Alt + Shift + S)->Global Libraries。
+要解决此问题，打开Project Structure(Ctrl + Alt + Shift + S)->Global Libraries，添加相应的Scala SDK即可，如下图所示。
 
+{% asset_img scala-sdk-adding.jpg 添加scala SDK %}
+
+所用的Intellij Idea为Ultimate版本，在Community版本里面没有作此设置可以正常运行。
