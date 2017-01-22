@@ -70,6 +70,18 @@ Jinfo的作用是实时查看虚拟机的各项参数信息jps –v可以查看�
 
 jstack用于JVM当前时刻的线程快照，又称threaddump文件，它是JVM当前每一条线程正在执行的堆栈信息的集合。生成线程快照的主要目的是为了定位线程出现长时间停顿的原因，如线程死锁、死循环、请求外部时长过长导致线程停顿的原因。通过jstack我们就可以知道哪些进程在后台做些什么？在等待什么资源等！
 
+找到Java进程ID:
+
+```Bash
+ps -ef | grep credit-system
+```
+
+查看线程内的堆栈信息：
+
+```Bash
+jstack 26820
+```
+
 参考资料：
 
 [jstat - Java Virtual Machine Statistics Monitoring Tool](http://docs.oracle.com/javase/1.5.0/docs/tooldocs/share/jstat.html)
