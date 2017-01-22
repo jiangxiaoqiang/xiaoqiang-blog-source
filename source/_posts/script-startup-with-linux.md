@@ -54,7 +54,24 @@ nohup openvpn /etc/openvpn/client.conf
 
 需要注意的是，执行时需要切换到<code>/etc/openvpn</code>目录，默认的配置文件例如key等默认在当前目录下寻找。OpenVPN启动时需要root权限。需要成功启动OpenVPN客户端首次登陆时需要以root用户登陆。
 
-Ubuntu开机之后会执行`/etc/rc.local`文件中的脚本，所以可以直接在`/etc/rc.local`中添加启动脚本。当然要添加到语句`exit 0`前面才行。
+Ubuntu开机之后会执行`/etc/rc.local`文件中的脚本，所以可以直接在`/etc/rc.local`中添加启动脚本。当然要添加到语句`exit 0`前面才行。如下rc.local脚本，在启动后自动运行XX-Net:
+
+```Bash
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+nohup /opt/local/tools/XX-Net-3.2.8/start &
+exit 0
+```
 
 #### 联网后自动运行程序
 

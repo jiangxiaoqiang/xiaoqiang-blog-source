@@ -43,7 +43,7 @@ date: 2017-01-19 13:28:26
 
 ##### Vimium(装逼神器，必备)
 
-Vimium is an open source Google Chrome Extension[1] which provides keyboard short-cuts for navigation and control in the spirit of the Vim editor. Unlike other add-ons for web browsers such as Vimperator or Pentadactyl, it doesn’t modify the browser’s interface but instead focuses on allowing the user to navigate web pages, tabs and links using vim-like keyboard commands rather than the mouse. It also allows the user to map or customise its key bindings.
+Vimium is an open source Google Chrome Extension which provides keyboard short-cuts for navigation and control in the spirit of the Vim editor. Unlike other add-ons for web browsers such as Vimperator or Pentadactyl, it doesn’t modify the browser’s interface but instead focuses on allowing the user to navigate web pages, tabs and links using vim-like keyboard commands rather than the mouse. It also allows the user to map or customise its key bindings.
 
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|

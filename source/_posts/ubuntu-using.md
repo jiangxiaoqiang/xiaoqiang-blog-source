@@ -21,6 +21,13 @@ texstudio virtualbox synaptic terminator
 
 synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
 
+卸载软件：
+
+```Bash
+# 卸载libreoffice
+sudo apt remove -y --purge libreoffice*
+```
+
 #### 字体
 
 在Ubuntu下一些漂亮的字体记录。
