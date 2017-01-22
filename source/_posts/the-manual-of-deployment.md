@@ -15,7 +15,7 @@ categories: Programming
 使用如下命令拷贝程序到服务端：
 
 ```Bash
-scp credit-system-web-boot-1.0.0.jar hldev@172.30.0.110:~
+scp system-web-boot-1.0.0.jar hldev@172.30.0.110:~
 ```
 
 #### 启动
@@ -28,6 +28,9 @@ nohup java -jar system-web-boot-1.0.0.jar
 
 # 启动，可以在界面上查看输出日志
 java -jar system-web-boot-1.0.0.jar
+
+# 启动，优先使用IPv4
+java -jar -Djava.net.preferIPv4Stack=true system-web-boot-1.0.0.jar
 ```
 
 #### 访问
