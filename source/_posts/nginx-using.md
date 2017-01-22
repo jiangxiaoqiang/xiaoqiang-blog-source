@@ -8,10 +8,14 @@ categories: Programming
 
 #### 安装
 
-在Ubuntu下，输入如下命令安装：
+输入如下命令安装：
 
 ```Bash
+# Ubuntu 16.04 LTS
 sudo apt install nginx -y
+
+# Mac OS X
+brew install nginx
 ```
 
 安装完毕后配置文件在`/etc/nginx/config.d`。
@@ -60,6 +64,20 @@ location /api{
 ```
 
 将前缀为api的请求发送到地址：`http://dn5:28080`.
+
+#### 负载均衡(Load Balance)
+
+Nginx除了作为常规的Web服务器外，还会被大规模的用于反向代理前端，因为Nginx的异步框架可以处理很大的并发请求，把这些并发请求hold住之后就可以分发给后台服务端(backend servers，也叫做服务池， 后面简称backend)来做复杂的计算、处理和响应，这种模式的好处是相当多的：隐藏业务主机更安全，节约了公网IP地址，并且在业务量增加的时候可以方便地扩容后台服务器。
+
+{% asset_img loadbalance.png 负载均衡示意图%}
+
+* 负载均衡算法
+
+* 会话一致性
+
+* 后台服务端的动态配置
+
+* 基于DNS的负载均衡
 
 #### 常见问题
 
