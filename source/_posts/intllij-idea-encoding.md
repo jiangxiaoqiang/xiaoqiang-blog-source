@@ -76,7 +76,7 @@ Shift + F6,可以重命名你的类、方法、变量等等。
 
 #### 常用快捷键
 
-Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器的味道。善用Intellij Idea编辑器可以大幅提高工作效率，用快捷键有一种装逼的感觉，装逼人士必备。
+Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器的味道。善用Intellij Idea编辑器可以大幅提高工作效率，用快捷键有一种装逼的感觉，装逼人士必备。如下是在Windows下的快捷键：
 
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
@@ -130,6 +130,13 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 | Ctrl + Delete | 删除行 |
 | Ctrl + Alt + O（Optimize） | 优化包导入 |
 
+如下是在Mac OS X中的快捷键：
+
+| 快捷键(Short Keys)  | 作用  |
+| ----------------- |:-------------:|
+| Commmand + , |  调出Setting界面 |
+| Commmand + ； |  调出项目Setting界面 |
+| Command + F4 | 关闭界面 |
 
 ##### 进入退出全屏
 
