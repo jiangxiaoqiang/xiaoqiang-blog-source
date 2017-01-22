@@ -83,6 +83,7 @@ fi
 | Ctrl + PageDown | 切换到终端的下一个Tab页 |
 | Ctrl + Shift + W | 关闭终端当前Tab标签  |
 | Ctrl + Shift + Q | 关闭终端所有Tab标签 |
+| Window + D(Desktop) | 显示桌面，默认是没有此快捷键的，在系统的Keyboard Setting -> Navigation 中，设置Hide All Normal Windows的热键为Window + D即可 |
 
 参考资料：
 
