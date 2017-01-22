@@ -61,6 +61,10 @@ fi
 
 代码的含义是，如果当前目录不在`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`目录下，那么就切换到此目录。下一次打开终端时默认路径即为：`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`
 
+#### 打开程序
+
+平时打开程序，可以直接按下Window键，输入程序名称，点击Enter键即可。还有可以使用`Window + Tab`快捷键，可以在启动菜单里切换相应的程序打开，因为Window+数字组合键只能打开最多9个程序，超过9个程序的可以使用此种方式打开。
+
 #### 快捷键
 
 | 快捷键 | 作用 |

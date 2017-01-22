@@ -1,5 +1,5 @@
 ---
-title: Nginx使用
+title: Nginx使用总结
 date: 2017-01-09 13:08:05
 tags:
 - Nginx
@@ -27,6 +27,26 @@ whereis nginx
 # 重启Nginx
 sudo /etc/init.d/nginx restart
 ```
+
+在修改配置文件后，可以输入如下命令检查配置文件的正确性：
+
+```Bash
+/usr/local/nginx/sbin/nginx -t
+```
+
+其中参数t表示测试配置文件，并退出，命令的结果为：
+
+```
+nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful
+```
+
+也可以输入如下命令查看Nginx帮助：
+
+```Bash
+/usr/local/nginx/sbin/nginx -h
+```
+
 
 #### location
 
