@@ -297,3 +297,14 @@ git stash
 #### Please, commit your changes or stash them before you can merge
 
 出现这个问题的原因是其他人修改了文件并提交到版本库中去了，而你本地也修改了xxx.php，这时候你进行git pull操作就好出现冲突了。
+
+#### 无法添加文件夹
+
+在项目中有一个next文件夹始终无法添加到项目中(无法通过`git add .`命令添加),解决方法是先删除此文件夹,重新创建文件夹,再重新添加进入项目中:
+
+```Bash
+# 删除文件夹
+rm -rf theme/next
+# 添加文件夹
+git add --all .
+```
