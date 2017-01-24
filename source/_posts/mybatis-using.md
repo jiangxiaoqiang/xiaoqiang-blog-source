@@ -1,5 +1,5 @@
 ---
-title: MyBatis使用
+title: MyBatis使用总结
 date: 2016-12-20 22:20:23
 tags:
 - MyBatis
@@ -47,9 +47,9 @@ open="(" separator="," close=")">#{item}</foreach>
 如果是遍历List<String>，可以采用如下写法：
 
 ```XML
-<select id=**"countByXdrShxym" **resultType=**"java.util.HashMap"**>    
+<select id="countByXdrShxym" resultType="java.util.HashMap">    
     select XDR_SHXYM, count(*) AS total from TS_B_BLACKLIST where XDR_SHXYM in
-    <foreach item=**"item" **index=**"index" **collection=**"list" **open=**"('" **separator=**"','" **close=**"')"**>${item}</foreach>    
+    <foreach item=**"item" **index="index" **collection="list" **open=**"('" **separator=**"','" **close=**"')"**>${item}</foreach>    
     group by XDR_SHXYM
 </select>
 ```
