@@ -16,7 +16,7 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp
+texstudio virtualbox synaptic terminator gimp graphiz
 ```
 
 synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
@@ -88,6 +88,7 @@ fi
 | Ctrl + Shift + W | 关闭终端当前Tab标签  |
 | Ctrl + Shift + Q | 关闭终端所有Tab标签 |
 | Window + D(Desktop) | 显示桌面，默认是没有此快捷键的，在系统的Keyboard Setting -> Navigation 中，设置Hide All Normal Windows的热键为Window + D即可 |
+| Ctrl + L | 在Google Chrome中定位到地址栏 |
 
 参考资料：
 

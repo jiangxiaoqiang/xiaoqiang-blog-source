@@ -14,12 +14,25 @@ categories: Tool
 
 <!-- more -->
 
+#### 手动安装Gradle
+
+下载Gradle，解压到指定文件夹，在用户根目录下的`.bash_profile`文件中，设置环境变量如下代码片段所示。
+
+```Bash
+export GRADLE_HOME=/opt/local/tools/gradle-2.12
+export PATH=$PATH:$SONAR_HOME/bin:$SONAR_SCANNER/bin:$GRADLE_HOME/bin
+
+# 使环境变量生效
+source .bash_profile
+```
+
 #### 基础
 
 在Ubuntu 16.04 LTS中安装Gradle:
 
 ```Bash
 sudo apt install gradle -y
+
 # 安装指定版本的Gradle
 sudo apt install -y gradle=2.12
 ```
