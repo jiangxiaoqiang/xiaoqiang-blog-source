@@ -166,6 +166,11 @@ Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器�
 
 {% asset_img reformate-code.png 格式化时优化导入包%}
 
+#### 调试时卡住
+
+在调试程序时，启动到一半时卡住，也没有发现断点按钮高亮，原来是在Mapper层的接口方法上添加了断点。打开断点（Breakpoints）视图，取消断点即可。
+
+
 参考：
 
 [Java开发必装的IntelliJ IDEA插件]

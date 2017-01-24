@@ -44,17 +44,7 @@ open="(" separator="," close=")">#{item}</foreach>
 
 <!-- more -->
 
-如果是遍历List<String>，可以采用如下写法：
-
-```XML
-<select id="countByXdrShxym" resultType="java.util.HashMap">    
-    select XDR_SHXYM, count(*) AS total from TS_B_BLACKLIST where XDR_SHXYM in
-    <foreach item=**"item" **index="index" **collection="list" **open=**"('" **separator=**"','" **close=**"')"**>${item}</foreach>    
-    group by XDR_SHXYM
-</select>
-```
-
-其中open和close需要单独加上单引号，链接分隔符(separator)也需要添加引号。另外遍历的item会出现解析出来是？的情况，将字符#替换为$，不过有SQL注入的风险。Mybatis如果采用#{xxx}的形式设置参数，Mybatis会进行sql注入的过滤。如果采用的是${xxx}，Mybatis不会进行sql注入过滤，而是直接将参入的内容输出为sql语句。
+如果是遍历List<String>，同样采用如上写法。不用考虑string类型添加单引号问题，Myatis会自动handle此问题。其中open和close需要单独加上单引号，链接分隔符(separator)也需要添加引号。另外遍历的item会出现解析出来是？的情况，将字符#替换为$，不过有SQL注入的风险。Mybatis如果采用#{xxx}的形式设置参数，Mybatis会进行sql注入的过滤。如果采用的是${xxx}，Mybatis不会进行sql注入过滤，而是直接将参入的内容输出为sql语句。
 
 #### 特殊符号
 

@@ -1,5 +1,5 @@
 ---
-title: Fedora使用
+title: Fedora使用经验总结
 date: 2017-01-17 10:29:33
 tags:
 - Fedora
@@ -11,6 +11,12 @@ categories: Programming
 | 字体名称  | 字号  |
 | ----------------- |:-------------:|
 | UM Typewriter Regular   | 12 |
+
+安装常用软件：
+
+```Bash
+sudo dnf install -y iostat keepass htop
+```
 
 ##### 查看本机IP
 
@@ -37,67 +43,6 @@ ifconfig表示Interface Configuration.一般Linux，在`/etc/sysconfig/network-s
 | ----------------- |:-------------:|
 | Windows + Space   | 切换输入法 |
 | Ctrl + Alt + Tab | 切换键盘焦点 |
-
-
-<!-- 根据统一社会信用码统计行政许可数 -->
-    <select id="countXzxk" resultType="java.util.HashMap">
-        select XDR_SHXYM, count(*) AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-        <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">${item}</foreach>
-        /*AND INFO_TYPE = 1
-        group by XDR_SHXYM*/
-    </select>
-
-    <!-- 根据统一社会信用码统计行政处罚数 -->
-    <select id="countXzcf" resultType="java.util.HashMap">
-        select XDR_SHXYM, count(*) AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-        <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">${item}</foreach>
-       /* AND INFO_TYPE = 2
-        group by XDR_SHXYM*/
-    </select>
-
-
-
-    <!-- 根据统一社会信用码统计行政许可数 -->
-        <select id="countXzxk" resultType="java.util.HashMap">
-            select *  from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-            <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">${item}</foreach>
-        </select>
-
-        <!-- 根据统一社会信用码统计行政处罚数 -->
-        <select id="countXzcf" resultType="java.util.HashMap">
-            select * from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-            <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">${item}</foreach>
-        </select>
-
-        <select id="countXzxk" resultType="java.util.HashMap">
-        /*select XDR_SHXYM, count(*) AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in*/
-        select * AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-
-        <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">#{item}</foreach>
-        /*AND INFO_TYPE = 1
-        group by XDR_SHXYM*/
-    </select>
-
-    <!-- 根据统一社会信用码统计行政处罚数 -->
-    <select id="countXzcf" resultType="java.util.HashMap">
-        /*select XDR_SHXYM, count(*) AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in*/
-        select * from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-        <foreach item="item" index="index" collection="list" open="('" separator="','" close="')">#{item}</foreach>
-        /*AND INFO_TYPE = 2
-        group by XDR_SHXYM*/
-    </select>
-
-<!-- 根据统一社会信用码统计行政许可数 -->
-    <select id="countXzxk" resultType="java.util.HashMap">
-        select * AS total from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">#{item}</foreach>
-    </select>
-
-    <!-- 根据统一社会信用码统计行政处罚数 -->
-    <select id="countXzcf" resultType="java.util.HashMap">
-        select * from TS_B_CREDIT_DOCUMENT where XDR_SHXYM in
-        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">#{item}</foreach>
-    </select>
 
 #### 安装MPlayer
 
