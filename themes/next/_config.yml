@@ -37,8 +37,8 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
-  about: /about
+  #categories: /categories
+  #about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
@@ -220,10 +220,10 @@ post_meta:
 
 
 # Wechat Subscriber
-wechat_subscriber:
-  enabled: true
-  qcode: /uploads/qrcode.jpg
-  description: Welcome to subscribe my WeChat public accout!
+#wechat_subscriber:
+  #enabled: true
+  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
+  #description: ex. subscribe to my blog by scanning my public wechat account
 
 
 
@@ -245,7 +245,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties
+highlight_theme: normal
 
 
 # ---------------------------------------------------------------
@@ -276,6 +276,10 @@ mathjax:
 
 # Gentie productKey
 #gentie_productKey:
+
+# Support for youyan comments system.
+# You can get your uid from http://www.uyan.cc
+#youyan_uid: your uid
 
 # Baidu Share
 # Available value:
@@ -409,6 +413,8 @@ use_motion: true
 # Fancybox
 fancybox: true
 
+# Canvas-nest
+canvas_nest: false
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -456,6 +462,10 @@ vendors:
   # https://www.algolia.com
   algolia_instant_js:
   algolia_instant_css:
+
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest:
 
 
 
