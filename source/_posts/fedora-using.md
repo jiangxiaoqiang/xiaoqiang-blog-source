@@ -1,5 +1,5 @@
 ---
-title: Fedora使用
+title: Fedora使用经验总结
 date: 2017-01-17 10:29:33
 tags:
 - Fedora
@@ -11,6 +11,12 @@ categories: Programming
 | 字体名称  | 字号  |
 | ----------------- |:-------------:|
 | UM Typewriter Regular   | 12 |
+
+安装常用软件：
+
+```Bash
+sudo dnf install -y iostat keepass htop
+```
 
 ##### 查看本机IP
 
@@ -36,7 +42,7 @@ ifconfig表示Interface Configuration.一般Linux，在`/etc/sysconfig/network-s
 | 快捷键(Short Keys)  | 作用  |
 | ----------------- |:-------------:|
 | Windows + Space   | 切换输入法 |
-
+| Ctrl + Alt + Tab | 切换键盘焦点 |
 
 #### 安装MPlayer
 

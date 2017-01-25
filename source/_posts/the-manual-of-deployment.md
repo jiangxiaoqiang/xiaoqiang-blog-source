@@ -30,7 +30,7 @@ nohup java -jar system-web-boot-1.0.0.jar
 java -jar system-web-boot-1.0.0.jar
 
 # 启动，优先使用IPv4
-java -jar -Djava.net.preferIPv4Stack=true system-web-boot-1.0.0.jar
+java -jar -Djava.net.preferIPv4Stack=true esystem-web-boot-1.0.0.jar
 ```
 
 #### 访问
