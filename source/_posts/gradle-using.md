@@ -1,5 +1,5 @@
 ---
-title: Gradle使用
+title: Gradle使用总结
 date: 2016-12-27 16:23:37
 tags:
 - Gradle
@@ -116,3 +116,11 @@ sudo apt install gradle=2.12
 ```
 
 如上命令在项目文件夹cc-web-boot下执行构建，并排除test任务，生成对应的jar包。bootRepackage任务依赖于Gradle assemble任务，assemble任务会编译程序中的源代码，并打包生成Jar文件，这个任务不执行单元测试。不使用spring-boot插件，主程序jar包，与依赖的jar包是分开的，需要分别打包，这在云环境中，上传部署比较麻烦，得传多个文件（或者上传前，先压缩成一个包，再传到服务器上解压），服务器节点多时，操作起来太累又重复。而使用spring-boot插件，会自动将依赖的包集成到主包里，非常方便。
+
+#### 多项目构建
+
+使用gradle构建多项目时，setting.gradle文件时必须存在的。并且要包含多个项目，示例如下：
+
+```
+include "dolphin-framework", "dolphin-common"
+```
