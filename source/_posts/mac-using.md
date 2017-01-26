@@ -98,6 +98,13 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Command + Option + Left／Right | 在Google Chrom中左右Tab页切换 |
 | Command + Shift + 3 | 整个屏幕截图 |
 | Command + Shift + 4 | 屏幕指定区域截图 |
+| Command + Shift + H(Home) | 打开Home目录，相当于Window + E |
+| Command + Shift + G(Go) | 跳转到指定文件夹，如果想跳转到Home目录，输入～即可，注意输入的路径要是完整的绝对路径 |
+| Command + Shift + C(Computer) | 跳转到我的电脑 |
+| Command + Option + Space | 打开电脑Finder搜索 |
+| Command + Option + D（Dock） | 显示／隐藏Dock |
+
+在Finder中，光标高亮在文件夹上按右键可以展开（Expand）子文件夹和子文件夹，按左键可以收拢（Toggle）子文件和子文件夹。 
 
 
 #### 设置Terminal颜色显示
