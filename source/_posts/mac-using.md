@@ -33,6 +33,10 @@ brew cask install wget
 brew install gradle
 # 列出已经安装的软件名字
 brew list
+# 列出通过cask命令安装的软件的名字
+brew cask list
+# 安装常用软件
+brew install htop gradle nginx aria2 node openssl pcre sbt scala wget
 ```
 
 有些命令安装软件是brew，而有些命令安装软件是brew cask。brew是从下载源码解压然后`./configure && make install`，同时会包含相关依存库。并自动配置好各种环境变量，而且易于卸载。而brew cask是已经编译好了的应用包(.dmg[Apple Disk Image]/.pkg)，仅仅是下载解压，放在统一的目录中(/opt/homebrew-cask/Caskroom)，省掉了自己去下载、解压、拖拽（安装）等步骤，同样，卸载相当容易与干净。这个对一般用户来说会比较方便，包含很多在AppStore里没有的常用软件。
@@ -103,8 +107,10 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Command + Shift + C(Computer) | 跳转到我的电脑 |
 | Command + Option + Space | 打开电脑Finder搜索 |
 | Command + Option + D（Dock） | 显示／隐藏Dock |
+| Command + Ctrl + Space | 调出Emoj界面 |
+| Fn + F11 | 显示桌面 | 
 
-在Finder中，光标高亮在文件夹上按右键可以展开（Expand）子文件夹和子文件夹，按左键可以收拢（Toggle）子文件和子文件夹。 
+在Finder中，光标高亮在文件夹上按右键可以展开（Expand）子文件夹和子文件夹，按左键可以收拢（Toggle）子文件和子文件夹。选中文件后按下空格键，可以预览当前的文件。 
 
 
 #### 设置Terminal颜色显示
