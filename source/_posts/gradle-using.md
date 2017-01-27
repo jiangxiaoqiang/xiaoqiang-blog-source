@@ -162,7 +162,31 @@ mavenCentral指代Maven的中央仓库(Maven central repository)，jcenter指代
 
 buildscript中的声明是gradle脚本自身需要使用的资源。可以声明的资源包括依赖项、第三方插件、maven仓库地址等。而在build.gradle文件中直接声明的依赖项、仓库地址等信息是项目自身需要的资源。
 
-gradle是由groovy语言编写的，支持groovy语法，可以灵活的使用已有的各种ant插件、基于jvm的类库，这也是它比maven、ant等构建脚本强大的原因。虽然gradle支持开箱即用，但是如果你想在脚本中使用一些第三方的插件、类库等，就需要自己手动添加对这些插件、类库的引用。而这些插件、类库又不是直接服务于项目的，而是支持其它build脚本的运行。所以你应当将这部分的引用放置在buildscript代码块中。gradle在执行脚本时，会优先执行buildscript代码块中的内容，然后才会执行剩余的build脚本。
+gradle是由groovy语言编写的，支持groovy语法，可以灵活的使用已有的各种ant插件、基于jvm的类库，这也是它比maven、ant等构建脚本强大的原因。虽然gradle支持开箱即用，但是如果你想在脚本中使用一些第三方的插件、类库等，就需要自己手动添加对这些插件、类库的引用。而这些插件、类库又不是直接服务于项目的，而是支持其它build脚本的运行。所以你应当将这部分的引用放置在buildscript代码块中。gradle在执行脚本时，会优先执行buildscript代码块中的内容，然后才会执行剩余的build脚本。buildscript脚本的简单示例如下：
+
+```
+buildscript {
+    ext {
+        springBootVersion = '1.4.2.RELEASE'
+        jacksonVersion = '2.8.4'
+        tomcatVersion = '7.0.70'
+        springfoxVersion = '2.6.1'
+        poiVersion = "3.14"
+    }
+    repositories {
+        maven { url 'http://repox.gtan.com:8078' }
+        mavenCentral()
+        jcenter()
+        maven { url 'http://repo.spring.io/plugins-release' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
+    }
+}
+```
+
+其中，ext为扩展属性(Extra properties),All enhanced objects in Gradle's domain model can hold extra user-defined properties. This includes, but is not limited to, projects, tasks, and source sets. Extra properties can be added, read and set via the owning object's ext property. Alternatively, an ext block can be used to add multiple properties at once.扩展属性在buildscript中指定后，可以在整个gradle脚本中使用(${属性名})。使用命令`gradle buildEnvironment`，可以打印出扩展属性到依赖关系图。
 
 
 参考资料：
