@@ -1,5 +1,5 @@
 ---
-title: Gradle使用总结
+title: Gradle使用经验总结
 date: 2016-12-27 16:23:37
 tags:
 - Gradle
@@ -13,6 +13,12 @@ categories: Tool
 * Gradle设置文件（gradle.settings）对于只有一个项目的构建而言是可选的，如果我们的构建中包含多于一个项目，那么它就是必须的，因为它描述了哪一个项目参与构建。每一个多项目的构建都必须在项目结构的根目录中加入一个设置文件。
 
 <!-- more -->
+
+#### 为什么使用Gradle
+
+* 与Maven和Ant相比较，Maven和Ant的XML配置文件比较复杂。
+* Gradle提供更细粒度的操作，自由定制化空间大
+* 与Maven和Ant完全兼容
 
 #### 手动安装Gradle
 
@@ -137,3 +143,28 @@ sudo apt install gradle=2.12
 ```
 include "dolphin-framework", "dolphin-common"
 ```
+
+在多项目构建时，指定多项目共同的中央仓库，可以使用allproject块,如下代码片段所示。
+
+```
+allprojects {
+    repositories {
+        maven { url 'http://repox.gtan.com:8078' }
+        mavenCentral()
+        jcenter()
+    }
+}
+```
+
+mavenCentral指代Maven的中央仓库(Maven central repository)，jcenter指代的是Java中央仓库(JCenter repository)。
+
+#### buildscript
+
+buildscript中的声明是gradle脚本自身需要使用的资源。可以声明的资源包括依赖项、第三方插件、maven仓库地址等。而在build.gradle文件中直接声明的依赖项、仓库地址等信息是项目自身需要的资源。
+
+gradle是由groovy语言编写的，支持groovy语法，可以灵活的使用已有的各种ant插件、基于jvm的类库，这也是它比maven、ant等构建脚本强大的原因。虽然gradle支持开箱即用，但是如果你想在脚本中使用一些第三方的插件、类库等，就需要自己手动添加对这些插件、类库的引用。而这些插件、类库又不是直接服务于项目的，而是支持其它build脚本的运行。所以你应当将这部分的引用放置在buildscript代码块中。gradle在执行脚本时，会优先执行buildscript代码块中的内容，然后才会执行剩余的build脚本。
+
+
+参考资料：
+
+* [Chapter 26. Multi-project Builds]https://docs.gradle.org/current/userguide/multi_project_builds.html()
