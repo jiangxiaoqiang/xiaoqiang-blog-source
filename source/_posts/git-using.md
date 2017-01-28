@@ -20,6 +20,8 @@ Git的配置分为系统配置(System Configuration)，全局配置(Global Confi
 全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。列出当前的Git配置：
 
 ```Bash
+# 自动纠正命令的拼写错误配置
+git config --global help.autocorrect 1
 # 列出Git的配置，实际上是将.git目录下的config文件显示出来
 git config --list
 ```
