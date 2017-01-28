@@ -8,9 +8,16 @@ Git是目前世界上最先进的分布式版本控制系统，没有之一。Gi
 
 <!-- more -->
 
-#### 常用命令
+#### Git配置
 
-列出当前的Git配置：
+Git的配置分为系统配置(System Configuration)，全局配置(Global Configuration)和本地库配置(Local Configuration)3个层次。系统配置生效于当前PC的所有用户，全局配置生效于当前用户，本地配置生效于当前用户的当前库，范围逐渐降低。系统配置的配置文件在etc文件夹下
+
+```
+# Mac下的路径为
+/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig
+```
+
+全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。列出当前的Git配置：
 
 ```Bash
 # 列出Git的配置，实际上是将.git目录下的config文件显示出来
@@ -18,6 +25,8 @@ git config --list
 ```
 
 可以进入.git目录，命令所列出来的内容，实际上就是config文件里面的内容。
+
+#### 常用命令
 
 ```Bash
 #列出分支
@@ -297,8 +306,9 @@ git remote add osc https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 
 其中osc为远程仓库的名称，https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git为远程仓库的地址。
 
+#### 常见问题
 
-#### Your branch and 'origin/master' have diverged
+##### Your branch and 'origin/master' have diverged
 
 If you absolutely sure this is your case then you can force Git to push your changes:
 
@@ -307,12 +317,12 @@ If you absolutely sure this is your case then you can force Git to push your cha
 git push origin master -f
 ```
 
-##### Changes not staged for commit
+###### Changes not staged for commit
 
 ```Bash
 git stash
 ```
 
-#### Please, commit your changes or stash them before you can merge
+##### Please, commit your changes or stash them before you can merge
 
 出现这个问题的原因是其他人修改了文件并提交到版本库中去了，而你本地也修改了xxx.php，这时候你进行git pull操作就好出现冲突了。
