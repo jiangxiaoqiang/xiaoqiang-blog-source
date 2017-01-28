@@ -131,6 +131,17 @@ gradlew.bat
     gradle-wrapper.properties
 ```
 
+在gradle-wrapper.properties中的gradle_user_home ，默认是用户的home目录。
+
+```
+Note, «GRADLE_USER_HOME» defaults to «USER_HOME»/.gradle, 
+where «USER_HOME» is the home directory of the current user. 
+This location can be configured via the -g 
+and --gradle-user-home command line switches, 
+as well as by the GRADLE_USER_HOME environment variable 
+and org.gradle.user.home JVM system property.
+```
+
 #### Gradle界面(GUI)
 
 在终端中输入如下命令可以查看Gradle的GUI：
