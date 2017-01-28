@@ -106,7 +106,30 @@ Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当�
 gradle Wrapper --help
 ```
 
-会打印出所有Gradle Wrapper.
+会打印出所有Gradle Wrapper.Most tools require installation on your computer before you can use them. If the installation is easy, you may think that’s fine. But it can be an unnecessary burden on the users of the build. Equally importantly, will the user install the right version of the tool for the build? What if they’re building an old version of the software? The Gradle Wrapper (henceforth referred to as the “Wrapper”) solves both these problems and is the preferred way of starting a Gradle build.需要添加Wrapper，在gradle.build中添加如下block:
+
+```
+task wrapper(type: Wrapper) {
+    description = 'Generates gradlew[.bat] scripts'
+    gradleVersion = '3.2.1'
+}
+```
+
+或者执行命令：
+
+```Bash
+gradle wrapper --gradle-version 3.2.1
+```
+
+命令执行之后，会生成wrapper任务脚本，和如下文件夹及文件：
+
+```
+gradlew
+gradlew.bat
+    gradle/wrapper/
+    gradle-wrapper.jar
+    gradle-wrapper.properties
+```
 
 #### Gradle界面(GUI)
 
@@ -189,6 +212,11 @@ buildscript {
 其中，ext为扩展属性(Extra properties),All enhanced objects in Gradle's domain model can hold extra user-defined properties. This includes, but is not limited to, projects, tasks, and source sets. Extra properties can be added, read and set via the owning object's ext property. Alternatively, an ext block can be used to add multiple properties at once.扩展属性在buildscript中指定后，可以在整个gradle脚本中使用(${属性名})。使用命令`gradle buildEnvironment`，可以打印出扩展属性到依赖关系图。
 
 
+Note, «GRADLE_USER_HOME» defaults to «USER_HOME»/.gradle, where «USER_HOME» is
+the home directory of the current user. This location can be configured via the -g and --gradle-user-home command line switches, as well as by the GRADLE_USER_HOME environment variable and org.gradle.user.home JVM system property.
+
 参考资料：
 
-* [Chapter 26. Multi-project Builds]https://docs.gradle.org/current/userguide/multi_project_builds.html()
+* [Chapter 26. Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html
+
+* [Gradle Userguide]()
