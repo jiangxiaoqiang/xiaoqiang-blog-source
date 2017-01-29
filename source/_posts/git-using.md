@@ -17,7 +17,7 @@ Git的配置分为系统配置(System Configuration)，全局配置(Global Confi
 /Library/Developer/CommandLineTools/usr/share/git-core/gitconfig
 ```
 
-全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。列出当前的Git配置：
+全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。
 
 ```Bash
 # 自动纠正命令的拼写错误配置
