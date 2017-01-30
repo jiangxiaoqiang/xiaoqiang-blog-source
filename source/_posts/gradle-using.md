@@ -98,6 +98,14 @@ apply plugin: 'propdeps'
 apply plugin: 'org.springframework.boot'
 ```
 
+如上写法为旧式写法(Legacy)。另一种使用二进制插件的写法如下：
+
+```
+plugins {
+    id 'java'
+}
+```
+
 #### Wrapper
 
 Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。注意安装不会真的在计算机中安装Gradle的发行版本，它会下载Gradle，存放在目录`$USER_HOME/.gradle/wrapper/dists`下，构建时使用命令调用而不是直接添加到当前计算机(试想如果不同的Gradle版本，如果添加到系统的环境变量了，构建时到底是以调用哪一个版本的Gradle呢)。需要查看Gradle Wrapper帮助，在命令行中输入如下命令：
@@ -190,7 +198,7 @@ allprojects {
 }
 ```
 
-mavenCentral指代Maven的中央仓库(Maven central repository)，jcenter指代的是Java中央仓库(JCenter repository)。
+mavenCentral指代Maven的中央仓库(Maven central repository)，jcenter指代的是Java中央仓库(JCenter repository)。在构建项目时，IDE中可能看不到jar包的下载进度(如：Intellij Idea)，此时可以切换到命令行模式，执行`gradle build`命令，可以看到构建的进度，比如文件下载的进度等。
 
 #### buildscript
 
@@ -225,6 +233,31 @@ buildscript {
 
 Note, «GRADLE_USER_HOME» defaults to «USER_HOME»/.gradle, where «USER_HOME» is
 the home directory of the current user. This location can be configured via the -g and --gradle-user-home command line switches, as well as by the GRADLE_USER_HOME environment variable and org.gradle.user.home JVM system property.
+
+#### 设置源码路径
+
+在混合编程中，需要设置不同开发语言的源码路径，如下代码片段所示：
+
+```
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala', 'src/main/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/test/scala', 'src/test/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+}
+```
 
 参考资料：
 
