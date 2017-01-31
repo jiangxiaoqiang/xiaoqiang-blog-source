@@ -274,9 +274,13 @@ sourceSets {
 }
 ```
 
+#### Gradle构建流程
+
+Gradle构建流程如下：processResources -> compileJava -> classes -> jar。
+
 参考资料：
 
-* [Chapter 26. Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html
+* [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 
 * [Gradle Userguide]()
 
