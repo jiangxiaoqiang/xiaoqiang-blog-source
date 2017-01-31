@@ -14,6 +14,8 @@ categories: Tool
 
 <!-- more -->
 
+Gradle 是以 Groovy 语言为基础, 基于DSL (领域特定语言Domain Specifies language) 语法的自动化构建工具, 但是它增加了一些额外的特性, 这使得Gradle更加的容易去阐释构建.一个构建脚本能够包含任何Groovy语言的元素 ( Any language element except for statement labels), 每个构建脚本都使用UTF-8编码.
+
 #### 为什么使用Gradle
 
 * 与Maven和Ant相比较，Maven和Ant的XML配置文件比较复杂。
@@ -105,6 +107,19 @@ plugins {
     id 'java'
 }
 ```
+
+##### 插件属性(Plugin Properties)
+
+Java插件有一些扩展属性:
+
+```
+# Java version compatibility to use when compiling Java source.
+sourceCompatibility = 1.8
+# Java version to generate classes for.
+targetCompatibility = 1.8
+```
+
+
 
 #### Wrapper
 
@@ -264,3 +279,5 @@ sourceSets {
 * [Chapter 26. Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html
 
 * [Gradle Userguide]()
+
+* [Gradle Build Language Reference](https://docs.gradle.org/current/dsl/)

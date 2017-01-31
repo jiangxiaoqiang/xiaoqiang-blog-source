@@ -68,6 +68,8 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 
+在终端下输入`env`命令可以查看当前系统的所有的环境变量。
+
 #### 常用快捷键
 
 | 快捷键(Short Keys)  | 作用  |
