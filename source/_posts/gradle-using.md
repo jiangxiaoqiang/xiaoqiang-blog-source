@@ -278,6 +278,8 @@ sourceSets {
 
 Gradle构建流程如下：processResources -> compileJava -> classes -> jar。
 
+{% asset_img gradle-build-workflow.jpg Gradle构建流程%}
+
 参考资料：
 
 * [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
