@@ -34,6 +34,16 @@ export PATH=$PATH:$SONAR_HOME/bin:$SONAR_SCANNER/bin:$GRADLE_HOME/bin
 source .bash_profile
 ```
 
+非手动安装时，可以输入如下命令查看gradle的home目录：
+
+```Bash
+gradle getHomeDir
+# Mac下
+brew info gradle
+```
+
+注意在Intellij Idea下设置gradle的目录为`/usr/local/Cellar/gradle/3.2.1/libexec`。
+
 #### 基础
 
 在Ubuntu 16.04 LTS中安装Gradle:
@@ -279,6 +289,8 @@ sourceSets {
 Gradle构建流程如下：processResources -> compileJava -> classes -> jar。
 
 {% asset_img gradle-build-workflow.jpg Gradle构建流程%}
+
+
 
 参考资料：
 
