@@ -15,8 +15,16 @@ Git的配置分为系统配置(System Configuration)，全局配置(Global Confi
 ```
 # Mac下的路径为
 /Library/Developer/CommandLineTools/usr/share/git-core/gitconfig
+# Ubuntu下的路径为
+/etc/gitconfig
 ```
 
+注意在Ubuntu(此处是16.04 LTS版本)下，如果没有使用命令配置过系统配置，在etc目录下是没有gitconfig文件的。当使用系统配置命令之后，会自动生成`/etc/gitconfig`文件。例如执行如下命令后：
+
+```Bash
+git config --system credential.helper store
+```
+即会自动生成系统配置文件。
 全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。
 
 ```Bash
