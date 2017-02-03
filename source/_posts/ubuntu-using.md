@@ -89,6 +89,19 @@ fi
 | Ctrl + Shift + Q | 关闭终端所有Tab标签 |
 | Window + D(Desktop) | 显示桌面，默认是没有此快捷键的，在系统的Keyboard Setting -> Navigation 中，设置Hide All Normal Windows的热键为Window + D即可 |
 | Ctrl + L | 在Google Chrome中定位到地址栏 |
+| Ctrl + a(ahead) | 在Shell中光标移动到首字母 |
+| Ctrl + e(end) | 在Shell中光标移动到尾字母 |
+
+##### Bash Shell常用快捷键
+
+
+| 快捷键 | 作用 |
+| ----------------- |:-------------:|
+| Ctrl + Alt + + | 放大终端 |
+| Ctrl + - | 缩小终端 |
+| Ctrl + a(ahead) | 在Shell中光标移动到首字母 |
+| Ctrl + e(end) | 在Shell中光标移动到尾字母 |
+| Ctrl + Shift + W | 关闭终端tab |
 
 参考资料：
 

@@ -21,6 +21,8 @@ Gradle 是以 Groovy 语言为基础, 基于DSL (领域特定语言Domain Specif
 * 与Maven和Ant相比较，Maven和Ant的XML配置文件比较复杂。
 * Gradle提供更细粒度的操作，自由定制化空间大
 * 与Maven和Ant完全兼容
+* Gradle对多语言、多平台有更原生(natural)的支持
+* DSL(Domain Specific Language)比XML更简洁高效
 
 #### 手动安装Gradle
 
@@ -284,13 +286,21 @@ sourceSets {
 }
 ```
 
-#### Gradle构建流程
+#### Gradle构建生命周期(Gradle Build Lifecycle)
 
-Gradle构建流程如下：processResources -> compileJava -> classes -> jar。
+关于Gradle构建的生命周期，全部都是Gradle用户使用手册里面的内容，这里仅仅是摘抄而已，可以直接下载用户手册进行阅读。
+
+初始化阶段(Initialization):Gradle supports single and multi-project builds. During the initialization phase, Gradle determines which projects are going to take part in the build, and creates a Project instance for each of these projects.
+
+配置阶段(Configuration):During this phase the project objects are configured. The build scripts of all projects which are part of the build are executed. Gradle 1.4 introduced an incubating opt-in feature called configuration on demand . In this mode, Gradle configures only relevant projects.
+
+执行阶段(Execution):Gradle determines the subset of the tasks, created and configured during the configuration phase, to be executed. The subset is determined by the task name arguments passed to the gradle command and the current directory. Gradle then executes each of the selected tasks.
+
+Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出的内容：processResources -> compileJava -> classes -> jar。
 
 {% asset_img gradle-build-workflow.jpg Gradle构建流程%}
 
-
+Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。
 
 参考资料：
 
@@ -299,3 +309,5 @@ Gradle构建流程如下：processResources -> compileJava -> classes -> jar。
 * [Gradle Userguide]()
 
 * [Gradle Build Language Reference](https://docs.gradle.org/current/dsl/)
+
+* [Gradle学习笔记](https://blog.gmem.cc/gradle-study-note)
