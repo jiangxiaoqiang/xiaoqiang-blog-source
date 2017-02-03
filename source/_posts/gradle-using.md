@@ -300,6 +300,8 @@ Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出�
 
 {% asset_img gradle-build-workflow.jpg Gradle构建流程%}
 
+Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。
+
 参考资料：
 
 * [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
@@ -307,3 +309,5 @@ Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出�
 * [Gradle Userguide]()
 
 * [Gradle Build Language Reference](https://docs.gradle.org/current/dsl/)
+
+* [Gradle学习笔记](https://blog.gmem.cc/gradle-study-note)

@@ -10,12 +10,23 @@ categories: Programming
 
 <!-- more -->
 
+#### 编译程序
+
+输入如下命令编译程序：
+
+```Bash
+./gradlew -p cc-web-boot -x test build
+```
+
+编译完成后，切换到目标目录`cc-web-boot/build/libs`即可发现生成的jar包。命令指定项目的目录是`cc-web-boot`。
+
 #### 拷贝程序到服务器
 
 使用如下命令拷贝程序到服务端：
 
 ```Bash
 scp system-web-boot-1.0.0.jar hldev@172.30.0.110:~
+scp system-web-boot-1.0.0.jar hl@192.168.32.106:/home/app/backend/credit-system
 ```
 
 #### 启动
