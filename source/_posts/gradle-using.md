@@ -300,7 +300,7 @@ Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出�
 
 {% asset_img gradle-build-workflow.jpg Gradle构建流程%}
 
-Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。
+Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。processResources任务拷贝资源到生产环境的resource目录下(Copies production resources into the production resources directory).
 
 参考资料：
 
