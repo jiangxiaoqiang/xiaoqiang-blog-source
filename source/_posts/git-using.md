@@ -135,6 +135,20 @@ git push origin v1_xiaoqiang
 * test (when adding missing tests)
 * chore (maintain)
 
+#### 克隆(clone)
+
+有时会遇到这样的场景，在比较慢的网络速度下，clone一个稍微大一些的仓库会用掉不少时间。比如一个20MB左右的仓库，clone的速度只有10Kb左右。此时可以使用git的shallow clone功能，即浅复制。它只复制最新的代码到本地，而不关心代码的历史信息。命令如下：
+
+```Bash
+git clone --depth=1 https://github.com/jiangxiaoqiang/jiangxiaoqiang.github.io.git
+```
+
+depth参数创建一个指定深度的浅克隆。此时下载的代码量就会大大的减少了，因为git目前克隆时是没有断点续传的，如果在中途断线或者下载速度停止，那么就必须从头再来，如果这样的应用场景，对于在较低网速的网络环境下，克隆一个较大的代码仓库几乎是不太可能的。浅克隆给出了一个更优的选择。如果想在后面获取此仓库的所有历史信息，只需要执行如下命令即可：
+
+```Bash
+git fetch --unshallow
+```
+
 #### 更新(update)
 
 采用git pull时，提示如下：

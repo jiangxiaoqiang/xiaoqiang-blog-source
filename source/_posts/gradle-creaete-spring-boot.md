@@ -29,9 +29,6 @@ gradle init
 
 #### 常见问题
 
-<<<<<<< HEAD
-##### 
-=======
 
 ##### call 'refresh' before multicasting events via the context
 
