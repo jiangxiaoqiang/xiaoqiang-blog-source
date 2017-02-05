@@ -60,7 +60,13 @@ jstat -gc 2479 20000 5
 
 #### jinfo（JVM configuration Info for Java）
 
-Jinfo的作用是实时查看虚拟机的各项参数信息jps –v可以查看虚拟机在启动时被显式指定的参数信息，但是如果你想知道默认的一些参数信息呢？除了去查询对应的资料以外，jinfo就显得很重要了。
+Jinfo的作用是实时查看虚拟机的各项参数信息jps –v可以查看虚拟机在启动时被显式指定的参数信息，但是如果你想知道默认的一些参数信息呢？除了去查询对应的资料以外，jinfo就显得很重要了。jinfo的使用示例如下：
+
+```Java
+sudo jinfo 2651
+```
+
+其中2651为java的进程id(Process ID)。
 
 #### jmap（JVM Memory Map for Java）
 

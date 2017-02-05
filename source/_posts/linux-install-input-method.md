@@ -1,5 +1,5 @@
 ---
-title: Linux安装输入法
+title: Linux输入法管理
 date: 2016-12-19 23:40:49
 tags:
 - Linux
@@ -18,3 +18,13 @@ im-config
 ```
 
 安装配置完成后，重启电脑即可。
+
+
+#### Ubuntu卸载输入法
+
+
+输入如下命令卸载搜狗拼音输入法：
+
+```Bash
+sudo apt-get purge sougoupinyin
+```
