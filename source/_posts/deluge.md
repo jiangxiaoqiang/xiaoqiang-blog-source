@@ -33,3 +33,7 @@ sudo apt-get install -y deluge
 ```Bash
 brew install Caskroom/cask/deluge
 ```
+
+#### 效果
+
+{% asset_img deluge-main.png deluge下载效果 %}
