@@ -316,6 +316,17 @@ git remote add osc https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 
 其中osc为远程仓库的名称，https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git为远程仓库的地址。
 
+#### 凭证管理(Credential Management)
+
+在clone仓库时，提示仓库未找到(Not Found),由于电脑是原来前端同学的开发电脑，此时clone的是后端项目，而git存储的还是前端同学的用户，前端用户没有权限查看后端的代码，所以会提示此错误。开发的机器使用的操作系统是Winodws 7，删除原来的凭证。到目录`C:\Program Files\Git\mingw64\etc\gitconfig（和你在Git安装位置有关）`下，删除内容：
+
+```
+[credential]
+helper = manager
+```
+
+再次clone时，会提示输入认证信息，输入认证信息后即可成功clone。
+
 #### 常见问题
 
 ##### Your branch and 'origin/master' have diverged

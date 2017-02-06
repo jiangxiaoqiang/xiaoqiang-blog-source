@@ -91,6 +91,24 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 可以自己添加相应菜单，可以在一级菜单上添加一个书(Book)或者其他模块。
 
 
+#### 生成站点地图
+
+安装生成站点地图的插件：
+
+```Bash
+npm install hexo-generator-sitemap --save
+```
+
+修改站点配置文件_config.yml:
+
+```
+# Extensions
+plugins:
+- hexo-generator-sitemap
+```
+
+配置完毕后在使用`hexo g`命令生成项目时，会自动生成站点地图文件sitemap.xml。
+
 #### 常见问题
 
 ```

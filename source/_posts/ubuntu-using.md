@@ -102,6 +102,9 @@ fi
 | Ctrl + a(ahead) | 在Shell中光标移动到首字母 |
 | Ctrl + e(end) | 在Shell中光标移动到尾字母 |
 | Ctrl + Shift + W | 关闭终端tab |
+| Ctrl + Shift + E | 在安装了Terminator之后，此快捷键水平分割终端 |
+| Ctrl + Tab | 在水平分割后的终端之间切换 |
+
 
 参考资料：
 

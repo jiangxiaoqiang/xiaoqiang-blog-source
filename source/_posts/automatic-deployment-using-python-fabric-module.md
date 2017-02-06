@@ -15,7 +15,7 @@ Fabric是一个Python库，为应用程序的自动部署，无缝集成了SSH�
 
 #### 安装Fabric
 
-使用如下命令安装fabric：
+在Ubuntu 16.04上，使用如下命令安装fabric：
 
 ```Bash
 sudo pip install fabric

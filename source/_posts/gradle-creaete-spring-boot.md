@@ -19,13 +19,83 @@ gradle init
 
 #### 多项目构建
 
+多项目构建时，根目录下需要包含settings.gradle文件。文件中需要定义项目的名称：
 
+```
+rootProject.name = 'dolphin'
+
+include ':dolphin', ':dolphin-core',':dolphin-data'
+```
+
+同时在build.gradle文件中声明需要构建的项目：
+
+```
+project(":dolphin"){
+    description = "dolphin"
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    apply plugin: 'org.springframework.boot'
+
+// In this section you declare where to find the dependencies of your project
+    repositories {
+        // Use 'jcenter' for resolving your dependencies.
+        // You can declare any Maven/Ivy/file repository here.
+        jcenter()
+    }
+
+    // In this section you declare the dependencies for your production and test code
+    dependencies {
+        // The production code uses the SLF4J logging API at compile time
+        compile 'org.slf4j:slf4j-api:1.7.21'
+
+        compile('org.springframework.boot:spring-boot-starter-web')
+        testCompile('org.springframework.boot:spring-boot-starter-test')
+        // Declare the dependency for your favourite test framework you want to use in your tests.
+        // TestNG is also supported by the Gradle Test task. Just change the
+        // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
+        // 'test.useTestNG()' to your build script.
+        testCompile 'junit:junit:4.12'
+    }
+}
+
+project(":dolphin-core"){
+
+}
+
+project(":dolphin-data"){
+
+}
+```
+
+配置完毕后输入命令`gradle projects`查看配置的多个项目，输出的结果如下:
+
+```Bash
+hldev@hldev-100:~/summerize/dolphin-framework$ gradle projects --stacktrace
+:projects
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+Root project 'dolphin'
++--- Project ':dolphin' - dolphin
++--- Project ':dolphin-core'
+\--- Project ':dolphin-data'
+
+To see a list of the tasks of a project, run gradle <project-path>:tasks
+For example, try running gradle :dolphin:tasks
+
+BUILD SUCCESSFUL
+
+Total time: 0.683 secs
+```
 
 
 * 一个多项目构建必须在根项目的根目录下包含settings.gradle文件，因为它指明了那些包含在多项目构建中的项目。
 * 如果需要在多项目构建的所有项目中加入公用的配置或行为，我们可以将这项配置加入到根项目的build.gradle文件中(使用allprojects)。
 * 如果需要在根项目的子项目中加入公用的配置或行为，我们可以将这项配置加入到根项目的build.gradle文件中(使用subprojects)。
-
 
 #### 常见问题
 
