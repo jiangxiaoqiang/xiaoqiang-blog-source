@@ -139,3 +139,4 @@ java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - c
 ```
 
 是由于不能直接将application.java 文件放在main/java文件夹下，必须要新建一个包把他放进去。
+>>>>>>> 4009afc05e30f3d939a628afa06ad3698f5cd3ea
