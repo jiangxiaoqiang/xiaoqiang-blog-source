@@ -38,6 +38,6 @@ sudo apt-get update
 sudo apt-get install ultra-flat-icons
 ```
 
-安装完成后，打开unity-tweak-tool软件，修改主题和图标：
+安装完成后，打开unity-tweak-tool软件，修改主题和图标,进入Theme，修改为Flatabulous，效果如下图所示：
 
-进入Theme，修改为Flatabulous
+{asset_img ubuntu-flatabulous-theme.png Flatabulous主题效果}
