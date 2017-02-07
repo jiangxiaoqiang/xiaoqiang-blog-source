@@ -205,6 +205,20 @@ git merge v1
 
 关闭文件对比(合并)工具后，辅助文件都会自动删除，但同时会生成一个test.txt.orig的文件，orig是original的缩写，内容是解决冲突前的冲突现场。默认该.orig文件可能不会自动删除，需要手动删除。
 
+#### 分支(branch)
+
+##### 特性分支(Topic Branch)
+
+有时想要改进一个特性，但是在新特性还没有完全完成之前，不方便合并入旧的代码仓库，或许新特性会影响旧的特性，或者新特性不够完美。那么此时可以开一个特性分支，在此分支上可以放心的重写或者改进旧有的代码，到完全完成的时候合并入主干稳定的代码分支即可。
+
+
+```Bash
+git checkout -b v1_xiaoqiang_feature_movetosinglesearch
+```
+
+新加的分支的命名方式，为主干分支的名称(v1_xiaoqiang)+特性(feature)+功能(movetosinglesearch)。
+
+
 #### 撤销合并
 
 使用git show命令查看父编号(parent number):

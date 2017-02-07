@@ -18,7 +18,25 @@ categories: Equipment
 
 树莓派基金会提供了基于ARM的Debian和Arch Linux的发行版供大众下载。还计划提供支持Python作为主要编程语言，支持Java、BBC BASIC (通过 RISC OS 映像或者Linux的"Brandy Basic"克隆)、C 和Perl等编程语言.
 
-2016年年初Raspberry Pi 3发布了，目前Raspberry Pi 3的处理器是64位的了，同时还内建了Wi-Fi及蓝牙功能。也配备了 1GB RAM 和 400MHz VideoCore IV GPU，整块主机板的大小，则跟 Pi 2 的尺寸别无二致。之前 Pi 2 上的四核心 900MHz ARM Cortex-A7 处理器，这次升级成了四核心 1.2GHz 的 Cortex-A53 芯片。而在内建了蓝牙 4.0 和 802.11n Wi-Fi 以后，许多以前要靠外接 USB 来实现的功能，现在都可以通过无线方式来完成了。
+2016年2月Raspberry Pi 3发布了，目前Raspberry Pi 3的处理器是64位的了，同时还内建了Wi-Fi及蓝牙功能。也配备了 1GB RAM 和 400MHz VideoCore IV GPU，整块主机板的大小，则跟 Pi 2 的尺寸别无二致。之前 Pi 2 上的四核心 900MHz ARM Cortex-A7 处理器，这次升级成了四核心 1.2GHz 的 Cortex-A53 芯片。而在内建了蓝牙 4.0 和 802.11n Wi-Fi 以后，许多以前要靠外接 USB 来实现的功能，现在都可以通过无线方式来完成了。与树莓派2代相比，增加了如下功能:
+
+* A 1.2GHz 64-bit quad-core ARMv8 CPU
+* 802.11n Wireless LAN
+* Bluetooth 4.1
+* Bluetooth Low Energy (BLE)
+
+与树莓派2代一样的特性有:
+
+* 1GB RAM
+* 4 USB ports
+* 40 GPIO pins
+* Full HDMI port
+* Ethernet port
+* Combined 3.5mm audio jack and composite video
+* Camera interface (CSI)
+* Display interface (DSI)
+* Micro SD card slot (now push-pull rather than push-push)
+* VideoCore IV 3D graphics core
 
 #### 购买
 

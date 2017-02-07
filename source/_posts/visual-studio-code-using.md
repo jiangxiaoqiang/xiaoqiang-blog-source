@@ -21,3 +21,10 @@ Visual Studio Code是微软推出的一款跨平台的开源的代码编辑器�
 | Commmand + ` |  调出命令行窗口 |
 | Ctrl + 1,2,3 | 在分屏预览时，可以在不同的屏幕之间切换 |
 
+
+#### 插件(Plugin)
+
+##### Markdown Shortcuts
+
+有时在写Markdown文稿时，需要实时插入表格等，但是表格的markdown内容有点复杂，不容易记忆。那么此时就需要[Markdown Shortcuts](https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)插件了。安装了插件之后，常用的markdown语法都会自动帮助你完成。
+

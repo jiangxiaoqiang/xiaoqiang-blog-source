@@ -16,10 +16,11 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp graphiz deluge
+texstudio virtualbox synaptic terminator gimp graphiz deluge zsh
 ```
 
-synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
+* synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
+
 
 卸载软件：
 
@@ -110,6 +111,7 @@ fi
 | Ctrl + L | 在Google Chrome中定位到地址栏 |
 | Ctrl + a(ahead) | 在Shell中光标移动到首字母 |
 | Ctrl + e(end) | 在Shell中光标移动到尾字母 |
+| Ctrl + Shift + T | 在Google Chrome浏览器中恢复历史记录 |
 
 ##### Bash Shell常用快捷键
 
