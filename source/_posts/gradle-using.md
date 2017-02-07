@@ -102,6 +102,14 @@ gradle properties
 
 其中allprojects表示所有的Project，在多项目构建中，它将包含多个Project；buildDir表示构建结果的输出目录。
 
+#### 构建(build)
+
+##### 构建常见问题
+
+###### 错误: 编码GBK的不可映射字符
+
+在使用Gradle部署的时候出现此错误，原因是由于java源文件的编码采用的是UTF-8编码，而本地Java编译器默认的编码采用的是操作系统的默认编码，在Window 7下默认是GBK，所以出现了此错误。解决方法就是显示指定JDK编译器的编码为UTF-8。在系统环境变量中增加一个变量，变量名为: JAVA_TOOL_OPTIONS， 变量值为：-Dfile.encoding=UTF-8，保存，重新打开命令提示符，再运行一次刚刚的构建的命令即可。
+
 #### 插件(Plugin)
 
 插件就是Gradle的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：
@@ -130,8 +138,6 @@ sourceCompatibility = 1.8
 # Java version to generate classes for.
 targetCompatibility = 1.8
 ```
-
-
 
 #### Wrapper
 

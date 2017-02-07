@@ -44,4 +44,4 @@ npm run site-dev
 npm run dev
 ```
 
-gulp是一个基于流的构建系统(The streaming build system)，暂时还不理解到底是个什么鬼东西。Webpack是一款用户打包前端模块的工具。主要是用来打包在浏览器端使用的javascript的。同时也能转换、捆绑、打包其他的静态资源，包括css、image、font file、template等。
+npm不仅可用于模块管理，也可以用于执行脚本。package.json有一个scripts字段，可以用于指定脚本命令，供npm直接调用。以上的npm run命令就是直接调用的scripts字段指定的脚本。gulp是一个基于流的构建系统(The streaming build system)，暂时还不理解到底是个什么鬼东西。Webpack是一款用户打包前端模块的工具。主要是用来打包在浏览器端使用的javascript的。同时也能转换、捆绑、打包其他的静态资源，包括css、image、font file、template等。

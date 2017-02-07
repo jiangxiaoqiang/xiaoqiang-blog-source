@@ -10,15 +10,15 @@ categories: Programming
 
 <!-- more -->
 
-#### 编译程序
+#### 编译程序(Compile)
 
-输入如下命令编译程序：
+对于Java与Scala编写的后端代码，输入如下命令编译程序：
 
 ```Bash
 ./gradlew -p cc-web-boot -x test build
 ```
 
-编译完成后，切换到目标目录`cc-web-boot/build/libs`即可发现生成的jar包。命令指定项目的目录是`cc-web-boot`。
+编译完成后，切换到目标目录`cc-web-boot/build/libs`即可发现生成的jar包。命令指定项目的目录是`cc-web-boot`。对于Javascript、html、css编写的前端代码：
 
 #### 拷贝程序到服务器
 

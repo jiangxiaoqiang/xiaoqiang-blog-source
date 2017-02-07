@@ -16,7 +16,7 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp graphiz
+texstudio virtualbox synaptic terminator gimp graphiz deluge
 ```
 
 synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
@@ -42,6 +42,25 @@ sudo apt remove -y --purge libreoffice*
 
 * 长按Windows键会出现全局快捷键页面
 * 在开发的过程中可以修改本机Host文件实现主机和IP的映射，这样在源码里只需要写上主机名称，如果某一个开发者想连接不同环境的主机进行调试，直接修改开发者本机的配置，这样不会影响其他开发者
+
+##### 改变任务栏位置
+
+改变任务栏位置是Ubuntu 16.04 LTS才加入的特性，所以低版本的运行此命令不会生效，如果要使之生效需要重新启动系统。
+
+```Bash
+# 任务栏显示在底部
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+# 任务栏显示在左侧
+gsettings set com.canonical.Unity.Launcher launcher-position Left
+```
+
+也可以使用GUI工具dconf-editor来设置，可以立即生效，不需重启系统。dconf is a low-level configuration system and settings management. Its main purpose is to provide a back end to GSettings on platforms that don't already have configuration storage systems. It depends on GLib. It is part of GNOME 3 and is a replacement for GConf.
+
+```Bash
+sudo apt-get install dconf-editor
+```
+
+安装好之后可以在该工具的 com – canonical – unity – launcher 中手动选择 Unity 在桌面中的所处位置。
 
 #### 设置截屏快捷键
 
