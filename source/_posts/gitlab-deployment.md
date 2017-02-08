@@ -1,5 +1,5 @@
 ---
-title: Gitlab在Ubuntu 16.04 LTS部署流程
+title: GitLab在Ubuntu 16.04 LTS部署流程
 date: 2017-02-07 17:13:39
 tags:
 - Gitlab
@@ -10,7 +10,7 @@ categories: Tool
 
 #### 简介
 
-GitLab是一个与Git结合的项目管理系统，它有社区版本(Community Edition)和企业版本(Enterprise Edition)，可以部署在公司的内网。这点对于保密性有要求的项目非常合适。目前集成有如下功能：
+GitLab是一个可以与Git相结合的开源项目，用于代码仓库管理等。它有社区版本(Community Edition)和企业版本(Enterprise Edition)，可以部署在公司的内网。这点对于保密性有要求的项目非常合适。目前集成有如下功能：
 
 <!-- more -->
 
@@ -27,7 +27,7 @@ GitLab是一个与Git结合的项目管理系统，它有社区版本(Community 
 
 #### 部署
 
-这里的部署环境是在Ubuntu 16.04 LTS下，部署的是社区版本(Community Edition)，输入如下命令下载部署环境检查脚本：
+这里的部署环境是在Ubuntu 16.04 LTS下，部署的是社区版本(Community Edition)，版本号为8.16.4 - f32ee82，输入如下命令下载部署环境检查脚本：
 
 ```
 cd /tmp
@@ -87,13 +87,64 @@ sudo apt install -y gitlal-ce
 sudo gitlab-ctl reconfigure
 ```
 
+GitLab默认使用的是80端口，但是在自己的机器上，80端已经被Nginx占用，所以需要修改GitLab的默认端口。使用如下命令修改：
 
+```shell
+sudo vim /etc/gitlab/gitlab.rb
+```
+
+这里GitLab的端口修改为8081，如下片段所示：
+
+```shell
+## GitLab URL
+##! URL on which GitLab will be reachable.
+##! For more details on configuring external_url see:
+##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
+external_url 'http://hldev-100:8081'
+```
+
+修改后运行`sudo gitlab-ctl reconfigure`命令使之生效。除了这个端口外，还有一个unicorn用的端口，默认是8080，如果8080端口被其他程序占用(在自己的机器上，8080端口被Jenkins占用了)。那么unicorn就会无法启动，显示为502错误，”GitLab is not responding”。如下片段所示：
+
+```
+Whoops, GitLab is taking too much time to respond.
+
+Try refreshing the page, or going back and attempting the action again.
+
+Please contact your GitLab administrator if this problem persists.
+
+Go back
+```
+
+还是在`/etc/gitlab/gitlab.rb`文件中，将端口修改为8082，如下片段所示。
+
+```shell
+unicorn['port'] = 8082
+```
+
+再次运行配置文件生效命令。访问地址`http://hldev-100:8081`即可。首页如下图所示：
+
+{% asset_img gitlab-welcom-page.png GitLab欢迎页%}
+
+#### 账号设置
+
+GitLab默认的账号如下：
+
+```
+Username: root
+Password: 5iveL!fe
+```
+
+首次登录时需要修改密码。
 
 参考资料：
 
 [How To Install and Configure GitLab on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04)
 
 [Gitlab Community Edition 镜像使用帮助](https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/)
+
+[GitLab安装配置](http://skyao.github.io/2015/02/16/git-gitlab-setup/)
+
+
 
 
 
