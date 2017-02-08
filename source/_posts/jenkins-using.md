@@ -8,6 +8,8 @@ date: 2017-02-06 15:36:35
 
 项目的开发情况是源码管理采用Git，构建工具采用的是Gradle。
 
+<!-- more -->
+
 #### 安装Git相关插件
 
 项目的源码管理采用的是Git，所以签出源码首先需要Git相关的插件：
@@ -83,7 +85,13 @@ Jenkins就会使用hldev用户下`~/.gradle/`目录下已经下载完成的Gradl
 
 ##### 找不到javac文件
 
-在Jenkins中使用Gradle编译项目`/var/lib/jenkins/workspace/credit-system/gradlew -p /var/lib/jenkins/workspace/credit-system/cc-web-boot -x test build --stacktrace`时，提示如下错误：
+在Jenkins中使用Gradle命令编译项目时：
+
+````
+/var/lib/jenkins/workspace/credit-system/gradlew -p /var/lib/jenkins/workspace/credit-system/cc-web-boot -x test build --stacktrace
+````
+
+提示如下错误：
 
 ```
 Caused by: java.io.IOException: Cannot run program "/usr/lib/jvm/java-8-openjdk-amd64/bin/javac": error=2, No such file or directory
