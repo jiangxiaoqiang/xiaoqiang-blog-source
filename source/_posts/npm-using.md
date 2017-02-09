@@ -6,9 +6,9 @@ tags:
 categories: Programming
 ---
 
-#### 基础
+#### npm run
 
-npm 允许在package.json文件里面，使用scripts字段定义脚本命令。例如可以在Package.js里面定义如下脚本：
+npm 允许在package.json文件里面，使用scripts字段定义脚本命令，供npm直接调用。例如可以在Package.json里面定义如下脚本：
 
 <!-- more -->
 
@@ -44,4 +44,7 @@ npm run site-dev
 npm run dev
 ```
 
-npm不仅可用于模块管理，也可以用于执行脚本。package.json有一个scripts字段，可以用于指定脚本命令，供npm直接调用。以上的npm run命令就是直接调用的scripts字段指定的脚本。gulp是一个基于流的构建系统(The streaming build system)，暂时还不理解到底是个什么鬼东西。Webpack是一款用户打包前端模块的工具。主要是用来打包在浏览器端使用的javascript的。同时也能转换、捆绑、打包其他的静态资源，包括css、image、font file、template等。
+以上的npm run命令就是直接调用的scripts字段指定的脚本，其实npm run命令是npm run-script命令的缩写。gulp是一个基于流的构建系统(The streaming build system)，暂时还不理解到底是个什么鬼东西。Webpack是一款用户打包前端模块的工具。主要是用来打包在浏览器端使用的javascript的。同时也能转换、捆绑、打包其他的静态资源，包括css、image、font file、template等。
+
+在执行`npm run <command> `指令时，npm模块首先是执行在根目录下的package.json文件中script节点定义的对应的指令，package.json中调用Webpack完成项目的打包等工作。
+

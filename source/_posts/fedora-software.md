@@ -1,11 +1,9 @@
----
 title: Linux常用软件集合
 tags:
-  - Fedora
+- Fedora
 - Linux
-categories: Tool
-date: 2016-12-16 23:32:33
----
+  categories: Tool
+  date: 2016-12-16 23:32:33
 
 使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。列出的软件大多数是跨平台(Crossplatform)的，可以运行在其他Linux发行版上，以及Mac OS和Windows上。
 

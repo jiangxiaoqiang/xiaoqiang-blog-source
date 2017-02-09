@@ -63,8 +63,6 @@ http://localhost:8000
 
 此时在浏览器中可以看到输出的Hello World表示成功。
 
-
-
 #### 定义Webpack配置文件
 
 每个项目下都应该包含一个webpack.config.js，用来告诉Webpack需要做些什么。Webpack在执行的时候，默认会搜索当前目录下的webpack.config.js文件。如下所示：
@@ -87,13 +85,17 @@ webpack --config common.js
 
 注意如果在key entry中填写`app.js`时，直接添加文件夹下应该有node_modules文件夹，因为默认到此目录下寻找app.js，所以此处写成`./app.js`比较合适，同时app.js应该放在项目的根文件夹下。entry为项目开始打包时执行的入口( Here the application starts executing and webpack starts bundling)。
 
-
+这个配置文件让Webpack以`./app.js`文件为入口，将文件需要的所有依赖打包成一个独立可执行的JavaScript文件，并保存到`dist/bundle.js`。
 
 #### 使用Babel
 
-Babel 是一个 JavaScript 编译器。使用它可以将ES6的语法转换为ES5的语法，以便在现在有的环境执行。
+Babel 是一个 JavaScript 编译器。使用它可以将ES6的语法转换为ES5的语法，以便在现在有的环境执行。在工程中安装Babel:
 
+```shell
+sudo npm install --save-dev babel-cli babel-core babel-polyfill babel-preset-es2015 babel-preset-react
+```
 
+babel-preset-es2015和babel-preset-react分别是ES6和React的插件集。babel通过polyfill来支持某些方法在低级别上浏览器不支持的问题。
 
 #### 使用React
 
@@ -136,7 +138,7 @@ module.exports = {
 }
 ```
 
-hello.js文件如下：
+当解析JavaScript文件时，使用babel-loader进行转义。hello.js文件如下：
 
 ```javascript
 import React from "react";
@@ -169,7 +171,7 @@ ReactDOM.render(
 
 #### 使用Gulp构建
 
-Gulp基于文件流的构建系统，使用如下命令安装Gulp：
+Gulp基于文件流的构建系统，是一个流程控制工具，使用如下命令安装Gulp：
 
 ```shell
 sudo npm install gulp -g
@@ -195,6 +197,16 @@ gulp.task('default', function(){
 ```
 
 直接输入gulp命令即可运行。
+
+#### 使用Webpack Server
+
+添加webpack-dev-server作为项目的依赖：
+
+```shell
+sudo npm install -D webpack-dev-server
+```
+
+-D参数代表Dependency的含义。执行命令后，会在package.json文件的devDependencies中添加相应的依赖。
 
 
 

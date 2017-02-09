@@ -19,7 +19,7 @@ categories: Equipment
 * [Pidora](http://pidora.ca/)
 * [snappy-raspi2](https://developer.ubuntu.com/core/get-started)
 
-入手Raspberry Pi后，启动Raspberry Pi之前需要将Raspbian系统烧录到SD卡中。此时需要自备读卡器和Micro SD卡。由于此处试用的是Ubuntu操作系统，输入如下命令进行烧录：
+入手Raspberry Pi后，启动Raspberry Pi之前需要将Raspbian系统烧录到SD卡中。此时需要自备读卡器和Micro SD卡。首先到[官网](https://www.raspberrypi.org/downloads/raspbian/)下载镜像，选择RASPBIAN JESSIE WITH PIXEL，可以下载zip包，也可以下载torrent文件。zip包大概有1.5GB大小，解压出来4.4GB左右。由于此处试用的是Ubuntu操作系统，输入如下命令进行烧录：
 
 ```shell
 sudo dd if=2012-12-16-wheezy-raspbian.img of=/dev/mmcblk0 bs=2M

@@ -18,7 +18,7 @@ comment: false
 | Cache            | Redis                                    |          |
 | Web Server       | Apache Tomcat、Nginx                      |          |
 | Front End        | JavaScript、HTML                          |          |
-| Tools            | Git、GitLab、Intellij Idea、JRebel、Gradle、Jenkins |          |
+| Tools            | Git、GitLab、Intellij Idea、JRebel、Gradle、Jenkins、SonarQube |          |
 | 口号(Slogan)       | 开源、分享要从娃娃抓起,装逼也是(So as zhuangbiliaty)    |          |
 
 #### 出没地
