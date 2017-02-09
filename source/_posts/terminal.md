@@ -23,6 +23,7 @@ categories: OS
 | Ctrl + k                         | 从光标处删除至命令行尾                              |
 | Alt + f (forward)                | 按单词前移（右向）                                |
 | Alt + b(backward)                | 按单词后移（左向）                                |
+| Ctrl + Left/Right                | 光标左右定位单词                                 |
 
 
 

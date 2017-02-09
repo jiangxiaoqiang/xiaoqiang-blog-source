@@ -1,14 +1,31 @@
 ---
-title: Fedora常用软件集合
+title: Linux常用软件集合
 tags:
   - Fedora
-categories: Programming
+- Linux
+categories: Tool
 date: 2016-12-16 23:32:33
 ---
 
 使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。列出的软件大多数是跨平台(Crossplatform)的，可以运行在其他Linux发行版上，以及Mac OS和Windows上。
 
 <!-- more -->
+
+####  ### 总览
+
+收录的软件以开源跨平台为指导原则，特别优秀的软件例外。
+
+
+
+| 名称                                       | 支持平台                                     | 说明                              |
+| ---------------------------------------- | ---------------------------------------- | ------------------------------- |
+| [**QuiteRSS**](http://quiterss.org/en/download) | Windows (32bit and 64 bit), Linux OS and Mac OS X | RSS聚合阅读器( RSS news feeds reader |
+|                                          |                                          |                                 |
+|                                          |                                          |                                 |
+
+
+
+
 
 ### 网络(Network)
 
@@ -66,31 +83,31 @@ htop是实时显示当前系统运行情况的，不同于ps、pstree、pidof、
 
 
 
-| 列名 | 含义 |
-| ----------------- |:-------------:|
-| PID | 进程id |
-| PPID | 父进程id |
-| RUSER | Real user name |
-| UID | 进程所有者的用户id |
-| TTY | 启动进程的终端名。不是从终端启动的进程则显示为 ?|
-| PR | 优先级 |
-| NI | nice值。负值表示高优先级，正值表示低优先级 |
-| P | 最后使用的CPU，仅在多CPU环境下有意义 |
-| %CPU | 上次更新到现在的CPU时间占用百分比 |
-| VIRT(Virtual) | 进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES |
-| TIME | 进程使用的CPU时间总计，单位秒 |
-| SHR(Share) | 共享内存大小，单位kb |
-| TIME+ | 进程使用的CPU时间总计，单位1/100秒 |
-| %MEM | 进程使用的物理内存百分比 |
-| SWAP | 进程使用的虚拟内存中，被换出的大小，单位kb |
-| S(Status) | 进程状态（D=不可中断的睡眠状态，R=运行，S=睡眠，T=跟踪/停止，Z=僵尸进程） |
-| RES | 进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA |
-| CODE | 可执行代码占用的物理内存大小，单位kb |
-| DATA | 可执行代码以外的部分(数据段+栈)占用的物理内存大小，单位kb |
-| nFLT | 页面错误次数 |
-| nDRT | 最后一次写入到现在，被修改过的页面数 |
-| WCHAN | 若该进程在睡眠，则显示睡眠中的系统函数名 |
-| Flags | 任务标志，参考 sched.h |
+| 列名            |                    含义                    |
+| ------------- | :--------------------------------------: |
+| PID           |                   进程id                   |
+| PPID          |                  父进程id                   |
+| RUSER         |              Real user name              |
+| UID           |                进程所有者的用户id                |
+| TTY           |        启动进程的终端名。不是从终端启动的进程则显示为 ?         |
+| PR            |                   优先级                    |
+| NI            |         nice值。负值表示高优先级，正值表示低优先级          |
+| P             |          最后使用的CPU，仅在多CPU环境下有意义           |
+| %CPU          |            上次更新到现在的CPU时间占用百分比            |
+| VIRT(Virtual) |      进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES      |
+| TIME          |             进程使用的CPU时间总计，单位秒             |
+| SHR(Share)    |               共享内存大小，单位kb                |
+| TIME+         |          进程使用的CPU时间总计，单位1/100秒           |
+| %MEM          |               进程使用的物理内存百分比               |
+| SWAP          |          进程使用的虚拟内存中，被换出的大小，单位kb          |
+| S(Status)     | 进程状态（D=不可中断的睡眠状态，R=运行，S=睡眠，T=跟踪/停止，Z=僵尸进程） |
+| RES           |   进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA   |
+| CODE          |           可执行代码占用的物理内存大小，单位kb            |
+| DATA          |     可执行代码以外的部分(数据段+栈)占用的物理内存大小，单位kb      |
+| nFLT          |                  页面错误次数                  |
+| nDRT          |            最后一次写入到现在，被修改过的页面数            |
+| WCHAN         |           若该进程在睡眠，则显示睡眠中的系统函数名           |
+| Flags         |             任务标志，参考 sched.h              |
 
 默认情况下仅显示比较重要的 PID、USER、PR、NI、VIRT、RES、SHR、S、%CPU、%MEM、TIME+、COMMAND 列。可以通过下面的快捷键来更改显示内容
 

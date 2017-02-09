@@ -67,7 +67,7 @@ http://localhost:8000
 
 #### 定义Webpack配置文件
 
-每个项目下都应该包含一个webpack.config.js，用来告诉Webpack需要做些什么。如下所示：
+每个项目下都应该包含一个webpack.config.js，用来告诉Webpack需要做些什么。Webpack在执行的时候，默认会搜索当前目录下的webpack.config.js文件。如下所示：
 
 ```javascript
 module.exports = {
@@ -79,7 +79,13 @@ module.exports = {
 }
 ```
 
-添加配置文件后，再终端中直接执行`webpack`命令，生成的结果一样。注意如果在key entry中填写`app.js`时，直接添加文件夹下应该有node_modules文件夹，因为默认到此目录下寻找app.js，所以此处写成`./app.js`比较合适，同时app.js应该放在项目的根文件夹下。entry为项目开始打包时执行的入口( Here the application starts executing and webpack starts bundling)。
+添加配置文件后，再终端中直接执行`webpack`命令，生成的结果一样。配置文件的名称和位置也可以通过参数进行指定：
+
+```shell
+webpack --config common.js
+```
+
+注意如果在key entry中填写`app.js`时，直接添加文件夹下应该有node_modules文件夹，因为默认到此目录下寻找app.js，所以此处写成`./app.js`比较合适，同时app.js应该放在项目的根文件夹下。entry为项目开始打包时执行的入口( Here the application starts executing and webpack starts bundling)。
 
 
 
