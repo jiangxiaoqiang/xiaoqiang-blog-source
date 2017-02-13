@@ -72,7 +72,7 @@ export default routes;
 
 在导航配置里，引入了layouts目录下的Frame组件，添加了嵌套式路由声明。/路由对应的为Frame，当访问/路由时，将渲染Frame组件。但是渲染Frame渲染时，没有渲染Home组件，所以嵌套一个IndexRoute组件。添加后，当访问/时，实际渲染的组件是Frame和Home。在这里，Home组件就将作为Frame组件的子组件，当在Frame的render方法中渲染this.props.children时，渲染的的其实是Home组件。文件添加后的目录结构为：
 
-{%  img_asset add-route-content-structure.png  添加路由后的目录结构%}
+{%  asset_img add-route-content-structure.png  添加路由后的目录结构%}
 
 
 
