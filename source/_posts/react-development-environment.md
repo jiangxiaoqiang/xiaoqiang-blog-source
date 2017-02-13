@@ -20,6 +20,8 @@ sudo npm install --save-dev babel-cli babel-core babel-polyfill babel-preset-es2
 
 babel-preset-es2015和babel-preset-react分别是ES6和React的插件集。babel通过polyfill来支持某些方法在低级别上浏览器不支持的问题。
 
+<!-- more -->
+
 ##### 安装React
 
 终端输入以下代码对react和react-dom进行安装：
@@ -116,8 +118,6 @@ ReactDOM.render 是 React 的最基本方法，用于将模板转为 HTML 语言
 
 Webpack是一个模块打包工具，能够把各种文件（例如：ReactJS、Babel、Coffeescript、Less/Sass等）作为模块进行编译后进行打包。输入如下命令安装Webpack：
 
-<!-- more -->
-
 ```shell
 sudo npm install webpack -g
 ```
@@ -173,7 +173,9 @@ http://localhost:8083
 
 {% asset_img react-hello-world.png React示例%}
 
+当前项目的目录结构如下图所示：
 
+{% asset_img content_structure.png 项目目录结构%}
 
 #### 常见问题
 
@@ -198,7 +200,42 @@ ERROR in Entry module not found: Error: Can't resolve 'app.js' in '/home/hldev/s
 
 使用命令`webpack --display-error-details`输出详细错误，是缺少了文件夹node_modules。
 
+##### ERROR in multi (webpack)-dev-server
 
+在运行命令：
+
+```shell
+ webpack-dev-server --hot --inline --content-base --port 8083 .
+```
+
+出现如下错误提示：
+
+```
+ERROR in multi (webpack)-dev-server/client?http://localhost:8083 webpack/hot/dev-server .
+Module not found: Error: Can't resolve '/home/hldev/summerize/dolphin-framework-frontend' in '/home/hldev/summerize/dolphin-framework-frontend'
+ @ multi (webpack)-dev-server/client?http://localhost:8083 webpack/hot/dev-server .
+webpack: Failed to compile.
+```
+
+##### Error: Cannot find module 'webpack'
+
+在运行命令：
+
+```
+webpack --watch --progress --colors --display-error-details --config webpack/webpack.config.js
+```
+
+时，提示找不到Webpack模块，其实webpack已经全局安装了啊。切换到项目的目录下对Webpack进行局部安装即可：
+
+```shell
+npm install webpack
+```
+
+具体错误原因还未明白。
+
+##### Uncaught Error: The root route must render a single element
+
+检查文件是否添加了export，在本项目中是由于Frame.js没有添加`export default Frame;`语句。
 
 参考资料：
 

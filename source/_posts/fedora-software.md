@@ -1,28 +1,23 @@
+---
 title: Linux常用软件集合
 tags:
 - Fedora
 - Linux
-  categories: Tool
-  date: 2016-12-16 23:32:33
+categories: Tool
+date: 2016-12-16 23:32:33
+---
 
 使用Fedora 24有一段时间了，这里列出了平时总结的在Fedora上可以使用的一些软件，完成平时的任务。如果您也要尝试使用Fedora，或许可以节省不少时间。列出的软件大多数是跨平台(Crossplatform)的，可以运行在其他Linux发行版上，以及Mac OS和Windows上。
 
 <!-- more -->
 
-####  ### 总览
+### 总览
 
 收录的软件以开源跨平台为指导原则，特别优秀的软件例外。
-
-
 
 | 名称                                       | 支持平台                                     | 说明                              |
 | ---------------------------------------- | ---------------------------------------- | ------------------------------- |
 | [**QuiteRSS**](http://quiterss.org/en/download) | Windows (32bit and 64 bit), Linux OS and Mac OS X | RSS聚合阅读器( RSS news feeds reader |
-|                                          |                                          |                                 |
-|                                          |                                          |                                 |
-
-
-
 
 
 ### 网络(Network)
