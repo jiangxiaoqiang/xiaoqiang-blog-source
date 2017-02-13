@@ -40,7 +40,7 @@ categories: Equipment
 
 #### 购买
 
-购买raspberry pi 3 包含的配件有：
+在淘宝上购买raspberry pi 3 包含的配件有：
 
 * 16G 80M Micro SD卡
 * raspberry pi 3主板
@@ -49,7 +49,8 @@ categories: Equipment
 * 官方外壳
 * 散热片
 
-由于官方原配的SD卡，所以不用考虑SD卡的兼容性问题了。
+
+由于官方原配的SD卡，所以不用考虑SD卡的兼容性问题了。自己没有买任何配件，直接是一块主板，家里有充电头和数据线。选购了一张Micro SD卡。
 
 
 参考资料：
