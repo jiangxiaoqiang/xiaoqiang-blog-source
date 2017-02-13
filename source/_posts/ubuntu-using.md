@@ -126,6 +126,19 @@ fi
 | Ctrl + Shift + E | 在安装了Terminator之后，此快捷键水平分割终端 |
 | Ctrl + Tab       |        在水平分割后的终端之间切换        |
 
+#### 格式化U盘
+
+卸载卷：
+
+```Bash
+umount /dev/sdb1
+```
+
+格式化:
+
+```Bash
+sudo mkfs.ext3 /dev/sdb1
+```
 
 参考资料：
 

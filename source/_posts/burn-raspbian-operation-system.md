@@ -29,15 +29,51 @@ h表示human readable，已人机交互友好的方式显示系统当前可用�
 
 ```
 umount /media/dolphin/9016-4EF8
+umount /media/dolphin/sdb1
+umount /media/dolphin/Untitled
 ```
 
 注意这里必须要先卸载此卷，否则在使用dd命令刻录时会提示`/media/dolphin/9016-4EF8 is a directionay`，从而导致刻录失败。输入如下命令进行烧录：
 
 ```shell
-sudo dd if=2012-12-16-wheezy-raspbian.img of=/media/dolphin/9016-4EF8 bs=2M
+sudo dd if=2017-01-11-raspbian-jessie.img of=/dev/sdb1 bs=2M
 ```
 
-of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。烧录完成之后，将SD卡插入Raspberry Pi的卡槽中，接通电源启动Raspberry。
+of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。让人感到郁闷的是，烧录后，Ubuntu不管怎样都无法读出存储卡的数据了。使用命令重新加载也无法读出。
+
+```Bash
+sudo mount /dev/sdb1 /mnt -t ext3
+```
+
+提示错误如下：
+
+```
+dolphin@dolphin-F81Se:~$ sudo mount /dev/sdb1 /mnt -t ext3
+mount: wrong fs type, bad option, bad superblock on /dev/sdb1,
+       missing codepage or helper program, or other error
+       In some cases useful info is found in syslog - try
+       dmesg | tail  or so
+```
+
+采用命令查看：
+
+```Bash
+dmesg|tail
+```
+
+提示如下：
+
+```
+[ 4978.374994] EXT4-fs (sdb1): VFS: Can't find ext4 filesystem
+[ 4978.376737] EXT4-fs (sdb1): VFS: Can't find ext4 filesystem
+[ 4978.378490] EXT4-fs (sdb1): VFS: Can't find ext4 filesystem
+[ 4978.379857] FAT-fs (sdb1): bogus number of reserved sectors
+[ 4978.379863] FAT-fs (sdb1): Can't find a valid FAT filesystem
+[ 4978.383365] hfsplus: unable to find HFS+ superblock
+[ 5008.676937] EXT4-fs (sdb1): VFS: Can't find ext4 filesystem
+```
+
+烧录完成之后，将SD卡插入Raspberry Pi的卡槽中，接通电源启动Raspberry。
 
 #### SSH登录树莓派
 
