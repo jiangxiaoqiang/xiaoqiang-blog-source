@@ -1,5 +1,5 @@
 ---
-title: Gradle使用
+title: Gradle使用经验总结
 date: 2016-12-27 16:23:37
 tags:
 - Gradle
@@ -14,12 +14,45 @@ categories: Tool
 
 <!-- more -->
 
+Gradle 是以 Groovy 语言为基础, 基于DSL (领域特定语言Domain Specifies language) 语法的自动化构建工具, 但是它增加了一些额外的特性, 这使得Gradle更加的容易去阐释构建.一个构建脚本能够包含任何Groovy语言的元素 ( Any language element except for statement labels), 每个构建脚本都使用UTF-8编码.
+
+#### 为什么使用Gradle
+
+* 与Maven和Ant相比较，Maven和Ant的XML配置文件比较复杂。
+* Gradle提供更细粒度的操作，自由定制化空间大
+* 与Maven和Ant完全兼容
+* Gradle对多语言、多平台有更原生(natural)的支持
+* DSL(Domain Specific Language)比XML更简洁高效
+
+#### 手动安装Gradle
+
+下载Gradle，解压到指定文件夹，在用户根目录下的`.bash_profile`文件中，设置环境变量如下代码片段所示。
+
+```Bash
+export GRADLE_HOME=/opt/local/tools/gradle-2.12
+export PATH=$PATH:$SONAR_HOME/bin:$SONAR_SCANNER/bin:$GRADLE_HOME/bin
+
+# 使环境变量生效
+source .bash_profile
+```
+
+非手动安装时，可以输入如下命令查看gradle的home目录：
+
+```Bash
+gradle getHomeDir
+# Mac下
+brew info gradle
+```
+
+注意在Intellij Idea下设置gradle的目录为`/usr/local/Cellar/gradle/3.2.1/libexec`。
+
 #### 基础
 
 在Ubuntu 16.04 LTS中安装Gradle:
 
 ```Bash
 sudo apt install gradle -y
+
 # 安装指定版本的Gradle
 sudo apt install -y gradle=2.12
 ```
@@ -69,6 +102,14 @@ gradle properties
 
 其中allprojects表示所有的Project，在多项目构建中，它将包含多个Project；buildDir表示构建结果的输出目录。
 
+#### 构建(build)
+
+##### 构建常见问题
+
+###### 错误: 编码GBK的不可映射字符
+
+在使用Gradle部署的时候出现此错误，原因是由于java源文件的编码采用的是UTF-8编码，而本地Java编译器默认的编码采用的是操作系统的默认编码，在Window 7下默认是GBK，所以出现了此错误。解决方法就是显示指定JDK编译器的编码为UTF-8。在系统环境变量中增加一个变量，变量名为: JAVA_TOOL_OPTIONS， 变量值为：-Dfile.encoding=UTF-8，保存，重新打开命令提示符，再运行一次刚刚的构建的命令即可。
+
 #### 插件(Plugin)
 
 插件就是Gradle的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：
@@ -79,6 +120,25 @@ apply plugin: 'propdeps'
 apply plugin: 'org.springframework.boot'
 ```
 
+如上写法为旧式写法(Legacy)。另一种使用二进制插件的写法如下：
+
+```
+plugins {
+    id 'java'
+}
+```
+
+##### 插件属性(Plugin Properties)
+
+Java插件有一些扩展属性:
+
+```
+# Java version compatibility to use when compiling Java source.
+sourceCompatibility = 1.8
+# Java version to generate classes for.
+targetCompatibility = 1.8
+```
+
 #### Wrapper
 
 Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当执行gradlew(Gradle Wrapper)命令时，首先会检查电脑是否安装了Gradle，如果没有安装，会自动从gradle repository下载安装。注意安装不会真的在计算机中安装Gradle的发行版本，它会下载Gradle，存放在目录`$USER_HOME/.gradle/wrapper/dists`下，构建时使用命令调用而不是直接添加到当前计算机(试想如果不同的Gradle版本，如果添加到系统的环境变量了，构建时到底是以调用哪一个版本的Gradle呢)。需要查看Gradle Wrapper帮助，在命令行中输入如下命令：
@@ -87,7 +147,41 @@ Wrapper主要是考虑在没有安装Gradle的电脑上使用Gradle命令。当�
 gradle Wrapper --help
 ```
 
-会打印出所有Gradle Wrapper.
+会打印出所有Gradle Wrapper.Most tools require installation on your computer before you can use them. If the installation is easy, you may think that’s fine. But it can be an unnecessary burden on the users of the build. Equally importantly, will the user install the right version of the tool for the build? What if they’re building an old version of the software? The Gradle Wrapper (henceforth referred to as the “Wrapper”) solves both these problems and is the preferred way of starting a Gradle build.需要添加Wrapper，在gradle.build中添加如下block:
+
+```
+task wrapper(type: Wrapper) {
+    description = 'Generates gradlew[.bat] scripts'
+    gradleVersion = '3.2.1'
+}
+```
+
+或者执行命令：
+
+```Bash
+gradle wrapper --gradle-version 3.2.1
+```
+
+命令执行之后，会生成wrapper任务脚本，和如下文件夹及文件：
+
+```
+gradlew
+gradlew.bat
+    gradle/wrapper/
+    gradle-wrapper.jar
+    gradle-wrapper.properties
+```
+
+在gradle-wrapper.properties中的gradle_user_home ，默认是用户的home目录。
+
+```
+Note, «GRADLE_USER_HOME» defaults to «USER_HOME»/.gradle, 
+where «USER_HOME» is the home directory of the current user. 
+This location can be configured via the -g 
+and --gradle-user-home command line switches, 
+as well as by the GRADLE_USER_HOME environment variable 
+and org.gradle.user.home JVM system property.
+```
 
 #### Gradle界面(GUI)
 
@@ -116,3 +210,110 @@ sudo apt install gradle=2.12
 ```
 
 如上命令在项目文件夹cc-web-boot下执行构建，并排除test任务，生成对应的jar包。bootRepackage任务依赖于Gradle assemble任务，assemble任务会编译程序中的源代码，并打包生成Jar文件，这个任务不执行单元测试。不使用spring-boot插件，主程序jar包，与依赖的jar包是分开的，需要分别打包，这在云环境中，上传部署比较麻烦，得传多个文件（或者上传前，先压缩成一个包，再传到服务器上解压），服务器节点多时，操作起来太累又重复。而使用spring-boot插件，会自动将依赖的包集成到主包里，非常方便。
+
+#### 多项目构建
+
+使用gradle构建多项目时，setting.gradle文件时必须存在的。并且要包含多个项目，示例如下：
+
+```
+include "dolphin-framework", "dolphin-common"
+```
+
+在多项目构建时，指定多项目共同的中央仓库，可以使用allproject块,如下代码片段所示。
+
+```
+allprojects {
+    repositories {
+        maven { url 'http://repox.gtan.com:8078' }
+        mavenCentral()
+        jcenter()
+    }
+}
+```
+
+mavenCentral指代Maven的中央仓库(Maven central repository)，jcenter指代的是Java中央仓库(JCenter repository)。在构建项目时，IDE中可能看不到jar包的下载进度(如：Intellij Idea)，此时可以切换到命令行模式，执行`gradle build`命令，可以看到构建的进度，比如文件下载的进度等。
+
+#### buildscript
+
+buildscript中的声明是gradle脚本自身需要使用的资源。可以声明的资源包括依赖项、第三方插件、maven仓库地址等。而在build.gradle文件中直接声明的依赖项、仓库地址等信息是项目自身需要的资源。
+
+gradle是由groovy语言编写的，支持groovy语法，可以灵活的使用已有的各种ant插件、基于jvm的类库，这也是它比maven、ant等构建脚本强大的原因。虽然gradle支持开箱即用，但是如果你想在脚本中使用一些第三方的插件、类库等，就需要自己手动添加对这些插件、类库的引用。而这些插件、类库又不是直接服务于项目的，而是支持其它build脚本的运行。所以你应当将这部分的引用放置在buildscript代码块中。gradle在执行脚本时，会优先执行buildscript代码块中的内容，然后才会执行剩余的build脚本。buildscript脚本的简单示例如下：
+
+```
+buildscript {
+    ext {
+        springBootVersion = '1.4.2.RELEASE'
+        jacksonVersion = '2.8.4'
+        tomcatVersion = '7.0.70'
+        springfoxVersion = '2.6.1'
+        poiVersion = "3.14"
+    }
+    repositories {
+        maven { url 'http://repox.gtan.com:8078' }
+        mavenCentral()
+        jcenter()
+        maven { url 'http://repo.spring.io/plugins-release' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
+    }
+}
+```
+
+其中，ext为扩展属性(Extra properties),All enhanced objects in Gradle's domain model can hold extra user-defined properties. This includes, but is not limited to, projects, tasks, and source sets. Extra properties can be added, read and set via the owning object's ext property. Alternatively, an ext block can be used to add multiple properties at once.扩展属性在buildscript中指定后，可以在整个gradle脚本中使用(${属性名})。使用命令`gradle buildEnvironment`，可以打印出扩展属性到依赖关系图。
+
+
+Note, «GRADLE_USER_HOME» defaults to «USER_HOME»/.gradle, where «USER_HOME» is
+the home directory of the current user. This location can be configured via the -g and --gradle-user-home command line switches, as well as by the GRADLE_USER_HOME environment variable and org.gradle.user.home JVM system property.
+
+#### 设置源码路径
+
+在混合编程中，需要设置不同开发语言的源码路径，如下代码片段所示：
+
+```
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala', 'src/main/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/test/scala', 'src/test/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+}
+```
+
+#### Gradle构建生命周期(Gradle Build Lifecycle)
+
+关于Gradle构建的生命周期，全部都是Gradle用户使用手册里面的内容，这里仅仅是摘抄而已，可以直接下载用户手册进行阅读。
+
+初始化阶段(Initialization):Gradle supports single and multi-project builds. During the initialization phase, Gradle determines which projects are going to take part in the build, and creates a Project instance for each of these projects.
+
+配置阶段(Configuration):During this phase the project objects are configured. The build scripts of all projects which are part of the build are executed. Gradle 1.4 introduced an incubating opt-in feature called configuration on demand . In this mode, Gradle configures only relevant projects.
+
+执行阶段(Execution):Gradle determines the subset of the tasks, created and configured during the configuration phase, to be executed. The subset is determined by the task name arguments passed to the gradle command and the current directory. Gradle then executes each of the selected tasks.
+
+Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出的内容：processResources -> compileJava -> classes -> jar。
+
+{% asset_img gradle-build-workflow.jpg Gradle构建流程%}
+
+Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。processResources任务拷贝资源到生产环境的resource目录下(Copies production resources into the production resources directory).
+
+参考资料：
+
+* [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
+
+* [Gradle Userguide]()
+
+* [Gradle Build Language Reference](https://docs.gradle.org/current/dsl/)
+
+* [Gradle学习笔记](https://blog.gmem.cc/gradle-study-note)

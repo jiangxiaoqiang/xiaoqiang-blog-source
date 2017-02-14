@@ -1,7 +1,10 @@
 ---
-title: Apache Ambari 2.2.2.0
-tags: [Ambari]
+title: Apache Ambari 2.2.2.0安装
+tags:
+  - Ambari
+date: 2017-01-30 18:25:45
 ---
+
 
 * Apache Ambari 2.2.2.0
 
@@ -12,6 +15,8 @@ tags: [Ambari]
 ```Bash
 tar xzvf jdk-7u25-linux-x64.tar.gz -C /usr/jdk64/
 ```
+
+<!-- more -->
 
 #### 下载
 

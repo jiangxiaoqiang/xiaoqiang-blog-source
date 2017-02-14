@@ -33,11 +33,13 @@ brew cask install wget
 brew install gradle
 # 列出已经安装的软件名字
 brew list
+# 列出通过cask命令安装的软件的名字
+brew cask list
+# 安装常用软件
+brew install vim htop gradle nginx aria2 node openssl pcre sbt scala wget graphviz
 ```
 
-有些命令安装软件是brew，而有些命令安装软件是brew cask。brew是从下载源码解压然后`./configure && make install`，同时会包含相关依存库。并自动配置好各种环境变量，而且易于卸载。而brew cask是已经编译好了的应用包(.dmg[Apple Disk Image]/.pkg)，仅仅是下载解压，放在统一的目录中(/opt/homebrew-cask/Caskroom)，省掉了自己去下载、解压、拖拽（安装）等步骤，同样，卸载相当容易与干净。这个对一般用户来说会比较方便，包含很多在AppStore里没有的常用软件。
-
-brew默认的安装路径在/usr/local/bin下。
+有些命令安装软件是brew，而有些命令安装软件是brew cask。brew是从下载源码解压然后`./configure && make install`，同时会包含相关依存库。并自动配置好各种环境变量，而且易于卸载。而brew cask是已经编译好了的应用包(.dmg[Apple Disk Image]/.pkg)，仅仅是下载解压，放在统一的目录中(`/usr/local/Caskroom`)，省掉了自己去下载、解压、拖拽（安装）等步骤，同样，卸载相当容易与干净。这个对一般用户来说会比较方便，包含很多在AppStore里没有的常用软件。brew默认的安装路径在/usr/local/bin下。
 
 #### 设置root
 
@@ -63,6 +65,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Hom
 export PATH=$JAVA_HOME/bin:$PATH 
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
+
+在终端下输入`env`命令可以查看当前系统的所有的环境变量。
 
 #### 常用快捷键
 
@@ -98,6 +102,15 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 | Command + Option + Left／Right | 在Google Chrom中左右Tab页切换 |
 | Command + Shift + 3 | 整个屏幕截图 |
 | Command + Shift + 4 | 屏幕指定区域截图 |
+| Command + Shift + H(Home) | 打开Home目录，相当于Window + E |
+| Command + Shift + G(Go) | 跳转到指定文件夹，如果想跳转到Home目录，输入～即可，注意输入的路径要是完整的绝对路径 |
+| Command + Shift + C(Computer) | 跳转到我的电脑 |
+| Command + Option + Space | 打开电脑Finder搜索 |
+| Command + Option + D（Dock） | 显示／隐藏Dock |
+| Command + Ctrl + Space | 调出Emoj界面 |
+| Fn + F11 | 显示桌面 | 
+
+在Finder中，光标高亮在文件夹上按右键可以展开（Expand）子文件夹和子文件夹，按左键可以收拢（Toggle）子文件和子文件夹。选中文件后按下空格键，可以预览当前的文件。 
 
 
 #### 设置Terminal颜色显示

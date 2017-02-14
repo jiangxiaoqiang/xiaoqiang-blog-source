@@ -1,5 +1,5 @@
 ---
-title: git使用经验与技巧总结
+title: Git使用技巧与经验总结
 date: 2016-12-19 23:34:02
 tags:
 ---
@@ -8,13 +8,35 @@ Git是目前世界上最先进的分布式版本控制系统，没有之一。Gi
 
 <!-- more -->
 
-#### 常用命令
+#### Git配置
 
-列出当前的Git配置：
+Git的配置分为系统配置(System Configuration)，全局配置(Global Configuration)和本地库配置(Local Configuration)3个层次。系统配置生效于当前PC的所有用户，全局配置生效于当前用户，本地配置生效于当前用户的当前库，范围逐渐降低。系统配置的配置文件在etc文件夹下
+
+```
+# Mac下的路径为
+/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig
+# Ubuntu下的路径为
+/etc/gitconfig
+```
+
+注意在Ubuntu(此处是16.04 LTS版本)下，如果没有使用命令配置过系统配置，在etc目录下是没有gitconfig文件的。当使用系统配置命令之后，会自动生成`/etc/gitconfig`文件。例如执行如下命令后：
 
 ```Bash
+git config --system credential.helper store
+```
+即会自动生成系统配置文件。
+全局配置的配置文件在当前用户的home目录下`~/.gitconfig`。
+
+```Bash
+# 自动纠正命令的拼写错误配置
+git config --global help.autocorrect 1
+# 列出Git的配置，实际上是将.git目录下的config文件显示出来
 git config --list
 ```
+
+可以进入.git目录，命令所列出来的内容，实际上就是config文件里面的内容。
+
+#### 常用命令
 
 ```Bash
 #列出分支
@@ -113,6 +135,20 @@ git push origin v1_xiaoqiang
 * test (when adding missing tests)
 * chore (maintain)
 
+#### 克隆(clone)
+
+有时会遇到这样的场景，在比较慢的网络速度下，clone一个稍微大一些的仓库会用掉不少时间。比如一个20MB左右的仓库，clone的速度只有10Kb左右。此时可以使用git的shallow clone功能，即浅复制。它只复制最新的代码到本地，而不关心代码的历史信息。命令如下：
+
+```Bash
+git clone --depth=1 https://github.com/jiangxiaoqiang/jiangxiaoqiang.github.io.git
+```
+
+depth参数创建一个指定深度的浅克隆。此时下载的代码量就会大大的减少了，因为git目前克隆时是没有断点续传的，如果在中途断线或者下载速度停止，那么就必须从头再来，如果这样的应用场景，对于在较低网速的网络环境下，克隆一个较大的代码仓库几乎是不太可能的。浅克隆给出了一个更优的选择。如果想在后面获取此仓库的所有历史信息，只需要执行如下命令即可：
+
+```Bash
+git fetch --unshallow
+```
+
 #### 更新(update)
 
 采用git pull时，提示如下：
@@ -168,6 +204,20 @@ git merge v1
 ```
 
 关闭文件对比(合并)工具后，辅助文件都会自动删除，但同时会生成一个test.txt.orig的文件，orig是original的缩写，内容是解决冲突前的冲突现场。默认该.orig文件可能不会自动删除，需要手动删除。
+
+#### 分支(branch)
+
+##### 特性分支(Topic Branch)
+
+有时想要改进一个特性，但是在新特性还没有完全完成之前，不方便合并入旧的代码仓库，或许新特性会影响旧的特性，或者新特性不够完美。那么此时可以开一个特性分支，在此分支上可以放心的重写或者改进旧有的代码，到完全完成的时候合并入主干稳定的代码分支即可。
+
+
+```Bash
+git checkout -b v1_xiaoqiang_feature_movetosinglesearch
+```
+
+新加的分支的命名方式，为主干分支的名称(v1_xiaoqiang)+特性(feature)+功能(movetosinglesearch)。
+
 
 #### 撤销合并
 
@@ -268,6 +318,22 @@ git stash drop
 
 drop后可以跟储藏的编号，如果没有指定，默认丢弃最新一次储藏。
 
+#### 日志信息(log)
+
+查看提交日志，常用的命令如下：
+
+```Bash
+git log --oneline --graph
+```
+
+提交日志一个有趣的应用是自动生成周报。如果要在每周五上交周报，那么可以运行如下命令：
+
+```Bash
+git log --author="jiangxiaoqiang" --after="1 week ago" --oneline
+```
+
+将输出的内容稍加编辑，即可生成一份简单的周报，当然前提是在每次提交的时候需要认真对待提交信息的填写，否则生成的内容也是没什么意义的。
+
 #### 远程仓库(remote)
 
 添加远程仓库：
@@ -278,8 +344,20 @@ git remote add osc https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 
 其中osc为远程仓库的名称，https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git为远程仓库的地址。
 
+#### 凭证管理(Credential Management)
 
-#### Your branch and 'origin/master' have diverged
+在clone仓库时，提示仓库未找到(Not Found),由于电脑是原来前端同学的开发电脑，此时clone的是后端项目，而git存储的还是前端同学的用户，前端用户没有权限查看后端的代码，所以会提示此错误。开发的机器使用的操作系统是Winodws 7，删除原来的凭证。到目录`C:\Program Files\Git\mingw64\etc\gitconfig（和你在Git安装位置有关）`下，删除内容：
+
+```
+[credential]
+helper = manager
+```
+
+再次clone时，会提示输入认证信息，输入认证信息后即可成功clone。
+
+#### 常见问题
+
+##### Your branch and 'origin/master' have diverged
 
 If you absolutely sure this is your case then you can force Git to push your changes:
 
@@ -288,23 +366,12 @@ If you absolutely sure this is your case then you can force Git to push your cha
 git push origin master -f
 ```
 
-##### Changes not staged for commit
+###### Changes not staged for commit
 
 ```Bash
 git stash
 ```
 
-#### Please, commit your changes or stash them before you can merge
+##### Please, commit your changes or stash them before you can merge
 
 出现这个问题的原因是其他人修改了文件并提交到版本库中去了，而你本地也修改了xxx.php，这时候你进行git pull操作就好出现冲突了。
-
-#### 无法添加文件夹
-
-在项目中有一个next文件夹始终无法添加到项目中(无法通过`git add .`命令添加),解决方法是先删除此文件夹,重新创建文件夹,再重新添加进入项目中:
-
-```Bash
-# 删除文件夹
-rm -rf theme/next
-# 添加文件夹
-git add --all .
-```

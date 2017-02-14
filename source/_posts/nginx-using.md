@@ -101,3 +101,7 @@ yum -y install pcre-devel openssl openssl-devel
 make
 make install
 ```
+
+参考资料：
+
+* [Nginx的负载均衡原理](http://kb.cnblogs.com/page/559213/)

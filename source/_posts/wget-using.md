@@ -25,7 +25,47 @@ wget -c url
 
 抓取整站：
 
-```
+```Bash
 #抓取整站
 wget -r -p -np -k http://www.xxx.com
 ```
+
+使用wget限速下载：
+
+```Bash
+wget --limit-rate=300k http://www.minjieren.com/wordpress-3.1-zh_CN.zip
+```
+
+使用wget -b后台下载。命令：
+
+```Bash
+wget -b http://www.minjieren.com/wordpress-3.1-zh_CN.zip
+```
+
+说明：
+
+对于下载非常大的文件的时候，我们可以使用参数-b进行后台下载。
+
+```Bash
+wget -b http://www.minjieren.com/wordpress-3.1-zh_CN.zip
+Continuing in background, pid 1840.
+Output will be written to `wget-log'.
+```
+
+你可以使用以下命令来察看下载进度：
+
+```Bash
+tail -f wget-log
+```
+
+使用wget –tries增加重试次数
+
+命令：
+
+```Bash
+wget --tries=40 URL
+```
+
+说明：
+
+如果网络有问题或下载一个大文件也有可能失败。wget默认重试20次连接下载文件。如果需要，你可以使用–tries增加重试次数。

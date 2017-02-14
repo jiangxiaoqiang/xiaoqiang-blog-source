@@ -91,6 +91,24 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 可以自己添加相应菜单，可以在一级菜单上添加一个书(Book)或者其他模块。
 
 
+#### 生成站点地图
+
+安装生成站点地图的插件：
+
+```Bash
+npm install hexo-generator-sitemap --save
+```
+
+修改站点配置文件_config.yml:
+
+```
+# Extensions
+plugins:
+- hexo-generator-sitemap
+```
+
+配置完毕后在使用`hexo g`命令生成项目时，会自动生成站点地图文件sitemap.xml。
+
 #### 常见问题
 
 ```
@@ -98,4 +116,14 @@ ERROR Local hexo not found in ~/source/blogs/xiaoqiang-blog-source
 ERROR Try running: 'npm install hexo --save'
 ```
 
-使用命令安装了还是不见好。删除项目文件夹下的node_module模块，使用`npm instal hexo --save`重新安装Hexo即可。
+使用命令安装了还是不见好。删除项目文件夹下的node_module模块，使用`npm install hexo --save`重新安装Hexo即可。
+
+##### hexo server命令无反应
+
+有时候在输入命令`hexo s`或者`hexo server`时，并没有按预期的启动server端，在4000端口监听。而是输出了hexo的帮助信息，此时要检查是否在站点的_config.yml文件中显示的指定了plugin，如果有显示的指定plugin那么同样需要指定插件hexo-Server模块,如下代码片段所示：
+
+```
+plugins:
+- hexo-generator-sitemap
+- hexo-server
+```
