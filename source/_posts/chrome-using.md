@@ -25,16 +25,16 @@ date: 2017-01-19 13:28:26
 
 #### 快捷键(Shortcuts)
 
-| 快捷键(Short Keys)  | 作用  |
-| ----------------- |:-------------:|
-| 打开“菜单” | Alt + f、Alt + e 或 F10  |
-| Ctrl + Shift + T | 恢复已关闭的标签页（最多恢复10项） |
-| chrome://version/（about:version） | 查看Google Chrome版本信息 |
-| chrome://plugins/（about:plugin） | 查看Google Chrome版本信息 |
-| Ctrl + Shift + B | 显示隐藏书签 |
-| G | 滑倒页面的底部 |
-| gg | 滑倒页面的顶部 |
-| Ctrl + 9 | 切换到最后一个标签页 |
+| 快捷键(Short Keys)                  |          作用           |
+| -------------------------------- | :-------------------: |
+| 打开“菜单”                           | Alt + f、Alt + e 或 F10 |
+| Ctrl + Shift + T                 |  恢复已关闭的标签页（最多恢复10项）   |
+| chrome://version/（about:version） |  查看Google Chrome版本信息  |
+| chrome://plugins/（about:plugin）  |  查看Google Chrome版本信息  |
+| Ctrl + Shift + B                 |        显示隐藏书签         |
+| G                                |        滑倒页面的底部        |
+| gg                               |        滑倒页面的顶部        |
+| Ctrl + 9                         |      切换到最后一个标签页       |
 
 在管理Google书签时，虽然没有发现快捷键，但是在安装了Vimium插件之后，可以按下键O或者B(Bookmark),输入关键字搜索书签内的内容，类似于快捷键效果。
 
@@ -45,8 +45,19 @@ date: 2017-01-19 13:28:26
 
 Vimium is an open source Google Chrome Extension which provides keyboard short-cuts for navigation and control in the spirit of the Vim editor. Unlike other add-ons for web browsers such as Vimperator or Pentadactyl, it doesn’t modify the browser’s interface but instead focuses on allowing the user to navigate web pages, tabs and links using vim-like keyboard commands rather than the mouse. It also allows the user to map or customise its key bindings.
 
-| 快捷键(Short Keys)  | 作用  |
-| ----------------- |:-------------:|
-| Shift + ? | 调取出Vimium帮助页面  |
+| 快捷键(Short Keys) |      作用       |
+| --------------- | :-----------: |
+| Shift + ?       | 调取出Vimium帮助页面 |
+
+###### 键盘选择网页文字
+
+* 搜索起始点：/搜索内容
+* 按 Enter。
+* 启用视觉模式：v，按行的视觉模式：Shift + V
+* 使用 vim 导航键选择文本：h、j、k、l、b、e、w、$（Shift + w，这个组合键可以按单词选择）
+* 使用 y 将选择的文本复制到剪贴板。
+* 切换程序，使用 Ctrl+V，将文本粘贴到其他程序中。
+
+ 步骤还是有点繁琐，这里还是鼠标要来的方便一些。
 
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
