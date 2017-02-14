@@ -40,5 +40,3 @@ java -jar -Djava.net.preferIPv4Stack=true system-web-boot-1.0.0.jar
 ```
 http://172.30.0.110:28080/
 ```
-
-
