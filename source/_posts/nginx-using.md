@@ -45,6 +45,14 @@ nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok
 nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful
 ```
 
+修改后使配置文件生效可以重启Nginx，不过更加方便的是重载Nginx：
+
+```shell
+sudo nginx -s reload
+#命令写上绝对路径
+sudo /usr/sbin/nginx -s reload
+```
+
 也可以输入如下命令查看Nginx帮助：
 
 ```Bash

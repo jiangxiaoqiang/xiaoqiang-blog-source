@@ -39,7 +39,7 @@ umount /media/dolphin/Untitled
 sudo dd if=2017-01-11-raspbian-jessie.img of=/dev/sdb1 bs=2M
 ```
 
-of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。让人感到郁闷的是，烧录后，Ubuntu不管怎样都无法读出存储卡的数据了。使用命令重新加载也无法读出。
+of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。如果想要看到写入的进度，可以使用dd的一款加强版本dcfldd，是dd的一个fork，在 dd 的基础上增加了取证和安全方面的功能。让人感到郁闷的是，烧录后，Ubuntu不管怎样都无法读出存储卡的数据了。使用命令重新加载也无法读出。
 
 ```Bash
 sudo mount /dev/sdb1 /mnt -t ext3
@@ -111,3 +111,5 @@ dmesg|tail
 [INSTALLING OPERATING SYSTEM IMAGES](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 [Cannot connect to raspbian jessie lite but to raspbian jessie](http://raspberrypi.stackexchange.com/questions/40689/cannot-connect-to-raspbian-jessie-lite-but-to-raspbian-jessie)
+
+[INSTALLING OPERATING SYSTEM IMAGES ON LINUX](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
