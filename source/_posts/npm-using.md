@@ -48,3 +48,11 @@ npm run dev
 
 在执行`npm run <command> `指令时，npm模块首先是执行在根目录下的package.json文件中script节点定义的对应的指令，package.json中调用Webpack完成项目的打包等工作。
 
+#### cnpm
+
+[cnpm](https://github.com/cnpm/cnpm)是淘宝做的一个npm的类似于国内镜像的东西(npm client for China mirror of npm)，由于众所周知的原因，npm的使用在国内不是很稳定，经常会遇到无反应，一直等待的情况。cnpm要求NodeJS的版本至少是4.0.0。当有时遇到npm更新包卡死的情况时，试一试命令：
+
+```
+cnpm install
+```
+

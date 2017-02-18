@@ -11,6 +11,14 @@ categories: Programming
 
 #### 流程
 
+项目的入口文件是index.js，在此文件中定义了整个项目的结构：
+
+```javascript
+ReactDOM.render(<Provider store={store}>{routes}</Provider>, dest);
+```
+
+`ReactDOM.render` 裡面第一個參數是放你要呈現的 JSX 表達式，而第二個則是你要插入的地方。`react-dom`包提供了DOM操作的具体方法，如：组件渲染、节点找查等。你可以在程序的最顶层使用它，除了必要的DOM操作，大多数组件不需要使用这个模块。整个项目只有一个ReactDOM.render方法。如果在服务端渲染，可以使用ReactDOMServer类库。routes中定义了整个项目所有的模块，模块或平级，或嵌套组成了项目前端的页面。所以使用react非常重要的应该是考虑如何安排组件。
+
 **View --> ActionCreator --> Store(middleware,reducer,state)Loop --> View(Provider,connect)**
 |                                                                                                                                                             |
 |                                                                                                                                                             |
@@ -18,7 +26,7 @@ categories: Programming
 
 通过connect,React-redux应用中，store中维护的state就是我们的应用state，一个React组件作为View层，做两件事：render和响应用户操作。于是connect就是将store中的必要数据作为props传递给React组件来render，并包装action creator用于在响应用户操作时dispatch一个action。
 
-redux的store可以视为一个可以保存状态的内存盘，而connect则赋予react组件随处修改store的能力。如果UI层非常简单，没有很多互动，Redux 就不是必须要用的，因为它会增加复杂性。Redux 的适用场景是多交互、多数据源。
+Redux的store可以视为一个可以保存状态的内存盘，而connect则赋予react组件随处修改store的能力。如果UI层非常简单，没有很多互动，Redux 就不是必须要用的，因为它会增加复杂性。Redux 的适用场景是多交互、多数据源。
 
 #### store
 

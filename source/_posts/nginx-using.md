@@ -24,12 +24,20 @@ brew install nginx
 
 #### 常用命令
 
+启动停止Nginx：
+
 ```Bash
 # 查看Nginx的安装目录,一般在(/usr/local/nginx)下
 whereis nginx
 
 # 重启Nginx
 sudo /etc/init.d/nginx restart
+
+# 停止Nginx(legacy < Ubuntu 16.04)
+sudo /etc/init.d/nginx stop
+# Ubuntu 16.04 or higher
+sudo systemctl stop nginx
+sudo service nginx stop
 ```
 
 在修改配置文件后，可以输入如下命令检查配置文件的正确性：
