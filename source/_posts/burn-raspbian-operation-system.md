@@ -98,13 +98,55 @@ dmesg|tail
 
 烧录完成之后，有可能当前电脑识别不出SD卡，此时可以将SD卡插入其他电脑，并修改其中的文件(我的电脑在Ubuntu下刻录之后，Ubuntu这台机器无法再读取U盘，但是安装Fedora系统的另一台计算机可以读取)，此处添加一个空的ssh文件。文件添加完毕后，将SD卡插入Raspberry Pi的卡槽中，接通电源启动Raspberry，那么就会默认启动sshd进程，知道了树莓派的IP后就可以使用ssh登录了。
 
+#### 构建局域网
+
+使用一根网线连接Pi和笔记本，组成一个局域网。在笔记本上配置DHCP(Dynamic Host Configuration Protocol)服务，这样Pi启动后就可以从DHCP获取IP：
+
+```Bash
+yum install dhcp -y
+```
+
+打开dhcp配置文件`sudo vim /etc/dhcp/dhcpd.conf`，配置dhcp：
+
+```Shell
+subnet 192.168.33.0 netmask 255.255.255.0 { 
+    range 192.168.33.2 192.168.33.114; 
+    default-lease-time 86400; 
+    max-lease-time 259200; 
+    option subnet-mask 255.255.255.0; 
+    option broadcast-address 192.168.33.255; 
+    option routers 192.168.33.2; 
+    option domain-name-servers 192.168.33.2; 
+}
+```
+
+配置完成后通过`dhcpd`命令启动，会提示相应文件的存储位置。
+
+```
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcpd/dhcpd.leases
+PID file: /var/run/dhcpd.pid
+```
+
+使用`arp`命令查看Raspberry Pi的IP，可以看到此处的IP是192.168.33.3：
+
+```
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.33.3             ether   c8:37:eb:36:16:63   C                     enp0s25
+gateway                  ether   f2:83:cd:94:23:14   C                     wlp3s0
+```
+
 #### SSH登录树莓派
 
-由于本人只选购了一个裸机，也没有屏幕，电源和网线是自己准备的。所以必须要SSH登录到树莓派上面进行操作，使用命令`ssh pi@192.168.1.101`登录时，提示拒绝连接:`ssh: connect to host 192.168.1.101 port 22: connection refused`。使用nmap也无法扫描到打开的端口，原来是树莓派官方默认关闭了SSH(话说关闭了不能搞点宣传吗，能高调点关闭吗，关了也不通知－－貌似也无法通知)，主要还是为了安全考虑，才关闭22端口:
+由于本人只选购了一个裸机，也没有屏幕，电源和网线是自己准备的。所以必须要SSH登录到树莓派上面进行操作，其实没有多大必要使用屏幕，到如今还比较庆幸当初没有花多余的钱购置配件，实在是没有任何必要。仅仅一个Raspberry Pi，一张8GB或以上的存储卡，一根网线，5V2A的充电器一个，USB数据线一条。许多配件家里都有现成的。使用命令`ssh pi@192.168.33.3`登录，注意或许会提示拒绝连接:`ssh: connect to host 192.168.33.3 port 22: connection refused`。使用nmap也无法扫描到打开的端口，原来是树莓派官方默认关闭了SSH(当初也是不知道，也没有屏幕，折腾了许久)，主要还是为了安全考虑，才关闭22端口:
 
 > As of the November 2016 release, Raspbian has the SSH server disabled by default.
 
-重新开启也很简单，把SD卡拔下来，进入到根目录，新建一个名为`ssh`的文件就行了(For headless setup, SSH can be enabled by placing a file named 'ssh', without any extension, onto the boot partition of the SD card)。
+重新开启也很简单，把SD卡拔下来，进入到启动目录（这里也需要注意，一定要在启动目录boot下，因为Raspberry Pi有2个目录，不要弄错），新建一个名为`ssh`的文件就行了(For headless setup, SSH can be enabled by placing a file named 'ssh', without any extension, onto the boot partition of the SD card)。
+
+成功登陆Raspberry Pi,截图记录一下，当初以为非常简单，动手起来还是不容易的：
+
+{% asset_img ssh-login-raspberry-pi.jpg Raspberry Pi登陆%}
 
 参考资料：
 
