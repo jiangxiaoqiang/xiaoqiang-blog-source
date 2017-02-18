@@ -87,31 +87,43 @@ fi
 
 #### 快捷键
 
-| 快捷键                        |                    作用                    |
-| -------------------------- | :--------------------------------------: |
-| Ctrl + Alt + +             |                   放大终端                   |
-| Ctrl + -                   |                   缩小终端                   |
-| Ctrl + Window + Up         |           最大化窗口，注意按下时按顺序按下相应键            |
-| Ctrl + Window + Down       |           最小化窗口，注意按下时按顺序按下相应键            |
-| Alt + F1                   |            调出侧边栏(如果有设置自动隐藏的话)            |
-| Ctrl + Window + D(Desktop) |                 显示桌面快捷键                  |
-| Alt + F7                   |                 激活窗口移动功能                 |
-| Alt(长按)                    |         激活程序的菜单，即可使用程序的Alt快捷键组合了         |
-| Alt(短按)                    |        激活本应用程序的搜索菜单，即可在当前应用程序中搜索了        |
-| Alt + E                    |     在Google Chrome浏览器中，可以打开浏览器右侧的菜单      |
-| Window + 1                 |      打开Home目录(还可以用Window组合键打开其他目录)       |
-| Window + M                 |               搜索音乐(Music)                |
-| Window + A                 |           搜索或浏览程序（Application）           |
-| Window + F                 |              搜索或浏览文件（File）               |
-| Ctrl + PageUp              |              切换到终端的上一个Tab页               |
-| Ctrl + PageDown            |              切换到终端的下一个Tab页               |
-| Ctrl + Shift + W           |               关闭终端当前Tab标签                |
-| Ctrl + Shift + Q           |               关闭终端所有Tab标签                |
-| Window + D(Desktop)        | 显示桌面，默认是没有此快捷键的，在系统的Keyboard Setting -> Navigation 中，设置Hide All Normal Windows的热键为Window + D即可 |
-| Ctrl + L                   |          在Google Chrome中定位到地址栏           |
-| Ctrl + a(ahead)            |             在Shell中光标移动到首字母              |
-| Ctrl + e(end)              |             在Shell中光标移动到尾字母              |
-| Ctrl + Shift + T           |         在Google Chrome浏览器中恢复历史记录         |
+|            快捷键             | 作用                                       |
+| :------------------------: | :--------------------------------------- |
+|       Ctrl + Alt + +       | 放大终端                                     |
+|          Ctrl + -          | 缩小终端                                     |
+|     Ctrl + Window + Up     | 最大化窗口，注意按下时按顺序按下相应键                      |
+|    Ctrl + Window + Down    | 最小化窗口，注意按下时按顺序按下相应键                      |
+|          Alt + F1          | 调出侧边栏(如果有设置自动隐藏的话)                       |
+|         Alt + F10          | 打开面板上第一个菜单(注意在不同的面板里有不同的效果，多尝试并观察)       |
+| Ctrl + Window + D(Desktop) | 显示桌面快捷键                                  |
+|          Alt + F7          | 激活窗口移动功能                                 |
+|          Alt(长按)           | 激活程序的菜单，即可使用程序的Alt快捷键组合了                 |
+|          Alt(短按)           | 激活本应用程序的搜索菜单，即可在当前应用程序中搜索了               |
+|          Alt + E           | 在Google Chrome浏览器中，可以打开浏览器右侧的菜单          |
+|         Window + 1         | 打开Home目录(还可以用Window组合键打开其他目录)            |
+|         Window + M         | 搜索音乐(Music)                              |
+|         Window + A         | 搜索或浏览程序（Application）                     |
+|         Window + F         | 搜索或浏览文件（File）                            |
+|     Window + W(Window)     | 平铺模式列出所有窗口                               |
+|       Ctrl + PageUp        | 切换到终端的上一个Tab页                            |
+|      Ctrl + PageDown       | 切换到终端的下一个Tab页                            |
+|      Ctrl + Shift + W      | 关闭终端当前Tab标签                              |
+|      Ctrl + Shift + Q      | 关闭终端所有Tab标签                              |
+|    Window + D(Desktop)     | 显示桌面，默认是没有此快捷键的，在系统的Keyboard Setting -> Navigation 中，设置Hide All Normal Windows的热键为Window + D即可 |
+|          Ctrl + L          | 在Google Chrome中定位到地址栏                    |
+|      Ctrl + a(ahead)       | 在Shell中光标移动到首字母                          |
+|       Ctrl + e(end)        | 在Shell中光标移动到尾字母                          |
+|      Ctrl + Shift + T      | 在Google Chrome浏览器中恢复历史记录                 |
+|     Ctrl-Alt-Numpad 7      | 放置窗口到屏幕左上角。                              |
+|     Ctrl-Alt-Numpad 8      | 置窗口到屏幕上半部分                               |
+|     Ctrl-Alt-Numpad 9      | 放置窗口到屏幕右上角                               |
+|     Ctrl-Alt-Numpad 4      | 放置窗口到屏幕左侧                                |
+|     Ctrl-Alt-Numpad 5      | 在屏幕中间位置居中/最大化窗口                          |
+|     Ctrl-Alt-Numpad 6      | 放置窗口到屏幕右侧                                |
+|     Ctrl-Alt-Numpad 1      | 放置窗口到屏幕左下角                               |
+|     Ctrl-Alt-Numpad 2      | 放置窗口到屏幕下半部分                              |
+|     Ctrl-Alt-Numpad 3      | 放置窗口到屏幕右下角                               |
+|     Ctrl-Alt-Numpad 0      | 最大化窗口                                    |
 
 ##### Bash Shell常用快捷键
 
