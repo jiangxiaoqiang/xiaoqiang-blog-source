@@ -127,8 +127,13 @@ Config file: /etc/dhcp/dhcpd.conf
 Database file: /var/lib/dhcpd/dhcpd.leases
 PID file: /var/run/dhcpd.pid
 ```
+配置与Pi连接的网卡的IP:
 
-使用`arp`命令查看Raspberry Pi的IP，可以看到此处的IP是192.168.33.3：
+```Bash
+sudo ifconfig enp0s25 192.168.33.2/24
+```
+
+enp0s25指代的是有线网卡的名称。en指代的是Ethernet,p0s25指代的是PCI接口物理位置为(0,25)，其中横坐标代表bus，纵坐标代表slot。自从将原来的旧的引导系统initd替换为systemd，网卡采用的是另一套命名规则。使用`arp`命令查看Raspberry Pi的IP，可以看到此处的IP是192.168.33.3：
 
 ```
 Address                  HWtype  HWaddress           Flags Mask            Iface
