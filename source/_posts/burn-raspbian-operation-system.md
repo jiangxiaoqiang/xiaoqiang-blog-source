@@ -36,10 +36,10 @@ umount /media/dolphin/Untitled
 注意这里必须要先卸载此卷，否则在使用dd命令刻录时会提示`/media/dolphin/9016-4EF8 is a directionay`，从而导致刻录失败。输入如下命令进行烧录：
 
 ```shell
-sudo dd if=2017-01-11-raspbian-jessie.img of=/dev/sdb1 bs=2M
+sudo dd if=2017-01-11-raspbian-jessie.img of=/dev/sdb bs=2M
 ```
 
-of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。如果想要看到写入的进度，可以使用dd的一款加强版本dcfldd，是dd的一个fork，在 dd 的基础上增加了取证和安全方面的功能。让人感到郁闷的是，烧录后，Ubuntu不管怎样都无法读出存储卡的数据了。使用命令重新加载也无法读出。
+of(output file)参数后面不要添加斜杠。if表示input file，bs表示block size。输入命令后系统在后台刻录，前台可能看不到进度，此时只需要耐心等待即可。如果想要看到写入的进度，可以使用dd的一款加强版本dcfldd，是dd的一个fork，在 dd 的基础上增加了取证和安全方面的功能。让人感到郁闷的是，烧录后，Ubuntu不管怎样都无法读出存储卡的数据了。使用命令重新加载也无法读出。**这里需要注意,SD卡分boot区和数据区，所以在使用dd命令刻录时，填写sdb，而不是sdb1。**
 
 ```Bash
 sudo mount /dev/sdb1 /mnt -t ext3
@@ -97,6 +97,10 @@ dmesg|tail
 
 
 烧录完成之后，有可能当前电脑识别不出SD卡，此时可以将SD卡插入其他电脑，并修改其中的文件(我的电脑在Ubuntu下刻录之后，Ubuntu这台机器无法再读取U盘，但是安装Fedora系统的另一台计算机可以读取)，此处添加一个空的ssh文件。文件添加完毕后，将SD卡插入Raspberry Pi的卡槽中，接通电源启动Raspberry，那么就会默认启动sshd进程，知道了树莓派的IP后就可以使用ssh登录了。
+
+#### 共享网络
+
+由于没有采购屏幕，所以需要ssh链接。直接通过网线，一端链接树霉派，一端链接笔记本电脑，将无线网络共享给本地链接。
 
 #### SSH登录树莓派
 
