@@ -10,14 +10,20 @@ tags:
 
 #### 安装Transmission
 
-
+<!-- more -->
 
 输入如下命令安装Transmission后端：
 
 ```shell
 sudo apt-get update
 sudo apt-get install transmission-daemon -y
+sudo apt-get install transmission-cli -y
+sudo apt-get install transmission-common -y
 ```
+
+
+
+#### 使用Transmission下载
 
 
 
