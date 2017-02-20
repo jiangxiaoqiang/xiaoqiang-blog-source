@@ -98,6 +98,11 @@ dmesg|tail
 
 烧录完成之后，有可能当前电脑识别不出SD卡，此时可以将SD卡插入其他电脑，并修改其中的文件(我的电脑在Ubuntu下刻录之后，Ubuntu这台机器无法再读取U盘，但是安装Fedora系统的另一台计算机可以读取)，此处添加一个空的ssh文件。文件添加完毕后，将SD卡插入Raspberry Pi的卡槽中，接通电源启动Raspberry，那么就会默认启动sshd进程，知道了树莓派的IP后就可以使用ssh登录了。
 
+<<<<<<< HEAD
+#### 共享网络
+
+由于没有采购屏幕，所以需要ssh链接。直接通过网线，一端链接树霉派，一端链接笔记本电脑，将无线网络共享给本地链接。
+=======
 #### 构建局域网
 
 使用一根网线连接Pi和笔记本，组成一个局域网。在笔记本上配置DHCP(Dynamic Host Configuration Protocol)服务，这样Pi启动后就可以从DHCP获取IP：
@@ -140,6 +145,7 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 192.168.33.3             ether   c8:37:eb:36:16:63   C                     enp0s25
 gateway                  ether   f2:83:cd:94:23:14   C                     wlp3s0
 ```
+>>>>>>> 007fe6a098ed974918d442b8ea245b383b475a9b
 
 #### SSH登录树莓派
 
@@ -152,8 +158,6 @@ gateway                  ether   f2:83:cd:94:23:14   C                     wlp3s
 成功登陆Raspberry Pi,截图记录一下，当初以为非常简单，动手起来还是不容易的：
 
 {% asset_img ssh-login-raspberry-pi.jpg Raspberry Pi登陆%}
-
-虽然已经通过Fedora登录Raspberry Pi，但是此时Raspberry Pi和Fedora在同一个局域网里，而Fedora和路由在另一个局域网里，所以Raspberry Pi目前还无法连接互联网，只是一个局域网里面的设备。
 
 参考资料：
 
