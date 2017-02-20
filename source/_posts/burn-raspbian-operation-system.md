@@ -153,6 +153,8 @@ gateway                  ether   f2:83:cd:94:23:14   C                     wlp3s
 
 {% asset_img ssh-login-raspberry-pi.jpg Raspberry Pi登陆%}
 
+虽然已经通过Fedora登录Raspberry Pi，但是此时Raspberry Pi和Fedora在同一个局域网里，而Fedora和路由在另一个局域网里，所以Raspberry Pi目前还无法连接互联网，只是一个局域网里面的设备。
+
 参考资料：
 
 [INSTALLING OPERATING SYSTEM IMAGES](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)

@@ -14,3 +14,33 @@ categories: Programming
 
 <!-- more -->
 
+#### enp3so含义
+
+在Ubuntu 16.04 LTS和Fedora 24中使用`ifconfig`命令查看时，发现以太网卡的名字竟然不是eth0，变成了enp3s0。是由于Ubuntu 16.04将systemd替换掉了initd来引导系统，原来习惯service什么的来控制系统服务什么的，现在竟然被systemctl这个命令替换了（虽然service依旧可用）。systemd带来的另外一个副作用（或者可以说是优点）就是网络接口的命名方式变了:
+
+```
+/*
+ * Two character prefixes based on the type of interface:
+ *   en — Ethernet
+ *   sl — serial line IP (slip)
+ *   wl — wlan
+ *   ww — wwan
+ *
+ * Type of names:
+ *   b<number>                             — BCMA bus core number
+ *   c<bus_id>                             — CCW bus group name, without leading zeros [s390]
+ *   o<index>[d<dev_port>]                 — on-board device index number
+ *   s<slot>[f<function>][d<dev_port>]     — hotplug slot index number
+ *   x<MAC>                                — MAC address
+ *   [P<domain>]p<bus>s<slot>[f<function>][d<dev_port>]
+ *                                         — PCI geographical location
+ *   [P<domain>]p<bus>s<slot>[f<function>][u<port>][..][c<config>][i<interface>]
+ *                                         — USB port number chain
+ */
+```
+
+上面一段是systemd源码的注释，意思是:
+
+1. en代表以太网卡
+2. p3s0代表PCI接口的物理位置为(3, 0), 其中横座标代表bus，纵座标代表slot
+
