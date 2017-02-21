@@ -52,6 +52,16 @@ setsid命令即使关闭终端，程序也能够后台运行。当用户注销�
 
 登录Ngrok，在Dashboard的Status的Tab上即可以看到链接信息。但是**使用Ngrok有一个致命的缺点是极不稳定,偶尔可以链接，非常容易连接不上，基本没有达到基础的可用级别。**不是一个可靠的解决方案。Ngrok可以付费使用，估计这也是免费不稳定的缘由之一，先让你尝试是可以的，稳定使用是需要费用的。毕竟服务器资源的开销也是一笔不菲的费用。
 
+#### frpc
+
+[frpc](http://getfrp.yzxx-soft.com/index.html)内网穿透工具，支持Windows、Mac OS X和Linux。启动frpc：
+
+```shell
+./frpc -c ./frpc.ini
+```
+
+
+
 
 
 
