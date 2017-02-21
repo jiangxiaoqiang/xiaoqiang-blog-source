@@ -93,10 +93,10 @@ git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next
 git checkout -b v1_xiaoqiang
 ```
 
-| 参数 | 含义 |
-|--------|--------|
-| -b <branch> |  create and checkout a new branch  |
-| -B <branch> |  create/reset and checkout a branch |
+| 参数          | 含义                                 |
+| ----------- | ---------------------------------- |
+| -b <branch> | create and checkout a new branch   |
+| -B <branch> | create/reset and checkout a branch |
 
 将新的分之push到origin分支中：
 
@@ -332,7 +332,13 @@ git log --oneline --graph
 git log --author="jiangxiaoqiang" --after="1 week ago" --oneline
 ```
 
-将输出的内容稍加编辑，即可生成一份简单的周报，当然前提是在每次提交的时候需要认真对待提交信息的填写，否则生成的内容也是没什么意义的。
+将输出的内容稍加编辑，即可生成一份简单的周报，当然前提是在每次提交的时候需要认真对待提交信息的填写，否则生成的内容也是没什么意义的。有时需要查看某一个文件的修改记录,可以使用如下命令:
+
+```shell
+git log --pretty 文件名
+# 显示某一个提交的更改历史
+git show 499376ba9314310d64c172216db450ffed815706
+```
 
 #### 远程仓库(remote)
 

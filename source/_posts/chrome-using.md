@@ -38,6 +38,22 @@ date: 2017-01-19 13:28:26
 
 在管理Google书签时，虽然没有发现快捷键，但是在安装了Vimium插件之后，可以按下键O或者B(Bookmark),输入关键字搜索书签内的内容，类似于快捷键效果。
 
+#### 一些小技巧
+
+##### copy as cURL
+
+在调试网页时,有时需要重复发送请求查看,如果每次都填写表单会比较麻烦,此时可以使用copy as cURL.如下图所示:
+
+{% asset_img chrome-copy-as-curl.jpg copy as cURL%}
+
+将复制出来的命令放到终端中执行,会更加方便 .
+
+```shell
+curl 'http://test/pubapi/advice/create' -H 'HL-APP-KEY: SharePortal' -H 'Origin: http://test' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36' -H 'Content-Type: application/json;charset=UTF-8' -H 'Accept: application/json, text/plain, */*' -H 'Referer: http://test/jointConference/suggestion' -H 'Cookie: JSESSIONID=7FA6BD4DB8921445D986C2F42EE90A1C; validate-code=WHNZenQvMHNZaUdPSysxpuSFp3emlRS3QxVExxVUzlYN2x5Rmc0QmpaL05kWjVxWVBicGFIQktkN2c9PQ; cc-o-t=azRuzdEWDMzMXZodGFNc9QR1NLbTVtK0NRQldLbG5UWlIvQ1NuTmtCWnhrR0tmYjVoMkFpV1lqbnRBY2toZjVjVHhlZ2h1c0szREhsemw5NnZuUE1rZDl6a0tvWHErZzlya1FNeHI2WjZXRlQ' -H 'Connection: keep-alive' -H 'DNT: 1' --data-binary '{"theme":"trthrt","advice":"gdgd","name":"gdgg","phone":"41414","address":"gsggsg","groupId":"500001000001","userId":1}' --compressed
+```
+
+
+
 #### Plugin
 
 

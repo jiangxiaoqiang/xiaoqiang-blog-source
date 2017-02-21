@@ -63,6 +63,16 @@ sudo apt-get install dconf-editor
 
 安装好之后可以在该工具的 com – canonical – unity – launcher 中手动选择 Unity 在桌面中的所处位置。
 
+##### 启用root用户
+
+在Ubuntu Desktop 16.04中,root用户默认是禁用的,启用root用户:
+
+```shell
+sudo -i passwd root
+```
+
+输入root的密码即可.其中-i参数表示--login的含义.Run the shell specified by the target user's password database entry as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.If a command is specified, it is passed to the shell for execution via the shell's -c option.  If no command is specified, an interactive shell is executed.  sudo attempts to change to that user's home directory before running the shell.  The command is run with an environment similar to the one a user would receive at log in.
+
 #### 设置截屏快捷键
 
 在安装好了Shutter之后，每次截取屏幕都需要打开Shutter，点击Selection按钮。其实可以配置截屏的快捷键，就像QQ的`Ctrl + Alt + A`一样。如下图所示：
