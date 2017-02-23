@@ -1,16 +1,35 @@
 ---
-title: Raspberry初始配置
+title: Raspberry Pi 3 Model B配置
 date: 2017-02-18 15:51:53
 tags:
 - Raspberry
 categories: Equipment
 ---
 
+Raspberry Pi经过各种改造，可以有不同的用途，包括但不限于如下用途：
+
+* 一个24小时在线下载的微型服务器(BitTorrent下载机)
+* 一个微型的Web网络服务器，托管个人网站等
+* 一个微型的科学上网代理服务器(Tor Router...)，或者叫家用 VPN 服务器
+* 搭建一个微型广播站，实现自己的广播(FM广播系统)
+* 一个路由器
+* 家庭NAS(Network Access Storage)
+* XBMC操作系统打造家庭影院(XMBC 多媒体中心)
+* 添加一个摄像头做一个监控(Web Cam 服务器)
+* 有声书籍播放器
+* 一个Git服务器
+* 私有云服务ownCloud，可以在任何地方，包括用手机，上传下载文件，同步日历等
+* 一个闹钟
+
+但是在实现如上功能之前还是需要一步一步从最开始进行配置。
+
+<!-- more -->
+
 #### 网络配置(Network Config)
 
 使用ssh连接上Raspberry之后，还无法上网。使用如下命令扫描无线热点：
 
-<!-- more -->
+
 
 ````shell
 sudo iwlist wlan0 scan

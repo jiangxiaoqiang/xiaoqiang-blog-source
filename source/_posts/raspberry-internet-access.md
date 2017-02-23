@@ -1,5 +1,5 @@
 ---
-title: Raspberry外网访问
+title: Raspberry Pi 3 Model B外网访问
 date: 2017-02-19 10:04:51
 tags:
 - Raspberry

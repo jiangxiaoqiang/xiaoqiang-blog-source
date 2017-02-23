@@ -1,5 +1,5 @@
 ---
-title: Raspberry搭建下载服务器
+title: Raspberry Pi 3 Model B搭建下载服务器
 date: 2017-02-19 09:11:52
 tags:
 - Raspberry
@@ -62,11 +62,16 @@ sudo apt-get install amule-daemon amule-utils -y
 
 ### Deluge
 
+Deluge是一款开源跨平台的下载工具，支持Windows、Mac OS X、Linux等平台。
+
 #### 安装
 
 ```shell
 sudo apt-get install deluged -y
 sudo apt-get install deluge-console -y
+sudo apt-get install deluge-web -y
+# 也可以使用如下一条指令搞定
+sudo apt-get install deluged deluge-console deluge-web -y
 ```
 
 
