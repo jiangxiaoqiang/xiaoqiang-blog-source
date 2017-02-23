@@ -1,5 +1,5 @@
 ---
-title: 通用程序部署手册(手动)
+title: 通用部署流程
 date: 2017-01-22 16:43:20
 tags:
 - deployment
@@ -15,6 +15,7 @@ categories: Programming
 对于Java与Scala编写的后端代码，输入如下命令编译程序：
 
 ```Bash
+# 编译jar包
 ./gradlew -p cc-web-boot -x test build
 ```
 
@@ -26,8 +27,10 @@ categories: Programming
 
 ```Bash
 scp system-web-boot-1.0.0.jar hldev@172.30.0.110:~
-scp system-web-boot-1.0.0.jar hl@192.168.32.106:/home/app/backend/credit-system
+scp system-web-boot-1.0.0.jar hl@192.168.32.106:/home/app/
 ```
+
+目前服务器Web使用的Tengine。需要将后端的jar/war包分别拷贝到12和13服务器。前端代码在11上，Nginx转发请求、负载均衡也在11服务器。在使用国产Web（默认端口9060）时要注意修改配置文件application.properties，将Cookie Domain和Datasource Url设置为相应的值。
 
 #### 启动
 
@@ -51,3 +54,7 @@ java -jar -Djava.net.preferIPv4Stack=true esystem-web-boot-1.0.0.jar
 ```
 http://172.30.0.110:28080/
 ```
+
+#### 优化与思考
+
+如何使用Chubby使多机部署自动化，部署的程序如何回滚。目前采用的方式是scp拷贝到2台web服务器，肯定可以完全自动化完成的。
