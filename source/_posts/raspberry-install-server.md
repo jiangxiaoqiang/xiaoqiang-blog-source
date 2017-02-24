@@ -67,9 +67,21 @@ sudo apt-get install amule-daemon amule-utils -y
 ```shell
 sudo apt-get install deluged -y
 sudo apt-get install deluge-console -y
+# 合并安装
+sudo apt-get install deluged deluge-console deluge-web -y
 ```
 
+待Deluge安装完毕后，输入如下命令启动：
 
+```Bash
+# 启动守护进程
+deluged
+# 启动Web端
+deluge-web
+# 启动Console端
+deluge-console
+```
 
+登录地址：`http://192.168.1.113:8112/`即可从Web访问Deluge。
 
 
