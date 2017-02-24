@@ -46,7 +46,7 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```json
 network={    
   ssid="76D2"    
-  psk="cxyqw1387"
+  psk="cxyqw138597"
 }
 ```
 
@@ -63,19 +63,8 @@ Raspberry Pi 3内置了无线网卡，以前的版本是没有无线网卡的。
 
 
 
-#### 远程连接
 
-可以使用远程桌面来访问Pi，过程也很简单，我通过iphone也连接到了Pi。在Pi上安装xrdp, 一个远程桌面的服务端：
 
-```Bash
-sudo apt-get install xrdp
-```
-
-安装好后xrdp就自动启动了，而且配置为随系统启动。在Fedora上安装rdesktop，一个远程桌面客户端：
-
-```Bash
-sudo yum install rdesktop 
-```
 
 
 
