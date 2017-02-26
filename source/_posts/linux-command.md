@@ -24,6 +24,18 @@ scp -r /tmp/local_dir username@servername:remote_dir
 scp -r pi@192.168.1.113:/var/lib/daemon/GK ./
 ```
 
+#### ss命令
+
+ss(Socket Statistics)命令用于显示本机Sock统计信息。相比于其他工具，它可以显示更多的信息(It can display more TCP and state informations than other tools)。l查看监听端口。
+```Bash
+# 显示所有TCP Sockets
+ss -t -a
+# 查看ssh端口是否已经打开
+ss -t -n -a|grep 22
+```
+
+t参数表示只显示TCP端口，n(number)表示以数字的方式显示，可以使用`ss --help`查看帮助。
+
 #### lsof命令
 
 ```Bash

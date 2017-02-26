@@ -205,7 +205,7 @@ git merge v1
 
 关闭文件对比(合并)工具后，辅助文件都会自动删除，但同时会生成一个test.txt.orig的文件，orig是original的缩写，内容是解决冲突前的冲突现场。默认该.orig文件可能不会自动删除，需要手动删除。
 
-#### 分支(branch)
+#### 分支(checkout)
 
 ##### 特性分支(Topic Branch)
 
@@ -216,7 +216,15 @@ git merge v1
 git checkout -b v1_xiaoqiang_feature_movetosinglesearch
 ```
 
-新加的分支的命名方式，为主干分支的名称(v1_xiaoqiang)+特性(feature)+功能(movetosinglesearch)。
+新加的分支的命名方式，为主干分支的名称(v1_xiaoqiang)+特性(feature)+功能(movetosinglesearch)。checkout还可以用于撤销更改：
+
+```shell
+# 快速撤销本地文件修改
+git checkout -- <filename>
+git checkout -- src/components/system/SuggestionMain.js
+```
+
+
 
 
 #### 撤销合并
@@ -281,7 +289,15 @@ git pull osc v1
 
 其中osc为远程主机的主机名，v1为本地分支。
 
-TS_B_PJZC_T_SP_SXRMD
+#### 比对(Diff)
+
+git的diff命令主要用于比对文件变动之前和变动之后的区别。此命令用于比较工作区和上次提交的差异：
+
+```shell
+git difftool -t meld -y HEAD
+```
+
+t(Tool)参数指定比较使用的工具为meld，y(Yes)参数表示不用弹出提示。
 
 #### 储藏(Stash)
 
