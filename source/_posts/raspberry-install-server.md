@@ -50,6 +50,13 @@ transmission-cli torrentfilename.torrent
 
 {% asset_img web-download-page.png 下载界面 %}
 
+在使用的时候有时会无法进入web界面，此时可以重启transmission守护进程即可,运行如下命令：
+
+```shell
+sudo service transmission-daemon stop
+sudo service transmission-daemon start
+```
+
 ### aMule
 
 aMule是一款开源跨平台的文件分享(下载)工具.
@@ -69,12 +76,8 @@ Deluge是一款开源跨平台的下载工具，支持Windows、Mac OS X、Linux
 ```shell
 sudo apt-get install deluged -y
 sudo apt-get install deluge-console -y
-<<<<<<< HEAD
-# 合并安装
-=======
 sudo apt-get install deluge-web -y
 # 也可以使用如下一条指令搞定
->>>>>>> 161f826a0053efffea883fa5846c295ded50ec87
 sudo apt-get install deluged deluge-console deluge-web -y
 ```
 
