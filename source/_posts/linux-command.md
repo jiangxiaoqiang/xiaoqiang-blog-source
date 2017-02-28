@@ -20,6 +20,8 @@ du -alh
 ```Bash
 #将本地文件夹上传到服务器
 scp -r /tmp/local_dir username@servername:remote_dir
+# 将服务器文件拷贝到本地
+scp -r pi@192.168.1.113:/var/lib/daemon/GK ./
 ```
 
 #### ss命令
