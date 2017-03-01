@@ -1,5 +1,5 @@
 ---
-title: hexo使用总结
+title: Hexo使用总结
 date: 2016-12-18 11:37:59
 tags:
 - Hexo
@@ -30,7 +30,7 @@ npm install hexo-cli -g
 npm install hexo-server --save
 ```
 
-安装之后就可以使用hexo server命令了。在Ubuntu下安装会出现获取文件失败的错误，可能需要多次尝试。提示：WARN  No layout: index.html时，一般是由于主题文件不存在导致，安装相应的主题即可。切换到源码目录下：
+安装之后就可以使用hexo server命令了。在Ubuntu下安装会出现获取文件失败的错误，可能需要多次尝试。提示：`WARN  No layout: index.html`时，一般是由于主题文件不存在导致，安装相应的主题即可。切换到源码目录下：
 
 ```Bash
 git clone https://github.com/iissnan/hexo-theme-next themes/next
@@ -127,3 +127,20 @@ plugins:
 - hexo-generator-sitemap
 - hexo-server
 ```
+
+##### watch ENOSPC
+
+在运行`hexo server`命令时，提示错误：
+
+```shell
+FATAL watch /home/dolphin/dolphin/project/blogs/xiaoqiang-blog-source/themes/next/ ENOSPC
+Error: watch /home/dolphin/dolphin/project/blogs/xiaoqiang-blog-source/themes/next/ ENOSPC
+```
+
+运行如下命令即可解决：
+
+```shell
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+此命令可以提交监视文件的数量，估计是由于随着博客文章数量不断增加，监视文件数量达到上限，此命令可以提高监视文集的数量。

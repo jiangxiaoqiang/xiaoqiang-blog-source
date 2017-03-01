@@ -67,6 +67,32 @@ aMule是一款开源跨平台的文件分享(下载)工具.
 sudo apt-get install amule-daemon amule-utils -y
 ```
 
+添加用户：
+
+```shell
+sudo adduser amule
+```
+
+使用命令`amule`启动aMule守护进程。 初次启动时提示如下：
+
+```
+!2017-03-01 11:55:18: ERROR: aMule daemon cannot be used when external connections are disabled. To enable External Connections, use either a normal aMule, start amuled with the option --ec-config or set the key "AcceptExternalConnections" to 1 in the file ~/.aMule/amule.conf
+```
+
+按照提示修改相应值之后，使用如下命令生成remote.conf文件：
+
+```shell
+amuleweb --write-config --host=localhost --password=123456 --admin-pass=123456
+```
+
+使用如下命令生成密码:
+
+```shell
+echo -n yourpasswordhere | md5sum | cut -d ' ' -f 1
+```
+
+如果想从网页进入amule，运行命令`nohup amuleweb &`启动amule网页守护进程，在浏览器中输入地址`http://ip:4711`即可进入。
+
 ### Deluge
 
 Deluge是一款开源跨平台的下载工具，支持Windows、Mac OS X、Linux等平台。
