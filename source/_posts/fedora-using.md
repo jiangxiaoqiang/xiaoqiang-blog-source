@@ -76,3 +76,6 @@ baobab
 
 {% asset_img baobo.png Baobo界面%}界面界面
 
+#### RPM Fusion
+
+RPM Fusion 是为 Fedora 及 Red Hat Enterprise Linux 用户提供的一个软件包仓库。要是想要安装的软件在官方的仓库中找不到，兴许通过 RPM Fusion 你就找到了。
