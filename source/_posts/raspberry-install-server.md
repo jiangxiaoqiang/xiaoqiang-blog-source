@@ -28,8 +28,11 @@ sudo apt-get install transmission-common -y
 ```shell
 # 查看transmission的运行状态
 service transmission-daemon status
-# 启动daemon
+# 启动daemon守护进程（推荐）
+# 使用此命令启动后可以直接登录Web控制台
 service transmission-daemon start 
+# 启动transmission守护进程(不推荐)
+transmission-daemon
 # 重新启动daemon
 service transmission-daemon reload 
 # 停止daemon
@@ -73,7 +76,7 @@ sudo apt-get install amule-daemon amule-utils -y
 sudo adduser amule
 ```
 
-使用命令`amule`启动aMule守护进程。 初次启动时提示如下：
+使用命令`amuled(amule deamon)`启动aMule守护进程。 初次启动时提示如下：
 
 ```
 !2017-03-01 11:55:18: ERROR: aMule daemon cannot be used when external connections are disabled. To enable External Connections, use either a normal aMule, start amuled with the option --ec-config or set the key "AcceptExternalConnections" to 1 in the file ~/.aMule/amule.conf
@@ -91,7 +94,15 @@ amuleweb --write-config --host=localhost --password=123456 --admin-pass=123456
 echo -n yourpasswordhere | md5sum | cut -d ' ' -f 1
 ```
 
-如果想从网页进入amule，运行命令`nohup amuleweb &`启动amule网页守护进程，在浏览器中输入地址`http://ip:4711`即可进入。
+如果想从网页进入amule，运行命令`nohup amuleweb &`启动amule网页守护进程,如果没有启动amule，输入`nohup amuled &`启动amule守护进程，也可以使用如下命令：
+
+```shell
+sudo systemctl start amuled
+```
+
+在浏览器中输入地址`http://ip:4711`即可进入。如下图所示：
+
+{% asset_img amuse.png aMule下载页 %}
 
 ### Deluge
 

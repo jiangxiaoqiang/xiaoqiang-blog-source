@@ -29,8 +29,6 @@ Raspberry Pi经过各种改造，可以有不同的用途，包括但不限于�
 
 使用ssh连接上Raspberry之后，还无法上网。使用如下命令扫描无线热点：
 
-
-
 ````shell
 sudo iwlist wlan0 scan
 ````
