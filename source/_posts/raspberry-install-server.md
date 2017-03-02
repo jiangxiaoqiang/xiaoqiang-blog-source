@@ -50,6 +50,13 @@ transmission-cli torrentfilename.torrent
 
 {% asset_img web-download-page.png 下载界面 %}
 
+在使用的时候有时会无法进入web界面，此时可以重启transmission守护进程即可,运行如下命令：
+
+```shell
+sudo service transmission-daemon stop
+sudo service transmission-daemon start
+```
+
 ### aMule
 
 aMule是一款开源跨平台的文件分享(下载)工具.
@@ -60,6 +67,32 @@ aMule是一款开源跨平台的文件分享(下载)工具.
 sudo apt-get install amule-daemon amule-utils -y
 ```
 
+添加用户：
+
+```shell
+sudo adduser amule
+```
+
+使用命令`amule`启动aMule守护进程。 初次启动时提示如下：
+
+```
+!2017-03-01 11:55:18: ERROR: aMule daemon cannot be used when external connections are disabled. To enable External Connections, use either a normal aMule, start amuled with the option --ec-config or set the key "AcceptExternalConnections" to 1 in the file ~/.aMule/amule.conf
+```
+
+按照提示修改相应值之后，使用如下命令生成remote.conf文件：
+
+```shell
+amuleweb --write-config --host=localhost --password=123456 --admin-pass=123456
+```
+
+使用如下命令生成密码:
+
+```shell
+echo -n yourpasswordhere | md5sum | cut -d ' ' -f 1
+```
+
+如果想从网页进入amule，运行命令`nohup amuleweb &`启动amule网页守护进程，在浏览器中输入地址`http://ip:4711`即可进入。
+
 ### Deluge
 
 Deluge是一款开源跨平台的下载工具，支持Windows、Mac OS X、Linux等平台。
@@ -69,12 +102,8 @@ Deluge是一款开源跨平台的下载工具，支持Windows、Mac OS X、Linux
 ```shell
 sudo apt-get install deluged -y
 sudo apt-get install deluge-console -y
-<<<<<<< HEAD
-# 合并安装
-=======
 sudo apt-get install deluge-web -y
 # 也可以使用如下一条指令搞定
->>>>>>> 161f826a0053efffea883fa5846c295ded50ec87
 sudo apt-get install deluged deluge-console deluge-web -y
 ```
 

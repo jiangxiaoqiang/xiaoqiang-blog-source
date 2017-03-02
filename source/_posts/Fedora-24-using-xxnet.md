@@ -1,9 +1,9 @@
 ---
-title: 在Fedora 24中使用xx-net
+title: 使用XX-Net总结
 tags:
   - Fedora-24
   - xx-net
-categories: Software
+categories: Tool
 date: 2016-10-15 21:30:14
 ---
 
