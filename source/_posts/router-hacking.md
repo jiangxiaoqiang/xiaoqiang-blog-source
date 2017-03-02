@@ -1,5 +1,5 @@
 ---
-title: Router Hacking
+title: Hydra使用总结
 date: 2017-02-20 14:39:04
 tags:
 - Hacking
@@ -10,7 +10,7 @@ categories: Hacking
 
 <!-- more -->
 
-下载THC Hydra:
+下载THC Hydra(THC指代The Hacker Choice):
 
 ```shell
 wget -c http://www.thc.org/releases/hydra-7.1-src.tar.gz
