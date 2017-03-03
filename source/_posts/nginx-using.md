@@ -25,6 +25,10 @@ brew install nginx
 
 <!-- more -->
 
+#### 开机自动启动
+
+开机启动在`/etc/rc.local`文件中添加nginx命令即可。
+
 #### 常用命令
 
 启动停止Nginx：
@@ -59,7 +63,6 @@ nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful
 修改后使配置文件生效可以重启Nginx，不过更加方便的是重载Nginx：
 
 ```shell
-# 
 sudo nginx -s reload
 #命令写上绝对路径
 sudo /usr/sbin/nginx -s reload
