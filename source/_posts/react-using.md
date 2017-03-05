@@ -40,15 +40,11 @@ class BatchQuery extends Component {
 
 React 为每个状态都提供了两种处理函数，will 函数在进入状态之前调用，did 函数在进入状态之后调用，三种状态共计五种处理函数。
 
-componentWillMount()---render之前最后一次修改状态的机会
-
-componentDidMount()---成功render并渲染完成真实DOM之后触发，可以修改DOM
-
-componentWillUpdate(object nextProps, object nextState)
-
-componentDidUpdate(object prevProps, object prevState)
-
-componentWillUnmount()
+1. componentWillMount()---render之前最后一次修改状态的机会
+2. componentDidMount()---成功render并渲染完成真实DOM之后触发，可以修改DOM
+3. componentWillUpdate(object nextProps, object nextState)
+4. componentDidUpdate(object prevProps, object prevState)
+5. componentWillUnmount()—组件卸载的时候执行，一般可用于清除数据
 
 此外，React 还提供两种特殊状态的处理函数。
 
@@ -57,3 +53,17 @@ componentWillReceiveProps(object nextProps)：已加载组件收到新的参数�
 shouldComponentUpdate(object nextProps, object nextState)：组件判断是否重新渲染时调用
 
  注意：render只能访问this.props和this.state，只有一个顶层组件，不允许修改状态和DOM输出
+
+#### props
+
+许多组件创建的时候可以自定义许多参数，这些参数就叫做属性(props)。
+
+> Most components can be customized when they are created, with different parameters. These creation parameters are called `props`.
+
+`this.props` 表示那些一旦定义，就不再改变的特性，而 `this.state` 是会随着用户互动而产生变化的特性。`this.props` 对象的属性与组件的属性一一对应，但是有一个例外，就是 `this.props.children` 属性。它表示组件的所有子节点。
+
+参考资料：
+
+[React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
+
+[Props](https://facebook.github.io/react-native/docs/props.html)
