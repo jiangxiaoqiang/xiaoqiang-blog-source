@@ -19,7 +19,7 @@ JD是Java Decompiler的缩写。它的目标是一个反编译Java 5及其后版
 
 JD GUI是Java Decompiler Graphics User Interface的缩写。是JD的一个图形化的工具(**JD-GUI** is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields)。
 
-##### 安装JD GUI
+##### 获取JD GUI源码
 
 官方有提供各种平台的安装文件，但是是托管在Amazon的云上的。估计是服务器在国外加上国内艰苦的上网环境。真的是下载不下来，往往是下载到部分了就到了授权时间(估计是Amazon对每个授权的Key做了时间限制)。一旦过了授权时间，又必须重头再来。还好在Github上有源码。使用如下命令下载源码：
 
@@ -43,7 +43,15 @@ git clone -depth=1 https://github.com/java-decompiler/jd-gui.git
 ./gradlew installOsxDist
 ```
 
-构建完成后，生成的文件在目录(`jd-gui/build/install/jd-gui-osx`)下，切换到目录下运行相应脚本(`universalJavaApplicationStub.sh`)启动程序即可。
+构建完成后，生成的文件在目录(`jd-gui/build/install/jd-gui-osx`)下，切换到目录下运行相应脚本(`universalJavaApplicationStub.sh`)启动程序即可。如果在Ubuntu下，使用如下命令安装：
+
+```shell
+cd /jd-gui/build/distributions
+# 查看Deb包信息,-i相当于--info
+sudo dpkg -I example.deb
+# 安装Deb包，i相当于Install
+sudo dpkg -i example.deb 
+```
 
 #### JAD
 

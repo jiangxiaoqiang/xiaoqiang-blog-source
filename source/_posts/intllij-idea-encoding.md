@@ -1,7 +1,7 @@
 ---
 title: IntelliJ Idea使用总结与快捷键技巧
 tags: [IntelliJ,IDE]
-categories: Programming
+categories: Tool
 date: 2016-09-26 14:23:24
 ---
 
