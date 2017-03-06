@@ -12,7 +12,7 @@ categories: Programming
 解压tar.bz2的命令如下：
 
 ```Bash
- tar -jxvf xx.tar.bz2
+tar -jxvf xx.tar.bz2
 ```
 
 <!-- more -->

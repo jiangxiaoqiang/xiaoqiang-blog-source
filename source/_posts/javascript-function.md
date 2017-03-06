@@ -1,5 +1,5 @@
 ---
-title: Javascript函数
+title: Javascript使用总结
 date: 2017-03-01 13:34:36
 tags:
 - Javascript
@@ -31,3 +31,8 @@ let paramList = values.param.toString().split(/\s+/);
 * In Javascript, new lines are represented by a single "\n" character.
 * Textarea values might have the character combos "\n\r" in the text box, but once they are pulled into Javascript, "\n\r" becomes JUST "\n".
 * When replacing out new line characters, treat them as you would any other character. They are not special, they just have special notation.
+
+#### 三点运算符
+
+
+
