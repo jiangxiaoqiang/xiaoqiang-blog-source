@@ -370,12 +370,22 @@ git remote add osc https://github.com/jiangxiaoqiang/xiaoqiang-blog-source.git
 
 在clone仓库时，提示仓库未找到(Not Found),由于电脑是原来前端同学的开发电脑，此时clone的是后端项目，而git存储的还是前端同学的用户，前端用户没有权限查看后端的代码，所以会提示此错误。开发的机器使用的操作系统是Winodws 7，删除原来的凭证。到目录`C:\Program Files\Git\mingw64\etc\gitconfig（和你在Git安装位置有关）`下，删除内容：
 
-```
+```shell
 [credential]
 helper = manager
 ```
 
 再次clone时，会提示输入认证信息，输入认证信息后即可成功clone。
+
+#### 忽略(Ignore)
+
+有时在修改忽略规则文件.gitignore后，git并未显示.gitignore文件已经修改，无法使新的规则生效，具体原因还未知。解决方法可以先把本地缓存删除（改变成未track状态），然后再提交：
+
+```shell
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+```
 
 #### 常见问题
 

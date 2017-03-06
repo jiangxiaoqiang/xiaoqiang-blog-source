@@ -1,7 +1,7 @@
 ---
-title: IntelliJ Idea快捷键技巧
+title: IntelliJ Idea使用总结与快捷键技巧
 tags: [IntelliJ,IDE]
-categories: Programming
+categories: Tool
 date: 2016-09-26 14:23:24
 ---
 
@@ -18,7 +18,7 @@ date: 2016-09-26 14:23:24
 
 {% asset_img intelli-idea-override-default-font.jpg 覆盖默认字体%}
 
-在Debug控制台中Tomcat中输出乱码，可以打开Run/Debug Configuration,选择你的tomcat。在Server > VM options设置为<code>-Dfile.encoding=UTF-8</code> ，重启tomcat，其中参数-D代表Default，设置默认的文件编码是UTF-8。
+不过自己发现有一款英文字体TeXGyreAdventor特别喜欢，不想解决乱码问题，中文就只能眼睁睁看着它乱码了，一定要用这个字体。TeX Gyre Adventor字体家族是基于URW Gothic L字体家族，由Herb Lubalin和Tom Car­nase在1970年设计(The TEX Gyre Ad­ven­tor fam­ily of sans serif fonts is based on the URW Gothic L fam­ily. The orig­i­nal font, ITC Avant Garde Gothic, was de­signed by Herb Lubalin and Tom Car­nase in 1970; the URW font is com­monly used as a sub­sti­tute for the ITC orig­i­nal.)。在Debug控制台中Tomcat中输出乱码，可以打开Run/Debug Configuration,选择你的tomcat。在Server > VM options设置为<code>-Dfile.encoding=UTF-8</code> ，重启tomcat，其中参数-D代表Default，设置默认的文件编码是UTF-8。
 
 #### 智能提示敏感调整
 

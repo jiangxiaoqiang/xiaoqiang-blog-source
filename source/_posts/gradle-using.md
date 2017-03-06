@@ -110,6 +110,10 @@ gradle properties
 
 在使用Gradle部署的时候出现此错误，原因是由于java源文件的编码采用的是UTF-8编码，而本地Java编译器默认的编码采用的是操作系统的默认编码，在Window 7下默认是GBK，所以出现了此错误。解决方法就是显示指定JDK编译器的编码为UTF-8。在系统环境变量中增加一个变量，变量名为: JAVA_TOOL_OPTIONS， 变量值为：-Dfile.encoding=UTF-8，保存，重新打开命令提示符，再运行一次刚刚的构建的命令即可。
 
+#### Resolving dependencies ':classpath'
+
+构建时一直停留在`Resolving dependencies ':classpath'`界面，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。
+
 #### 插件(Plugin)
 
 插件就是Gradle的扩展，简而言之就是为你添加一些非常有用的默认配置。Gradle 自带了很多插件，并且你也可以很容易的编写和分享自己的插件。Java plugin 作为其中之一，为你提供了诸如编译，测试，打包等一些功能。插件配置示例：

@@ -10,7 +10,7 @@ categories: Equipment
 
 ####  简介
 
-树莓派（英语：Raspberry Pi），是一款基于Linux的单板机电脑。它由英国的树莓派基金会所开发，目的是以低价硬件及自由软件促进学校的基本计算机科学教育。树莓派的生产是通过有生产许可的两家公司：Element 14/Premier Farnell和RS Components。这两家公司都在网上出售树莓派。树莓派基金会于2016年2月发布了树莓派3,较前一代树莓派2，树莓派3的处理器升级为了64位的博通BCM2837，并首次加入了Wi-Fi无线网络及蓝牙功能，而售价仍然是35美元。树莓派3代的额定功率功率是4.0 W.
+树莓派（英语：Raspberry Pi），是一款基于Linux的单板机电脑。它由英国的树莓派基金会所开发，目的是以低价硬件及自由软件促进学校的基本计算机科学教育。剑桥计算机实验室厄普顿项目邮件组中相互交流想法时，为了方便指代厄普顿的电脑，邮件中使用了“树莓”这个水果名字。又由于最开始的原型机上只支持Python编程语言，“树莓”后面又跟上了代表Python的“派”。“树莓派”（Raspberry Pi）就这样诞生了。厄普顿于2009年成了慈善性质的“树莓派基金会”，成为研发树莓派的主要机构。树莓派的生产是通过有生产许可的两家公司：Element 14/Premier Farnell和RS Components。这两家公司都在网上出售树莓派。树莓派基金会于2016年2月发布了树莓派3,较前一代树莓派2，树莓派3的处理器升级为了64位的博通BCM2837，并首次加入了Wi-Fi无线网络及蓝牙功能，而售价仍然是35美元。树莓派3代的额定功率功率是4.0 W.
 
 
 #### 烧录操作系统(Burn Operation System)
@@ -168,6 +168,8 @@ nmap -sn 192.168.1.0/24
 虽然已经通过Fedora登录Raspberry Pi，但是此时Raspberry Pi和Fedora在同一个局域网里，而Fedora和路由在另一个局域网里，所以Raspberry Pi目前还无法连接互联网，只是一个局域网里面的设备。
 
 参考资料：
+
+[树莓派：关于教育的故事](https://www.douban.com/note/607175261/)
 
 [INSTALLING OPERATING SYSTEM IMAGES](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
