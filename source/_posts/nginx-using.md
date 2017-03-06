@@ -3,7 +3,7 @@ title: Nginx使用总结
 date: 2017-01-09 13:08:05
 tags:
 - Nginx
-categories: Programming
+categories: Tool
 ---
 
 #### 安装
@@ -73,7 +73,6 @@ sudo /usr/sbin/nginx -s reload
 ```Bash
 /usr/local/nginx/sbin/nginx -h
 ```
-
 
 #### location
 

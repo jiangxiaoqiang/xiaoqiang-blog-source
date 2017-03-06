@@ -68,6 +68,27 @@ localhost:8085
 
 访问Google搜索引擎，如果能够成功访问Google,代表配置成功。如果首次无法访问，可以待后台程序多运行一些时间，几十分钟到几小时不等。一段时间之后再次尝试。需要注意的是XX-Net代理上网不具有匿名性，或者说匿名性很弱。
 
+#### 开机自动启动
+
+Ubuntu开机之后会执行/etc/rc.local文件中的脚本，所以可以直接在/etc/rc.local中添加启动脚本。当然要添加到语句exit 0前面才行。如下rc.local脚本，在启动后自动运行XX-Net:
+
+```shell
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+nohup /opt/local/tools/XX-Net-3.2.8/start &
+exit 0
+```
+
 参考资料：
 
 * [使用Chrome浏览器](https://github.com/XX-net/XX-Net/wiki/%E4%BD%BF%E7%94%A8Chrome%E6%B5%8F%E8%A7%88%E5%99%A8)
