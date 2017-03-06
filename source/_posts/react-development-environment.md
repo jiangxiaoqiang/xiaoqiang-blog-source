@@ -5,7 +5,7 @@ tags:
 - React
 - Webpack
 - Bebel
-categories: Front End
+categories: Front-end
 ---
 
 #### 必备组件

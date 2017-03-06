@@ -148,6 +148,13 @@ gateway                  ether   f2:83:cd:94:23:14   C                     wlp3s
 
 #### SSH登录树莓派
 
+`nmap`命令（Network Mapper）是一个开源的工具，可以用来寻找“开启的主机”。Linux，Mac OS，和Windows平台上都可以使用。输入如下命令获取树莓派的IP：
+
+```shell
+# 扫描局域网中UP的主机
+nmap -sn 192.168.1.0/24
+```
+
 由于本人只选购了一个裸机，也没有屏幕，电源和网线是自己准备的。所以必须要SSH登录到树莓派上面进行操作，其实没有多大必要使用屏幕，到如今还比较庆幸当初没有花多余的钱购置配件，实在是没有任何必要。仅仅一个Raspberry Pi，一张8GB或以上的存储卡，一根网线，5V2A的充电器一个，USB数据线一条。许多配件家里都有现成的。使用命令`ssh pi@192.168.33.3`登录，注意或许会提示拒绝连接:`ssh: connect to host 192.168.33.3 port 22: connection refused`。使用nmap也无法扫描到打开的端口，原来是树莓派官方默认关闭了SSH(当初也是不知道，也没有屏幕，折腾了许久)，主要还是为了安全考虑，才关闭22端口:
 
 > As of the November 2016 release, Raspbian has the SSH server disabled by default.
