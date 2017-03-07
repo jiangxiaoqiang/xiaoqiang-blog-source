@@ -85,7 +85,7 @@ location /api{
 }
 ```
 
-将前缀为api的请求发送到地址：`http://dn5:28080`.
+将前缀为api的请求发送到地址：`http://dn5:28080`.表明看rewrite和location功能有点像，都能实现跳转，主要区别在于rewrite是在同一域名内更改获取资源的路径，而location是对一类路径做控制访问或反向代理，可以proxy_pass到其他机器。很多情况下rewrite也会写在location里。
 
 #### 负载均衡(Load Balance)
 
