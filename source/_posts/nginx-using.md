@@ -101,6 +101,36 @@ Nginx除了作为常规的Web服务器外，还会被大规模的用于反向代
 
 * 基于DNS的负载均衡
 
+Nginx的简单的负载均衡是HTTP Upstream模块，负载均衡的配置如下片段所示：
+
+```
+ upstream backend {
+        server 192.168.1.2:8080;
+        #server 192.168.1.3:28080 backup;
+        #server 192.168.1.4:28080 backup;
+        #server 192.168.1.5:8080 backup;
+    }
+```
+
+nginx 的 upstream目前支持 4 种方式的分配
+1)、轮询（默认）
+      每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。
+2)、weight
+      指定轮询几率，weight和访问比率成正比，用于后端服务器性能不均的情况。
+2)、ip_hash
+      每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。 
+3)、fair（第三方）
+      按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
+4)、url_hash（第三方）
+
+upstream 每个设备的状态:
+
+* down 表示单前的server暂时不参与负载
+* weight  默认为1.weight越大，负载的权重就越大。
+* max_fails ：允许请求失败的次数默认为1.当超过最大次数时，返回proxy_next_upstream 模块定义的错误
+* fail_timeout:max_fails 次失败后，暂停的时间。
+* backup： 其它所有的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻。
+
 #### 常见问题
 
 ##### 403 Forbidden
