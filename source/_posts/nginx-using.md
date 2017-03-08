@@ -139,7 +139,7 @@ upstream 每个设备的状态:
 
 #####  the HTTP rewrite module requires the PCRE library
 
-在安装时提示 the HTTP rewrite module requires the PCRE library：
+Nginx的Url rewrite模块依赖[PCRE](http://www.pcre.org/)(Perl Compatible Regular Expressionss)，The PCRE library is a set of functions that implement regular expression pattern matching using the same syntax and semantics as Perl 5. PCRE has its own native API, as well as a set of wrapper functions that correspond to the POSIX regular expression API. The PCRE library is free, even for building proprietary software.在安装时提示 the HTTP rewrite module requires the PCRE library：
 
 ```
 ./configure: error: the HTTP rewrite module requires the PCRE library.
