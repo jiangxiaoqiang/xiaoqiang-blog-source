@@ -2,12 +2,11 @@
 title: Intellij-Idea远程调试
 tags:
   - Remote Debugging
-categories: Programming
+categories: Tool
 date: 2016-11-12 17:28:17
 ---
 
-
-因为我们用的是Tomcat，所以在IDEA中点击右上角那个“Edit Configurations”按钮，然后在弹出的界面中点击左上角的加号，选择tomcat server->remote。
+远程调试在排错时帮助非常大，有时在本地无法模拟实际的线上环境，有些错误需要达到特定的边界条件才触发，而在本地环境或许无法创造出这样的边界条件和环境。也有的时候本地由于某些限制无法访问特定计算机，只能在远程机上能够访问，但是远程机器上不一定有完整的开发环境。遇到这些场景，远程调试会帮助我们发现和定位问题所在，观察远程机上的软件运行过程，从而找到问题起因。因为我们用的是Tomcat，所以在IDEA中点击右上角那个“Edit Configurations”按钮，然后在弹出的界面中点击左上角的加号，选择tomcat server->remote。
 
 #### 服务器配置
 
@@ -61,6 +60,23 @@ lsof -i:53996
 Intellij Idea远程调试配置如下：
 
 {% asset_img intellij-idea-remote-debugging.jpg Intellij Idea远程调试配置%}
+
+#### jar包远程调试
+
+有时项目直接使用jar包部署，此时如果需要使用远程调试,在启动jar包时，添加特定的参数：
+
+```shell
+# Java 1.5或者1.5以上版本启动命令
+java -jar -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 example.jar
+# Java 1.4版本启动命令
+java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 example.jar
+# Java 1.3或更早版本启动命令
+java -jar -Xnoagent -Djava.compiler=NONE -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 example.jar
+```
+
+在Intellij Idea中进行配置,主机填写远程主机的IP，端口填写远程主机jar启动时指定的端口即可。
+
+
 
 
 参考资料：
