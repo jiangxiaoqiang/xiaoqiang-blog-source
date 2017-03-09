@@ -112,7 +112,7 @@ gradle properties
 
 #### Resolving dependencies ':classpath'
 
-构建时一直停留在`Resolving dependencies ':classpath'`界面，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。
+在使用命令构建时一直停留在`Resolving dependencies ':classpath'`输出，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。由此可以知道原因是Maven的Url此时指定的是内网的URL，而当前电脑无法连接到内网的服务器，所以会一直停留在解析依赖的输出，将Maven仓库的URL改为外网即可成功构建。scasca
 
 #### 插件(Plugin)
 

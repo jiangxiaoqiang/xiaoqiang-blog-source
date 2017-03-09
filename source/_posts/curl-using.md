@@ -81,13 +81,19 @@ curl -H "APPID:123" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "
 curl http://mywebsite.com/index.php?a=1&b=2&c=3
 ```
 
-$\_GET只能获取到参数a,由于url中有&，其他参数获取不到，在linux系统中&会使进程系统后台运行,必须对&进行下转义才能$\_GET获取到所有参数。
+$\_GET只能获取到参数a,由于url中有&，其他参数获取不到，在linux系统中&会使进程系统后台运行,必须对&进行一下转义才能获取到所有参数。
 
 ```
 curl http://mywebsite.com/index.php?a=1\&b=2\&c=3
 ```
 
-这一个细节需要注意。
+这一个细节需要注意。在提交POST请求时，如果参数里包含有汉字和特殊字符等，最好进行一下编码：
+
+```shell
+curl -X POST --data-urlencode "param1=汉字&param2=汉字" "www.xxxx.com"
+```
+
+如果不进行编码，服务端有可能无法处理带有特殊字符的请求。
 
 #### 下载文件
 
