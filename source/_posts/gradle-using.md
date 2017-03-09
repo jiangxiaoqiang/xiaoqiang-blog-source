@@ -312,6 +312,17 @@ Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出�
 
 Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。processResources任务拷贝资源到生产环境的resource目录下(Copies production resources into the production resources directory).
 
+#### Intellij Idea构建Gradle版本
+
+在Intellij Idea中使用Gradle Wrapper构建时，有时明明指定的是某一个版本，Intellij Idea却去下载另一个版本，例如在build.gradle中指定的是3.2.1版本，而Intellij Idea却下载Gradle 2.13版本。此时需要执行命令：
+
+```shell
+# 刷新gradle wrapper（regenerate the wrapper with gradle(w) wrapper after changing gradleVersion）
+./gradlew wrapper
+# 指定版本
+./gradlew wrapper --gradle-version 3.2.1
+```
+
 参考资料：
 
 * [Multi-project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
