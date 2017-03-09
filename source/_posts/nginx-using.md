@@ -86,7 +86,14 @@ location /api{
 }
 ```
 
-将前缀为api的请求发送到地址：`http://dn5:28080`.
+将前缀为api的请求发送到地址：`http://dn5:28080`。如下配置，指定项目根目录的默认首页为`index.html`，如果不指定默认首页，那么就需要在URL中明确指定首页。
+
+```bash
+location / {
+        root   /home/app/frontend/credit-system-frontend/dist;
+        index index.html;
+}
+```
 
 #### 负载均衡(Load Balance)
 
