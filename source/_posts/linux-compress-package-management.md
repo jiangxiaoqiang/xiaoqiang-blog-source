@@ -17,10 +17,11 @@ tar -jxvf xx.tar.bz2
 
 <!-- more -->
 
-#### tar.gz
+#### tar.gz或者.tgz包
 
 ```Bash
 tar -xzvf example.tar.gz
+tar -xzvf example.tgz
 ```
 
 #### rar
