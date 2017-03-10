@@ -144,3 +144,6 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 ```
 
 此命令可以提交监视文件的数量，估计是由于随着博客文章数量不断增加，监视文件数量达到上限，此命令可以提高监视文集的数量。
+
+
+curl -H "APPID:hlb11529c136998cb6" -H "TIMESTAMP:2016-12-19 16:58:02" -H "ECHOSTR:sdsaasf" -H "TOKEN:14d45648c62a746ae9dd9b90c03c50893061222d" http://192.168.32.106:28080/api/xysj/counttota

@@ -44,7 +44,7 @@ date: 2017-01-19 13:28:26
 
 在调试网页时,有时需要重复发送请求查看,如果每次都填写表单会比较麻烦,此时可以使用copy as cURL.如下图所示:
 
-{% asset_img chrome-copy-as-curl.jpg copy as cURL%}
+{% asset_img chrome-copy-as-curl.png copy as cURL%}
 
 #### Plugin
 

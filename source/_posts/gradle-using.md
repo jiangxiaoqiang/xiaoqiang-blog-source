@@ -112,7 +112,7 @@ gradle properties
 
 #### Resolving dependencies ':classpath'
 
-构建时一直停留在`Resolving dependencies ':classpath'`界面，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。
+在使用命令构建时一直停留在`Resolving dependencies ':classpath'`输出，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。由此可以知道原因是Maven的Url此时指定的是内网的URL，而当前电脑无法连接到内网的服务器，所以会一直停留在解析依赖的输出，将Maven仓库的URL改为外网即可成功构建。scasca
 
 #### 插件(Plugin)
 
@@ -311,6 +311,17 @@ Gradle构建流程如下,这是在实际执行Gradle构建指令后窗口输出�
 {% asset_img gradle-build-workflow.jpg Gradle构建流程%}
 
 Gradle构建时，会先构建依赖包，再构建主要的包。每个包的构建按照上图的流程反复执行。processResources任务拷贝资源到生产环境的resource目录下(Copies production resources into the production resources directory).
+
+#### Intellij Idea构建Gradle版本
+
+在Intellij Idea中使用Gradle Wrapper构建时，有时明明指定的是某一个版本，Intellij Idea却去下载另一个版本，例如在build.gradle中指定的是3.2.1版本，而Intellij Idea却下载Gradle 2.13版本。此时需要执行命令：
+
+```shell
+# 刷新gradle wrapper（regenerate the wrapper with gradle(w) wrapper after changing gradleVersion）
+./gradlew wrapper
+# 指定版本
+./gradlew wrapper --gradle-version 3.2.1
+```
 
 参考资料：
 
