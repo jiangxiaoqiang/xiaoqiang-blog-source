@@ -1,5 +1,5 @@
 ---
-title: Intellij-Idea远程调试
+title: Intellij Idea远程调试
 tags:
   - Remote Debugging
 categories: Tool
