@@ -102,10 +102,11 @@ system vimrc file: "/etc/vimrc"
  f-b for $VIMRUNTIME: "/usr/share/vim/vim80"
 ```
 
-如果在Home目录下没有.vimrc文件，使用`touch .vimrc`命令手动创建。在Vim中插件管理使用Vundle。Vundle是基于Git仓库的插件管理软件。Vundle将插件的安装简化为类似yum软件安装的过程，只要:BundleInstall插件安装，:BundleClean插件卸载。BundleSearch插件名搜索插件。
+如果在Home目录下没有.vimrc文件，使用`touch .vimrc`命令手动创建。在Vim中插件管理使用Vundle。Vundle是基于Git仓库的插件管理软件。Vundle将插件的安装简化为类似yum软件安装的过程，只要:BundleInstall插件安装，:BundleClean插件卸载。BundleSearch插件名搜索插件。安装Vundle：
 
-
-
+```shell
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ##### The NERD Tree
 
