@@ -88,5 +88,30 @@ vim 最新脚本.sql -c "e ++enc=GBK"
 :!ls
 ```
 
+#### 插件管理Vundle
+
+在vim中输入version命令可以查看vimrc文件的位置。在Fedora系统中，相关配置文件的位置为：
+
+```
+system vimrc file: "/etc/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+       defaults file: "$VIMRUNTIME/defaults.vim"
+  fall-back for $VIM: "/etc"
+ f-b for $VIMRUNTIME: "/usr/share/vim/vim80"
+```
+
+如果在Home目录下没有.vimrc文件，使用`touch .vimrc`命令手动创建。在Vim中插件管理使用Vundle。Vundle是基于Git仓库的插件管理软件。Vundle将插件的安装简化为类似yum软件安装的过程，只要:BundleInstall插件安装，:BundleClean插件卸载。BundleSearch插件名搜索插件。
+
+##### The NERD Tree
+
+`Ctr + w + h`光标focus左侧树形目录，ctrl+w+l 光标focus右侧文件显示窗口。多次摁 ctrl+w，光标自动在左右侧窗口切换。输入:q回车，关闭光标所在窗口
 
 
+
+| 命令           | 作用                        |
+| ------------ | ------------------------- |
+| Ctrl + w + h | 光标focus左侧树形目录              |
+
+如果需要搜索文件，直接在树形目录的Tab页输入斜杠命令后键入搜索关键字即可。

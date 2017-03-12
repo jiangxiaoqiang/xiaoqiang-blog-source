@@ -6,7 +6,15 @@ tags:
 categories: Programming
 ---
 
+#### ::1的含义
 
+经常在Linux的host(/etc/hosts)文件里看到这样的内容：
+
+```shell
+:::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+```
+
+其中:::1代表的是ipv6的回环。
 
 #### rc的含义
 
