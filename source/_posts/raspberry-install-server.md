@@ -6,7 +6,7 @@ tags:
 categories: Equipment
 ---
 
-由于Raspberry功耗很低，Raspberry Pi 3 Model B的功耗只有4W，4W是什么概念呢？假如你的Raspberry 7*24小时一年到头无休止开着，一年也才使用30度多一点的电量(4WX24小时X365天=31.2度)，一度电打算1块钱，开一整年也才30多块钱。由此看来，树莓派是个人可以养的起的服务器，所以可以使用它作为一个下载器。24小时不间断下载，就不用再等待下载完毕了，或者长时间开着电脑。如果回家的时候想看一部电影，那么随时都可以将下载任务放到队列里，下班回家或者有空的时候就可以看电影了。下载可以使用Transmission、Deluge、aMule、Wget、Aria2等工具，它们都是开源跨平台的，不管你是用Windows、Linux、Mac OS X、FreeBSD等。
+由于Raspberry功耗很低，Raspberry Pi 3 Model B的功耗只有10W(5V\*2A)，10W是什么概念呢？假如你的Raspberry 7*24小时一年到头无休止开着，一年也才使用30度多一点的电量(10WX24小时X365天=87.6度)，一度电打算1块钱，开一整年也才80多块钱。由此看来，树莓派是个人可以养的起的服务器，所以可以使用它作为一个下载器。24小时不间断下载，就不用再等待下载完毕了，或者长时间开着电脑。如果回家的时候想看一部电影，那么随时都可以将下载任务放到队列里，下班回家或者有空的时候就可以看电影了。下载可以使用Transmission、Deluge、aMule、Wget、Aria2等工具，它们都是开源跨平台的，不管你是用Windows、Linux、Mac OS X、FreeBSD等。
 
 ###  Transmission
 
@@ -48,7 +48,10 @@ sudo transmission-cli torrentfilename.torrent
 安装完毕后，需要修改配置文件`/etc/transmission-daemon/settings.json`，此处transmission的版本是Transmission 2.84 (14307)。将rpc-whitelist修改为：192.168.1.*，表示在192.168.1.网段的计算机都可以访问，注意如果要在局域网内其他计算机登陆，一定要修改此字段。修改的时候要停止transmission。
 
 ```json
+# 允许某一网段的IP登陆RPC
 "rpc-whitelist": "192.168.1.*"
+# 允许某几台设备登陆,IP地址中间以逗号隔开
+"rpc-whitelist": "192.168.31.93,192.168.31.151"
 ```
 
 修改完毕后登陆：`http://192.168.1.113:9091`，192.168.1.113为树莓派的IP。进入界面之前会提示输入用户名和密码，首次登陆如果没有修改用户名密码的话，默认的用户名和密码都是transmission。下载界面如下图所示。
