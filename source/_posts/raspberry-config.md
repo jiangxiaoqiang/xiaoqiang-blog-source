@@ -49,7 +49,9 @@ network={
 ```
 
 
-编辑完毕后重启wlan0，使用命令ifocnifg wlan0查看是否有IP，如有，则配置成功。
+编辑完毕后重启wlan0，使用命令`ifocnifg wlan0`查看是否有IP，如有，则配置成功。如果没有，使用命令`sudo reboot`重启Raspberry。重启后，到路由器管理界面查看Raspberry的IP。
+
+{% asset_img raspberry-ip.png 链接无线网络获取的IP %}
 
 ##### ssh自动启动
 

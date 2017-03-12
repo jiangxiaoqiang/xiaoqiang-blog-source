@@ -3,7 +3,7 @@ title: Raspberry Pi 3 Model B搭建下载服务器
 date: 2017-02-19 09:11:52
 tags:
 - Raspberry
-
+categories: Equipment
 ---
 
 由于Raspberry功耗很低，Raspberry Pi 3 Model B的功耗只有4W，4W是什么概念呢？假如你的Raspberry 7*24小时一年到头无休止开着，一年也才使用30度多一点的电量(4WX24小时X365天=31.2度)，一度电打算1块钱，开一整年也才30多块钱。由此看来，树莓派是个人可以养的起的服务器，所以可以使用它作为一个下载器。24小时不间断下载，就不用再等待下载完毕了，或者长时间开着电脑。如果回家的时候想看一部电影，那么随时都可以将下载任务放到队列里，下班回家或者有空的时候就可以看电影了。下载可以使用Transmission、Deluge、aMule、Wget、Aria2等工具，它们都是开源跨平台的，不管你是用Windows、Linux、Mac OS X、FreeBSD等。
@@ -21,24 +21,26 @@ sudo apt-get update
 sudo apt-get install transmission-daemon -y
 sudo apt-get install transmission-cli -y
 sudo apt-get install transmission-common -y
+# 一条命令安装
+sudo apt-get install transmission-deamon transmission-cli transmission-common -y
 ```
 
 常用命令:
 
 ```shell
 # 查看transmission的运行状态
-service transmission-daemon status
+sudo service transmission-daemon status
 # 启动daemon守护进程（推荐）
 # 使用此命令启动后可以直接登录Web控制台
-service transmission-daemon start 
+sudo service transmission-daemon start 
 # 启动transmission守护进程(不推荐)
-transmission-daemon
+sudo transmission-daemon
 # 重新启动daemon
-service transmission-daemon reload 
+sudo service transmission-daemon reload 
 # 停止daemon
-service transmission-daemon stop
+sudo service transmission-daemon stop
 # 添加下载任务
-transmission-cli torrentfilename.torrent
+sudo transmission-cli torrentfilename.torrent
 ```
 
 #### 使用Transmission下载
