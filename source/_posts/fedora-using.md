@@ -15,8 +15,13 @@ categories: Programming
 安装常用软件：
 
 ```Bash
-sudo dnf install -y iostat keepass htop
+sudo dnf install -y git iostat keepass htop wget curl uget shutter mplayer vlc baobab jq
 ```
+
+| 软件名称  | 作用  |
+| ----------------- |:-------------:|
+| jq   | Json格式化工具 |
+| vlc | 视频播放 |
 
 ##### 查看本机IP
 
