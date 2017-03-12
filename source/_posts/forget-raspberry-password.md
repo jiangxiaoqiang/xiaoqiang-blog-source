@@ -37,13 +37,16 @@ raspberrypi123
 接着安装Hydra：
 
 ```shell
+# Mac OS X
 brew install hydra
+# Ubuntu 14.04 LTS
+sudo apt-get install -y hydra
 ```
 
 使用如下命令破解：
 
 ```Shell
-hydra -L users.txt -P password.txt -t 1 -vV -e ns 192.168.31.151 ssh
+hydra -L user.txt -P password.txt -t 1 -vV -e ns 192.168.31.151 ssh
 ```
 
 
