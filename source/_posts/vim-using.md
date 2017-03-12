@@ -104,6 +104,9 @@ system vimrc file: "/etc/vimrc"
 
 如果在Home目录下没有.vimrc文件，使用`touch .vimrc`命令手动创建。在Vim中插件管理使用Vundle。Vundle是基于Git仓库的插件管理软件。Vundle将插件的安装简化为类似yum软件安装的过程，只要:BundleInstall插件安装，:BundleClean插件卸载。BundleSearch插件名搜索插件。
 
+
+
+
 ##### The NERD Tree
 
 `Ctr + w + h`光标focus左侧树形目录，ctrl+w+l 光标focus右侧文件显示窗口。多次摁 ctrl+w，光标自动在左右侧窗口切换。输入:q回车，关闭光标所在窗口

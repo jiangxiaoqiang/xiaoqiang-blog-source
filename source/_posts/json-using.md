@@ -12,6 +12,8 @@ Json具有数据紧凑的特点，非常适合网络传输，特别是数据频�
 
 #### 格式化
 
+由于编写接口时，经常会使用curl命令测试接口返回的Json数据。而普通返回的Json是没有格式化的，非常不便于阅读。而Python引入的json tool和jq可以很好的帮助格式化终端里的Json字符文本。
+
 ##### json tool
 
 json.tool在Python 2.6中引入，用于格式化Json数据流。
