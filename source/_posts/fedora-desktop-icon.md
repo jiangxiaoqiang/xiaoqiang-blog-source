@@ -91,7 +91,12 @@ Terminal=true //是否使用终端
 NoDisplay=true //是否显示在gnome菜单里
 ```
 
+Fedora自从更新到22之后，文件浏览器（Nautilus）出现了一个很大的变化，那就是把文件图标默认变大了。所以有时候图标看起来会比较大，如果想调整尺寸，输入如下命令即可：
 
+```shell
+# 有三个档次："small", "standard", "large"
+gsettings set org.gnome.nautilus.icon-view default-zoom-level small
+```
 
 
 

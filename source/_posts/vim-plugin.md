@@ -70,7 +70,14 @@ filetype plugin indent on    " required
 
 #### Ctrlp
 
-ctrlp是一款相当棒的插件，主要的功能是对文件进行模糊的查找，如果你的project目录结构复杂，或者你正在阅读一个较大的项目的话，那么ctrlp可以帮你快速的定位到你想要文件。
+ctrlp是一款相当棒的插件，主要的功能是对文件进行模糊的查找，如果你的project目录结构复杂，或者你正在阅读一个较大的项目的话，那么ctrlp可以帮你快速的定位到你想要文件。安装Ctrlp，在`.vimrc`文件中加入：
+
+```shell
+# 使用的Vundle版本是0.10.2,较早版本的写法是Bundle 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+```
+
+在Vim中执行命令`:PluginInstall`即可安装。安装完毕后，使用Vim打开文件夹，可以直接输入`Ctrl + P`快捷键调出Ctrlp的模糊搜索功能。输入需要搜索的关键字，匹配的文件出来后，可以按下`Ctrl + j/k`快捷键进行上下选择。选定需要打开的文件后，使用快捷键`Ctrl +x/v`水平/垂直分屏打开文件。按下`Ctrl + t`在新的Tab中打开文件。
 
 #### NERD Tree
 
