@@ -3,7 +3,7 @@ title: babel使用
 date: 2017-02-13 16:10:47
 tags:
 - babel
-categories: Frontend
+categories: Front-end
 ---
 
 #### bebel简介

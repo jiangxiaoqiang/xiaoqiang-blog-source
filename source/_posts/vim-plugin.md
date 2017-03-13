@@ -12,6 +12,17 @@ categories: Tool
 
 <!-- more -->
 
+安装vim-airline插件首先在`.vimrc`文件中添加插件名称`Plugin ‘bling/vim-airline'`，添加完毕后执行Vundle插件安装命令`:PluginInstall`命令安装插件。插件安装完毕后还未立即生效，在Vim配置文件`.vimrc`中添加如下配置即可生效：
+
+```
+" vim-airline
+set laststatus=2 " 永远显示状态栏
+```
+
+效果如下图所示：
+
+{% asset_img vim-plugin-airline.jpg Vim airline状态栏显示插件 %}
+
 #### Vundle
 
 Vundle是一款管理插件的插件。安装Vundle输入如下命令：
@@ -82,6 +93,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 #### NERD Tree
 
 树形的文件浏览。
+
+#### Vim Powerline
+
 
 
 代码补全（YouCompleteMe，语法检查（syntastic），文件模糊搜索（ctrlp），显示vim状态栏（Vim Powerline）,主题颜色（Molokai）,显示文件结构（tagbar）
