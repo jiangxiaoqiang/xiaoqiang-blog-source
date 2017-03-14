@@ -92,10 +92,20 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 #### NERD Tree
 
-树形的文件浏览。
+树形的文件浏览。安装NERD Tree，在配置文件中添加如下配置：
+
+```shell
+Plugin 'scrooloose/nerdtree'
+```
 
 #### Vim Powerline
 
 
+#### Markdown
+
+```shell
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+```
 
 代码补全（YouCompleteMe，语法检查（syntastic），文件模糊搜索（ctrlp），显示vim状态栏（Vim Powerline）,主题颜色（Molokai）,显示文件结构（tagbar）
