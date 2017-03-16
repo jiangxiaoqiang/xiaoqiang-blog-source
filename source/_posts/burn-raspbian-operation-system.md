@@ -28,6 +28,10 @@ categories: Equipment
 
 ```shell
 df -h
+# 列出移动设备的分区情况
+# 注意是外围设备，如果是本级硬盘是不会列出分区情况的
+# 输入p命令可列出磁盘的分区情况
+fdisk -l /dev/sdb
 ```
 
 h表示human readable，已人机交互友好的方式显示系统当前可用卷的信息。此处查出的卷标名称为`/media/dolphin/9016-4EF8`。然后卸载此卷，使得用户不能对此卷进行操作：

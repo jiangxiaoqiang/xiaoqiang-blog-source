@@ -108,11 +108,11 @@ gradle properties
 
 ###### 错误: 编码GBK的不可映射字符
 
-在使用Gradle部署的时候出现此错误，原因是由于java源文件的编码采用的是UTF-8编码，而本地Java编译器默认的编码采用的是操作系统的默认编码，在Window 7下默认是GBK，所以出现了此错误。解决方法就是显示指定JDK编译器的编码为UTF-8。在系统环境变量中增加一个变量，变量名为: JAVA_TOOL_OPTIONS， 变量值为：-Dfile.encoding=UTF-8，保存，重新打开命令提示符，再运行一次刚刚的构建的命令即可。
+在使用Gradle部署的时候出现此错误，原因是由于java源文件的编码采用的是UTF-8编码，而本地Java编译器默认的编码采用的是操作系统的默认编码，在Window 7下默认是GBK，所以出现了此错误。解决方法就是显示指定JDK编译器的编码为UTF-8。在系统环境变量中增加一个变量，变量名为: `JAVA_TOOL_OPTIONS`， 变量值为：`-Dfile.encoding=UTF-8`，保存，重新打开命令提示符，再运行一次刚刚的构建的命令即可。
 
 #### Resolving dependencies ':classpath'
 
-在使用命令构建时一直停留在`Resolving dependencies ':classpath'`输出，无法往下进行构建。此时可以检查Maven的URL是否可用，将`htttp://dn6:8078`切换为`http://repox.gtan.com:8078`即可。由此可以知道原因是Maven的Url此时指定的是内网的URL，而当前电脑无法连接到内网的服务器，所以会一直停留在解析依赖的输出，将Maven仓库的URL改为外网即可成功构建。scasca
+在使用命令构建时一直停留在`Resolving dependencies ':classpath'`输出，无法往下进行构建。此时可以检查Maven的URL是否可以正常访问，此处是最初使用的地址是公司内部的局域网中的Maven仓库，在客户现场后即无法访问公司的内部网路，将原来无法访问的局域网的地址`htttp://dn6:8078`修改为广域网Maven公共仓库的地址`http://repox.gtan.com:8078`即可。由此可以知道原因是Maven的Url此时指定的是内网的URL，而当前电脑无法连接到内网的服务器，所以会一直停留在解析依赖的输出，将Maven仓库的URL改为外网即可成功构建。
 
 #### 插件(Plugin)
 
@@ -132,6 +132,14 @@ plugins {
 }
 ```
 
+Gradle常用的插件有：
+
+| 插件名称  | 用途                                       |
+| ----- | ---------------------------------------- |
+| java  | Gradle是一个通用构建工具，也就是说，它不单是为Java而生。比如，还可以做Groovy，Scala的构建。这取决于使用什么样的插件。大部分Java项目的基本步骤都非常类似，编译Java源代码，运行单元测试，拷贝生成的class文件到目标目录，打包Jar文件（或者war包，ear包），而这些重复且约定俗成的任务，如果可以不用写一行构建代码就实现就完美了。Maven就做到这一点，采用约定优于配置的思想，预先定义常用的任务，并定义它们的执行顺序。Gradle吸收了Maven的这个优点，通过插件，实现预定义任务和任务之间依赖关系的导入，这样就可以在一行代码都不写的情况下，直接使用已经定义的任务。 |
+| war   | War 的插件继承自 Java 插件并添加了对组装 web 应用程序的 WAR 文件的支持。它禁用了 Java 插件生成默认的 JAR archive，并添加了一个默认的 WAR archive 任务。 War 插件添加了两个依赖配置： `providedCompile`和`providedRuntime`。虽然它们有各自的`compile`和`runtime`配置，但这些配置有相同的作用域，只是它们不会添加到 WAR 文件中。 |
+| scala | Scala 的插件继承自 Java 插件并添加了对 Scala 项目的支持。它可以处理 Scala 代码，以及混合的 Scala 和 Java 代码，甚至是纯 Java 代码。该插件支持联合编译，联合编译可以通过 Scala 及 Java 的各自的依赖任意地混合及匹配它们的代码。例如，一个 Scala 类可以继承自一个 Java 类，而这个 Java 类也可以继承自一个 Scala 类。这样一来，我们就能够在项目中使用最适合的语言，并且在有需要的情况下用其他的语言重写其中的任何类。 |
+
 ##### 插件属性(Plugin Properties)
 
 Java插件有一些扩展属性:
@@ -142,6 +150,12 @@ sourceCompatibility = 1.8
 # Java version to generate classes for.
 targetCompatibility = 1.8
 ```
+
+#### SourceSet和项目布局
+
+Java插件引入了一个概念叫做SourceSets，它代表了一组源文件，通过修改SourceSets中的属性，可以指定哪些源文件（或文件夹下的源文件）要被编译，哪些源文件要被排除。Gradle就是通过它实现Java项目的布局定义。
+
+Java插件默认实现了两个SourceSet，main和test。每个SourceSet都提供了一系列的属性，通过这些属性，可以定义该SourceSet所包含的源文件。比如，java.srcDirs，resources.srcDirs。Java插件中定义的其他任务，就根据main和test的这两个SourceSet的定义来寻找产品代码和测试代码等。
 
 #### Wrapper
 

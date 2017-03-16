@@ -13,7 +13,9 @@ MiniDLNA is server software with the aim of being fully compliant with DLNA(Digi
 在Fedora 24下，输入如下命令安装：
 
 ```shell
-dnf install -y minidlna
+sudo dnf install -y minidlna
+# Raspberry
+sudo apt-get install -y minidlna
 ```
 
 编辑minidlna配置文件`/etc/minidlna.conf`:
@@ -37,9 +39,11 @@ sudo service minidlna force-reload
 ps -aux|grep minidlna
 # 查看服务状态
 service minidlna status
+# MiniDLNA随机启动
+sudo update-rc.d minidlna defaults
 ```
 
-访问界面`http://127.0.0.1:8200/`。
+访问界面`http://127.0.0.1:8200/`。DLNA 支持的媒体格式：Image JPEG PNG, GIF, TIFF，Audio LPCM AAC, AC-3, ATRAC 3plus, MP3, WMA9，AV MPEG2 MPEG-1,MPEG-4*, AVC, WMV9
 
 #### 常见问题
 
