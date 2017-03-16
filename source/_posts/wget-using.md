@@ -58,9 +58,7 @@ Output will be written to `wget-log'.
 tail -f wget-log
 ```
 
-使用wget –tries增加重试次数
-
-命令：
+有时在低速网络环境下(真的会有低速网络，在2017年的时候，还使用过下载速度只有2KB/s左右的网络，当然了2B/s也不见怪了)，下载可能会经常中断，使用wget –tries增加重试次数。命令：
 
 ```Bash
 wget --tries=40 URL
