@@ -96,6 +96,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 ```shell
 Plugin 'scrooloose/nerdtree'
+let NERDTreeWinPos='right'
+let NERDTreeWinSize=30
+map <F2> :NERDTreeToggle<CR>
 ```
 
 #### Vim Powerline
