@@ -3,7 +3,7 @@ title: Intellij IDEA推荐插件
 tags:
   - Plugin
   - Intellij
-categories: Programming
+categories: Tool
 date: 2016-10-08 13:46:41
 ---
 
@@ -23,6 +23,12 @@ date: 2016-10-08 13:46:41
 #### JRebel for IntelliJ(Commercial)
 
 JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。
+
+##### 激活
+
+JRebel可用的的一个激活码如下，Intellij Idea的版本是2016.03，JRebel版本是7.0.5，激活日期2017年3月。
+
+> rhJHjOzo/+R/VPcMIdoqMkswzJ9JcZCYrwCNo9xTAD5t9yc47UbVNNiIOqsHhNFCjoWTc/A/+sLAME2HXprxS1zxei7a2CLbw6bOnWWM/ygEvpOMnWA4aa/yunt3pK0/s77Q0w==
 
 #### Lombok
 
