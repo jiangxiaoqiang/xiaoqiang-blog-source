@@ -45,6 +45,13 @@ sudo update-rc.d minidlna defaults
 
 访问界面`http://127.0.0.1:8200/`。DLNA 支持的媒体格式：Image JPEG PNG, GIF, TIFF，Audio LPCM AAC, AC-3, ATRAC 3plus, MP3, WMA9，AV MPEG2 MPEG-1,MPEG-4*, AVC, WMV9
 
+
+#### VLC播放媒体
+
+在Raspberry上安装完毕MiniDLNA后，可以直接在局域网中的PC上通过VLC媒体播放器直接播放Raspberry Pi中的媒体文件。在Window-Playlist-Local Network-Universal Plugin Play中可以找到媒体文件，如下图所示。
+
+{% asset_img upnp-media.jpg 播放Raspberry Pi媒体文件%}
+
 #### 常见问题
 
 ##### Media directory not accessible
