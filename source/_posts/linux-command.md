@@ -20,9 +20,11 @@ du -alh
 ```shell
 # 在本机中查找与Intellij有关，但是不包含JavaScript、svg、markdown文件
 sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
+# 查找所有非txt的文件
+find . ! -name "*.txt" -print
+# 指定查找的深度，查询当前目录下的文件，如果是目录将f(file)换成d(directory)即可
+find . -maxdepth 1 -type f
 ```
-
-
 
 #### ls命令
 

@@ -6,7 +6,6 @@ tags:
 categories: Programming
 ---
 
-
 #### 替換（substitute）
 
 ```shell
@@ -29,7 +28,7 @@ categories: Programming
 | e       | 不顯示 error。                               |
 | g       | globe，不詢問，整行替換。                          |
 | i       | ignore 不分大小寫。                            |
-
+| nG | 跳转到指定行，n代表行号  |
 
 g 大概都是要加的，否則只會替換每一行的第一個符合字串。可以合起來用，如 cgi，表示不分大小寫，整行替換，替換前要詢問是否替換。
 
@@ -119,3 +118,24 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 | Ctrl + w + h | 光标focus左侧树形目录              |
 
 如果需要搜索文件，直接在树形目录的Tab页输入斜杠命令后键入搜索关键字即可。
+
+#### 全文搜索
+
+VIM原生提供了强大的全文搜索命令，搜索命令的语法为：
+
+```shell
+:vim[grep][!] /{pattern}/[g][j] {file} ...
+```
+
+第一个字段中括号里的 grep 是可选字段，所以我通常只使用 :vim ；
+
+第二个字段是要带入一个正则表达式，可以在 vim 中使用 :h regex 来查看用法；
+
+最后一个字段是要搜索的文件，如果希望递归搜索，要设置 ** ，举例来说，比如我想搜索当前目录下的所有 .c 文件，那么就要写成 *.c ，如果我要对此目录以及其递归子目录下的所有 .c 文件进行搜索，就要写成 \**/*.c 。
+
+搜索结果会保存在 quickfix list 中，可以使用 :cw 查看。
+
+```shell
+# 在当前目录以及子目录下的md(Markdown)文件中搜索以ssh开头的文件
+:vim /^ssh\>/ **/*.md
+```

@@ -26,7 +26,7 @@ JRebel的热部署可以让你修改代码以后不用重新启动项目即可�
 
 ##### 激活
 
-JRebel可用的的一个激活码如下，Intellij Idea的版本是2016.03，JRebel版本是7.0.5，激活日期2017年3月。
+JRebel可用的的一个激活码如下，Intellij Idea的版本是2016.03 Ultimate，JRebel版本是7.0.5，激活日期2017年3月。
 
 > rhJHjOzo/+R/VPcMIdoqMkswzJ9JcZCYrwCNo9xTAD5t9yc47UbVNNiIOqsHhNFCjoWTc/A/+sLAME2HXprxS1zxei7a2CLbw6bOnWWM/ygEvpOMnWA4aa/yunt3pK0/s77Q0w==
 
