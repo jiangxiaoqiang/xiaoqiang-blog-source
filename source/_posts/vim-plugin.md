@@ -25,10 +25,10 @@ set laststatus=2 " 永远显示状态栏
 
 #### Vundle
 
-Vundle是一款管理插件的插件。安装Vundle输入如下命令：
+Vundle是一款Vim编辑器插件，用于管理Vim编辑器的插件。安装Vundle输入如下命令：
 
 ```shell
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 配置Vundle：

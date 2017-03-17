@@ -15,6 +15,15 @@ du -alh
 
 <!-- more -->
 
+
+
+```shell
+# 在本机中查找与Intellij有关，但是不包含JavaScript、svg、markdown文件
+sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
+```
+
+
+
 #### ls命令
 
 ```shell

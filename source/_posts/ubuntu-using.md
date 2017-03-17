@@ -39,6 +39,12 @@ sudo apt-get purge packagename
 sudo apt-get remove packagename
 ```
 
+有时在软件管理中心无法卸载，可以直接使用命令找到软件所在的目录强行删除，如下命令找到Intellij Idea的安装目录：
+
+```shell
+sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
+```
+
 #### 字体
 
 在Ubuntu下一些漂亮的字体记录。
