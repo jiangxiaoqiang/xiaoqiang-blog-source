@@ -50,7 +50,7 @@ sudo update-rc.d minidlna defaults
 
 在Raspberry上安装完毕MiniDLNA后，可以直接在局域网中的PC上通过VLC媒体播放器直接播放Raspberry Pi中的媒体文件。在Window-Playlist-Local Network-Universal Plugin Play中可以找到媒体文件，如下图所示。
 
-{% asset_img upnp-media.jpg 播放Raspberry Pi媒体文件%}
+{% asset_img upnp-media.png 播放Raspberry Pi媒体文件%}
 
 #### 常见问题
 
