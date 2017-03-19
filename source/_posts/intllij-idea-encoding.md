@@ -5,6 +5,11 @@ categories: Tool
 date: 2016-09-26 14:23:24
 ---
 
+#### JDK配置
+
+单击File | Project Structure菜单项，打开ProjectStructure对话框，在左侧列表框中，选择SDKs列表项，进入SDK配置页面。如下图所示：
+
+{% asset_img project-sdk-setting.png SDK设置%}
 
 #### 输入乱码
 
@@ -78,65 +83,65 @@ Shift + F6,可以重命名你的类、方法、变量等等。
 
 Intellij Idea可以完全丢掉键盘工作，有点早期Vim和Emacs编辑器的味道。善用Intellij Idea编辑器可以大幅提高工作效率，用快捷键有一种装逼的感觉，装逼人士必备。如下是在Windows下的快捷键：
 
-| 快捷键(Short Keys)  | 作用  |
-| ----------------- |:-------------:|
-| Ctrl + Shift + F12      | 编辑区全屏 |
-| Ctrl + F4      | 关闭当前编辑文件      |
-| Alt + 1 | 打开项目树视图,并将光标定位到当前编辑文件在项目树上的位置 |
-| Alt + Home | 定位到导航条 |
-| Ctrl + Shift + N| 定位到某一个文件(定位到指定文件) |
-| Shift + Esc | 隐藏底部(如：Debug、TODO等)窗口 |
-| F12 | 把焦点从编辑器移到最近使用的工具窗口，可用于显示底部(如：Debug、TODO等)对应窗口 |
-| Alt + 5 | 激活Debug窗口 |
-| Alt + 7 | 打开Structure窗口(Structure前面有一个带有下划线的5是快捷键提示) |
-| Ctrl + N | 根据输入的类名查找类文件 |
-| Ctrl + Shift + N | 查找文件 |
-| Alt + Insert | 生成Getter、Setter |
-| Ctrl + F12 | 在当前编辑的文件中快速导航 |
-| Alt + F3(Search/Incremental Search ) |在编辑器中实现快速查查找功能 |
-| Ctrl + J | 如果记不住Live Template的缩写，使用此快捷键可以弹出所有Live Template的缩写 |
-| Ctrl + X | 删除行，剪切(Cut) |
-| Ctrl + Alt + F12 | 显示当前项目树结构文件/文件夹所在目录，可以快速打开文件夹 |
-| Ctrl + Shift + T(Test) | 选中类名，按下快捷键,创建一个新的测试Case |
-| Ctrl + Shift + 数字键(NumPad)+ | 展开所有 |
-| Ctrl + Shift + 数字键(NumPad)- | 折叠所有 |
-| Ctrl +  数字键(NumPad)- | 在项目树上应用此快捷键可以折叠所有展开的文件夹 |
-| Ctrl + F12 | 打开Intellij中嵌入的终端(Terminal) |
-| Ctrl + B | 跳转到实现处 |
-| Ctrl + F8 | 设置断点和取消设置断点 |
-| Alt + Up/Down | 跳转到下一个方法或者属性 |
-| Ctrl + Tab | 编辑窗口切换(切换Debug视图、编辑区类文件等) |
-| Shift + F2/F2 | 跳到上/下一个错误处 |
-| Alt + F1 | 选中目标，可以定位到文件等各种对象，Alt + F1弹出的界面中选择需要定位的对象，也可以理解成对象导航 |
-| Shift + F6 | 重构、重命名 |
-| Ctrl + Shift + F10 | 运行测试，注意运行测试时界面需要切换到测试类的界面 |
-| Alt + F8 | 计算变量值 |
-| Alt + Left/Right | 按左/右方向切换当前已打开的文件视图 |
-| Ctrl + F10 | 更新资源和类文件，热部署(需要配置，部署时选择Exploded模式) |
-| Ctrl + Shift + T | 新建测试类，在测试类与被测试类之间跳转 |
-| Ctrl + Shift +F | 全文查找，类似于Eclipse的Ctrl + H |
-| Ctrl + Shift + Alt + N | 全文搜索，包含Maven引用的jar包里面的内容，在搜索界面中，需要勾选Include non-project symbols |
-| Ctrl + Alt + Left/Right | 到上一次/下一次编辑的位置 |
-| Ctrl + Y | 删除光标所在行或删除选中的行 |
-| Ctrl + P(Parameter) | 方法参数提示显示,当调用方法时未出现参数的智能提示时，可以手动显示方法的提示 |
-| Ctrl + Q | 光标所在的变量/类名/方法名等上面（也可以在提示补充的时候按），显示文档内容 |
-| Ctrl + Shift + Up/Down | 代码行上下移动 |
-| Ctrl + Shift + U | 单词大小写切换 |
-| Ctrl + W | 选中光标所在位置的单词(Words),递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 |
-| Ctrl + Alt + O | 优化(Optimization)类的Import |
-| Ctrl + H | 显示类的层次结构(Hierarchy) |
-| Alt + F12 | 激活Terminal |
-| Ctrl + Shift + F10 | 运行所有测试(不是特别好用) |
-| Ctrl + Delete | 删除行 |
-| Ctrl + Alt + O（Optimize） | 优化包导入 |
+| 快捷键(Short Keys)                      |                    作用                    |
+| ------------------------------------ | :--------------------------------------: |
+| Ctrl + Shift + F12                   |                  编辑区全屏                   |
+| Ctrl + F4                            |                 关闭当前编辑文件                 |
+| Alt + 1                              |      打开项目树视图,并将光标定位到当前编辑文件在项目树上的位置       |
+| Alt + Home                           |                  定位到导航条                  |
+| Ctrl + Shift + N                     |            定位到某一个文件(定位到指定文件)             |
+| Shift + Esc                          |          隐藏底部(如：Debug、TODO等)窗口           |
+| F12                                  | 把焦点从编辑器移到最近使用的工具窗口，可用于显示底部(如：Debug、TODO等)对应窗口 |
+| Alt + 5                              |                激活Debug窗口                 |
+| Alt + 7                              | 打开Structure窗口(Structure前面有一个带有下划线的5是快捷键提示) |
+| Ctrl + N                             |               根据输入的类名查找类文件               |
+| Ctrl + Shift + N                     |                   查找文件                   |
+| Alt + Insert                         |             生成Getter、Setter              |
+| Ctrl + F12                           |              在当前编辑的文件中快速导航               |
+| Alt + F3(Search/Incremental Search ) |              在编辑器中实现快速查查找功能              |
+| Ctrl + J                             | 如果记不住Live Template的缩写，使用此快捷键可以弹出所有Live Template的缩写 |
+| Ctrl + X                             |               删除行，剪切(Cut)                |
+| Ctrl + Alt + F12                     |      显示当前项目树结构文件/文件夹所在目录，可以快速打开文件夹       |
+| Ctrl + Shift + T(Test)               |         选中类名，按下快捷键,创建一个新的测试Case          |
+| Ctrl + Shift + 数字键(NumPad)+          |                   展开所有                   |
+| Ctrl + Shift + 数字键(NumPad)-          |                   折叠所有                   |
+| Ctrl +  数字键(NumPad)-                 |         在项目树上应用此快捷键可以折叠所有展开的文件夹          |
+| Ctrl + F12                           |        打开Intellij中嵌入的终端(Terminal)        |
+| Ctrl + B                             |                  跳转到实现处                  |
+| Ctrl + F8                            |               设置断点和取消设置断点                |
+| Alt + Up/Down                        |               跳转到下一个方法或者属性               |
+| Ctrl + Tab                           |        编辑窗口切换(切换Debug视图、编辑区类文件等)         |
+| Shift + F2/F2                        |                跳到上/下一个错误处                |
+| Alt + F1                             | 选中目标，可以定位到文件等各种对象，Alt + F1弹出的界面中选择需要定位的对象，也可以理解成对象导航 |
+| Shift + F6                           |                  重构、重命名                  |
+| Ctrl + Shift + F10                   |        运行测试，注意运行测试时界面需要切换到测试类的界面         |
+| Alt + F8                             |                  计算变量值                   |
+| Alt + Left/Right                     |            按左/右方向切换当前已打开的文件视图            |
+| Ctrl + F10                           |    更新资源和类文件，热部署(需要配置，部署时选择Exploded模式)    |
+| Ctrl + Shift + T                     |           新建测试类，在测试类与被测试类之间跳转            |
+| Ctrl + Shift +F                      |         全文查找，类似于Eclipse的Ctrl + H         |
+| Ctrl + Shift + Alt + N               | 全文搜索，包含Maven引用的jar包里面的内容，在搜索界面中，需要勾选Include non-project symbols |
+| Ctrl + Alt + Left/Right              |              到上一次/下一次编辑的位置               |
+| Ctrl + Y                             |              删除光标所在行或删除选中的行              |
+| Ctrl + P(Parameter)                  |  方法参数提示显示,当调用方法时未出现参数的智能提示时，可以手动显示方法的提示  |
+| Ctrl + Q                             |  光标所在的变量/类名/方法名等上面（也可以在提示补充的时候按），显示文档内容  |
+| Ctrl + Shift + Up/Down               |                 代码行上下移动                  |
+| Ctrl + Shift + U                     |                 单词大小写切换                  |
+| Ctrl + W                             | 选中光标所在位置的单词(Words),递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 |
+| Ctrl + Alt + O                       |         优化(Optimization)类的Import         |
+| Ctrl + H                             |           显示类的层次结构(Hierarchy)            |
+| Alt + F12                            |                激活Terminal                |
+| Ctrl + Shift + F10                   |              运行所有测试(不是特别好用)              |
+| Ctrl + Delete                        |                   删除行                    |
+| Ctrl + Alt + O（Optimize）             |                  优化包导入                   |
 
 如下是在Mac OS X中的快捷键：
 
-| 快捷键(Short Keys)  | 作用  |
-| ----------------- |:-------------:|
-| Commmand + , |  调出Setting界面 |
-| Commmand + ； |  调出项目Setting界面 |
-| Command + F4 | 关闭界面 |
+| 快捷键(Short Keys) |      作用       |
+| --------------- | :-----------: |
+| Commmand + ,    |  调出Setting界面  |
+| Commmand + ；    | 调出项目Setting界面 |
+| Command + F4    |     关闭界面      |
 
 ##### 进入退出全屏
 

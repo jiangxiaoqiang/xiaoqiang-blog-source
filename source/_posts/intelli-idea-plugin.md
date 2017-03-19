@@ -3,7 +3,7 @@ title: Intellij IDEA推荐插件
 tags:
   - Plugin
   - Intellij
-categories: Programming
+categories: Tool
 date: 2016-10-08 13:46:41
 ---
 
@@ -23,6 +23,20 @@ date: 2016-10-08 13:46:41
 #### JRebel for IntelliJ(Commercial)
 
 JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。
+
+##### 激活
+
+JRebel激活可以直接到[这里](https://my.jrebel.com),只需要在Facebook或者Twitter上面分享，即可获取1年使用时长的激活码。
+
+##### 常见问题
+
+###### IllegalArgumentException: Bean factory must allow eager class loading
+
+在使用JRebel版本7.0.6时，提示如下错误：
+
+> "IllegalArgumentException: Bean factory must allow eager class loading"
+
+Spring Boot的版本是1.4.5。在GitHub上浏览到这篇[Issue](https://github.com/spring-projects/spring-boot/issues/8488)，原来是JRebel Plugin for Intellij Idea的Bug，下载了一个[每日构建版本(nightly build)](https://zeroturnaround.com/software/jrebel/download/nightly-build/)替换掉原来安装的发布版本即可正常使用JRebel。
 
 #### Lombok
 

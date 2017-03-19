@@ -16,7 +16,7 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss
+texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss fail2ban
 ```
 
 * synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
@@ -37,6 +37,12 @@ sudo apt remove -y --purge libreoffice*
 sudo apt-get purge packagename
 # 仅仅移除二进制文件而不会移除配置和数据文件
 sudo apt-get remove packagename
+```
+
+有时在软件管理中心无法卸载，可以直接使用命令找到软件所在的目录强行删除，如下命令找到Intellij Idea的安装目录：
+
+```shell
+sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
 ```
 
 #### 字体
