@@ -139,7 +139,7 @@ Gradle常用的插件有：
 | java  | Gradle是一个通用构建工具，也就是说，它不单是为Java而生。比如，还可以做Groovy，Scala的构建。这取决于使用什么样的插件。大部分Java项目的基本步骤都非常类似，编译Java源代码，运行单元测试，拷贝生成的class文件到目标目录，打包Jar文件（或者war包，ear包），而这些重复且约定俗成的任务，如果可以不用写一行构建代码就实现就完美了。Maven就做到这一点，采用约定优于配置的思想，预先定义常用的任务，并定义它们的执行顺序。Gradle吸收了Maven的这个优点，通过插件，实现预定义任务和任务之间依赖关系的导入，这样就可以在一行代码都不写的情况下，直接使用已经定义的任务。 |
 | war   | War 的插件继承自 Java 插件并添加了对组装 web 应用程序的 WAR 文件的支持。它禁用了 Java 插件生成默认的 JAR archive，并添加了一个默认的 WAR archive 任务。 War 插件添加了两个依赖配置： `providedCompile`和`providedRuntime`。虽然它们有各自的`compile`和`runtime`配置，但这些配置有相同的作用域，只是它们不会添加到 WAR 文件中。 |
 | scala | Scala 的插件继承自 Java 插件并添加了对 Scala 项目的支持。它可以处理 Scala 代码，以及混合的 Scala 和 Java 代码，甚至是纯 Java 代码。该插件支持联合编译，联合编译可以通过 Scala 及 Java 的各自的依赖任意地混合及匹配它们的代码。例如，一个 Scala 类可以继承自一个 Java 类，而这个 Java 类也可以继承自一个 Scala 类。这样一来，我们就能够在项目中使用最适合的语言，并且在有需要的情况下用其他的语言重写其中的任何类。 |
-
+| propdeps | 此插件的作用是为Gradle提供另2个依赖配置(provided、optional)，和Maven生成的POM配置兼容。因为Gradle的依赖定义是：compile、runtime、testCompile和testRuntime，而Maven的依赖定义是：compile、compile、runtime、test和system。 |
 ##### 插件属性(Plugin Properties)
 
 Java插件有一些扩展属性:
