@@ -32,7 +32,7 @@ sudo apt-get install isatapd
 sudo apt-get install miredo -y
 ```
 
-貌似也没有什么用，有IPv6地址，但是无法链接到任何一个IPv6网站。
+Teredo是一个IPv6转换机制，它可为运行在IPv4互联网但没有IPv6网络原生连接的支持IPv6的主机提供完全的连通性。与其他的类似协议不同，它可以在网络地址转换(NAT)设备（例如家庭路由器）后完成功能。Teredo服务器目前已经停用。所以*也没有*什么用，有IPv6地址，但是无法链接到任何一个IPv6网站。
 
 #### 6to4
 

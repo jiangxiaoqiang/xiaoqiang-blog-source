@@ -76,4 +76,8 @@ Vimium is an open source Google Chrome Extension which provides keyboard short-c
 
  步骤还是有点繁琐，这里还是鼠标要来的方便一些。
 
+##### Auto Refresh
+
+最近在研究项目的前端部分，有时候修改了一下前端网页需要刷新一下浏览器，每次手动刷新，甚是麻烦。可以安装一个自动刷新Google Chrome页面的插件[Super Auto Refresh](https://chrome.google.com/webstore/detail/kkhjakkgopekjlempoplnjclgedabddk/reviews)，省去了重复手动刷新页面的烦恼。当然最理想的状态是能够像Browsersync那样即时刷新即时生效，但是可能和Webpack冲突，有时间后再行研究。
+
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
