@@ -22,4 +22,4 @@ categories: Equipment
 arp -a
 ```
 
-这里获取到的树霉派的IP是：`10.42.0.22`。
+这里获取到的树霉派的IP是：`10.42.0.22`。接下来就可以通过命令`ssh pi@10.42.0.22`登陆Raspberry Pi了。
