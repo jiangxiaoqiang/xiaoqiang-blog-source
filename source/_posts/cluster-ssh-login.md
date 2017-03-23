@@ -23,18 +23,14 @@ SSH之所以能够保证安全，原因在于它采用了公钥加密。过程�
 ssh-keygen -t rsa
 ```
 
-生成RSA公钥和私钥，注意在生成时要设置一个密码，尽量设置复杂一些。将生成的"id_rsa.pub"追加（这里切记是追加，不是覆盖）到授权的key里面去。这样的效果是实现了当前用户无密SSH登陆到自己，在首次登录时需要输入一遍生成Public Key时候设置的密码，可以勾选为自动保存，就只需要输入一次，以后就可以直接ssh登录：
+生成RSA公钥和私钥，注意在生成时要设置一个密码，尽量设置复杂一些。将生成的`id_rsa.pub`追加（这里切记是追加，不是覆盖）到授权的key里面去。这样的效果是实现了当前用户无密SSH登陆到自己，在首次登录时需要输入一遍生成Public Key时候设置的密码，可以勾选为自动保存，就只需要输入一次，以后就可以直接ssh登录：
 
 ```Bash
 #将id_rsa.pub追加到authorized_keys
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-如果要实现无密登陆到其它的主机，只需将生成的"id_rsa.pub"追加到其它主机的"\~/.ssh/authorized_keys"中去。这里我们使用的方法是先将本机的"\~/.ssh/id_rsa.pub"拷贝到你想无密登陆的主机上，再在相应的主机上使用"cat"命令将"\~/.ssh/id_rsa.pub"追加到该主机的 "\~/.ssh/authorized_keys"中。
-
-```Bash
-scp id_rsa.pub root@192.168.24.136:/tmp
-```
+如果要实现无密登陆到其它的主机，只需将生成的"id_rsa.pub"追加到其它主机的`\~/.ssh/authorized_keys`中去。这里我们使用的方法是先将本机的`\~/.ssh/id_rsa.pub`拷贝到你想无密登陆的主机上，再在相应的主机上使用"cat"命令将`\~/.ssh/id_rsa.pub`追加到该主机的 `\~/.ssh/authorized_keys`。
 
 #### 验证
 
