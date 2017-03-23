@@ -6,6 +6,10 @@ tags:
 categories: Tool
 ---
 
+Ansible是一款自动化运维工具，基于Python开发，由Paramiko(python的一个可并发连接ssh主机功能库), PyYAML和Jinja2(模板化)三个关键模块实现。
+
+<!-- more -->
+
 #### Ansible配置
 
 Ansible的配置文件在目录`/etc/ansible/`目录下。配置key：
