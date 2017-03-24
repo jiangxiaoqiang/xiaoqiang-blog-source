@@ -23,4 +23,10 @@ YouTube是全球最大的视频分享网站，内容五花八门，地铁的地�
 
 #### 下载
 
-将视频下载到本地是终极的解决方案，彻底告别卡顿。可以登录网站`www.savefrom.net`，直接将视频地址复制到网站的搜索框中下载，也可以安装网站的插件。
+将视频下载到本地是终极的解决方案，彻底告别卡顿。可以登录网站`www.savefrom.net`，直接将视频地址复制到网站的搜索框中下载，也可以安装网站的插件。发现了一个下载Youtube视频的工具：youtube-dl(youtube downloader)，项目托管在Github上，是用Python写的脚本。一共有2W+的Star，500+的Contributor，直到最近都还有更新。以前已经安装，使用如下命令升级：
+
+```shell
+sudo -H pip install --upgrade youtube-dl
+```
+
+
