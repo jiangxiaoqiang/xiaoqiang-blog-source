@@ -80,4 +80,8 @@ Vimium is an open source Google Chrome Extension which provides keyboard short-c
 
 最近在研究项目的前端部分，有时候修改了一下前端网页需要刷新一下浏览器，每次手动刷新，甚是麻烦。可以安装一个自动刷新Google Chrome页面的插件[Super Auto Refresh](https://chrome.google.com/webstore/detail/kkhjakkgopekjlempoplnjclgedabddk/reviews)，省去了重复手动刷新页面的烦恼。当然最理想的状态是能够像Browsersync那样即时刷新即时生效，但是可能和Webpack冲突，有时间后再行研究。
 
+#### Json格式化
+
+Json格式化有许多在线格式化的工具，但是始终感觉不是很方便，需要打开网页，复制Json，步骤比较多。Google Chrome有一款叫做JsonViewer的插件，可以直接格式化Json，当检测到输出内容是Json时，自动格式化并高亮显示。
+
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
