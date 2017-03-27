@@ -60,20 +60,44 @@ http://172.30.0.110:28080/
 针对目前程序部署拷贝需要输入许多重复的命令，可以考虑在服务器上编写一个shell脚本，通过ansible控制脚本运行。脚本做的动作就是停止当前网站，备份当前网站的程序，从远程主机（此处的远程主机指的是程序员的开发机器）上获取最新的程序，启动程序。相应的实现回滚功能。只需要执行一条Ansible命令即可。
 
 ```shell
-#!/usr/bin/env bash
+#!/bin/sh
 
 #
-#
-# 编译本地项目并拷贝到服务器
-#
-# 运行服务器执行部署脚本（停止服务，备份项目，替换文件，启动服务）
+# 一键部署前端项目到远程1台或多台服务器(欢迎改进)
+# 发布流程为：编译构建-打包-发布包-拷贝包到指定目录-解压包
+# 注：本机需要安装Ansible并与服务器做免密登录
 #
 
-```
+# send=`date '+%Y-%m-%d %H:%M:%S'`
+CURRENT_TIME=`date '+%Y%m%d%H%M%S'`
 
-Ansible远程执行命令：
+echo "$CURRENT_TIME"
 
-```shell
-ansible 127.0.0.1 -m command -a 'hostname'
-ansible testhost -m shell -a 'w'
+echo "开始构建..."
+# Build project
+npm run site-dev
+npm run build
+
+echo "开始打包..."
+# Package project
+rm -rf dist.tar.gz
+tar zcf dist.tar.gz dist
+
+echo "开始拷贝..."
+# publish project
+scp dist.tar.gz root@139.23.24.22:~/app-soft
+
+ansible webservers -m command -a "date"
+
+echo "备份站点..."
+# 备份当前站点
+ansible webservers -m command -a "mv /opt/app/frontend/dist /opt/app/frontend/dist-$CURRENT_TIME"
+
+ansible webservers -a "mv /opt/app/frontend/dist.tar.gz /opt/app/frontend/dist.tar.gz.bak"
+
+ansible webservers -a "mv ~/app-soft/dist.tar.gz /opt/app/frontend/"
+
+#部署
+ansible webservers -a "tar -xzvf /opt/app/frontend/dist.tar.gz -C /opt/app/frontend/"
+echo "部署完成"
 ```
