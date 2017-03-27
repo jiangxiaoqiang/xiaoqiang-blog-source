@@ -13,7 +13,6 @@ React 起源于 Facebook 的内部项目，因为该公司对市场上所有 Jav
 
 React 的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。从最早的UI引擎变成了一整套前后端通吃的 Web App 解决方案。衍生的 React Native 项目，目标更是宏伟，希望用写 Web App 的方式去写 Native App。如果能够实现，整个互联网行业都会被颠覆，因为同一组人只需要写一次 UI ，就能同时运行在服务器、浏览器和手机。
 
-<<<<<<< HEAD
 #### Redux流程
 
 Redux流程如下图所示：
@@ -39,26 +38,20 @@ Redux流程如下图所示：
 
 ```javascript
 @connect(
-    (state => state),
+    ({dashboard, article}) => ({
+        dashboard,
+        article
+    }),
     dispatch => ({
-        globalService: bindActionCreators(globalService, dispatch),
-        xzcfService: bindActionCreators(xzcfService, dispatch), 
-        redBlackService:bindActionCreators(redBlackService,dispatch),
         TYPES,
+        dashboardService: bindActionCreators(dashboardService, dispatch),
+        articleService: bindActionCreators(articleService, dispatch),
         dispatch
     })
 )
 ```
+connect将React组件与Redux的store连接起来。如上代码所示，dashboard与article为store，dashboardService为React的组件。Redux 本身提供了 bindActionCreators 函数，来将 action 包装成直接可被调用的函数。每个 action.type 的 case (A/B/C)，都有一个专门对应的数据处理函数 (handleA/handleB/handleC)，处理完之后返回新的 state 即可。原本的 reducer(state, action) 模式，我们用 createStore(reducer, initialState) 转换成 store.dispatch(action)，现在发现还不够，怎么做？再封装一层呗，这就是函数式思想的体现，通过反复组合，将多参数模式，转化为单参数模式。
 
-
-
-
-
-
-
-http://repox.gtan.com:8078
-
-=======
 #### constructor
 
 the constructor of a React component is executed once the first time the component is mounted, or instantiated. It is never called again in subsequent renders.Typically the constructor is used to set-up a component's internal state, for example:

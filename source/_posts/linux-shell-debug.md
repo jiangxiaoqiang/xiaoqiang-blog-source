@@ -38,7 +38,35 @@ export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_101
 bash -x /usr/bin/gradle
 ```
 
-可以看到脚本运行过程中输出的变量.
+可以看到脚本运行过程中输出的变量.如果脚本太长，可以在`.bash_profile`中设置如下的环境变量，打印出脚本的行号：
+
+```shell
+export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
+# 使环境变量生效
+. .bash_profile
+```
+
+在设置环境变量之后不要忘记执行`. .bash_profile`命令。
+
+#### 调试部分脚本
+
+
+
+#### 日志输出
+
+定义日志输出的函数：
+
+```shell
+# 
+_log() {
+    if [ "$_DEBUG" == "true" ]; then
+        echo 1>&2 "$@"
+    fi
+}
+```
+
+
+
 
 参考资料:
 
