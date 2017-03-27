@@ -15,6 +15,39 @@ du -alh
 
 <!-- more -->
 
+#### find命令
+
+find命令主要用于文件的查找。再当前目录下查找.txt和.pdf文件：
+
+```shell
+find . \( -name "*.txt" -o -name "*.pdf" \) -print
+```
+-o参数表示或者(or)的含义。其他的还包括-a，表示而且(and)的含义。-not,相反的含义。正则方式查找：
+
+```shell
+find . -regex  ".*\(\.txt|\.pdf\)$"
+```
+
+
+
+#### history命令
+
+history命令可以查看shell的历史命令记录，shell默认保存的历史命令为1000条，验证此说法只需要打开`.bash_history`文件查看即可，如果计算机使用的时间足够长，那么最多有1000行命令记录。注销系统时，terminal会将所有的历史命令写入`.bash_history`文件。要修改历史命令保存的数量，如果需要排查用户执行的命令，也可以记录下命令执行时间等。
+
+```shell
+# 在.bash_history中保存命令的记录总数
+HISTFILESIZE=10000
+# history命令输出的记录总数
+HISTSIZE=10000
+HISTTIMEFORMAT='%F %T'
+export HISTTIMEFORMAT
+```
+
+history命令可以查看shell的历史命令记录，shell默认保存的历史命令为1000条，验证此说法只需要打开`.bash_history`文件查看即可，如果计算机使用的时间足够长，那么最多有1000行命令记录。注销系统时，terminal会将所有的历史命令写入
+
+history命令可以查看shell的历史命令记录，shell默认保存的历史命令为1000条，验证此说法只需要打开`.bash_history`文件查看即可，如果计算机使用的时间足够长，那么最多有1000行命令记录。注销系统时，terminal会将所有的历史命令写入
+
+
 #### ls命令
 
 ```shell

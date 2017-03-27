@@ -23,6 +23,8 @@ SSH之所以能够保证安全，原因在于它采用了公钥加密。过程�
 ssh-keygen -t rsa
 ```
 
+-t参数指定创建的key的类型(type)，可选的类型有dsa、 ecdsa、 ed25519、 rsa、 rsa1。
+
 生成RSA公钥和私钥。将生成的"id_rsa.pub"追加（这里切记是追加，不是覆盖）到授权的key里面去。这样的效果是实现了当前用户无密SSH登陆到自己：
 
 ```Bash

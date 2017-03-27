@@ -1,16 +1,20 @@
 ---
-title: minidlna-file-share
+title: MiniDLNA文件共享
 date: 2017-03-01 15:52:54
 tags:
+- MiniDLNA
+categories: Tool
 ---
 
 MiniDLNA is server software with the aim of being fully compliant with DLNA(Digital Living Network Alliance)/UPnP clients. The MiniDNLA daemon serves media files (music, pictures, and video) to clients on a network. Example clients include applications such as totem and xbmc, and devices such as portable media players, smartphones, and televisions.MiniDLNA is a simple, lightweight alternative to MediaTomb, but has fewer features. It does not have a web interface for administration and must be configured by editing a text file.
 
 <!-- more -->
 
+在Raspberry Pi上下载文件完毕后，想直接通过局域网中的电脑直接播放Raspberry Pi上的媒体文件，不用再将文件拷贝到本地播放。其实再这里Raspberry Pi就是一个文件缓存服务器，可以解决视频卡顿的问题。这个任务可以使用MiniDLNA来完成，DLNA服务器搭建完毕后，就可以直接通过VLC播放Raspberry Pi上的内容了。在手机、PAD、Mac PC、Linux PC、Windows PC、高清电视上都可以播放Raspberry Pi上的内容，不用再将文件拷贝到各个设备上。
+
 #### 安装
 
-在Fedora 24下，输入如下命令安装：
+输入如下命令安装：
 
 ```shell
 sudo dnf install -y minidlna
@@ -80,3 +84,4 @@ ExecStart=/usr/sbin/minidlnad -S
 [Install]
 WantedBy=multi-user.target
 ```
+

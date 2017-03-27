@@ -113,7 +113,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 `Ctr + w + h`光标focus左侧树形目录，ctrl+w+l 光标focus右侧文件显示窗口。多次摁 ctrl+w，光标自动在左右侧窗口切换。输入:q回车，关闭光标所在窗口
 
 
-
 | 命令           | 作用                        |
 | ------------ | ------------------------- |
 | Ctrl + w + h | 光标focus左侧树形目录              |
