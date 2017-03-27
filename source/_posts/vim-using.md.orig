@@ -114,12 +114,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 `Ctr + w + h`光标focus左侧树形目录，ctrl+w+l 光标focus右侧文件显示窗口。多次摁 ctrl+w，光标自动在左右侧窗口切换。输入:q回车，关闭光标所在窗口
 
 
-
 | 命令           | 作用                        |
 | ------------ | ------------------------- |
 | Ctrl + w + h | 光标focus左侧树形目录              |
 
 如果需要搜索文件，直接在树形目录的Tab页输入斜杠命令后键入搜索关键字即可。
+<<<<<<< HEAD
+=======
 
 #### 全文搜索
 
@@ -141,3 +142,4 @@ VIM原生提供了强大的全文搜索命令，搜索命令的语法为：
 # 在当前目录以及子目录下的md(Markdown)文件中搜索以ssh开头的文件
 :vim /^ssh\>/ **/*.md
 ```
+>>>>>>> 7af4f3951ad983dc4e6192c44cd37851aab3c237

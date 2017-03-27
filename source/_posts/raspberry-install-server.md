@@ -10,6 +10,8 @@ categories: Equipment
 
 ###  Transmission
 
+Transmission支持DHT、Magnet Link、uTP以及PEX等特性。尤其是支持Magnet Link磁力链接下载十分重要，因为目前网上很多资源都是采用这种方式来分享的，而不是传统的.torrent文件，例如TPB、BTDigg。
+
 #### 安装Transmission
 
 <!-- more -->
@@ -45,7 +47,7 @@ sudo transmission-cli torrentfilename.torrent
 
 #### 使用Transmission下载
 
-安装完毕后，需要修改配置文件`/etc/transmission-daemon/settings.json`，此处transmission的版本是Transmission 2.84 (14307)。将rpc-whitelist修改为：192.168.1.*，表示在192.168.1.网段的计算机都可以访问，注意如果要在局域网内其他计算机登陆，一定要修改此字段。修改的时候要停止transmission。
+安装完毕后，需要修改配置文件`/etc/transmission-daemon/settings.json`，此处transmission的版本是Transmission 2.84 (14307)。将rpc-whitelist修改为：192.168.1.*，表示在192.168.1.网段的计算机都可以访问，注意如果要在局域网内其他计算机登陆，一定要修改此字段。修改的时候要停止transmission-daemon，否则编辑后又会被自动改回原来未编辑状态。
 
 ```json
 # 允许某一网段的IP登陆RPC

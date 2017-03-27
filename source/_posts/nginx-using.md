@@ -74,6 +74,14 @@ sudo /usr/sbin/nginx -s reload
 /usr/local/nginx/sbin/nginx -h
 ```
 
+#### rewrite
+
+```shell
+location /main {
+        root   /home/hldev/hldata/frontend/credit-system-frontend/dist;
+        rewrite ^/(?!js|css).*$ /main/index.html break;
+}
+```
 
 #### location
 
