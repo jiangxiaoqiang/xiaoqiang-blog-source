@@ -101,3 +101,11 @@ ansible webservers -a "mv ~/app-soft/dist.tar.gz /opt/app/frontend/"
 ansible webservers -a "tar -xzvf /opt/app/frontend/dist.tar.gz -C /opt/app/frontend/"
 echo "部署完成"
 ```
+
+常用命令：
+
+```shell
+# 切換遠程目錄，並執行腳本a.sh
+ansible host_1 -a 'chdir=/usr/local/src bash ./a.sh'
+```
+
