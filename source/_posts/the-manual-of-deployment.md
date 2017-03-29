@@ -102,10 +102,10 @@ ansible webservers -a "tar -xzvf /opt/app/frontend/dist.tar.gz -C /opt/app/front
 echo "部署完成"
 ```
 
-常用命令：
+Ansible常用命令：
 
 ```shell
 # 切換遠程目錄，並執行腳本a.sh
-ansible host_1 -a 'chdir=/usr/local/src bash ./a.sh'
+ansible webservers -a 'chdir=/usr/local/src bash ./a.sh'
 ```
 

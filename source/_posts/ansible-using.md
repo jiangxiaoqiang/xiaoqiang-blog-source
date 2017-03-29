@@ -57,4 +57,8 @@ hosts后面根据local是从hosts中读取的，tasks是是关键词，指明了
 
 
 
+##### is not file or directory
+
+在Ansibel中不能直接执行cd命令，需要使用chdir命令：
+
 

@@ -6,6 +6,8 @@ tags:
 categories: Tool
 ---
 
+对Google Chrome缓存的一些总结。
+
 #### 文件缓存
 
 <!-- more -->
