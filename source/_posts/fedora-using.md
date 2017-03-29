@@ -48,6 +48,8 @@ ifconfig表示Interface Configuration.一般Linux，在`/etc/sysconfig/network-s
 | ----------------- |:-------------:|
 | Windows + Space   | 切换输入法 |
 | Ctrl + Alt + Tab | 切换键盘焦点 |
+| Window + V | Verbose,显示Fedora的通知窗口 |
+| Window + S | 平铺所有已经打开的窗口 |
 
 #### 安装MPlayer
 
