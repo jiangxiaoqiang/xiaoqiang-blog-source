@@ -37,16 +37,19 @@ Redux流程如下图所示：
 
 ```javascript
 @connect(
-    (state => state),
+    ({dashboard, article}) => ({
+        dashboard,
+        article
+    }),
     dispatch => ({
-        globalService: bindActionCreators(globalService, dispatch),
-        xzcfService: bindActionCreators(xzcfService, dispatch), 
-        redBlackService:bindActionCreators(redBlackService,dispatch),
         TYPES,
+        dashboardService: bindActionCreators(dashboardService, dispatch),
+        articleService: bindActionCreators(articleService, dispatch),
         dispatch
     })
 )
 ```
+connect将React组件与Redux的store连接起来。如上代码所示，dashboard与article为store，dashboardService为React的组件。Redux 本身提供了 bindActionCreators 函数，来将 action 包装成直接可被调用的函数。每个 action.type 的 case (A/B/C)，都有一个专门对应的数据处理函数 (handleA/handleB/handleC)，处理完之后返回新的 state 即可。原本的 reducer(state, action) 模式，我们用 createStore(reducer, initialState) 转换成 store.dispatch(action)，现在发现还不够，怎么做？再封装一层呗，这就是函数式思想的体现，通过反复组合，将多参数模式，转化为单参数模式。
 
 #### constructor
 

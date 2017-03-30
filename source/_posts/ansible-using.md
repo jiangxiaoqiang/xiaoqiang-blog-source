@@ -40,8 +40,10 @@ ansible webservers -vvv -m command -a date
 
 #### Playbook
 
+playbook就是把在命令行的操作，以yml格式写在文件中来执行而已。复杂的playbook只是更多的命令行操作的集合。
+
  ```shell
- #
+#
 # 自动化部署Playback脚本
 #
 ---
@@ -54,7 +56,7 @@ tasks:
     shell: 'mv /opt/app/frontend/dist /opt/app/frontend/dist-bak'
   - name: back up tar
     shell: 'mv /opt/app/frontend/dist.tar.gz /opt/app/frontend/dist.tar.gz.bak'
- ```  
+ ```
 
 hosts后面根据local是从hosts中读取的，tasks是是关键词，指明了要执行哪些任务；下面的name是任务的名称，shell是前面提到的module(模块)，单引号中是命令。
 
@@ -62,10 +64,10 @@ hosts后面根据local是从hosts中读取的，tasks是是关键词，指明了
 
 ##### Unreachable
 
-
+Ansible下的Host文件添加主机配置，包括主机的IP、使用的端口配置、登录的用户名等。
 
 ##### is not file or directory
 
-在Ansibel中不能直接执行cd命令，需要使用chdir命令：
+在Ansibel中不能直接使用command模块执行cd命令，command模块中改变目录需要使用chdir命令：
 
 

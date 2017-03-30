@@ -102,6 +102,52 @@ ansible webservers -a "tar -xzvf /opt/app/frontend/dist.tar.gz -C /opt/app/front
 echo "部署完成"
 ```
 
+同理，后端项目的脚本：
+
+```shell
+#!/usr/bin/env bash
+
+#
+# 一键部署后端项目到远程1台或多台服务器(欢迎改进)
+# 发布流程为：编译构建-打包-发布包-拷贝包到指定目录-解压包
+# 注：本机需要安装Ansible并与服务器做免密登录
+#
+
+# send=`date '+%Y-%m-%d %H:%M:%S'`
+CURRENT_TIME=`date '+%Y%m%d%H%M%S'`
+PROGRAM_PATH="/opt/app/backend"
+echo "$CURRENT_TIME"
+
+echo "开始构建..."
+# Build project
+./gradlew -p cc-web-boot -x test build
+./gradlew -p cc-etl-sechedule -x test build
+
+echo "开始拷贝..."
+# publish project
+scp cc-web-boot/build/libs/credit-system-web-boot-1.0.0.jar root@59.214.215.6:~/app-soft/
+
+ansible webservers -m command -a "date"
+
+echo "停止站点..."
+ansible webservers -m command -a "chdir=/opt/app/backend bash ./stop.sh"
+
+echo "等待站点停止..."
+sleep 10
+
+echo "备份站点..."
+# 备份当前站点
+ansible webservers -m command -a "mv /opt/app/backend/credit-system-web-boot-1.0.0.jar /opt/app/backend/credit-system-web-boot-1.0.0.jar-$CURRENT_TIME"
+
+echo "拷贝新文件..."
+ansible webservers -a "mv ~/app-soft/credit-system-web-boot-1.0.0.jar /opt/app/backend/"
+
+echo "启动站点..."
+ansible webservers -a "chdir=/opt/app/backend bash ./start.sh"
+
+echo "部署完成"
+```
+
 Ansible常用命令：
 
 ```shell
