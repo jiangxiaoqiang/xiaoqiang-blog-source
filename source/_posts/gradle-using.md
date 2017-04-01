@@ -100,7 +100,7 @@ gradle -p cc-web-boot bootRun
 gradle properties
 ```
 
-其中allprojects表示所有的Project，在多项目构建中，它将包含多个Project；buildDir表示构建结果的输出目录。
+其中allprojects表示所有的Project，在多项目构建中，它将包含多个Project；buildDir表示构建结果的输出目录。如果需要刷新缓存，那么需要在构建命令后添加参数`--refresh-dependencies`，在命令行中刷新缓存有一个好处就是可以看到文件下载的进度和速度，如果在Intellij Idea中刷新是无法看到的。
 
 #### 构建(build)
 
