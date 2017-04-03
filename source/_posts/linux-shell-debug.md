@@ -1,5 +1,5 @@
 ---
-title: Linux Shell脚本调试
+title: Linux Shell脚本
 date: 2017-01-08 16:29:26
 tags:
 - Shell
@@ -7,9 +7,17 @@ tags:
 categories: Programming
 ---
 
-在Ubuntu 14.04下安装Gradle之后,提示如下错误:
+在Linux中，shell脚本能够帮助我们快速的完成指定的任务。
 
 <!-- more -->
+
+#### 错误处理
+
+使用`set -u`，当使用未初始化的变量时，让bash自动退出。你写的每一个脚本的开始都应该包含set -e。这告诉bash一但有任何一个语句返回非真的值，则退出bash。使用-e的好处是避免错误滚雪球般的变成严重错误，能尽早的捕获错误。
+
+#### 脚本调试
+
+在Ubuntu 14.04下安装Gradle之后,提示如下错误:
 
 ```
 # gradle

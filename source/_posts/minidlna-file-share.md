@@ -57,6 +57,29 @@ sudo update-rc.d minidlna defaults
 
 {% asset_img upnp-media.png 播放Raspberry Pi媒体文件%}
 
+#### 權限控制
+
+有時想讓某些內容需要授權才能夠查看，比如自己的豔照什麼的。那麼就需要權限限制啦，在 Linux 上, 利用 MAC address 来过滤封包的程序叫作 ebtables.
+
+```shell
+sudo apt-get install ebtables -y
+```
+
+ebtables 用起来很像 iptables, 不同的地方在于他是作用在较低阶的链路层(link layer). 
+
+```shell
+sudo ebtables -N dlna -P DROP
+sudo ebtables -A INPUT -p IPv4 --ip-proto tcp --ip-destination-port 8200 -j dlna
+```
+
+接著把设备的 MAC address 加进 dlna chain 中, 并且设定为接受封包:
+
+```
+sudo ebtables -A dlna -s XX:XX:XX:XX:XX:XX -j ACCEPT
+```
+
+这么一来就只有已登记 MAC address 的设备可以看到 server 上的媒体了。
+
 #### 常见问题
 
 ##### Media directory not accessible

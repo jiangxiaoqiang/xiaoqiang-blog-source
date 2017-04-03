@@ -89,6 +89,14 @@ sudo -i passwd root
 
 输入root的密码即可.其中-i参数表示--login的含义.Run the shell specified by the target user's password database entry as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.If a command is specified, it is passed to the shell for execution via the shell's -c option.  If no command is specified, an interactive shell is executed.  sudo attempts to change to that user's home directory before running the shell.  The command is run with an environment similar to the one a user would receive at log in.
 
+#### 选择剪切板内容
+
+在Ubuntu下按下`Ctrl + ；`快捷键，可以调出剪切板最近的内容，如下图所示：
+
+{% asset_img ubuntu-paste.png Ubuntu选择剪贴板内容粘贴%}
+
+接着按下相应的数字即可粘贴剪贴板中相应的内容。
+
 #### 设置截屏快捷键
 
 在安装好了Shutter之后，每次截取屏幕都需要打开Shutter，点击Selection按钮。其实可以配置截屏的快捷键，就像QQ的`Ctrl + Alt + A`一样。如下图所示：

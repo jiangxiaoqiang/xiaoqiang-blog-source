@@ -22,7 +22,7 @@ date: 2016-10-08 13:46:41
 
 #### JRebel for IntelliJ(Commercial)
 
-JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。针对jar形式的开发，需要手动配置热替换代码的快捷键。
+JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。针对jar形式的开发，需要手动配置热替换代码的快捷键，这里配置的是`Ctrl + \`。
 
 ##### 激活
 
