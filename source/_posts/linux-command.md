@@ -120,3 +120,24 @@ hldev@hldev-100:~/hldata/backend/credit-system$ dirs -v
 ```
 
 切换到压入栈中指定的目录只需要输入`pushd +N(pushd +2)`即可，N代表栈的编号。删除栈中的数据使用popd命令即可。
+
+#### 判斷是否存在
+
+```shell
+myFile="/opt/app/backend/app.id"
+# 这里的-f参数判断$myFile是否存在 
+if [ ! -f "$myFile" ]; then 
+	# 文件不存在
+	touch "$myFile" 
+fi
+
+# 判斷進程是否存在
+process=`ps aux | grep mysqld | grep -v grep`;
+if [ "$process" == "" ]; then
+    sleep 1;
+    echo "no process";
+else
+	echo "process exsits";
+	break;
+fi
+```
