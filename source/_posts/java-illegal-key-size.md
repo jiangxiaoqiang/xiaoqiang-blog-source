@@ -32,7 +32,7 @@ return base64.encodeToString(encrypted);
 
 #### 發現問題產生原因
 
-一说要替换local_policy.jar和US_export_policy.jar文件，替换了同样报错。經過反覆的嘗試，發現在本地运行此程序正常，在服务器上通过脚本启动程序正常，但是通过Ansible远程启动异常。所以想看看本地啓動程序和遠程啓動程序時，執行環境有何區別，在終端中用jps(Java Process)命令查看此計算機所有Java程序的PID，在終端中使用`jinfo pid`命令查看目標程序執行參數和運行環境时，提示如下错误：
+一说要替换local_policy.jar和US_export_policy.jar文件，替换了同样报错(實際替換是可以解決問題的，只是替換的位置不對，後面會提到)。經過反覆的嘗試，發現在本地运行此程序正常，在服务器上通过脚本启动程序正常，但是通过Ansible远程启动异常。所以想看看本地啓動程序和遠程啓動程序時，執行環境有何區別，在終端中用jps(Java Process)命令查看此計算機所有Java程序的PID，在終端中使用`jinfo pid`命令查看目標程序執行參數和運行環境时，提示如下错误：
 
 ```
 Error attaching to process: sun.jvm.hotspot.runtime.VMVersionMismatchException: Supported versions are 25.111-b14. Target VM is 25.101-b13
@@ -104,7 +104,7 @@ nohup /opt/app/local/jdk1.8.0_111/bin/java -Xmx8192M -Xms4096M -jar -Xdebug -Xru
 
 ##### non-interactive non-login shell
 
-這裏遠程執行命令即屬於非登錄、非交互模式。对于这种模式而言，它会去寻找环境变量`BASH_ENV`，将变量的值作为文件名进行查找，如果找到便加载它。`BASH_ENV`環境變量保存一個Bash啓動文件路徑，當啓動一個腳本程序時會去讀取該變量指定的文件。
+這裏遠程執行命令即屬於非登錄、非交互模式。对于这种模式而言，它会去寻找环境变量`BASH_ENV`，将变量的值作为文件名进行查找，如果找到便加载它。`BASH_ENV`環境變量保存一個Bash啓動文件路徑，當啓動一個非交互非登錄會話時會去讀取該變量指定的文件。
 
 參考資料：
 
