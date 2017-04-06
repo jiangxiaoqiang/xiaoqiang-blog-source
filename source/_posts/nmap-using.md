@@ -6,6 +6,15 @@ categories: Programming
 date: 2017-02-23 13:43:26
 ---
 
+#### 安装
+
+```shell
+# 在Ubuntu下安装
+sudo apt install nmap -y
+# 安装图形界面
+sudo apt install zenmap -y
+```
+
 #### 查看指定端口的状态
 
 有时我们想查看服务器具体的某一个端口是否UP，可以通过扫描实现。但是还有一种更加节省时间的方法，例如想查看凤凰网的80端口是否开启，可以输入如下命令：
