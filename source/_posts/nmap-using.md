@@ -41,3 +41,9 @@ nmap -A -T4 192.168.1.2
 # 操作系统侦测,O表示Operation System
 sudo nmap -O 192.168.1.2
 ```
+#### GUI
+
+```shell
+# 在Fedora下安装Zenmap客户端
+rpm -vhU https://nmap.org/dist/zenmap-7.40-1.noarch.rpm
+```
