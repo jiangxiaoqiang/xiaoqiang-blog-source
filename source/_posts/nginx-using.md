@@ -137,12 +137,74 @@ statically from the source with nginx by using --with-pcre=<path> option.
 安装pcre-devel与openssl-devel解决问题：
 
 ```Bash
-yum -y install pcre-devel openssl openssl-devel
+sudo yum -y install pcre-devel openssl openssl-devel
  
 ./configure --prefix=/usr/local/nginx
 make
 make install
 ```
+
+##### error while loading shared libraries: libpcre.so.0: cannot open shared object file: No such file or directory
+
+在使用命令`nginx -s reload`刷新时提示错误：
+
+```
+error while loading shared libraries: libpcre.so.0: cannot open shared object file: No such file or directory
+```
+
+执行命令：
+
+```shell
+ldd which /usr/local/nginx/sbin/nginx
+```
+
+提示如下：
+
+```
+nginx:
+        linux-vdso.so.1 =>  (0x00007ffd71300000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fb80682a000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007fb806625000)
+        libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00007fb8063ee000)
+        libpcre.so.0 => not found
+        libssl.so.10 => /lib64/libssl.so.10 (0x00007fb80617f000)
+        libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00007fb805d95000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007fb805b7f000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007fb8057bd000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007fb806a5c000)
+        libfreebl3.so => /lib64/libfreebl3.so (0x00007fb8055ba000)
+        libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00007fb80536c000)
+        libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00007fb805084000)
+        libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00007fb804e80000)
+        libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00007fb804c4e000)
+        libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00007fb804a3e000)
+        libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00007fb80483a000)
+        libresolv.so.2 => /lib64/libresolv.so.2 (0x00007fb804620000)
+        libselinux.so.1 => /lib64/libselinux.so.1 (0x00007fb8043f8000)
+        libpcre.so.1 => /lib64/libpcre.so.1 (0x00007fb804197000)
+```
+
+原因可能是操作系统升级到了CentOS 7.3版本，没有对应的模块libpcre.so.0，只有对应的模块libpcre.so.1。使用如下命令可以快速解决问题：
+
+```shell
+link /usr/lib64/libpcre.so.1 /lib64/libpcre.so.0
+```
+
+##### ERR\_INCOMPLETE\_CHUNKED_ENCODING
+
+进入nginx日志查看：
+
+```
+2017/04/07 18:31:20 [crit] 7928#0: *33 open() "/home/app/local/tengine/proxy_temp/7/00/0000000007" failed (13: Permission denied) while reading upstream, client: 2.1.27.53, server: , request: "GET /pubapi/global/homePage HTTP/1.1", upstream: "http://192.168.1.2:28080/pubapi/global/homePage", host: "192.168.1.2", referrer: "http://192.168.1.2/"
+```
+
+原来是nginx没有目录`/home/app/local/tengine/proxy_temp`权限导致此问题。在配置文件中修改:
+
+```shell
+# user为/home/app/local/tengine/proxy_temp目录的属主
+ser  {user};
+```
+
 
 参考资料：
 

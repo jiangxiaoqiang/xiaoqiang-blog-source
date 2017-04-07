@@ -45,6 +45,11 @@ sudo apt-get remove packagename
 sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
 ```
 
+
+名称  | 开发语言 | 开源协议 |支持的OS | 备注
+---------|----------|-------|--------|------
+ [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知 | Linux/Mac/Windows |  开源的项目管理工具,可生成甘特图
+
 #### 字体
 
 在Ubuntu下一些漂亮的字体记录。
@@ -171,6 +176,15 @@ fi
 | Ctrl + Shift + W |           关闭终端tab           |
 | Ctrl + Shift + E | 在安装了Terminator之后，此快捷键水平分割终端 |
 | Ctrl + Tab       |        在水平分割后的终端之间切换        |
+
+#### Terminator快捷键
+
+| 快捷键              |             作用              |
+| ---------------- | :-------------------------: |
+| Alt+Left  |  Move to the terminal left of the current one(高亮左侧的终端)  |
+| Ctrl+Shift+X |  Toggle between showing all terminals and only showing the current one (maximise)  |
+
+
 
 #### 格式化U盘
 
