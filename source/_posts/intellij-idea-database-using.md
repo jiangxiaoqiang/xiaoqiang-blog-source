@@ -3,7 +3,7 @@ title: Intellij Idea database使用
 date: 2017-04-06 13:21:38
 tags:
 - Intellij Idea
-categories:Tool
+categories: Tool
 ---
 
 

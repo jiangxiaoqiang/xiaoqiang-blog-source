@@ -204,7 +204,7 @@ link /usr/lib64/libpcre.so.1 /lib64/libpcre.so.0
 
 ```shell
 # user为/home/app/local/tengine/proxy_temp目录的属主
-ser  {user};
+user  {user};
 ```
 
 
