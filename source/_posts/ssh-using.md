@@ -54,7 +54,13 @@ ssh -p 22222 hl@192.168.1.101 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~
 PermitRootLogin no
 ```
 
+另外在文件`/var/log/secure`中，可以查看登錄的日誌記錄。
 
+#### 常見問題
+
+##### Authentication refused: bad ownership or modes for file
+
+SSH doesn’t like it if your home or `~/.ssh` directories have group write permissions. Your home directory should be writable only by you, `~/.ssh` should be 700, and authorized_keys should be 600。
 
 
 

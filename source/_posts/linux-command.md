@@ -64,11 +64,15 @@ ls -l|grep ^d
 
 #### scp
 
+scp是Secure Copy的簡稱m,scp的优点是使用简单，缺点是无法列出远端目录和改变目录。在做了免密登錄後，通過tab按鍵可以列出遠程目錄。
+
 ```Bash
 #将本地文件夹上传到服务器
 scp -r /tmp/local_dir username@servername:remote_dir
 # 将服务器文件拷贝到本地
 scp -r pi@192.168.1.113:/var/lib/daemon/GK ./
+# 將遠程服務器文件拷貝到本地，並指定端口是22222
+scp -P 22222 -r pi@192.168.1.113:/var/lib/daemon/GK ./
 ```
 
 #### ss命令
