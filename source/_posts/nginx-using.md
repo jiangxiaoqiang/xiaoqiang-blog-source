@@ -160,7 +160,7 @@ error while loading shared libraries: libpcre.so.0: cannot open shared object fi
 ldd which /usr/local/nginx/sbin/nginx
 ```
 
-提示如下：
+ldd命令用于打印程序或者库文件所依赖的共享库列表(print shared library dependencies)。比如需要看ls命令依賴哪些庫，可以輸入命令`ldd /bin/ls`，注意需要是全路徑。提示如下：
 
 ```
 nginx:
@@ -189,6 +189,7 @@ nginx:
 原因可能是操作系统升级到了CentOS 7.3版本，没有对应的模块libpcre.so.0，只有对应的模块libpcre.so.1。使用如下命令可以快速解决问题：
 
 ```shell
+# ln的功能是为某一个文件在另外一个位置建立一个同步的链接.当我们需要在不同的目录，用到相同的文件时，我们不需要在每一个需要的目录下都放一个必须相同的文件，我们只要在某个固定的目录，放上该文件，然后在 其它的目录下用ln命令链接（link）它就可以，不必重复的占用磁盘空间。這裏是將/lib64/libpcre.so.0鏈接到/lib64/libpcre.so.1，當程序訪問/lib64/libpcre.so.0時，自動訪問/lib64/libpcre.so.1
 link /usr/lib64/libpcre.so.1 /lib64/libpcre.so.0
 ```
 
