@@ -46,6 +46,8 @@ AuthorizedKeysFile .ssh/authorized_keys
 ssh -p 22222 hl@192.168.1.101 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 ```
 
+-p, --parents,如果目录已经存在，不报错，在必要的时候创建父级目录(no error if existing, make parent directories as needed)。
+
 #### 禁止root登錄
 
 在`/etc/ssh/sshd_config`文件中作如下設置：
@@ -55,6 +57,19 @@ PermitRootLogin no
 ```
 
 另外在文件`/var/log/secure`中，可以查看登錄的日誌記錄。
+
+#### 自定义配置
+
+快速连接。在`~/.ssh/config`文件夹下做如下配置：
+
+```shell
+Host aliyun
+    HostName 192.168.1.101
+    User dolphin
+    Port 22222    
+```
+
+配置完毕后，字节输入`ssh aliyun`命令即可登录。
 
 #### 常見問題
 
