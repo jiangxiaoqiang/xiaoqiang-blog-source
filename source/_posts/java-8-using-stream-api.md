@@ -53,3 +53,25 @@ deviceNumbers= new HashSet<>(Arrays.asList(deviceNumbers)).toArray(new String[0]
 ```Java
 List<CreditDocument> xzxkList = creditDocuments.stream().filter(a -> a.getInfoType() == 1).collect(Collectors.toList());
 ```
+
+#### Map
+
+`map()`用于映射，遍历原stream中的元素，转换后构成新的stream。它的作用就是把 input Stream 的每一个元素，映射成 output Stream 的另外一个元素。
+
+```java
+List<String> accountAndPasswordList = orgService.findList().stream()
+                .filter(org -> org.getParentOrgId() != null && org.getParentOrgId().equals("500001"))
+                .map(org -> {
+                    String password = String.valueOf(Utils$.MODULE$.randomInt(100000, 999999));
+                    if (StringUtils.isNotBlank(org.getOrgName())) {
+                        String account = org.getOrgName() + ".com";
+                        return account + "\t" + password;
+                    } else {
+                        return null;
+                    }
+                })
+                .collect(Collectors.toList());
+```
+
+以上代码取出组织中的指定条件(`org.getParentOrgId().equals("500001")`)数据，最终返回一个String类型的List。
+

@@ -22,7 +22,7 @@ date: 2016-10-08 13:46:41
 
 #### JRebel for IntelliJ(Commercial)
 
-JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。针对jar形式的开发，需要手动配置热替换代码的快捷键。
+JRebel的热部署可以让你修改代码以后不用重新启动项目即可加载效果，即所谓的热部署，可以大大提高开发效率。在IntelliJ Idea->Setting->Plugin->Browse Repositories中，输入JRebel for IntelliJ关键字即可。针对jar形式的开发，需要手动配置热替换代码的快捷键，这里配置的是`Ctrl + \`。
 
 ##### 激活
 
@@ -36,7 +36,9 @@ JRebel激活可以直接到[这里](https://my.jrebel.com),只需要在Facebook�
 
 > "IllegalArgumentException: Bean factory must allow eager class loading"
 
-Spring Boot的版本是1.4.5。在GitHub上浏览到这篇[Issue](https://github.com/spring-projects/spring-boot/issues/8488)，原来是JRebel Plugin for Intellij Idea的Bug，下载了一个[每日构建版本(nightly build)](https://zeroturnaround.com/software/jrebel/download/nightly-build/)替换掉原来安装的发布版本即可正常使用JRebel。
+Spring Boot的版本是1.4.5。在GitHub上浏览到这篇[Issue](https://github.com/spring-projects/spring-boot/issues/8488)，原来是JRebel Plugin for Intellij Idea的Bug，下载了一个[每日构建版本(nightly build)](https://zeroturnaround.com/software/jrebel/download/nightly-build/)替换掉原来安装的发布版本即可正常使用JRebel。安装完毕后，在JRebel->Advance中显示如下图所示的安装信息。
+
+{% asset_img jrebel-daily-build.png JRebel每日构建%}
 
 #### Lombok
 

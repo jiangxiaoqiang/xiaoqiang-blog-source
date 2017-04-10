@@ -6,14 +6,12 @@ tags:
 categories: Programming
 ---
 
-
 React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram的网站。
 
 <!-- more -->
 
 React 的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。从最早的UI引擎变成了一整套前后端通吃的 Web App 解决方案。衍生的 React Native 项目，目标更是宏伟，希望用写 Web App 的方式去写 Native App。如果能够实现，整个互联网行业都会被颠覆，因为同一组人只需要写一次 UI ，就能同时运行在服务器、浏览器和手机。
 
-<<<<<<< HEAD
 #### Redux流程
 
 Redux流程如下图所示：
@@ -39,26 +37,20 @@ Redux流程如下图所示：
 
 ```javascript
 @connect(
-    (state => state),
+    ({dashboard, article}) => ({
+        dashboard,
+        article
+    }),
     dispatch => ({
-        globalService: bindActionCreators(globalService, dispatch),
-        xzcfService: bindActionCreators(xzcfService, dispatch), 
-        redBlackService:bindActionCreators(redBlackService,dispatch),
         TYPES,
+        dashboardService: bindActionCreators(dashboardService, dispatch),
+        articleService: bindActionCreators(articleService, dispatch),
         dispatch
     })
 )
 ```
+connect将React组件与Redux的store连接起来。如上代码所示，dashboard与article为store，dashboardService为React的组件。Redux 本身提供了 bindActionCreators 函数，来将 action 包装成直接可被调用的函数。每个 action.type 的 case (A/B/C)，都有一个专门对应的数据处理函数 (handleA/handleB/handleC)，处理完之后返回新的 state 即可。原本的 reducer(state, action) 模式，我们用 createStore(reducer, initialState) 转换成 store.dispatch(action)，现在发现还不够，怎么做？再封装一层呗，这就是函数式思想的体现，通过反复组合，将多参数模式，转化为单参数模式。
 
-
-
-
-
-
-
-http://repox.gtan.com:8078
-
-=======
 #### constructor
 
 the constructor of a React component is executed once the first time the component is mounted, or instantiated. It is never called again in subsequent renders.Typically the constructor is used to set-up a component's internal state, for example:
@@ -106,11 +98,65 @@ shouldComponentUpdate(object nextProps, object nextState)：组件判断是否�
 
 > Most components can be customized when they are created, with different parameters. These creation parameters are called `props`.
 
-`this.props` 表示那些一旦定义，就不再改变的特性，而 `this.state` 是会随着用户互动而产生变化的特性。`this.props` 对象的属性与组件的属性一一对应，但是有一个例外，就是 `this.props.children` 属性。它表示组件的所有子节点。
+`this.props` 表示那些一旦定义，就不再改变的特性，而 `this.state` 是会随着用户互动而产生变化的特性。`this.props` 对象的属性与组件的属性一一对应，但是有一个例外，就是 `this.props.children` 属性。它表示组件的所有子节点。利用props将数据从父组件传递给子组件。故我们可以利用props，让父组件给子组件通信。故父组件向子组件通信还是很容易实现的。父组件怎么向孙子组件通信呢？可以利用props进行层层传递，使用ES6的...运算符可以用很简洁的方式把props传递给孙子组件。那么子组件怎么向父组件通信呢？其实仍然可以利用props。父组件利用props传递方法给子组件，子组件回调这个方法的同时，将数据传递进去，使得父组件的相关方法得到回调，这个时候就可以把数据从子组件传递给父组件了。父组件将方法传递给子组件：
+
+```javascript
+class UnitedListQuery extends Component {
+    /*父组件中定义returnTotal函数，并接受子组建传递的total参数值*/
+    returnTotal = (total) => {
+        this.count += total;
+        return this.count;
+    };
+
+    renderTablePanels = (signUser, paramsList, creditFormFieldList, creditFormTableList) => {
+        const tableNames = stateQuery.blackTableNames.concat(stateQuery.redTableNames);
+        return tableNames.map(tableName => {                        
+
+            return <UnitedTablePanel signUser={signUser}                                     
+                                     returnTotal={this.returnTotal}//将函数传递给子组件
+                                     key={tableName}/>;
+        });
+    };
+
+    handleDownload = () => {
+        let param = this.state.query.param;
+        let redTableNames = this.state.query.redTableNames;
+        let blackTableNames = this.state.query.blackTableNames;
+        let tableName = redTableNames.concat(blackTableNames).join(',');
+        /*父组件根据不同的数量作不同的业务逻辑处理*/
+        if (this.state.query.param && this.count < 5000) {
+            window.open(`/pubapi/downloadUser?param=${param}&tableName=${tableName}&isPl=0`);
+        } else if (this.count >= 5000) {
+            notification.warn({message: '下载数量不能超过5000条'});
+        }
+    };
+}
+```
+
+如下是子组建通过调用父组件传递的函数，将参数值传递给父组件，从而实现了子组件向父组件通信：
+
+```javascript
+class UnitedTablePanel extends Component {
+    tableDataSource = () => {
+        const creditDocumentPage = this.state.creditDocumentPage;        
+        /*
+        * 子组件调用父组件的方法，并将参数值传递给父组件
+        */
+        this.props.returnTotal(creditDocumentPage.totalElements);
+        return creditDocumentPage.content.map((doc, idx) => {
+            return {
+                ...doc,
+                _xdrNo: doc.xdrShxym || doc.xdrSfz,
+                key: idx
+            }
+        })
+    };
+}
+```
 
 参考资料：
 
 [React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
 
 [Props](https://facebook.github.io/react-native/docs/props.html)
->>>>>>> a925bc4c2ab59b740987dc1ebfb80cdd78036d50
+

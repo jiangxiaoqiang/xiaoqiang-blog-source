@@ -15,7 +15,7 @@ categories: Network
 
 > Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
 
-但是将中文编码作为参数，可以查询。RFC3986文档规定，Url中只允许包含英文字母（a-zA-Z）、数字（0-9）、-_.~4个特殊字符以及所有保留字符。
+但是将中文编码后作为参数传入，则可以成功查询。RFC3986文档规定，Url中只允许包含英文字母（a-zA-Z）、数字（0-9）、-_.~4个特殊字符以及所有保留字符。
 
 ```shell
 curl --data-urlencode "param1=value1&param2=value" http://hostname.com
