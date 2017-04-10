@@ -1,5 +1,5 @@
 ---
-title: ssh-using
+title: ssh使用经验与技巧总结
 date: 2017-04-06 21:49:32
 tags:
 - ssh
@@ -60,7 +60,7 @@ PermitRootLogin no
 
 #### 自定义配置
 
-快速连接。在`~/.ssh/config`文件夹下做如下配置：
+快速连接。在`~/.ssh/`文件夹下新建`config`文件，做如下配置：
 
 ```shell
 Host aliyun
@@ -70,6 +70,14 @@ Host aliyun
 ```
 
 配置完毕后，字节输入`ssh aliyun`命令即可登录。
+
+#### 小技巧
+
+* 在输入ssh命令后，按下tab按键，即可列出所有可能的主机列表
+* 在做了免密登录的情况下使用scp命令拷贝文件时，可以列出远程文件和文件夹的列表
+* 使用自定义ssh的config文件的配置可以快速的连接相应的主机
+
+
 
 #### 常見問題
 
