@@ -16,10 +16,11 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss fail2ban
+texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss fail2ban manpages-posix
 ```
 
 * synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
+* manpages-posix是Ubuntu下的man手冊
 
 
 查看已经安装了哪些软件：
@@ -44,6 +45,11 @@ sudo apt-get remove packagename
 ```shell
 sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "*.md" \) -print
 ```
+
+
+| 名称                                       | 开发语言 | 开源协议 | 支持的OS             | 备注               |
+| ---------------------------------------- | ---- | ---- | ----------------- | ---------------- |
+| [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知   | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图 |
 
 #### 字体
 
@@ -89,7 +95,7 @@ sudo -i passwd root
 
 输入root的密码即可.其中-i参数表示--login的含义.Run the shell specified by the target user's password database entry as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.If a command is specified, it is passed to the shell for execution via the shell's -c option.  If no command is specified, an interactive shell is executed.  sudo attempts to change to that user's home directory before running the shell.  The command is run with an environment similar to the one a user would receive at log in.
 
-#### 选择剪切板内容
+##### 选择剪切板内容
 
 在Ubuntu下按下`Ctrl + ；`快捷键，可以调出剪切板最近的内容，如下图所示：
 
@@ -97,7 +103,7 @@ sudo -i passwd root
 
 接着按下相应的数字即可粘贴剪贴板中相应的内容。
 
-#### 设置截屏快捷键
+##### 设置截屏快捷键
 
 在安装好了Shutter之后，每次截取屏幕都需要打开Shutter，点击Selection按钮。其实可以配置截屏的快捷键，就像QQ的`Ctrl + Alt + A`一样。如下图所示：
 
@@ -114,6 +120,12 @@ fi
 ```
 
 代码的含义是，如果当前目录不在`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`目录下，那么就切换到此目录。下一次打开终端时默认路径即为：`~/document/blogs/jiangxiaoqiang/xiaoqiang-blog-source`
+
+##### 强制kill进程
+
+有时有的界面点击关闭按钮无法关闭，也没有跳出Force Quit的确认窗口，此时就需要使用系统自带的xkill命令了。xkill在Ubuntu中时默认安装的。所以需要配置一个快捷键，使用快捷键激活xkill后，点击相应的窗口即可强制关闭窗口。
+
+{% asset_img xkillshortcut.png xkill快捷键设置 %}
 
 #### 打开程序
 
@@ -171,6 +183,15 @@ fi
 | Ctrl + Shift + W |           关闭终端tab           |
 | Ctrl + Shift + E | 在安装了Terminator之后，此快捷键水平分割终端 |
 | Ctrl + Tab       |        在水平分割后的终端之间切换        |
+
+#### Terminator快捷键
+
+| 快捷键          |                    作用                    |
+| ------------ | :--------------------------------------: |
+| Alt+Left     | Move to the terminal left of the current one(高亮左侧的终端) |
+| Ctrl+Shift+X | Toggle between showing all terminals and only showing the current one (maximise) |
+
+
 
 #### 格式化U盘
 
