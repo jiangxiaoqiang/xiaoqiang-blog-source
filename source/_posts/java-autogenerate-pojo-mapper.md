@@ -13,14 +13,26 @@ categories: Tool
 
 #### MyBatis Generator自动生成
 
-Mybatis Generator用于生成Mybatis的Model、Mapper、Dao持久层代码。虽然现在Mybatis Generator未提供Gradle的插件，不过Gradle可以调用Ant任务，所以Gradle也能使用Mybatis Generator。首先添加依赖：
+Mybatis Generator用于生成Mybatis的Model、Mapper、Dao持久层代码。虽然现在Mybatis Generator未提供Gradle的插件，不过Gradle可以调用Ant任务，所以Gradle也能使用Mybatis Generator。添加一个配置:
+
+```groovy
+configurations {
+    mybatisGenerator
+}
+```
+
+首先添加依赖：
 
 ```groovy
 dependencies {
-    mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'    
+    mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'  
     mybatisGenerator 'tk.mybatis:mapper:3.3.2'
 }
 ```
+
+在build.gradle中，定义一个task，在task里面调用ant
+
+
 
 
 #### Intellij Idea自动生成
