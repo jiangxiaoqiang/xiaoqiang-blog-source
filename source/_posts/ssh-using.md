@@ -6,7 +6,7 @@ tags:
 categories: Tool
 ---
 
-ssh是Scure Shell的簡稱。
+ssh是Scure Shell的簡稱。OpenSSH 服务，是 Telnet 的安全替代产品。
 
 <!-- more -->
 

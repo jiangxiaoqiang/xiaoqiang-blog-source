@@ -50,6 +50,7 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 | 名称                                       | 开发语言 | 开源协议 | 支持的OS             | 备注               |
 | ---------------------------------------- | ---- | ---- | ----------------- | ---------------- |
 | [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知   | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图 |
+| [Typora](https://typora.io/) | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
 
 #### 字体
 
