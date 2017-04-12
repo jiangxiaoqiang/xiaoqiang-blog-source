@@ -47,10 +47,10 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 ```
 
 
-| 名称                                       | 开发语言 | 开源协议 | 支持的OS             | 备注               |
-| ---------------------------------------- | ---- | ---- | ----------------- | ---------------- |
-| [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知   | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图 |
-| [Typora](https://typora.io/) | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
+| 名称                                       | 开发语言           | 开源协议    | 支持的OS             | 备注                  |
+| ---------------------------------------- | -------------- | ------- | ----------------- | ------------------- |
+| [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java           | 未知      | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图    |
+| [Typora](https://typora.io/)             | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
 
 #### 字体
 
@@ -61,6 +61,24 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 | Latin Modern Mono 10  Regular | 目前终端采用的这种字体                              |
 | Courier                       | Courier是一个等宽的粗衬线字体，主要是依据打字机所打印出来的字形来设计，于1955年由Howard "Bud" Kettler设计完成。原来的Courier字体是IBM公司在1950年代设计给打印机使用的字体，但是并未维护他们的专利，使得这个字型成为整个打字机制造业的标准。 |
 | Monospace                     | 等宽字体（英语：Monospaced Font）是指字符宽度相同的电脑字体。与此相对，字符宽度不尽相同的电脑字体称为比例字体。 |
+
+#### 目錄說明
+
+| 目錄名稱      | 说明                                       |
+| --------- | ---------------------------------------- |
+| /bin      | 裏面存放有基礎的命令二進制文件，即使`/usr/bin`沒有掛載，也保障一些基礎的命令可用，包含bash\cp\dmesg\less\more等等150多個命令(`ls -l|grep "^-"|wc -l`)，發現其實命令也還不算太多，也許用過的命令也就一半多一點 |
+| /dev      | 設備文件，linux中一切設備即文件                       |
+| /etc      | 存放系統所有重要的配置文件                            |
+| /home     | 用戶的家目錄                                   |
+| /lib      | 基礎的系統庫，和內核模塊(kernel module)，佔用空間最大的是內核模塊modules文件夾，使用命令`du -ah --max-depth=1`查看， `-a`，显示所有的文件和目录，而不仅仅显示目录。 |
+| /root     | 超級管理員的家目錄                                |
+| /sbin     | 系統管理員使用的基礎的二進制文件                         |
+| /tmp      | 系統級的臨時文件存放目錄                             |
+| /usr/bin  | 用戶使用的二進制文件                               |
+| /usr/lib  | 非系統級的庫文件                                 |
+| /usr/sbin | 非基礎性的二進制文件                               |
+| /var      | 可變數據，比如日誌等等                              |
+
 
 #### 小技巧
 
