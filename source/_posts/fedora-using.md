@@ -67,6 +67,22 @@ Codename:	Core
 | Window + V       | Verbose,显示Fedora的通知窗口 |
 | Window + S       |      平铺所有已经打开的窗口      |
 
+#### 訪問Windows共享文件夾
+
+首先，需要在Linux端安裝Samba-Common和Samba-Client包。創建windows共享文件夾，假如共享文件夾的名字是Share，用戶名是dolphin。在Fedora下，使用如下命令訪問共享文件夾：
+
+```shell
+smbclient -L //192.168.1.101/Share -U dolphin
+```
+
+之後可以使用get命令下載文件，使用put命令上傳文件。也可以使用如下命令直接掛載文件夾：
+
+```shell
+mount -t cifs //192.168.1.101/Share mytest -o username=dolphin,password=123456
+```
+
+其中cifs是通用网际文件系统(Common Internet File System)的縮寫。这个工具是 samba软件包的一部分。mount.cifs 用于挂载 CIFS 文件系统。它通常由使用"-t cifs"选项的 mount命令间接调用。这个命令只能在支持 CIFS 文件系统的Linux内核上使用。CIFS 协议是 SMB 协议的替代版本，它被包括 Windows 在内的几乎所有操作系统所以及 NAS(Network Attached Storage)应用和Samba服务器所支持。mount.cifs 可以将 service 表示的 UNC 名称挂载到本地的 mount-point 挂载点上。       service 使用 //server/share 语法，其中的"server"是主机名或者 IP 地址，而 "share" 是共享名。mount.cifs 的选项是用逗号分隔的 key=value 列表。除了下面列出的选项外，还可以使用其他选项，只要 cifs 文件系统内核模块(cifs.ko)支持即可。       不能被 cifs 文件系统内核模块(cifs.ko)识别的选项将会被记录到内核日志中。mount.cifs 将会启动一个名为 cifsd 的进程，并保持运行直到该资源被卸载(通常是通过 umount 工具)。
+
 #### 安装MPlayer
 
 输入如下命令安装MPlayer：
