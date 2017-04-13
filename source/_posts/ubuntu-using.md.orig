@@ -47,12 +47,19 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 ```
 
 
+<<<<<<< HEAD
 | 名称                                       | 开发语言 | 开源协议 | 支持的OS             | 备注               |
 | ---------------------------------------- | ---- | ---- | ----------------- | ---------------- |
 | [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知   | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图 |
 | [Typora](https://typora.io/) | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
 | [Zeal](https://koji.fedoraproject.org/koji/buildinfo?buildID=809071) | Unkonwn |GPLv3 | Linux/Mac/Windows | 离线文档浏览器 |
 | Pencil | Java | GNU GPL | Linux/Mac/Windows | 原型设计工具 |
+=======
+| 名称                                       | 开发语言           | 开源协议    | 支持的OS             | 备注                  |
+| ---------------------------------------- | -------------- | ------- | ----------------- | ------------------- |
+| [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java           | 未知      | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图    |
+| [Typora](https://typora.io/)             | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
+>>>>>>> ddfb09f11c621067d21a1d107f30121739304de4
 
 #### 字体
 
