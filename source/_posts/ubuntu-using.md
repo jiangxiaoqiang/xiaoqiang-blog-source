@@ -16,7 +16,7 @@ categories: OS
 # 安装常用软件(16.04 LTS及以后使用apt命令)
 sudo apt install -y wget curl aria2 keepass2 putty vim tree unzip git
 openssh-server uget maven gradle shutter nginx mysql-server nodejs 
-texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss fail2ban manpages-posix
+texstudio virtualbox synaptic terminator gimp graphiz deluge zsh quiterss fail2ban manpages-posix zeal
 ```
 
 * synaptic是一款图形化的apt(Advance Package Tool)包管理器，可以轻松查看已经安装的包，未安装的包。terminator它支持分割终端,并可以在终端中快速切换.
@@ -51,6 +51,8 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 | ---------------------------------------- | ---- | ---- | ----------------- | ---------------- |
 | [ProjectLibre](https://sourceforge.net/projects/projectlibre/files/?source=navbar) | Java | 未知   | Linux/Mac/Windows | 开源的项目管理工具,可生成甘特图 |
 | [Typora](https://typora.io/) | JavaScript + C | Unkonwn | Linux/Mac/Windows | Markdown编辑器，生成的页面美观 |
+| [Zeal](https://koji.fedoraproject.org/koji/buildinfo?buildID=809071) | Unkonwn |GPLv3 | Linux/Mac/Windows | 离线文档浏览器 |
+| Pencil | Java | GNU GPL | Linux/Mac/Windows | 原型设计工具 |
 
 #### 字体
 

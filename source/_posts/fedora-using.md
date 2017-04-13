@@ -15,7 +15,8 @@ categories: Programming
 安装常用软件：
 
 ```Bash
-sudo dnf install -y git iostat keepass htop wget curl uget shutter mplayer vlc baobab jq
+# Fedora 22及以上版本
+sudo dnf install -y git iostat keepass htop wget curl uget shutter mplayer vlc baobab jq zeal
 ```
 
 | 软件名称 |    作用     |

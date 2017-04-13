@@ -12,8 +12,6 @@ categories: OS
 
 <!-- more -->
 
-
-
 | 快捷键                              | 描述                                       |
 | -------------------------------- | ---------------------------------------- |
 | Ctrl+Shift + O                   | Split terminals Horizontally.（上下开新窗口，需要安装terminator） |
@@ -24,8 +22,9 @@ categories: OS
 | Alt + f (forward)                | 按单词前移（右向）                                |
 | Alt + b(backward)                | 按单词后移（左向）                                |
 | Ctrl + Left/Right                | 光标左右定位单词                                 |
-
-
+| Esc + b | 光標向後移動一個單詞 |
+| Esc + f | 光標向前移動一個單詞 |
+| Ctrl + w | 刪除光標前一個單詞 |
 
 #### 技巧
 
