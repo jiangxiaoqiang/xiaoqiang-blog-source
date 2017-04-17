@@ -68,7 +68,7 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 
 | 目錄名稱      | 说明                                       |
 | --------- | ---------------------------------------- |
-| /bin      | 裏面存放有基礎的命令二進制文件，即使`/usr/bin`沒有掛載，也保障一些基礎的命令可用，包含bash\cp\dmesg\less\more等等150多個命令(`ls -l|grep "^-"|wc -l`)，發現其實命令也還不算太多，也許用過的命令也就一半多一點 |
+| /bin      | 裏面存放有基礎的命令二進制文件，即使`/usr/bin`沒有掛載，也保障一些基礎的命令可用，包含bash\cp\dmesg\less\more等等150多個命令，發現其實命令也還不算太多，也許用過的命令也就一半多一點 |
 | /dev      | 設備文件，linux中一切設備即文件                       |
 | /etc      | 存放系統所有重要的配置文件                            |
 | /home     | 用戶的家目錄                                   |
@@ -80,6 +80,24 @@ sudo find / \( -name intellij* -not -name "*.js" -not -name "*.svg" -not -name "
 | /usr/lib  | 非系統級的庫文件                                 |
 | /usr/sbin | 非基礎性的二進制文件                               |
 | /var      | 可變數據，比如日誌等等                              |
+
+查看当前文件夹文件个数：
+
+```shell
+ls -l|grep "^-"|wc -l
+```
+
+创建外部连接
+
+使用外部连接
+
+USER_XYCQ.TS_B_XZCF
+
+create public link
+
+
+
+
 
 
 #### 小技巧
