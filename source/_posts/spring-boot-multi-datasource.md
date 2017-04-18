@@ -37,6 +37,79 @@ custom.datasource.ds1.username=dolphin
 custom.datasource.ds1.password=123456
 ```
 
+#### 实例化不同数据源实现
+
+可以通过实例化不同的Datasource，进而实例化不同的JdbcTemplate，在方法中使用不同的JdbcTemplate而实现多数据源。
+
+##### 配置Bean
+
+注入Datasource与JdbcTemplate配置：
+
+```Java
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import javax.sql.DataSource;
+
+/**
+ * Created by jiangxiaoqiang on 17-4-17.
+ */
+@Configuration
+public class DataSourceConfig {
+    @Bean
+    @Primary
+    @ConfigurationProperties(prefix = "spring.datasource")
+    public DataSource primaryDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean
+    @Primary
+    public JdbcTemplate primaryJdbcTemplate(DataSource dataSource) {
+        return new JdbcTemplate(dataSource);
+    }
+
+    @Bean(name = "secondaryDataSource")
+    @Qualifier("secondaryDataSource")
+    @ConfigurationProperties(prefix = "custom.datasource.ds1")
+    public DataSource secondaryDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean(name = "secondaryJdbcTemplate")
+    public JdbcTemplate secondaryJdbcTemplate(
+            @Qualifier("secondaryDataSource") DataSource dataSource) {
+        return new JdbcTemplate(dataSource);
+    }
+}
+```
+
+注意这里需要在主数据源上添加@Primary注解，表示主数据源优先选择，如果使用非主数据源，则在注入的时候使用@Qualifier进行限定。
+
+##### 注入JdbcTempldate
+
+```Java
+@Autowired@Qualifier("secondaryJdbcTemplate")
+private JdbcTemplate secondaryJdbcTemplate;
+```
+
+
+##### 使用JdbcTemplate
+
+```Java
+public void findAll2() {
+    String sql = "select * from A";      
+    List<Map<String, Object>> list = secondaryJdbcTemplate.queryForList(sql);
+    System.out.print(list.get(0));
+}
+```
+
+
 #### 添加TargetSource
 
 ```shell
