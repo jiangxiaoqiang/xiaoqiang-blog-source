@@ -224,8 +224,17 @@ git checkout -- <filename>
 git checkout -- src/components/system/SuggestionMain.js
 ```
 
+查看远程分支：
 
+```shell
+git branch -a
+```
 
+其中a表示all的含义，远程分支会用红色标识出来。如下图所示
+
+{% asset_img git-remote-branch.jpg git查看远程分支 %}
+
+其中origin和osc表示远程分支的主机名。此处可以看出有osc和origin两个远程主机。
 
 #### 撤销合并
 

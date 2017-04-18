@@ -317,7 +317,7 @@ the home directory of the current user. This location can be configured via the 
 
 #### 设置源码路径
 
-在混合编程中，需要设置不同开发语言的源码路径，如下代码片段所示：
+在混合编程中，需要设置不同开发语言的源码路径，如下代码片段所示： 
 
 ```
 sourceSets {
@@ -365,6 +365,18 @@ Gradle构建时，会先构建依赖包，再构建主要的包。每个包的�
 ./gradlew wrapper
 # 指定版本
 ./gradlew wrapper --gradle-version 3.2.1
+```
+
+#### 指定多个Maven源
+
+指定多个Maven源只需要在repositories中添加多个Maven Url即可。
+
+```groovy
+repositories {
+  maven { url "http://maven.springframework.org/release" }
+  maven { url "http://maven.restlet.org" }
+  mavenCentral()
+}
 ```
 
 参考资料：
