@@ -145,3 +145,32 @@ else
 	break;
 fi
 ```
+
+#### autojump
+
+使用Terminal的过程中，有许多时间是在不同的目录之间切换，但是我们很难记住所有的目录并准确无误的输入相应的路径。切换的过程中不得不反复按下tab选择目标路径。其实在使用Linux的过程中，高频使用的目录是有限的。而autojump工具就是將目錄使用的頻率按照權重排序，並根據目錄權重幫助我們快速找到相應的工作目錄。
+
+```shell
+# Fedora 22及以后版本安装
+sudo dnf install -y autojump
+# Ubuntu上安装
+sudo apt install -y autojump
+```
+
+#### 命令参数传递
+
+有时需要将一个命令的输出作为另一个命令的输入，可以采用如下的方式。
+
+##### 反引号``
+
+反引号括起来的字符串被shell解释为命令行，在执行时，shell首先执行该命令行，并以它的标准输出结果取代整个反引号（包括两个反引号）部分。例如将pwd命令的输出作为autojump命令的参数输入：
+
+```shell
+j -a `pwd`
+# 采用$()的方式，与``的方式相同
+j -a $(pwd)
+# 可以采用xargs的方式，不过这里需要写命令autojump的全名
+pwd | xargs autojump -a
+```
+
+
