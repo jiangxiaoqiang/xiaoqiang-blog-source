@@ -11,7 +11,7 @@ categories: Tool
 <!-- more -->
 
 
-#### 表格
+### 表格
 
 ```tex
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -30,3 +30,11 @@ categories: Tool
 	\hline	
 \end{tabular}
 ```
+
+### 预览
+
+#### PDF预览
+
+有时电脑屏幕比较小，需要单独打开一个新的窗口外部预览(External Preview)而不是使用嵌入式窗口(Embedded Preview)预览。在Configure TeXStudio->Build->Meta Commands中，修改Default Viewer为`txs:///view-pdf-external`，如下图所示。
+
+{% asset_img default-external-pdf-viewer.jpg 修改默认PDF预览%}
