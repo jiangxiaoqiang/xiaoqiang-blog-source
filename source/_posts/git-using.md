@@ -85,6 +85,8 @@ git remote set-url --add origin https://github.com/jiangxiaoqiang/xiaoqiang-blog
 git remote set-url --delete origin https://github.com/iissnan/hexo-theme-next
 ```
 
+有时经常使用`git add`命令，和`git commit`命令，可以将之合并为一个命令`git commit -am ‘init’`。其中参数a(all)表示提交所有修改文件。
+
 #### 发起pull request
 
 新建(check out)分支v1_xiaoqiang：

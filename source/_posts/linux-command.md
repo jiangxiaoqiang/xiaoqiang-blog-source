@@ -157,6 +157,14 @@ sudo dnf install -y autojump
 sudo apt install -y autojump
 ```
 
+获取数据autojump命令略显冗长，所以可以为autojump添加一个别名(alias)。在`~/.bashrc`文件中，添加如下一行：
+
+```shell
+alias j='autojump'
+```
+
+接着再运行`. ~/.bashrc`使之生效，或者重新开启一个终端(每次开启终端都会加载`.bashrc`文件)。
+
 #### 命令参数传递
 
 有时需要将一个命令的输出作为另一个命令的输入，可以采用如下的方式。
