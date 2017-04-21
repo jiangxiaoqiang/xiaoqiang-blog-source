@@ -10,6 +10,17 @@ categories: Tool
 
 <!-- more -->
 
+# 安装
+
+## Mac下安装
+
+下载LaTex安装包：
+
+```shell
+nohup wget -c http://mirror.lzu.edu.cn/CTAN/systems/mac/mactex/mactex-20161009.pkg &
+```
+
+
 
 ### 表格
 
