@@ -1,46 +1,68 @@
 ---
-title: 通用部署流程
+title: 平台部署流程
 date: 2017-01-22 16:43:20
 tags:
 - deployment
 categories: Programming
 ---
 
-虽然理想中的程序是从来不用考虑部署，只需要简单的几个按即可(部署、回滚、回滚到指定版本)。但是平时还是需要手动处理很多部署工作，将手动部署的一些步骤记录在此，避免遗忘。不管是小到一个简单的单机独立应用，还是大到跨国跨数据中心上千节点大型集群，部署过程大致如此。
+软件发布，往往需要整个团队的成员处于高度紧张的状态，随时待命排查问题。稍微大型一些的项目，加班通宵也是经常的事情。为了解决软件变化与发布的痛点，引入了持续持续集成，只需要简单的几个按即可(部署、回滚、回滚到指定版本)。但是由于种种客观条件限制，平时还是需要手动处理很多部署工作，将手动部署的一些步骤记录在此，避免遗忘。不管是小到一个简单的单机独立应用，还是大到跨国跨数据中心上千节点大型集群，部署过程大致如此。
 
 <!-- more -->
 
-#### 编译程序(Compile)
+{% asset_img deploy-workflow.jpg 部署流程 %}
 
-对于Java与Scala编写的后端代码，输入如下命令编译程序：
+#### 获取最新源码
+
+项目采用的源码管理软件是Git，Git目前是全球最流行的源码管理系统，由Linux内核的作者Linus Torvalds开发，包括Windows操作的源码，Linux内核以及数不清的Linux发行版都采用Git作为源码管理系统。本项目的主干分支是v1分支，获取源码如下：
 
 ```Bash
-# 编译jar包
+# 查看本地分支情况
+git branch
+# 将远程的v1分支合并到当前分支
+git pull osc v1
+```
+
+#### 编译程序(Compile)
+
+本项目后端有部分Scala代码，编译时需要同时安装Java Compiler和Scala Compiler，杨老师说不需要Scala SDK只需要在Intellij Idea中安装插件即可，不过自己还是安装了Scala SDK，比较容易理解。对于Java与Scala编写的后端代码，输入如下命令编译程序：
+
+```Bash
+# 在Windows下编译后端代码
+./gradlew.bat -p cc-web-boot -x test build
+# 在Linux下，编译后端jar包
 ./gradlew -p cc-web-boot -x test build
 ```
 
-编译完成后，切换到目标目录`cc-web-boot/build/libs`即可发现生成的jar包。命令指定项目的目录是`cc-web-boot`。对于Javascript、html、css编写的前端代码：
+编译完成后，切换到目标目录`cc-web-boot/build/libs`即可发现生成的jar包，jar包大概在70MB-90MB之间。命令指定项目的目录是`cc-web-boot`。对于Javascript、html、css编写的前端代码：
+
+```Bash
+# 在Linux下，编译前端包
+./build-release.sh
+```
+
+前端包的文件大概在7MB-10MB之间。
 
 #### 拷贝程序到服务器
 
-使用如下命令拷贝程序到服务端：
+在拷贝到服务器端时，如果存在覆盖的情况，会顺手备份一个版本。一般以日期作为标识，不管版本重要与否，开始时是手动备份，后面有脚本自动完成备份。一定记得备份，备份，备份。使用如下命令拷贝程序到服务端：
 
 ```Bash
-scp system-web-boot-1.0.0.jar hldev@172.30.0.110:~
-scp system-web-boot-1.0.0.jar hl@192.168.32.106:/home/app/
+scp system-web-boot-1.0.0.jar dolphin@172.30.0.110:~
+scp system-web-boot-1.0.0.jar dolphin@192.168.32.106:/home/app/
 ```
 
-目前服务器Web使用的Tengine。需要将后端的jar/war包分别拷贝到12和13服务器。前端代码在11上，Nginx转发请求、负载均衡也在11服务器。在使用国产Web（默认端口9060）时要注意修改配置文件application.properties，将Cookie Domain和Datasource Url设置为相应的值。
+system-web-boot-1.0.0.jar是目标jar包的名称，dolphin是ssh登陆用户名，172.30.0.110是部署目标服务器IP。目前服务器Web反向代理使用的Tengine。
 
 #### 启动
 
 使用Putty登录系统，启动：
 
 ```Bash
-# 新开进程启动
-nohup java -jar system-web-boot-1.0.0.jar
+# 新开进程启动,指定配置文件
+nohup java -jar system-web-boot-1.0.0.jar --spring.properties=
 
-# 启动，可以在界面上查看输出日志
+# 在当前Shell进程中启动，可以在界面上查看输出日志，退出Shell后程序自动退出
 java -jar system-web-boot-1.0.0.jar
 
 # 启动，优先使用IPv4
