@@ -31,6 +31,9 @@ date: 2016-09-26 14:23:24
 
 {% asset_img code-completion-case-sensitive.jpg 智能提示大小写敏感调整%}
 
+#### Gradle面板消失
+
+有时在Intellij Idea中导入项目之后无法看到Gradle面板，在Tool Window中也没有Gradle入口，此时可以进入设置`Command + ,`中指定Gradle的相关配置即可。
 
 #### Live Templates
 

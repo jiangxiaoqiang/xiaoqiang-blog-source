@@ -10,8 +10,19 @@ categories: Tool
 
 <!-- more -->
 
+# 安装
 
-#### 表格
+## Mac下安装
+
+下载LaTex安装包：
+
+```shell
+nohup wget -c http://mirror.lzu.edu.cn/CTAN/systems/mac/mactex/mactex-20161009.pkg &
+```
+
+
+
+### 表格
 
 ```tex
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -30,3 +41,20 @@ categories: Tool
 	\hline	
 \end{tabular}
 ```
+
+### 预览
+
+#### PDF预览
+
+有时电脑屏幕比较小，需要单独打开一个新的窗口外部预览(External Preview)而不是使用嵌入式窗口(Embedded Preview)预览。在Configure TeXStudio->Build->Meta Commands中，修改Default Viewer为`txs:///view-pdf-external`，如下图所示。
+
+{% asset_img default-external-pdf-viewer.jpg 修改默认PDF预览%}
+
+
+### 常见问题
+
+#### File `TikZ.sty' not found. \usepackage
+
+PGF/TikZ 是Latex中强大的画图工具（TikZ基于pgf）。pgf stands for Portable Graphics Format. TikZ is a recursive acronym for "TikZ ist kein Zeichenprogramm" (German for "TikZ is not a drawing program")。而TikZ则是在Tex环境下的一个宏包，实现了对PGF的封装。
+
+
