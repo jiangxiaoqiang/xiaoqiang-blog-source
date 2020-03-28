@@ -12,13 +12,13 @@ comment: false
 | ---------------- | ---------------------------------------- | -------- |
 | Language         | Java、C#、JavaScript、Shell、Assembly、C++、Python | 王爽《汇编语言》 |
 | Framework        | Spring、MyBatis                           |          |
-| Operation System | Redhat、CentOS、Ubuntu、Fedora、OpenSUSE     |          |
+| Operation System | Redhat、CentOS、Ubuntu、Fedora    |          |
 | Database         | MySQL、Apache HBase                       |          |
-| Message Queue    | Apache Kafka                             |          |
+| Message Queue    | RabbitMQ、Apache Kafka                             |          |
 | Cache            | Redis                                    |          |
 | Web Server       | Apache Tomcat、Nginx                      |          |
-| Front End        | JavaScript、HTML                          |          |
-| Tools            | Git、GitLab、Intellij Idea、JRebel、Gradle、Jenkins、SonarQube |          |
+| Front End        | React                          |          |
+| Tools            | Kubernetes、Git、GitLab、Intellij Idea、JRebel、Gradle、Jenkins、SonarQube |          |
 | 口号(Slogan)       | 开源、分享要从娃娃抓起,装逼也是(So as zhuangbiliaty)    |          |
 
 #### 出没地
@@ -26,8 +26,7 @@ comment: false
 * [StackOverflow](http://stackoverflow.com/users/2628868/dolphin)
 * [GitHub](https://github.com/jiangxiaoqiang/)
 
-下图是微信订阅号，会有一些分享，推送不频繁。
+下图是微信订阅号，研究用，基本没有推送，勿关注。
 
 ![qr](./index/qrcode.jpg)
 
-微信订阅号会不定期推送一些文章，非技术。
