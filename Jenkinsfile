@@ -30,6 +30,7 @@ pipeline {
                 sh "npm install"
                 sh "npm install -g hexo"
                 sh "hexo generate"
+                sh "rm -rf ${JENKINS_HOME}/workspace/jiangxiaoqiang.github.io/2020"
                 sh "cp -r jiangxiaoqiang.github.io/* ${JENKINS_HOME}/workspace/jiangxiaoqiang.github.io"
             }
         }
