@@ -34,6 +34,9 @@ pipeline {
         
         stage('build-source') {
             steps{
+                sh "ls -alh"
+                sh "cd .."
+                sh "ls -alh" 
                 sh "cd ../xiaoqiang-blog-source"
                 sh "npm install"
                 sh "npm install -g hexo"
