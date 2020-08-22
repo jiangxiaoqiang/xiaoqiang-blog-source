@@ -25,13 +25,6 @@ pipeline {
              } 
         }
         
-        stage('checkout-dist') {
-            steps {
-                git credentialsId: 'gitlab-project-auth',
-                url: 'https://github.com/jiangxiaoqiang/jiangxiaoqiang.github.io.git'
-             } 
-        }
-        
         stage('build-source') {
             steps{
                 sh "ls -alh"
