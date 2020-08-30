@@ -28,7 +28,7 @@ pipeline {
         stage('build-source') {
             steps{
                 sh "npm install"
-                sh "npm install -g hexo@4.1.1 hexo-cli@4.1.1"
+                sh "npm install -g hexo@4.1.1 hexo-cli"
                 sh "hexo clean"
                 sh "hexo generate"
                 sh "rm -rf ${JENKINS_HOME}/workspace/jiangxiaoqiang.github.io/2020"
