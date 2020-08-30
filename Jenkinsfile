@@ -13,7 +13,7 @@ pipeline {
     
     tools {
         nodejs "NodeJS-12.18.3"     //这里是全局工具配置的名字,要对应
-    }
+        }
 
     stages {
         stage('checkout-source') {
@@ -25,9 +25,9 @@ pipeline {
         
         stage('build-source') {
             steps{
-                sh "npm install"
+                sh "npm install --no-optional"
                 sh "npm install yarn"
-                sh "yarn add hexo@4.1.1 hexo-cli@4.1.0"
+                sh "npm add hexo@4.1.1 hexo-cli@4.1.0"
                 sh "hexo clean"
                 sh "hexo generate"
                 sh "rm -rf ${JENKINS_HOME}/workspace/jiangxiaoqiang.github.io/2020"
