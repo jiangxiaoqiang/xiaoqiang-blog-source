@@ -7,14 +7,12 @@ pipeline {
     }
     
     environment {
-        NODEJS_HOME = "${tool 'NodeJS-14.7.0'}"
+        NODEJS_HOME = "${tool 'NodeJS-12.18.3'}"
 		PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
     }
     
     tools {
-        //maven 'maven-3'    //这里是全局工具配置的名字,要对应
-        nodejs "NodeJS-14.7.0"     //这里是全局工具配置的名字,要对应
-        //gradle "Gradle"      //这里是全局工具配置的名字,要对应
+        nodejs "NodeJS-12.18.3"     //这里是全局工具配置的名字,要对应
     }
 
     stages {
