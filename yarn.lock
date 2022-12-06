@@ -379,9 +379,9 @@ decamelize@^1.0.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deepmerge@^4.2.2:
   version "4.2.2"
@@ -590,6 +590,22 @@ hexo-bunyan@^2.0.0:
     mv "~2"
     safe-json-stringify "~1"
 
+hexo-cli@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-cli/-/hexo-cli-4.1.0.tgz#833b1726550830fbf592dd84ffe2e9d0eba09ca1"
+  integrity sha512-Z1w0iRlkBZTOK/fooLkX0pf28qb+wTJfJUYEQcja7TVj+aeKBcSBpP7w21LA/Gtq6rHqmpGaMNPpunPPUKA1QQ==
+  dependencies:
+    abbrev "^1.1.1"
+    bluebird "^3.5.5"
+    chalk "^4.0.0"
+    command-exists "^1.2.8"
+    hexo-fs "^3.0.1"
+    hexo-log "^2.0.0"
+    hexo-util "^2.0.0"
+    minimist "^1.2.5"
+    resolve "^1.11.0"
+    tildify "^2.0.0"
+
 hexo-cli@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/hexo-cli/-/hexo-cli-3.1.0.tgz#a7414d4647333fe73762f86d77e5660659c0d05b"
@@ -604,22 +620,6 @@ hexo-cli@^3.0.0:
     hexo-log "^1.0.0"
     hexo-util "^1.4.0"
     minimist "^1.2.0"
-    resolve "^1.11.0"
-    tildify "^2.0.0"
-
-hexo-cli@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/hexo-cli/-/hexo-cli-4.1.0.tgz#833b1726550830fbf592dd84ffe2e9d0eba09ca1"
-  integrity sha512-Z1w0iRlkBZTOK/fooLkX0pf28qb+wTJfJUYEQcja7TVj+aeKBcSBpP7w21LA/Gtq6rHqmpGaMNPpunPPUKA1QQ==
-  dependencies:
-    abbrev "^1.1.1"
-    bluebird "^3.5.5"
-    chalk "^4.0.0"
-    command-exists "^1.2.8"
-    hexo-fs "^3.0.1"
-    hexo-log "^2.0.0"
-    hexo-util "^2.0.0"
-    minimist "^1.2.5"
     resolve "^1.11.0"
     tildify "^2.0.0"
 
@@ -786,7 +786,7 @@ hexo-util@^2.0.0:
     strip-indent "^3.0.0"
     striptags "^3.1.1"
 
-hexo@^4.0.0:
+hexo@4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/hexo/-/hexo-4.2.0.tgz#dd306abe801ca47623cae7c86818af4425b466ec"
   integrity sha512-j2Kzgx/eWF0IgSfUEsAAhr0mDaaqR3E1MTus0/Vrs+JpQdMiSlqSbudPf2S9O4FHi5CAzDCuzToGlg2kgoQxcA==
